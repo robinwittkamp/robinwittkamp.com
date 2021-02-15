@@ -1,24 +1,21 @@
-import Head from 'next/head'
+import Head from 'next/head';
 // import styles from '../styles/Home.module.css'
 
-const Home = () => {
-  return (
-    <>
-      <Head>
-        <title>Robin Wittkamp</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const Home = () => (
+  <>
+    <Head>
+      <title>Robin Wittkamp</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
 
-      <main>
-        <h1>
-          Hi, I'm Robin.
-        </h1>
-      </main>
+    <main>
+      <h1>
+        Hi, I'm Robin.
+      </h1>
+    </main>
 
-      <footer>
-      </footer>
-    </>
-  )
-}
+    <footer />
+  </>
+);
 
 export default Home;
