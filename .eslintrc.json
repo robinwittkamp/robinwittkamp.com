@@ -6,13 +6,24 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:import/recommended",
-    "plugin:react/recommended",
     "airbnb",
+    "airbnb/hooks",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
     "plugin:jsx-a11y/recommended"
   ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
   "plugins": [
     "react",
+    "react-hooks",
     "import",
     "jsx-a11y"
   ],
