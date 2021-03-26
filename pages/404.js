@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
 
-const NotFoundPage = () => (
+const Custom404 = () => (
   <Layout>
     <Head title="Page not found | Robin Wittkamp" />
     <span>{'<(☉︵☉)>'}</span>
@@ -12,4 +12,4 @@ const NotFoundPage = () => (
   </Layout>
 );
 
-export default NotFoundPage;
+export default Custom404;
