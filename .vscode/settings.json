@@ -6,6 +6,6 @@
   // Enables automatic correction of ESLint and Stylelint errors when the file is saved
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": false
   }
 }
