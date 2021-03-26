@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^0.3.1",
     "framer-motion": "^4.0.3",
     "next": "^10.0.9",
     "prop-types": "^15.7.2",
