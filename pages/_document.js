@@ -12,7 +12,7 @@ class CustomDocument extends Document {
     return (
       <Html
         lang="en"
-        className="antialiased bg-white text-gray-900 dark:bg-gray-900  dark:text-white"
+        className="antialiased bg-white text-true-gray-900 dark:bg-true-gray-900 dark:text-white"
       >
         <Head />
         <body>
