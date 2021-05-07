@@ -4,7 +4,7 @@ import { Canvas } from '@react-three/fiber';
 
 import Box from './Box';
 
-const CustomCanvas = () => (
+const HeroCanvas = () => (
   <Canvas
     style={{ height: '100%', width: '100%' }}
     // className="w-screen h-screen"
@@ -17,4 +17,4 @@ const CustomCanvas = () => (
   </Canvas>
 );
 
-export default CustomCanvas;
+export default HeroCanvas;
