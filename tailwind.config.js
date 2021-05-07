@@ -13,7 +13,7 @@ module.exports = {
       white: colors.white,
       'blue-gray': colors.blueGray,
       'cool-gray': colors.coolGray,
-      gray: colors.Gray,
+      gray: colors.gray,
       'true-gray': colors.trueGray,
       'warm-gray': colors.warmGray,
     },
