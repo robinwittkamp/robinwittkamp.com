@@ -8,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@headlessui/react": "^1.1.1",
+    "@headlessui/react": "^1.2.0",
     "@react-three/drei": "^4.3.3",
-    "@react-three/fiber": "^6.0.19",
+    "@react-three/fiber": "^6.0.21",
     "framer-motion": "^4.1.13",
     "next": "^10.2.0",
     "prop-types": "^15.7.2",
@@ -22,7 +22,7 @@
     "@babel/core": "^7.14.0",
     "@babel/eslint-parser": "^7.13.14",
     "autoprefixer": "^10.2.5",
-    "eslint": "^7.25.0",
+    "eslint": "^7.26.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-flowtype": "^5.7.2",
     "eslint-plugin-import": "^2.22.1",
