@@ -15,7 +15,9 @@
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "next",
+    "next/core-web-vitals"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
