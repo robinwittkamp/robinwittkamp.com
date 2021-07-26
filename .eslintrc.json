@@ -8,14 +8,14 @@
   },
   "extends": [
     "eslint:recommended",
+    "airbnb",
+    "airbnb/hooks",
     "plugin:flowtype/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
-    "airbnb",
-    "airbnb/hooks",
     "next",
     "next/core-web-vitals"
   ],
