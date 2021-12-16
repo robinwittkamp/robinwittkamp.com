@@ -6,7 +6,8 @@
 * [tailwindlabs/blog.tailwindcss.com](https://github.com/tailwindlabs/blog.tailwindcss.com)
 * [tailwindlabs/heroicons.com](https://github.com/tailwindlabs/heroicons.com)
 * [jonathanwilke/jonathan-wilke.com](https://github.com/jonathanwilke/jonathan-wilke.com)
-* [denoland/deno_website2](https://github.com/denoland/deno_website2)
+* [denoland/dotland](https://github.com/denoland/dotland)
+* [brianlovin/lists/personal-websites](https://github.com/stars/brianlovin/lists/personal-websites)
 
 ### Next.js
 * [benawad/dogehouse](https://github.com/benawad/dogehouse/tree/staging/kibbeh)
