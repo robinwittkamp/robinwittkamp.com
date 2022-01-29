@@ -10,29 +10,33 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.1",
-    "@react-three/drei": "^7.15.1",
-    "@react-three/fiber": "^7.0.16",
-    "framer-motion": "^4.1.17",
-    "next": "^11.1.2",
+    "@react-three/drei": "^8.8.0",
+    "@react-three/fiber": "^7.0.25",
+    "framer-motion": "^6.2.3",
+    "next": "^12.0.9",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "three": "^0.133.1"
+    "three": "^0.137.5"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/eslint-parser": "^7.15.8",
     "autoprefixer": "^10.3.7",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-next": "^11.1.2",
-    "eslint-plugin-flowtype": "^6.1.0",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^12.0.9",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "postcss": "^8.3.9",
-    "tailwindcss": "^2.2.17",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.4",
+    "tailwindcss": "^3.0.18",
     "typescript": "^4.4.4"
   }
 }
