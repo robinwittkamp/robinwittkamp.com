@@ -19,7 +19,8 @@ Head.propTypes = {
 Head.defaultProps = {
   title: 'Robin Wittkamp | Corporate design and web development',
   og: 'og.png',
-  description: "Hi, I'm Robin. I am a student in Visual Computing and Design from Germany. I create corporate designs and develop websites.",
+  description:
+    "Hi, I'm Robin. I am a student in Visual Computing and Design from Germany. I create corporate designs and develop websites.",
 };
 
 export default Head;

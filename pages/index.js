@@ -6,10 +6,9 @@ const Home = () => (
   <Layout>
     <Head />
     <section className="">
-      <h1 className="font-bold text-8xl">
+      <h1 className="text-8xl font-bold">
         Hi, I&apos;m Robin.
-        <br />
-        I create corporate designs and develop websites.
+        <br />I create corporate designs and develop websites.
       </h1>
     </section>
     <HeroCanvas />
