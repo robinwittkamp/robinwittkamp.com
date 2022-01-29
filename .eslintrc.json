@@ -17,7 +17,8 @@
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
     "next",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
@@ -40,7 +41,8 @@
     "react",
     "react-hooks",
     "import",
-    "jsx-a11y"
+    "jsx-a11y",
+    "prettier"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
