@@ -1,0 +1,19 @@
+{
+  "useTabs": false,
+  "semi": true,
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": ["*.html", "*.svg", "*.js", "*.php"],
+      "options": {
+        "tabWidth": 4
+      }
+    },
+    {
+      "files": ["*.js"],
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ]
+}
