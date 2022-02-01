@@ -1,7 +1,7 @@
 # Reference Websites
 * [robinwittkamp.com](https://robinwittkamp.com)
 
-Tech
+Hardware + Software
 * [apple.com](https://apple.com)
 * [tesla.com](https://tesla.com)
 
@@ -18,6 +18,8 @@ Software
 * [superlist.com](https://superlist.com)
 * [height.app](https://height.app)
 * [nextui.org](https://nextui.org)
+* [procreate.art/ipad](https://procreate.art/ipad)
+* [stagent.com](https://stagent.com)
 
 Courses
 * [shiftnudge.com](https://shiftnudge.com)
