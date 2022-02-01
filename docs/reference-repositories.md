@@ -21,3 +21,8 @@
 
 ### Lists
 * [brianlovin/lists/personal-websites](https://github.com/stars/brianlovin/lists/personal-websites)
+
+### Boilerplates
+* [ixartz/Next-js-Boilerplate](https://github.com/ixartz/Next-js-Boilerplate) (Next.js, TypeScript, TailwindCSS, ESLint, Prettier)
+* [hixartz/Next-JS-Landing-Page-Starter-Template](https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template) (Next.js, TypeScript, TailwindCSS, ESLint, Prettier)
+* [ixartz/Next-js-Blog-Boilerplate](https://github.com/ixartz/Next-js-Blog-Boilerplate) (Next.js, TypeScript, TailwindCSS, ESLint, Prettier)
