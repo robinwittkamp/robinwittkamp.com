@@ -15,7 +15,9 @@ Software
 * [stripe.com](https://stripe.com)
 * [designcode.io](https://designcode.io)
 * [shape.so](https://shape.so)
-* [superlist.com](https://superlist.com/)
+* [superlist.com](https://superlist.com)
+* [height.app](https://height.app)
+* [nextui.org](https://nextui.org)
 
 Courses
 * [shiftnudge.com](https://shiftnudge.com)
@@ -30,3 +32,4 @@ Person
 * [nelson.co](https://nelson.co)
 * [danspratling.dev](https://danspratling.dev)
 * [smhylmz.com](https://smhylmz.com)
+* [vijayverma.co](https://vijayverma.co)
