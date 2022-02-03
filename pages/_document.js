@@ -12,7 +12,10 @@ class CustomDocument extends Document {
         lang="en"
         className="h-full w-full bg-white text-true-gray-900 antialiased dark:bg-true-gray-900 dark:text-white"
       >
-        <Head />
+        <Head>
+          <link href="/fonts/Gilroy/Gilroy-Regular.woff" />
+          <link href="/fonts/Gilroy/gilroy-extrabold-webfont.woff2" />
+        </Head>
         <body className="h-full w-full">
           <Main />
           <NextScript />
