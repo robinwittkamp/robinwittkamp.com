@@ -10,14 +10,17 @@ const Home = () => (
         Hi, I&apos;m Robin.
         <br />I create corporate designs and develop websites.
       </h1>
+      <a className="mt-16 block text-2xl font-extrabold">View my projects 👇🏻</a>
       {/* <HeroCanvas /> */}
     </section>
 
-    <section className="mt-16">
-      <h2 className="text-5xl font-extrabold md:text-6xl lg:text-7xl xl:text-8xl">Latest work</h2>
+    <section className="mt-48">
+      <h2 className="text-center text-5xl font-extrabold md:text-6xl lg:text-7xl xl:text-8xl">
+        Latest work
+      </h2>
     </section>
 
-    <section className="mt-16">
+    <section className="mt-48">
       <h2 className="text-5xl font-extrabold md:text-6xl lg:text-7xl xl:text-8xl">Contact</h2>
     </section>
   </Layout>
