@@ -11,6 +11,14 @@ const Home = () => (
         <br />I create corporate designs and develop websites.
       </h1>
     </section>
+    <section className="">
+      <h2 className="text-center text-5xl font-extrabold md:text-6xl lg:text-7xl xl:text-8xl">
+        Latest work
+      </h2>
+    </section>
+    <section className="">
+      <h2 className="text-5xl font-extrabold md:text-6xl lg:text-7xl xl:text-8xl">Contact</h2>
+    </section>
     {/* <HeroCanvas /> */}
   </Layout>
 );
