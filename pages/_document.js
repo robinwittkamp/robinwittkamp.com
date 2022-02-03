@@ -13,7 +13,7 @@ class CustomDocument extends Document {
         className="bg-white text-true-gray-900 antialiased dark:bg-true-gray-900 dark:text-white"
       >
         <Head />
-        <body className="px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32">
+        <body className="">
           <Main />
           <NextScript />
         </body>
