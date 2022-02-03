@@ -1,23 +1,24 @@
 import Link from 'next/link';
 
+const navigation = [
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Work', href: '#work' },
+  { name: 'Contact', href: '#contact' },
+];
+
 const Nav = () => (
   <nav className="">
-    <ul className="flex">
-      <li>
-        <Link href="#home">
-          <a className="px-6 text-xl font-extrabold">Home</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="#portfolio">
-          <a className="px-6 text-xl font-extrabold">Portfolio</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="#contact">
-          <a className="px-6 text-xl font-extrabold">Contact</a>
-        </Link>
-      </li>
+    <a className="" />
+
+    <ul className="hidden md:flex">
+      {navigation.map((item) => (
+        <li key={item.name}>
+          <Link href={item.href}>
+            <a className="block h-full px-6 text-xl font-extrabold">{item.name}</a>
+          </Link>
+        </li>
+      ))}
     </ul>
   </nav>
 );
