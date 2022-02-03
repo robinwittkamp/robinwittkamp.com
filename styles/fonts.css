@@ -11,5 +11,13 @@
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/gilroy-extrabold.woff2') format('woff2');
+  src: url('/fonts/gilroy-extrabold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/gilroy-black.woff') format('woff');
 }
