@@ -6,7 +6,7 @@ const Head = ({ title, og, description }) => (
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content="noindex, nofollow" />
-    <link rel="icon" href="/favicon.ico" />
+    {/* <link rel="icon" href="/favicon.ico" /> */}
   </NextHead>
 );
 
