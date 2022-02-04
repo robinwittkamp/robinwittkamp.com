@@ -13,7 +13,7 @@ const Footer = () => (
       {languages.map((item) => (
         <li key={item.name}>
           <Link href="#">
-            <a className="block py-2 px-2 text-gray-600 dark:text-true-gray-300">{item.name}</a>
+            <a className="dark:text-neutral-300 block py-2 px-2 text-gray-600">{item.name}</a>
           </Link>
         </li>
       ))}
@@ -23,13 +23,13 @@ const Footer = () => (
       {navigation.map((item) => (
         <li key={item.name}>
           <Link href={item.href}>
-            <a className="block py-2 px-2 text-gray-600 dark:text-true-gray-300">{item.name}</a>
+            <a className="dark:text-neutral-300 block py-2 px-2 text-gray-600">{item.name}</a>
           </Link>
         </li>
       ))}
     </ul>
 
-    <span className="block py-2 px-2 text-center text-gray-500 dark:text-true-gray-400">
+    <span className="dark:text-neutral-400 block py-2 px-2 text-center text-gray-500">
       © 2022 robin wittkamp
     </span>
   </footer>

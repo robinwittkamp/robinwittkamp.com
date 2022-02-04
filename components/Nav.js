@@ -12,7 +12,7 @@ const Nav = () => (
   <Menu as="div" className="h-full">
     <Menu.Button className="h-full w-12">X</Menu.Button>
 
-    <Menu.Items as="ul" className="absolute left-0 right-0 w-full bg-white dark:bg-true-gray-900">
+    <Menu.Items as="ul" className="absolute left-0 right-0 w-full bg-white dark:bg-neutral-900">
       {navigation.map((item) => (
         <Menu.Item as="li" key={item.name}>
           <Link href={item.href}>
