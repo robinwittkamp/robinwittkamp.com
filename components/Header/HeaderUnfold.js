@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
@@ -11,6 +12,8 @@ const navigation = [
 ];
 
 const HeaderUnfold = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-800 bg-white/30 backdrop-blur transition-[height] duration-500 dark:bg-neutral-900/90">
       {/* Popover */}
