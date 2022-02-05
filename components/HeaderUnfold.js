@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import Logo from './Header/Logo';
 // import Nav from './Nav';
 
 const navigation = [
@@ -24,20 +25,7 @@ const HeaderUnfold = () => {
           <div className="flex items-center justify-between">
             {/* Logo container */}
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              {/* Logo */}
-              <Link href="/">
-                <a
-                  href="#"
-                  className="text-xl font-black leading-[0.85] md:text-2xl md:leading-[0.85]"
-                >
-                  <span className="sr-only">Robin Wittkamp</span>
-                  <span className="">
-                    robin
-                    <br />
-                    wittkamp
-                  </span>
-                </a>
-              </Link>
+              <Logo />
             </div>
 
             {/* Mobil menu button */}
@@ -52,11 +40,11 @@ const HeaderUnfold = () => {
 
         <Transition
           enter="transition duration-500"
-          enterFrom="transform scale-95 opacity-0"
-          enterTo="transform scale-100 opacity-100"
-          leave="transition duration-500"
-          leaveFrom="transform scale-100 opacity-100"
-          leaveTo="transform scale-95 opacity-0"
+          enterFrom="scale-95 opacity-0"
+          enterTo="scale-100 opacity-100"
+          leave="transition duration-500 ease-in"
+          leaveFrom="scale-100 opacity-100"
+          leaveTo="scale-95 opacity-0"
         >
           {/* Mobil navigation */}
           <Popover.Panel className="">
