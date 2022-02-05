@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import { Menu, Popover } from '@headlessui/react';
+import { Menu, Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import Nav from './Nav';
+import Logo from './Header/Logo';
+// import Nav from './Nav';
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -10,56 +11,74 @@ const navigation = [
   { name: 'Contact', href: '#contact' },
 ];
 
-const Header = () => (
-  <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-800 bg-white/30 backdrop-blur dark:bg-neutral-900/90">
-    {/* Popover */}
-    <Popover className="md:h-20 lg:h-24 xl:h-24">
-      {/* Padding container */}
-      <div className="px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32">
-        {/* Logo & Navigation container */}
-        <div className="flex items-center justify-between">
-          {/* Logo container */}
-          <div className="flex justify-start lg:w-0 lg:flex-1">
-            {/* Logo */}
-            <Link href="/">
-              <a
-                href="#"
-                className="text-xl font-black leading-[0.85] md:text-2xl md:leading-[0.85]"
-              >
-                <span className="sr-only">Robin Wittkamp</span>
-                <span className="">
-                  robin
-                  <br />
-                  wittkamp
-                </span>
-              </a>
-            </Link>
-          </div>
+const Header = () => {
+  return (
+    <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-800 bg-white/30 backdrop-blur dark:bg-neutral-900/90">
+      {/* Popover */}
+      <Popover className="md:h-20 lg:h-24 xl:h-24">
+        {/* Padding container */}
+        <div className="px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32">
+          {/* Logo & Navigation container */}
+          <div className="flex items-center justify-between">
+            {/* Logo container */}
+            <div className="flex justify-start lg:w-0 lg:flex-1">
+              <Logo />
+            </div>
 
-          {/* Mobil menu button */}
-          <div className="-mr-3 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md p-2">
-              <span className="sr-only">Open menu</span>
-              <MenuIcon className="h-8 w-8" aria-hidden="true" />
-            </Popover.Button>
+            {/* Open menu button container */}
+            <div className="-mr-3 md:hidden">
+              {/* Open menu button */}
+              <Popover.Button className="inline-flex items-center justify-center rounded-md p-2">
+                <span className="sr-only">Open menu</span>
+                <MenuIcon className="h-8 w-8" aria-hidden="true" />
+              </Popover.Button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Mobil navigation */}
-      <Popover.Panel className="">
-        <nav className="my-2">
-          {navigation.map((item) => (
-            <Link key={item.name} href={item.href} passHref>
-              <Popover.Button as="a" className="block px-4 py-3">
-                <span className="text-lg font-extrabold ">{item.name}</span>
-              </Popover.Button>
-            </Link>
-          ))}
-        </nav>
-      </Popover.Panel>
-    </Popover>
-  </header>
-);
+        <Transition
+          enter="transition-opacity duration-500 ease-out"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-500 ease-in"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          {/* Mobil popover */}
+          <Popover.Panel className="absolute top-0 w-full border-b border-neutral-800 bg-white dark:bg-neutral-900">
+            <div className="px-4">
+              <div className="flex justify-between">
+                {/* Logo container */}
+                <div className="flex items-center justify-start">
+                  <Logo />
+                </div>
+
+                {/* Close menu button container */}
+                <div className="-mr-3 flex justify-end">
+                  {/* Close menu button */}
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md p-2">
+                    <span className="sr-only">Close menu</span>
+                    <XIcon className="h-8 w-8" aria-hidden="true" />
+                  </Popover.Button>
+                </div>
+              </div>
+
+              {/* Mobil navigation */}
+              <nav className="my-2">
+                {navigation.map((item) => (
+                  <Link key={item.name} href={item.href} passHref>
+                    <Popover.Button as="a" className="block py-3">
+                      <span className="text-lg font-extrabold ">{item.name}</span>
+                    </Popover.Button>
+                  </Link>
+                ))}
+              </nav>
+            </div>
+          </Popover.Panel>
+        </Transition>
+      </Popover>
+    </header>
+  );
+};
 
 export default Header;
