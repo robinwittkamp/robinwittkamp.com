@@ -11,7 +11,7 @@ const navigation = [
 ];
 
 const Header = () => (
-  <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-800 bg-white/30 backdrop-blur dark:bg-neutral-900/70">
+  <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-800 bg-white/30 backdrop-blur dark:bg-neutral-900/90">
     {/* Popover */}
     <Popover className="md:h-20 lg:h-24 xl:h-24">
       {/* Padding container */}
@@ -48,12 +48,12 @@ const Header = () => (
 
       {/* Mobil navigation */}
       <Popover.Panel className="">
-        <nav className="">
+        <nav className="my-2">
           {navigation.map((item) => (
-            <Link key={item.name} href={item.href}>
-              <a className="block p-3">
+            <Link key={item.name} href={item.href} passHref>
+              <Popover.Button as="a" className="block px-4 py-3">
                 <span className="text-lg font-extrabold ">{item.name}</span>
-              </a>
+              </Popover.Button>
             </Link>
           ))}
         </nav>
