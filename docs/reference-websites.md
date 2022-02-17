@@ -12,6 +12,7 @@ Software
 * [sketch.com](https://sketch.com)
 * [superlist.com](https://superlist.com)
 * [height.app](https://height.app)
+* [vercel.com](https://vercel.com)
 * [nextui.org](https://nextui.org)
 * [procreate.art/ipad](https://procreate.art/ipad)
 * [designcode.io](https://designcode.io)
