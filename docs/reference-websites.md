@@ -20,9 +20,11 @@ Software
 * [stagent.com](https://stagent.com)
 * [pitch.com](https://pitch.com)
 * [framer.com](https://framer.com)
+* [clay.com](https://www.clay.com)
 
 Courses
 * [shiftnudge.com](https://shiftnudge.com)
+* [threejs-journey.com](https://threejs-journey.com)
 
 Agencies
 * [ramotion.com](https://ramotion.com)
