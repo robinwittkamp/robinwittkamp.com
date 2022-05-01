@@ -13,7 +13,7 @@ const navigation = [
 
 const Header = () => {
   return (
-    <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-800 bg-white/30 backdrop-blur dark:bg-neutral-900/90">
+    <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-200 bg-white/90 backdrop-blur-lg dark:border-neutral-800 dark:bg-neutral-900/90">
       {/* Popover */}
       <Popover className="md:h-20 lg:h-24 xl:h-24">
         {/* Padding container */}
