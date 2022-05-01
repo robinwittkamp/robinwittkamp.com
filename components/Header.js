@@ -36,6 +36,8 @@ const Header = () => {
           </div>
         </div>
 
+        {/* <Popover.Overlay className="fixed inset-0 bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
+
         <Transition
           enter="transition-opacity duration-500"
           enterFrom="opacity-0"
@@ -45,7 +47,7 @@ const Header = () => {
           leaveTo="opacity-0"
         >
           {/* Mobil popover */}
-          <Popover.Panel className="absolute top-0 w-full border-b border-neutral-800 bg-white dark:bg-neutral-900">
+          <Popover.Panel className="absolute top-0 w-full border-b border-neutral-200 bg-white backdrop-blur-lg dark:border-neutral-800 dark:bg-neutral-900">
             <div className="px-4">
               <div className="flex justify-between">
                 {/* Logo container */}
@@ -68,7 +70,7 @@ const Header = () => {
                 {navigation.map((item) => (
                   <Link key={item.name} href={item.href} passHref>
                     <Popover.Button as="a" className="block py-3">
-                      <span className="text-lg font-extrabold ">{item.name}</span>
+                      <span className="text-lg">{item.name}</span>
                     </Popover.Button>
                   </Link>
                 ))}

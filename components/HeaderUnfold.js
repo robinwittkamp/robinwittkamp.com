@@ -38,6 +38,8 @@ const HeaderUnfold = () => {
           </div>
         </div>
 
+        {/* <Popover.Overlay className="fixed inset-0 bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
+
         <Transition
           enter="transition duration-500"
           enterFrom="scale-95 opacity-0"
@@ -52,7 +54,7 @@ const HeaderUnfold = () => {
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href} passHref>
                   <Popover.Button as="a" className="block px-4 py-3">
-                    <span className="text-lg font-extrabold ">{item.name}</span>
+                    <span className="text-lg">{item.name}</span>
                   </Popover.Button>
                 </Link>
               ))}
