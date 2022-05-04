@@ -16,7 +16,7 @@ const HeaderUnfold = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-[height] duration-500 dark:border-neutral-800 dark:bg-neutral-900/90">
+    <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90">
       {/* Popover */}
       <Popover className="md:h-20 lg:h-24 xl:h-24">
         {/* Padding container */}
@@ -48,6 +48,7 @@ const HeaderUnfold = () => {
           leaveFrom="scale-100 opacity-100"
           leaveTo="scale-95 opacity-0"
         >
+          {/* <Popover.Overlay className="fixed inset-0 h-screen bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
           {/* Mobil navigation */}
           <Popover.Panel className="">
             <nav className="my-2">
