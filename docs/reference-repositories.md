@@ -3,13 +3,10 @@
 ### Next.js + TailwindCSS
 * [tailwindlabs/tailwindcss.com](https://github.com/tailwindlabs/tailwindcss.com)
 * [tailwindlabs/play.tailwindcss.com](https://github.com/tailwindlabs/play.tailwindcss.com)
-* [tailwindlabs/blog.tailwindcss.com](https://github.com/tailwindlabs/blog.tailwindcss.com)
 * [tailwindlabs/heroicons.com](https://github.com/tailwindlabs/heroicons.com)
 * [gavinmn/nelson.co](https://github.com/gavinmn/nelson.co)
-* [benawad/dogehouse](https://github.com/benawad/dogehouse/tree/staging/kibbeh)
 
 ### Next.js + TailwindCSS + Typescript
-* [jonathanwilke/jonathan-wilke.com](https://github.com/jonathanwilke/jonathan-wilke.com)
 * [denoland/dotland](https://github.com/denoland/dotland)
 * [leerob/leerob.io](https://github.com/leerob/leerob.io)
 * [timolins/timo-sh](https://github.com/timolins/timo-sh)
