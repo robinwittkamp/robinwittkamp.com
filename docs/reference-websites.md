@@ -21,6 +21,7 @@ Software
 * [pitch.com](https://pitch.com)
 * [framer.com](https://framer.com)
 * [clay.com](https://www.clay.com)
+* [raycast.com](https://www.raycast.com)
 
 Courses
 * [shiftnudge.com](https://shiftnudge.com)
