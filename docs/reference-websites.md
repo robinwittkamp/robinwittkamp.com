@@ -32,6 +32,7 @@ Agencies
 * [tubikstudio.com](https://tubikstudio.com)
 * [cuberto.com](https://cuberto.com)
 * [metalab.com](https://metalab.com)
+* [smuv.studio](https://www.smuv.studio)
 
 Person
 * [nelson.co](https://nelson.co)
