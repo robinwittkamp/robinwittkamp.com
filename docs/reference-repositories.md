@@ -24,7 +24,8 @@
 * [hixartz/Next-JS-Landing-Page-Starter-Template](https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template) (Next.js, TypeScript, TailwindCSS, ESLint, Prettier)
 * [ixartz/Next-js-Blog-Boilerplate](https://github.com/ixartz/Next-js-Blog-Boilerplate) (Next.js, TypeScript, TailwindCSS, ESLint, Prettier)
 * [theodorusclarence/ts-nextjs-tailwind-starter](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter) (Next.js, TypeScript, TailwindCSS, ESLint, Prettier)
-* [pmndrs/react-three-next](https://github.com/pmndrs/react-three-next) (Next.js, TailwindCSS, Typescript, Three.js, react-three-fiber)
+* [pmndrs/react-three-next](https://github.com/pmndrs/react-three-next) (Next.js, TailwindCSS, Typescript, Three.js, @react-three/fiber)
+* [whoisryosuke/r3f-next-starter](https://github.com/whoisryosuke/r3f-next-starter) (Next.js, Typescript, Three.js, @react-three/fiber)
 
 ### Lists
 * [brianlovin/lists/personal-websites](https://github.com/stars/brianlovin/lists/personal-websites)
