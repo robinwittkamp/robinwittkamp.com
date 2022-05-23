@@ -9,7 +9,7 @@ const Home = () => (
 
     <section id="home" className="px-4 py-24 sm:px-8 md:px-12 lg:px-24 xl:px-32">
       <h1 className="">Hi, I&apos;m Robin.</h1>
-      <p className="mt-4 text-xl text-neutral-500">
+      <p className="mt-4 text-xl text-neutral-500 dark:text-neutral-300">
         I build fast, reliable websites with a simple, modern design and focus on user experience.
         The technologies I currently use the most are Next.js, React.js and WordPress.
       </p>
