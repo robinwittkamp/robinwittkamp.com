@@ -17,10 +17,10 @@ Head.propTypes = {
 };
 
 Head.defaultProps = {
-  title: 'Robin Wittkamp | Corporate design and web development',
+  title: 'Robin Wittkamp - Fast, reliable and beautiful websites',
   og: 'og.png',
   description:
-    "Hi, I'm Robin. I am a student in Visual Computing and Design from Germany. I create corporate designs and develop websites.",
+    "Hi, I'm Robin. I build fast, reliable websites with a simple, modern design and focus on a high level of user experience.",
 };
 
 export default Head;

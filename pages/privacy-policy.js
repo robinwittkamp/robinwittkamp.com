@@ -3,8 +3,8 @@ import Layout from '../components/Layout';
 
 const PrivacyPolicy = () => (
   <Layout>
-    <Head />
-    <h1>PrivacyPolicy</h1>
+    <Head title="Privacy policy - Robin Wittkamp" />
+    <h1>Privacy policy</h1>
   </Layout>
 );
 

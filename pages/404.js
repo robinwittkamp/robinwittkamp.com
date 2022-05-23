@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 const Custom404 = () => (
   <Layout>
-    <Head title="Page not found | Robin Wittkamp" />
+    <Head title="Page not found - Robin Wittkamp" />
     <span>{'<(☉︵☉)>'}</span>
     <h1>Page not found</h1>
     <p>The link you followed may be broken, or the page may have been removed.</p>
