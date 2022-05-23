@@ -1,5 +1,6 @@
 import Head from '../components/Head';
 import Layout from '../components/Layout';
+import Button from '../components/Form/LinkButton';
 // import HeroCanvas from '../components/Three/HeroCanvas';
 
 const Home = () => (
@@ -8,11 +9,11 @@ const Home = () => (
 
     <section id="home" className="px-4 py-24 sm:px-8 md:px-12 lg:px-24 xl:px-32">
       <h1 className="">Hi, I&apos;m Robin.</h1>
-      <p className="mt-6 text-xl">
+      <p className="mt-4 text-xl text-neutral-500">
         I build fast, reliable websites with a simple, modern design and focus on user experience.
         The technologies I currently use the most are Next.js, React.js and WordPress.
       </p>
-      <a className="mt-6 block text-lg font-extrabold">View projects</a>
+      <Button link="#work">View projects</Button>
       {/* <HeroCanvas /> */}
     </section>
 
