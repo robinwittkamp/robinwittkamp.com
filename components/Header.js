@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="firefox:bg-opacity-90 fixed top-0 w-full border-b border-neutral-200 bg-white/90 backdrop-blur-lg dark:border-neutral-800 dark:bg-neutral-900/90">
       {/* Popover */}
-      <Popover className="md:h-20 lg:h-24 xl:h-24">
+      <Popover className="md:h-20 lg:h-20 xl:h-20">
         {/* Padding container */}
         <div className="px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32">
           {/* Logo & Navigation container */}
