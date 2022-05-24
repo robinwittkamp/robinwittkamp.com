@@ -12,7 +12,10 @@ const Home = () => (
       <p className="mt-4 text-xl text-neutral-500 dark:text-neutral-300">
         I build fast, reliable websites with a beautiful design and focus on user experience.
       </p>
-      <Button link="#work">View projects</Button>
+      <div className="space-x-4">
+        <Button link="#work">View projects</Button>
+        <Button link="#contact">Contact</Button>
+      </div>
     </section>
 
     <section id="about" className="mt-48 px-4 py-24 sm:px-8 md:px-12 lg:px-24 xl:px-32">
