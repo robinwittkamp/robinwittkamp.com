@@ -9,10 +9,10 @@ const Home = () => (
     <section id="home" className="px-4 py-24 sm:px-8 md:px-12 lg:px-24 xl:px-32">
       <span className="font-bold text-blue-500">Creative web developer</span>
       <h1 className="mt-4">Hi 👋🏻, I&apos;m Robin.</h1>
-      <p className="mt-6 text-xl text-neutral-500 dark:text-neutral-300">
+      <p className="mt-4 text-xl text-neutral-500 dark:text-neutral-300">
         I build fast, reliable websites with a beautiful design and focus on user experience.
       </p>
-      <div className="mt-6 space-x-4">
+      <div className="mt-8 space-x-4">
         <Button link="#work" variant="primary">
           View projects
         </Button>
@@ -24,7 +24,7 @@ const Home = () => (
 
     <section id="about" className="mt-48 px-4 py-24 sm:px-8 md:px-12 lg:px-24 xl:px-32">
       <span className="font-bold text-purple-500">First things first.</span>
-      <h2 className="mt-2">About me</h2>
+      <h2 className="mt-4">About me</h2>
       <p className="mt-4 text-xl text-neutral-500 dark:text-neutral-300">
         The technologies I currently use the most are Next.js, React.js and WordPress.
       </p>
@@ -32,12 +32,12 @@ const Home = () => (
 
     <section id="work" className="mt-48 px-4 py-24 sm:px-8 md:px-12 lg:px-24 xl:px-32">
       <span className="font-bold text-rose-500">Some of my projects.</span>
-      <h2 className="mt-2">Latest work</h2>
+      <h2 className="mt-4">Latest work</h2>
     </section>
 
     <section id="contact" className="mt-48 px-4 py-24 sm:px-8 md:px-12 lg:px-24 xl:px-32">
       <span className="font-bold text-amber-500">Let&apos;s work together.</span>
-      <h2 className="mt-2">Contact</h2>
+      <h2 className="mt-4">Contact</h2>
     </section>
 
     <section id="" className="mt-48 px-4 py-24 sm:px-8 md:px-12 lg:px-24 xl:px-32">
