@@ -7,18 +7,18 @@ const Home = () => (
     <Head />
 
     <section id="home" className="px-4 py-24 sm:px-8 md:px-12 lg:px-24 xl:px-32">
-      <span className="font-bold text-blue-500">Hi 👋🏻, I&apos;m Robin.</span>
-      <h1 className="mt-2">Creative web developer</h1>
-      <p className="mt-4 text-xl text-neutral-500 dark:text-neutral-300">
       <span className="font-bold text-blue-500">Creative web developer</span>
       <h1 className="mt-4">Hi 👋🏻, I&apos;m Robin.</h1>
       <p className="mt-6 text-xl text-neutral-500 dark:text-neutral-300">
         I build fast, reliable websites with a beautiful design and focus on user experience.
       </p>
-      <div className="space-x-4">
-        <Button link="#work">View projects</Button>
-        <Button link="#contact">Contact</Button>
       <div className="mt-6 space-x-4">
+        <Button link="#work" variant="primary">
+          View projects
+        </Button>
+        <Button link="#contact" variant="secondary">
+          Contact
+        </Button>
       </div>
     </section>
 
