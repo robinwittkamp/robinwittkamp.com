@@ -37,5 +37,4 @@ Agencies
 Person
 * [nelson.co](https://nelson.co)
 * [danspratling.dev](https://danspratling.dev)
-* [smhylmz.com](https://smhylmz.com)
 * [vijayverma.co](https://vijayverma.co)
