@@ -11,8 +11,8 @@
   "dependencies": {
     "@headlessui/react": "^1.6.2",
     "@heroicons/react": "^1.0.6",
+    "@netlify/classnames-template-literals": "^1.0.3",
     "@react-three/fiber": "^8.0.19",
-    "clsx": "^1.1.1",
     "next": "^12.1.6",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
