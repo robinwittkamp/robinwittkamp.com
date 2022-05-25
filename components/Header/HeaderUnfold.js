@@ -6,7 +6,7 @@ import Logo from './Logo';
 // import Nav from './Nav';
 
 const navigation = [
-  { name: 'Home', href: '#home' },
+  // { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Work', href: '#work' },
   { name: 'Contact', href: '#contact' },
@@ -16,7 +16,7 @@ const HeaderUnfold = () => {
   // const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="firefox:bg-opacity-90 fixed top-0 min-h-[3rem] w-full border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-20 lg:h-20 xl:h-20">
+    <header className="firefox:bg-opacity-90 fixed top-0 min-h-[3rem] w-full border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem] lg:h-[4.5rem] xl:h-[4.5rem]">
       {/* Logo & Navigation container */}
       <Popover className="flex h-full items-center justify-between px-4 sm:px-8 md:px-12 lg:px-24 xl:px-32">
         {/* Logo container */}
