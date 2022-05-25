@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import Logo from './Header/Logo';
+import Logo from './Logo';
 // import Nav from './Nav';
 
 const navigation = [
