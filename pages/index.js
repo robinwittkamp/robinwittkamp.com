@@ -6,7 +6,7 @@ const Home = () => (
   <Layout>
     <Head />
 
-    <section id="home" className="px-4 py-24 sm:px-8 md:px-8 lg:px-8 xl:px-8">
+    <section id="home" className="px-4 py-24 sm:px-8">
       {/* Flex container */}
       <div className="space-y-16 lg:flex lg:items-center lg:space-x-16 lg:space-y-0">
         {/* Text container */}
@@ -33,7 +33,7 @@ const Home = () => (
       </div>
     </section>
 
-    <section id="about" className="mt-48 px-4 py-24 sm:px-8 md:px-8 lg:px-8 xl:px-8">
+    <section id="about" className="mt-48 px-4 py-24 sm:px-8">
       <span className="font-bold text-purple-500">First things first.</span>
       <h2 className="mt-4">About me</h2>
       <p className="mt-4 text-xl text-neutral-500 dark:text-neutral-300">
@@ -41,24 +41,24 @@ const Home = () => (
       </p>
     </section>
 
-    <section id="work" className="mt-48 px-4 py-24 sm:px-8 md:px-8 lg:px-8 xl:px-8">
+    <section id="work" className="mt-48 px-4 py-24 sm:px-8">
       <span className="font-bold text-rose-500">Some of my projects.</span>
       <h2 className="mt-4">Latest work</h2>
     </section>
 
-    <section id="contact" className="mt-48 px-4 py-24 sm:px-8 md:px-8 lg:px-8 xl:px-8">
+    <section id="contact" className="mt-48 px-4 py-24 sm:px-8">
       <span className="font-bold text-amber-500">Let&apos;s work together.</span>
       <h2 className="mt-4">Contact</h2>
     </section>
 
-    <section id="" className="mt-48 px-4 py-24 sm:px-8 md:px-8 lg:px-8 xl:px-8">
+    {/* <section id="" className="mt-48 px-4 py-24 sm:px-8">
       <h1 className="">Heading 1</h1>
       <h2 className="">Heading 2</h2>
       <h3 className="">Heading 3</h3>
       <h4 className="">Heading 4</h4>
       <h5 className="">Heading 5</h5>
       <h6 className="">Heading 6</h6>
-    </section>
+    </section> */}
   </Layout>
 );
 
