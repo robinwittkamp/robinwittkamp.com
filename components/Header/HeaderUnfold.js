@@ -17,41 +17,43 @@ const HeaderUnfold = () => {
 
   return (
     <header className="firefox:bg-opacity-90 fixed top-0 flex min-h-[3rem] w-full items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem]">
-      {/* Max width */}
-      <div className="mx-auto max-w-screen-xl flex-1">
+      <div className="flex-1">
         {/* Popover */}
         <Popover className="">
           {/* x-Paddings */}
           <div className="px-4 sm:px-8">
-            {/* Logo & Navigation container */}
-            <div className="flex items-center justify-between">
-              {/* Logo container */}
-              <div className="flex justify-start">
-                <Logo />
-              </div>
+            {/* Max width */}
+            <div className="mx-auto max-w-screen-xl ">
+              {/* Logo & Navigation container */}
+              <div className="flex items-center justify-between">
+                {/* Logo container */}
+                <div className="flex justify-start">
+                  <Logo />
+                </div>
 
-              {/* Mobil menu button */}
-              <div className="-mr-3 md:hidden">
-                <Popover.Button className="inline-flex items-center justify-center rounded-md p-2">
-                  <span className="sr-only">Open menu</span>
-                  <MenuIcon className="h-8 w-8" aria-hidden="true" />
-                </Popover.Button>
-              </div>
+                {/* Mobil menu button */}
+                <div className="-mr-3 md:hidden">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md p-2">
+                    <span className="sr-only">Open menu</span>
+                    <MenuIcon className="h-8 w-8" aria-hidden="true" />
+                  </Popover.Button>
+                </div>
 
-              {/* Desktop navigation */}
-              <nav className="hidden md:block">
-                <ul className="flex">
-                  {navigation.map((item) => (
-                    <li key={item.name} className="">
-                      <Link href={item.href}>
-                        <a className="flex h-[4.5rem] items-center px-6">
-                          <span className="text-lg">{item.name}</span>
-                        </a>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+                {/* Desktop navigation */}
+                <nav className="hidden md:block">
+                  <ul className="flex">
+                    {navigation.map((item) => (
+                      <li key={item.name} className="">
+                        <Link href={item.href}>
+                          <a className="flex h-[4.5rem] items-center px-6">
+                            <span className="text-lg">{item.name}</span>
+                          </a>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
 
