@@ -92,11 +92,20 @@ const HeaderUnfold = () => {
                 <Popover.Panel static className="md:hidden">
                   <nav className="my-2">
                     {navigation.map((item) => (
-                      <Link key={item.name} href={item.href} passHref>
-                        <Popover.Button as="a" className="block px-4 py-3 sm:px-8">
-                          <span className="text-lg">{item.name}</span>
-                        </Popover.Button>
-                      </Link>
+                      // TODO: use next/link
+                      // <Link key={item.name} href={item.href} passHref>
+                      //   <Popover.Button as="a" className="block px-4 py-3 sm:px-8">
+                      //     <span className="text-lg">{item.name}</span>
+                      //   </Popover.Button>
+                      // </Link>
+                      <Popover.Button
+                        key={item.name}
+                        as="a"
+                        href={item.href}
+                        className="block px-4 py-3 sm:px-8"
+                      >
+                        <span className="text-lg">{item.name}</span>
+                      </Popover.Button>
                     ))}
                   </nav>
                 </Popover.Panel>
