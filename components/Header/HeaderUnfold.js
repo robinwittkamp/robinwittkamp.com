@@ -4,7 +4,7 @@ import { Popover, Transition } from '@headlessui/react';
 import Logo from './Logo';
 
 const hamburgerLine =
-  'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 group-hover:bg-neutral-500 dark:bg-white dark:group-hover:bg-neutral-300';
+  'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 group-focus:bg-neutral-500 group-hover:bg-neutral-500 dark:bg-white dark:group-focus:bg-neutral-300 dark:group-hover:bg-neutral-300';
 
 const navigation = [
   // { name: 'Home', href: '#home' },
@@ -36,11 +36,11 @@ const HeaderUnfold = () => {
 
                     {/* Mobil menu button */}
                     <div className="-mr-3 md:hidden">
-                      <Popover.Button className="inline-flex items-center justify-center rounded-md px-3 py-2">
+                      <Popover.Button className="group inline-flex items-center justify-center rounded-md px-3 py-2 focus:outline-none">
                         <span className="sr-only">Open menu</span>
                         {/* Animated hamburger icon */}
                         <div
-                          className="group flex h-8 w-6 flex-col items-center justify-center"
+                          className="flex h-8 w-6 flex-col items-center justify-center"
                           aria-hidden="true"
                         >
                           <div
