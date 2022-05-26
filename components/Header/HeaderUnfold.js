@@ -4,7 +4,7 @@ import { Popover, Transition } from '@headlessui/react';
 import Logo from './Logo';
 
 const hamburgerLine =
-  'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 dark:bg-white';
+  'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 group-hover:bg-neutral-500 dark:bg-white dark:group-hover:bg-neutral-300';
 
 const navigation = [
   // { name: 'Home', href: '#home' },
@@ -45,13 +45,13 @@ const HeaderUnfold = () => {
                         >
                           <div
                             className={`${hamburgerLine} ${
-                              open ? 'translate-y-[0.54rem] rotate-45' : ''
+                              open ? 'translate-y-[0.5rem] rotate-45' : ''
                             }`}
                           />
                           <div className={`${hamburgerLine} mt-1.5 ${open ? 'opacity-0' : ''}`} />
                           <div
                             className={`${hamburgerLine} mt-1.5 ${
-                              open ? '-translate-y-[0.54rem] -rotate-45' : ''
+                              open ? '-translate-y-[0.5rem] -rotate-45' : ''
                             }`}
                           />
                         </div>
