@@ -16,7 +16,7 @@ const Home = () => (
           <p className="mt-4 max-w-md text-xl text-neutral-500 dark:text-neutral-300">
             I build fast, reliable websites with a beautiful design and focus on user experience.
           </p>
-          <div className="mt-8 space-x-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Button link="#work" variant="primary">
               View projects
             </Button>
