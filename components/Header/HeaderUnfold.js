@@ -65,7 +65,7 @@ const HeaderUnfold = () => {
                     </div>
 
                     {/* Desktop navigation */}
-                    <nav className="hidden md:block">
+                    <nav className="-mr-6 hidden md:block">
                       <ul className="flex">
                         {navigation.map((item) => (
                           <li key={item.name} className="">
