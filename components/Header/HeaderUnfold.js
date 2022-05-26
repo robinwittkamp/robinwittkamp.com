@@ -1,9 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
-// import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Logo from './Logo';
-// import Nav from './Nav';
 
 const hamburgerLine =
   'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 dark:bg-white';
@@ -38,16 +36,11 @@ const HeaderUnfold = () => {
 
                     {/* Mobil menu button */}
                     <div className="-mr-3 md:hidden">
-                      <Popover.Button
-                        // onClick={() => setIsOpen(!isOpen)}
-                        className="inline-flex items-center justify-center rounded-md p-2"
-                      >
+                      <Popover.Button className="inline-flex items-center justify-center rounded-md p-2">
                         <span className="sr-only">Open menu</span>
-                        {/* <MenuIcon className="h-8 w-8" aria-hidden="true" /> */}
                         {/* Animated hamburger icon */}
                         <div
-                          className="group flex h-8 w-8 flex-col items-center justify-center p-[3px]"
-                          // onClick={() => setIsOpen(!isOpen)}
+                          className="group flex h-8 w-6 flex-col items-center justify-center"
                           aria-hidden="true"
                         >
                           <div
