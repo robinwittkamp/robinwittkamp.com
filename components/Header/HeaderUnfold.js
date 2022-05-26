@@ -95,7 +95,7 @@ const HeaderUnfold = () => {
               >
                 {/* <Popover.Overlay className="fixed inset-0 h-screen bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
                 {/* Mobil navigation */}
-                <Popover.Panel static className="">
+                <Popover.Panel static className="md:hidden">
                   <nav className="my-2">
                     {navigation.map((item) => (
                       <Link key={item.name} href={item.href} passHref>
