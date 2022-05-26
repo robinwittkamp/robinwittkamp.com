@@ -33,7 +33,7 @@ const HeaderUnfold = () => {
 
                 {/* Mobil menu button */}
                 <div className="-mr-3 md:hidden">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 outline-0">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md p-2">
                     <span className="sr-only">Open menu</span>
                     <MenuIcon className="h-8 w-8" aria-hidden="true" />
                   </Popover.Button>
