@@ -45,7 +45,7 @@ const HeaderUnfold = () => {
                     {navigation.map((item) => (
                       <li key={item.name} className="">
                         <Link href={item.href}>
-                          <a className="flex h-[4.5rem] items-center px-6">
+                          <a className="flex h-[4.5rem] items-center px-6 transition hover:text-neutral-500 dark:hover:text-neutral-300">
                             <span className="text-lg">{item.name}</span>
                           </a>
                         </Link>
