@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
+import { RemoveScrollBar } from 'react-remove-scroll-bar';
 import Logo from './Logo';
 
 const hamburgerLine =
@@ -90,6 +91,7 @@ const HeaderUnfold = () => {
                 {/* <Popover.Overlay className="fixed inset-0 h-screen bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
                 {/* Mobil navigation */}
                 <Popover.Panel static className="h-screen md:hidden">
+                  <RemoveScrollBar />
                   <nav className="my-2">
                     {navigation.map((item) => (
                       // TODO: use next/link
