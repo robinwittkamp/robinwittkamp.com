@@ -5,7 +5,8 @@ import { Popover, Transition } from '@headlessui/react';
 import Logo from './Logo';
 // import Nav from './Nav';
 
-const hamburgerLine = 'h-[2.5px] w-full rounded-full bg-neutral-900 transform duration-300';
+const hamburgerLine =
+  'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 dark:bg-white';
 
 const navigation = [
   // { name: 'Home', href: '#home' },
