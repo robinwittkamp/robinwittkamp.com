@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.2",
+    "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
     "@netlify/classnames-template-literals": "^1.0.3",
     "@react-three/fiber": "^8.0.19",
