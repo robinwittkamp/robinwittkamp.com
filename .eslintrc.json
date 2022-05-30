@@ -10,12 +10,12 @@
     "eslint:recommended",
     "plugin:flowtype/recommended",
     "plugin:react/recommended",
-    // "plugin:react-hooks/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
     "airbnb",
-    // "airbnb/hooks",
+    "airbnb/hooks",
     "next",
     "next/core-web-vitals",
     "plugin:prettier/recommended"
@@ -38,11 +38,11 @@
     }
   },
   "plugins": [
-    "react",
+    "react"
     // "react-hooks",
-    "import",
-    "jsx-a11y",
-    "prettier"
+    // "import",
+    // "jsx-a11y",
+    // "prettier"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
