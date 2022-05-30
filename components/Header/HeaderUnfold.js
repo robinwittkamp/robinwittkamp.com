@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
-// import { RemoveScrollBar } from 'react-remove-scroll-bar';
 import { RemoveScroll } from 'react-remove-scroll';
 import Logo from './Logo';
 
