@@ -5,15 +5,68 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 import Logo from './Logo';
 
-const hamburgerLine =
-  'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 group-focus:bg-neutral-500 group-hover:bg-neutral-500 dark:bg-white dark:group-focus:bg-neutral-300 dark:group-hover:bg-neutral-300';
-
 const navigation = [
-  // { name: 'Home', href: '#home' },
+  { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Work', href: '#work' },
   { name: 'Contact', href: '#contact' },
 ];
+
+const hamburgerLine =
+  'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 group-focus:bg-neutral-500 group-hover:bg-neutral-500 dark:bg-white dark:group-focus:bg-neutral-300 dark:group-hover:bg-neutral-300';
+
+const panelAnimations = {
+  open: {
+    height: '100vh',
+    // opacity: 1,
+    transition: {
+      ease: 'anticipate',
+      duration: 1,
+    },
+  },
+  closed: {
+    height: 0,
+    // opacity: 0,
+    transition: {
+      ease: 'anticipate',
+      duration: 1,
+    },
+  },
+};
+
+const navAnimations = {
+  open: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+  closed: {
+    transition: {
+      staggerChildren: 0.05,
+      staggerDirection: -1,
+    },
+  },
+};
+
+const itemsAnimations = {
+  open: {
+    // y: 0,
+    opacity: 1,
+    transition: {
+      ease: 'anticipate',
+      duration: 1,
+    },
+  },
+  closed: {
+    // y: '-1rem',
+    opacity: 0,
+    transition: {
+      ease: 'anticipate',
+      duration: 1,
+    },
+  },
+};
 
 const HeaderUnfold = () => {
   // const [isOpen, setIsOpen] = useState(false);
@@ -38,11 +91,7 @@ const HeaderUnfold = () => {
 
                     {/* Mobil menu button */}
                     <div className="-mr-3 md:hidden">
-                      <Popover.Button
-                        className="group inline-flex items-center justify-center rounded-md px-3 py-2 focus:outline-none"
-                        // onClick={() => setIsOpen((isOpen) => !isOpen)}
-                        // onClick={() => setIsOpen(!isOpen)}
-                      >
+                      <Popover.Button className="group inline-flex items-center justify-center rounded-md px-3 py-2 focus:outline-none">
                         <span className="sr-only">Open menu</span>
                         {/* Animated hamburger icon */}
                         <div
@@ -82,19 +131,6 @@ const HeaderUnfold = () => {
                 </div>
               </div>
 
-              {/* <Popover.Overlay className="fixed inset-0 bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
-
-              {/* <Transition
-                show={open}
-                enter="transition duration-500"
-                enterFrom="-translate-y-8 opacity-0"
-                enterTo="translate-y-0 opacity-100"
-                leave="transition duration-500 ease-in"
-                leaveFrom="translate-y-0 opacity-100"
-                leaveTo="-translate-y-8 opacity-0"
-              > */}
-              {/* <Popover.Overlay className="fixed inset-0 h-screen bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
-
               {/* Mobil navigation */}
               <AnimatePresence>
                 {open && (
@@ -102,30 +138,51 @@ const HeaderUnfold = () => {
                     static
                     className="h-screen md:hidden"
                     as={motion.div}
-                    initial={{
-                      height: 0,
-                      opacity: 0,
-                    }}
-                    animate={{
-                      height: '100vh',
-                      opacity: 1,
-                      transition: {
-                        ease: 'anticipate',
-                        duration: 1,
-                      },
-                    }}
-                    exit={{
-                      height: 0,
-                      opacity: 0,
-                      transition: {
-                        ease: 'anticipate',
-                        duration: 1,
-                      },
-                    }}
-                    // transition={{ duration: 0.75 }}
+                    key="panel"
+                    initial="closed"
+                    animate="open"
+                    exit="closed"
+                    variants={panelAnimations}
+                    // initial={{
+                    //   height: 0,
+                    //   // opacity: 0,
+                    // }}
+                    // animate={{
+                    //   height: '100vh',
+                    //   // opacity: 1,
+                    //   transition: {
+                    //     ease: 'anticipate',
+                    //     duration: 1,
+                    //   },
+                    // }}
+                    // exit={{
+                    //   height: 0,
+                    //   // opacity: 0,
+                    //   transition: {
+                    //     ease: 'anticipate',
+                    //     duration: 1,
+                    //   },
+                    // }}
                   >
                     <RemoveScroll>
-                      <nav className="">
+                      <motion.nav
+                        key="nav"
+                        variants={navAnimations}
+                        // animate={open ? 'open' : 'closed'}
+                        // initial="closed"
+                        // animate={{
+                        //   transition: {
+                        //     staggerChildren: 0.2,
+                        //     delayChildren: 0.2,
+                        //   },
+                        // }}
+                        // exit={{
+                        //   transition: {
+                        //     staggerChildren: 0.2,
+                        //     staggerDirection: -1,
+                        //   },
+                        // }}
+                      >
                         {navigation.map((item) => (
                           // TODO: use next/link
                           // <Link key={item.name} href={item.href} passHref>
@@ -133,21 +190,40 @@ const HeaderUnfold = () => {
                           //     <span className="text-lg">{item.name}</span>
                           //   </Popover.Button>
                           // </Link>
-                          <Popover.Button
+                          <motion.div
                             key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block px-4 py-3 sm:px-8"
+                            variants={itemsAnimations}
+                            // initial={{ opacity: 0 }}
+                            // animate={{
+                            //   opacity: 1,
+                            //   transition: {
+                            //     ease: 'anticipate',
+                            //     duration: 1,
+                            //   },
+                            // }}
+                            // exit={{
+                            //   opacity: 0,
+                            //   transition: {
+                            //     ease: 'anticipate',
+                            //     duration: 1,
+                            //   },
+                            // }}
                           >
-                            <span className="text-lg">{item.name}</span>
-                          </Popover.Button>
+                            <Popover.Button
+                              // key={item.name}
+                              as="a"
+                              href={item.href}
+                              className="block px-4 py-3 sm:px-8"
+                            >
+                              <span className="text-lg">{item.name}</span>
+                            </Popover.Button>
+                          </motion.div>
                         ))}
-                      </nav>
+                      </motion.nav>
                     </RemoveScroll>
                   </Popover.Panel>
                 )}
               </AnimatePresence>
-              {/* </Transition> */}
             </>
           )}
         </Popover>
