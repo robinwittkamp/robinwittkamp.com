@@ -1,7 +1,7 @@
-import React from 'react';
+// import { useState } from 'react';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 import Logo from './Logo';
 
@@ -38,7 +38,11 @@ const HeaderUnfold = () => {
 
                     {/* Mobil menu button */}
                     <div className="-mr-3 md:hidden">
-                      <Popover.Button className="group inline-flex items-center justify-center rounded-md px-3 py-2 focus:outline-none">
+                      <Popover.Button
+                        className="group inline-flex items-center justify-center rounded-md px-3 py-2 focus:outline-none"
+                        // onClick={() => setIsOpen((isOpen) => !isOpen)}
+                        // onClick={() => setIsOpen(!isOpen)}
+                      >
                         <span className="sr-only">Open menu</span>
                         {/* Animated hamburger icon */}
                         <div
@@ -92,37 +96,57 @@ const HeaderUnfold = () => {
               {/* <Popover.Overlay className="fixed inset-0 h-screen bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
 
               {/* Mobil navigation */}
-              {open && (
-                <Popover.Panel
-                  static
-                  className="h-screen md:hidden"
-                  as={motion.div}
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: '100vh', opacity: 1 }}
-                  transition={{ duration: 0.75 }}
-                >
-                  <RemoveScroll>
-                    <nav className="my-2">
-                      {navigation.map((item) => (
-                        // TODO: use next/link
-                        // <Link key={item.name} href={item.href} passHref>
-                        //   <Popover.Button as="a" className="block px-4 py-3 sm:px-8">
-                        //     <span className="text-lg">{item.name}</span>
-                        //   </Popover.Button>
-                        // </Link>
-                        <Popover.Button
-                          key={item.name}
-                          as="a"
-                          href={item.href}
-                          className="block px-4 py-3 sm:px-8"
-                        >
-                          <span className="text-lg">{item.name}</span>
-                        </Popover.Button>
-                      ))}
-                    </nav>
-                  </RemoveScroll>
-                </Popover.Panel>
-              )}
+              <AnimatePresence>
+                {open && (
+                  <Popover.Panel
+                    static
+                    className="h-screen md:hidden"
+                    as={motion.div}
+                    initial={{
+                      height: 0,
+                      opacity: 0,
+                    }}
+                    animate={{
+                      height: '100vh',
+                      opacity: 1,
+                      transition: {
+                        ease: 'easeInOut',
+                        duration: 1,
+                      },
+                    }}
+                    exit={{
+                      height: 0,
+                      opacity: 0,
+                      transition: {
+                        ease: 'easeInOut',
+                        duration: 1,
+                      },
+                    }}
+                    // transition={{ duration: 0.75 }}
+                  >
+                    <RemoveScroll>
+                      <nav className="">
+                        {navigation.map((item) => (
+                          // TODO: use next/link
+                          // <Link key={item.name} href={item.href} passHref>
+                          //   <Popover.Button as="a" className="block px-4 py-3 sm:px-8">
+                          //     <span className="text-lg">{item.name}</span>
+                          //   </Popover.Button>
+                          // </Link>
+                          <Popover.Button
+                            key={item.name}
+                            as="a"
+                            href={item.href}
+                            className="block px-4 py-3 sm:px-8"
+                          >
+                            <span className="text-lg">{item.name}</span>
+                          </Popover.Button>
+                        ))}
+                      </nav>
+                    </RemoveScroll>
+                  </Popover.Panel>
+                )}
+              </AnimatePresence>
               {/* </Transition> */}
             </>
           )}
