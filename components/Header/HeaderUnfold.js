@@ -110,7 +110,7 @@ const HeaderUnfold = () => {
                       height: '100vh',
                       opacity: 1,
                       transition: {
-                        ease: 'easeInOut',
+                        ease: 'anticipate',
                         duration: 1,
                       },
                     }}
@@ -118,7 +118,7 @@ const HeaderUnfold = () => {
                       height: 0,
                       opacity: 0,
                       transition: {
-                        ease: 'easeInOut',
+                        ease: 'anticipate',
                         duration: 1,
                       },
                     }}
