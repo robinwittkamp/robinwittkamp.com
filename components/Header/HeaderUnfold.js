@@ -1,6 +1,6 @@
 // import { useState } from 'react';
 import Link from 'next/link';
-import { Popover, Transition } from '@headlessui/react';
+import { Popover } from '@headlessui/react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 import Logo from './Logo';
@@ -18,7 +18,6 @@ const hamburgerLine =
 const panelAnimations = {
   open: {
     height: '100vh',
-    // opacity: 1,
     transition: {
       ease: 'anticipate',
       duration: 1,
@@ -26,7 +25,6 @@ const panelAnimations = {
   },
   closed: {
     height: 0,
-    // opacity: 0,
     transition: {
       ease: 'anticipate',
       duration: 1,
@@ -51,7 +49,6 @@ const navAnimations = {
 
 const itemsAnimations = {
   open: {
-    // y: 0,
     opacity: 1,
     transition: {
       ease: 'anticipate',
@@ -59,7 +56,6 @@ const itemsAnimations = {
     },
   },
   closed: {
-    // y: '-1rem',
     opacity: 0,
     transition: {
       ease: 'anticipate',
@@ -69,8 +65,6 @@ const itemsAnimations = {
 };
 
 const HeaderUnfold = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-
   return (
     <header className="firefox:bg-opacity-90 fixed top-0 flex min-h-[3rem] w-full items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem]">
       <div className="flex-1">
@@ -143,46 +137,9 @@ const HeaderUnfold = () => {
                     animate="open"
                     exit="closed"
                     variants={panelAnimations}
-                    // initial={{
-                    //   height: 0,
-                    //   // opacity: 0,
-                    // }}
-                    // animate={{
-                    //   height: '100vh',
-                    //   // opacity: 1,
-                    //   transition: {
-                    //     ease: 'anticipate',
-                    //     duration: 1,
-                    //   },
-                    // }}
-                    // exit={{
-                    //   height: 0,
-                    //   // opacity: 0,
-                    //   transition: {
-                    //     ease: 'anticipate',
-                    //     duration: 1,
-                    //   },
-                    // }}
                   >
                     <RemoveScroll>
-                      <motion.nav
-                        key="nav"
-                        variants={navAnimations}
-                        // animate={open ? 'open' : 'closed'}
-                        // initial="closed"
-                        // animate={{
-                        //   transition: {
-                        //     staggerChildren: 0.2,
-                        //     delayChildren: 0.2,
-                        //   },
-                        // }}
-                        // exit={{
-                        //   transition: {
-                        //     staggerChildren: 0.2,
-                        //     staggerDirection: -1,
-                        //   },
-                        // }}
-                      >
+                      <motion.nav key="nav" variants={navAnimations}>
                         {navigation.map((item) => (
                           // TODO: use next/link
                           // <Link key={item.name} href={item.href} passHref>
@@ -190,27 +147,8 @@ const HeaderUnfold = () => {
                           //     <span className="text-lg">{item.name}</span>
                           //   </Popover.Button>
                           // </Link>
-                          <motion.div
-                            key={item.name}
-                            variants={itemsAnimations}
-                            // initial={{ opacity: 0 }}
-                            // animate={{
-                            //   opacity: 1,
-                            //   transition: {
-                            //     ease: 'anticipate',
-                            //     duration: 1,
-                            //   },
-                            // }}
-                            // exit={{
-                            //   opacity: 0,
-                            //   transition: {
-                            //     ease: 'anticipate',
-                            //     duration: 1,
-                            //   },
-                            // }}
-                          >
+                          <motion.div key={item.name} variants={itemsAnimations}>
                             <Popover.Button
-                              // key={item.name}
                               as="a"
                               href={item.href}
                               className="block px-4 py-3 sm:px-8"
