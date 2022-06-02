@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
+import { motion } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 import Logo from './Logo';
 
@@ -21,7 +22,7 @@ const HeaderUnfold = () => {
     <header className="firefox:bg-opacity-90 fixed top-0 flex min-h-[3rem] w-full items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem]">
       <div className="flex-1">
         {/* Popover */}
-        <Popover className="">
+        <Popover>
           {({ open }) => (
             <>
               {/* x-Paddings */}
@@ -79,18 +80,27 @@ const HeaderUnfold = () => {
 
               {/* <Popover.Overlay className="fixed inset-0 bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
 
-              <Transition
+              {/* <Transition
                 show={open}
                 enter="transition duration-500"
-                enterFrom="scale-95 opacity-0"
-                enterTo="scale-100 opacity-100"
+                enterFrom="-translate-y-8 opacity-0"
+                enterTo="translate-y-0 opacity-100"
                 leave="transition duration-500 ease-in"
-                leaveFrom="scale-100 opacity-100"
-                leaveTo="scale-95 opacity-0"
-              >
-                {/* <Popover.Overlay className="fixed inset-0 h-screen bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
-                {/* Mobil navigation */}
-                <Popover.Panel static className="h-screen md:hidden">
+                leaveFrom="translate-y-0 opacity-100"
+                leaveTo="-translate-y-8 opacity-0"
+              > */}
+              {/* <Popover.Overlay className="fixed inset-0 h-screen bg-white/90 dark:border-neutral-800 dark:bg-neutral-900/90" /> */}
+
+              {/* Mobil navigation */}
+              {open && (
+                <Popover.Panel
+                  static
+                  className="h-screen md:hidden"
+                  as={motion.div}
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: '100vh', opacity: 1 }}
+                  transition={{ duration: 0.75 }}
+                >
                   <RemoveScroll>
                     <nav className="my-2">
                       {navigation.map((item) => (
@@ -112,7 +122,8 @@ const HeaderUnfold = () => {
                     </nav>
                   </RemoveScroll>
                 </Popover.Panel>
-              </Transition>
+              )}
+              {/* </Transition> */}
             </>
           )}
         </Popover>
