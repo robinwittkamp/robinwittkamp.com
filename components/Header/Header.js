@@ -82,10 +82,8 @@ const Header = () => {
               <div className="mx-auto max-w-screen-xl ">
                 {/* Logo & Navigation container */}
                 <div className="flex items-center justify-between">
-                  {/* Logo container */}
-                  <div className="flex justify-start">
-                    <Logo />
-                  </div>
+                  {/* Logo */}
+                  <Logo />
 
                   {/* Mobil menu button */}
                   <div className="-mr-3 md:hidden">
