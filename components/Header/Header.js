@@ -71,7 +71,7 @@ const Header = () => {
     <Popover>
       {({ open }) => (
         <motion.header
-          className={`fixed top-0 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem] ${
+          className={`fixed top-0 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-300 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem] ${
             isOpen ? 'bg-white/100 backdrop-blur-none dark:bg-neutral-900/100' : ''
           }`}
         >
@@ -117,7 +117,7 @@ const Header = () => {
                       {navigation.map((item) => (
                         <li key={item.name} className="">
                           <Link href={item.href}>
-                            <a className="flex h-[4.5rem] items-center px-6 transition hover:text-neutral-500 dark:hover:text-neutral-300">
+                            <a className="flex h-[4.5rem] items-center px-6 transition duration-300 hover:text-neutral-500 dark:hover:text-neutral-300">
                               <span className="text-lg">{item.name}</span>
                             </a>
                           </Link>
