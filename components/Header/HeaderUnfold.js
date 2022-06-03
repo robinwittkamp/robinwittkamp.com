@@ -144,7 +144,11 @@ const HeaderUnfold = () => {
                   onAnimationStart={() => setIsOpen(true)}
                 >
                   <RemoveScroll>
-                    <motion.nav key="nav" variants={navVariants}>
+                    <motion.nav
+                      key="nav"
+                      variants={navVariants}
+                      className="border-t border-neutral-200 dark:border-neutral-800"
+                    >
                       {navigation.map((item) => (
                         // TODO: use next/link
                         // <Link key={item.name} href={item.href} passHref>
@@ -156,7 +160,7 @@ const HeaderUnfold = () => {
                           <Popover.Button
                             as="a"
                             href={item.href}
-                            className="block px-4 py-3 sm:px-8"
+                            className="block border-b border-neutral-200 px-4 py-3 dark:border-neutral-800 sm:px-8"
                           >
                             <span className="text-lg">{item.name}</span>
                           </Popover.Button>
