@@ -59,7 +59,7 @@ const navItemsVariants = {
     opacity: 0,
     transition: {
       ease: 'anticipate',
-      duration: 1,
+      duration: 0.5,
     },
   },
 };
