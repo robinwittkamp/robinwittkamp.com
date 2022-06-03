@@ -8,7 +8,7 @@ const navigation = [
 ];
 
 const Footer = () => (
-  <footer className="pb-8 pt-16 md:pb-16">
+  <footer className="min-w-[20rem] pb-8 pt-16 md:pb-16">
     {/* Padding container */}
     <div className="px-4 sm:px-8">
       {/* Margin container */}
