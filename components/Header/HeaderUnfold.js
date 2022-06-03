@@ -68,10 +68,8 @@ const HeaderUnfold = () => {
     <Popover>
       {({ open }) => (
         <header
-          className={`firefox:bg-opacity-95 md:h-[4.5rem]} fixed top-0 flex min-h-[3rem] w-full items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 ${
-            open
-              ? 'firefox:bg-opacity-100 bg-white/100 backdrop-blur-none dark:bg-neutral-900/100'
-              : ''
+          className={`fixed top-0 flex min-h-[3rem] w-full items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem] ${
+            open ? 'bg-white/100 backdrop-blur-none dark:bg-neutral-900/100' : ''
           }`}
         >
           <div className="flex-1">
