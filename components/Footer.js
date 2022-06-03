@@ -8,11 +8,11 @@ const navigation = [
 ];
 
 const Footer = () => (
-  <footer className="pb-8 pt-16">
-    {/* Margin container */}
-    <div className="mx-auto max-w-screen-xl ">
-      {/* Padding container */}
-      <div className="px-4 sm:px-8">
+  <footer className="pb-8 pt-16 md:pb-16">
+    {/* Padding container */}
+    <div className="px-4 sm:px-8">
+      {/* Margin container */}
+      <div className="mx-auto max-w-screen-xl ">
         {/* 3 columns container */}
         <div className="space-y-3 md:flex md:flex-row-reverse md:justify-between md:space-y-0">
           {/* Top/Right container */}
