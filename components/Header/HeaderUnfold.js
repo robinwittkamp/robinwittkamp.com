@@ -15,7 +15,7 @@ const navigation = [
 const hamburgerLine =
   'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 group-focus:bg-neutral-500 group-hover:bg-neutral-500 dark:bg-white dark:group-focus:bg-neutral-300 dark:group-hover:bg-neutral-300';
 
-const panelAnimations = {
+const panelVariants = {
   open: {
     height: '100vh',
     transition: {
@@ -32,7 +32,7 @@ const panelAnimations = {
   },
 };
 
-const navAnimations = {
+const navVariants = {
   open: {
     transition: {
       staggerChildren: 0.1,
@@ -47,7 +47,7 @@ const navAnimations = {
   },
 };
 
-const itemsAnimations = {
+const navItemsVariants = {
   open: {
     opacity: 1,
     transition: {
@@ -140,11 +140,11 @@ const HeaderUnfold = () => {
                   initial="closed"
                   animate="open"
                   exit="closed"
-                  variants={panelAnimations}
+                  variants={panelVariants}
                   onAnimationStart={() => setIsOpen(true)}
                 >
                   <RemoveScroll>
-                    <motion.nav key="nav" variants={navAnimations}>
+                    <motion.nav key="nav" variants={navVariants}>
                       {navigation.map((item) => (
                         // TODO: use next/link
                         // <Link key={item.name} href={item.href} passHref>
@@ -152,7 +152,7 @@ const HeaderUnfold = () => {
                         //     <span className="text-lg">{item.name}</span>
                         //   </Popover.Button>
                         // </Link>
-                        <motion.div key={item.name} variants={itemsAnimations}>
+                        <motion.div key={item.name} variants={navItemsVariants}>
                           <Popover.Button
                             as="a"
                             href={item.href}
