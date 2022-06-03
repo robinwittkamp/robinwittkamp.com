@@ -71,12 +71,6 @@ const HeaderUnfold = () => {
     <Popover>
       {({ open }) => (
         <motion.header
-          // animate={controls}
-          // variants={headerAnimations}
-          // className="fixed top-0 flex min-h-[3rem] w-full items-center border-b border-neutral-200 bg-white/90 transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem]"
-          // className={`fixed top-0 flex min-h-[3rem] w-full items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem] ${
-          //   open ? 'bg-white/100 backdrop-blur-none dark:bg-neutral-900/100' : ''
-          // }`}
           className={`fixed top-0 flex min-h-[3rem] w-full items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-500 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem] ${
             isOpen ? 'bg-white/100 backdrop-blur-none dark:bg-neutral-900/100' : ''
           }`}
@@ -136,10 +130,7 @@ const HeaderUnfold = () => {
             </div>
 
             {/* Mobil navigation */}
-            <AnimatePresence
-              onExitComplete={() => setIsOpen(false)}
-              // onExitComplete={() => console.log('Exit complete')}
-            >
+            <AnimatePresence onExitComplete={() => setIsOpen(false)}>
               {open && (
                 <Popover.Panel
                   static
@@ -151,7 +142,6 @@ const HeaderUnfold = () => {
                   exit="closed"
                   variants={panelAnimations}
                   onAnimationStart={() => setIsOpen(true)}
-                  // onAnimationStart={() => console.log('Animation started')}
                 >
                   <RemoveScroll>
                     <motion.nav key="nav" variants={navAnimations}>
