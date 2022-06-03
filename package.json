@@ -13,7 +13,7 @@
     "@heroicons/react": "^1.0.6",
     "@netlify/classnames-template-literals": "^1.0.3",
     "@react-three/fiber": "^8.0.22",
-    "framer-motion": "^6.3.7",
+    "framer-motion": "^6.3.10",
     "next": "^12.1.6",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.18.2",
-    "@types/node": "^17.0.38",
+    "@types/node": "^17.0.39",
     "@types/react": "^18.0.10",
     "@types/react-dom": "^18.0.5",
     "autoprefixer": "^10.4.7",
