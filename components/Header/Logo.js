@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFeather } from '@fortawesome/pro-solid-svg-icons';
+import { faFeather } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 
 const iconVariants = {
