@@ -71,7 +71,7 @@ const Header = () => {
     <Popover>
       {({ open }) => (
         <motion.header
-          className={`fixed top-0 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg transition-all duration-300 dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem] ${
+          className={`fixed top-0 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-neutral-200 bg-white/90 backdrop-blur-lg dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem] ${
             isOpen ? 'bg-white/100 backdrop-blur-none dark:bg-neutral-900/100' : ''
           }`}
         >
