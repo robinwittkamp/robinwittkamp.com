@@ -16,19 +16,19 @@
     "@heroicons/react": "^1.0.6",
     "@netlify/classnames-template-literals": "^1.0.3",
     "@react-three/fiber": "^8.0.22",
-    "framer-motion": "^6.3.10",
+    "framer-motion": "^6.3.11",
     "next": "^12.1.6",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-remove-scroll": "^2.5.3",
+    "react-remove-scroll": "^2.5.4",
     "three": "^0.141.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.18.2",
-    "@types/node": "^17.0.39",
-    "@types/react": "^18.0.11",
+    "@types/node": "^17.0.41",
+    "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.17.0",
@@ -44,7 +44,7 @@
     "postcss": "^8.4.14",
     "prettier": "^2.6.2",
     "prettier-plugin-tailwindcss": "^0.1.11",
-    "tailwindcss": "^3.0.24",
+    "tailwindcss": "^3.1.2",
     "typescript": "^4.7.3"
   }
 }
