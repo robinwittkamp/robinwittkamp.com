@@ -71,9 +71,9 @@ const Header = () => {
     <Popover>
       {({ open }) => (
         <motion.header
-          className={`fixed top-0 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-neutral-200 bg-white backdrop-blur-lg dark:border-neutral-800 dark:bg-neutral-900/90 md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-white/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
+          className={`fixed top-0 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-neutral-200 bg-white backdrop-blur-lg dark:border-neutral-800 dark:bg-neutral-900 md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-white/90 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
             isOpen
-              ? 'bg-white backdrop-blur-none dark:bg-neutral-900/100 [@supports(backdrop-filter:blur(0))]:bg-white/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0'
+              ? 'bg-white backdrop-blur-none dark:bg-neutral-900 [@supports(backdrop-filter:blur(0))]:bg-white/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/100'
               : ''
           }`}
         >
