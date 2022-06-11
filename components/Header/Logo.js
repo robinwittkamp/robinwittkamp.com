@@ -28,7 +28,7 @@ const iconVariants = {
 };
 
 const Logo = () => (
-  <Link href="/">
+  <Link href="/" passHref>
     <motion.a
       className="group cursor-pointer"
       initial="rest"
