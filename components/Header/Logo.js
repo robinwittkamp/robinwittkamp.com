@@ -30,7 +30,7 @@ const iconVariants = {
 const Logo = () => (
   <Link href="/" passHref>
     <motion.a
-      className="group cursor-pointer"
+      className="cursor-pointer"
       initial="rest"
       animate="rest"
       whileHover="hover"
