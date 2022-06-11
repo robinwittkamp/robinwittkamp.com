@@ -10,6 +10,7 @@ const variants = {
     shadow-lg
     shadow-blue-500/50
     hover:bg-neutral-900
+    hover:shadow-md
     hover:shadow-blue-500/50
     dark:bg-white
     dark:text-neutral-900
