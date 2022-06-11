@@ -38,7 +38,7 @@ const Logo = () => (
     >
       <div className="flex items-center space-x-3">
         <motion.div variants={iconVariants}>
-          <FontAwesomeIcon icon={faFeather} className="mt-0.5 text-xl md:text-2xl" />
+          <FontAwesomeIcon icon={faFeather} className="text-xl md:text-2xl" />
         </motion.div>
         <div className="">
           <span className="sr-only">Robin Wittkamp</span>
