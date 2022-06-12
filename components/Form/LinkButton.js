@@ -34,10 +34,11 @@ const variants = {
     text-neutral-600
     hover:bg-neutral-200
     hover:border-neutral-200
-    dark:border-neutral-700
-    dark:bg-neutral-900
-    dark:text-white
-    dark:hover:bg-neutral-800`,
+    dark:border-neutral-800
+    dark:bg-neutral-800
+    dark:text-neutral-200
+    dark:hover:bg-neutral-700
+    dark:hover:border-neutral-700`,
 };
 
 const LinkButton = ({ children, link, variant }) => {
