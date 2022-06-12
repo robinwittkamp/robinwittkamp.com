@@ -28,6 +28,16 @@ const variants = {
     dark:bg-neutral-900
     dark:text-white
     dark:hover:bg-neutral-800`,
+  tertiary: `
+    border-neutral-50
+    bg-neutral-50
+    text-neutral-600
+    hover:bg-neutral-200
+    hover:border-neutral-200
+    dark:border-neutral-700
+    dark:bg-neutral-900
+    dark:text-white
+    dark:hover:bg-neutral-800`,
 };
 
 const LinkButton = ({ children, link, variant }) => {
@@ -57,7 +67,7 @@ const LinkButton = ({ children, link, variant }) => {
 LinkButton.propTypes = {
   children: PropTypes.node.isRequired,
   link: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(['primary', 'secondary']).isRequired,
+  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
 };
 
 export default LinkButton;
