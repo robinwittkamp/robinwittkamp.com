@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const variants = {
   primary: `
-    border-transparent
+    border-neutral-800
     bg-neutral-800
     text-white
     shadow-lg
@@ -16,29 +16,31 @@ const variants = {
     dark:text-neutral-900
     dark:hover:bg-neutral-200`,
   secondary: `
-    border-blue-100
-    bg-neutral-50
-    text-neutral-700
-    shadow-lg
-    shadow-blue-500/25
-    hover:bg-neutral-100
-    hover:shadow-md
-    hover:shadow-blue-500/25
-    dark:border-neutral-700
-    dark:bg-neutral-900
-    dark:text-white
-    dark:hover:bg-neutral-800`,
-  tertiary: `
-    border-neutral-50
-    bg-neutral-50
-    text-neutral-600
-    hover:bg-neutral-200
+    border-neutral-100
+    bg-neutral-100
+    text-neutral-800
     hover:border-neutral-200
+    hover:bg-neutral-200
+    hover:text-neutral-900
     dark:border-neutral-800
     dark:bg-neutral-800
-    dark:text-neutral-200
+    dark:text-neutral-100
+    dark:hover:border-neutral-700
     dark:hover:bg-neutral-700
-    dark:hover:border-neutral-700`,
+    dark:hover:text-white`,
+  tertiary: `
+    border-neutral-100
+    bg-white
+    text-neutral-700
+    hover:border-neutral-200
+    hover:bg-neutral-100
+    hover:text-neutral-800
+    dark:border-neutral-800
+    dark:bg-neutral-900
+    dark:text-neutral-300
+    dark:hover:border-neutral-700
+    dark:hover:bg-neutral-800
+    dark:hover:text-neutral-100`,
 };
 
 const LinkButton = ({ children, link, variant }) => {
