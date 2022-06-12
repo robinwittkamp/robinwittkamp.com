@@ -90,7 +90,7 @@ const Header = () => {
             isOpen
               ? 'bg-white backdrop-blur-none dark:bg-neutral-900 [@supports(backdrop-filter:blur(0))]:bg-white/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/100'
               : ''
-          } ${isWindowAtTop ? '' : 'border-neutral-200 dark:border-neutral-800'}`}
+          } ${isWindowAtTop ? '' : 'border-neutral-900/10 dark:border-neutral-50/10'}`}
         >
           <div className="flex-1">
             {/* x-Paddings */}
