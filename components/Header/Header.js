@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Popover } from '@headlessui/react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { RemoveScroll } from 'react-remove-scroll';
 import Logo from './Logo';
 
@@ -66,16 +66,31 @@ const navItemsVariants = {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isWindowAtTop, setIsWindowAtTop] = useState(false);
+
+  const handleScroll = () => {
+    // console.log('scroll event', window.scrollY);
+    if (window.scrollY === 0) {
+      setIsWindowAtTop(true);
+    } else {
+      setIsWindowAtTop(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
 
   return (
     <Popover>
       {({ open }) => (
         <motion.header
-          className={`fixed top-0 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-neutral-200 bg-white backdrop-blur-lg dark:border-neutral-800 dark:bg-neutral-900 md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-white/90 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
+          className={`fixed top-0 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-transparent bg-white backdrop-blur-lg transition-[border] duration-300 dark:bg-neutral-900 md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-white/90 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
             isOpen
               ? 'bg-white backdrop-blur-none dark:bg-neutral-900 [@supports(backdrop-filter:blur(0))]:bg-white/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/100'
               : ''
-          }`}
+          } ${isWindowAtTop ? '' : 'border-neutral-200 dark:border-neutral-800'}`}
         >
           <div className="flex-1">
             {/* x-Paddings */}
