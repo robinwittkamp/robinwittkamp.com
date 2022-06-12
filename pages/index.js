@@ -21,7 +21,7 @@ const Home = () => (
             <Button link="#work" variant="primary">
               View projects
             </Button>
-            <Button link="#contact" variant="secondary">
+            <Button link="#contact" variant="tertiary">
               Contact
             </Button>
           </div>
