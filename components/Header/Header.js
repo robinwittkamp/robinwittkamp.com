@@ -66,11 +66,11 @@ const navItemsVariants = {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isWindowAtTop, setIsWindowAtTop] = useState(false);
+  const [isWindowAtTop, setIsWindowAtTop] = useState(true);
 
   const handleScroll = () => {
-    // console.log('scroll event', window.scrollY);
-    if (window.scrollY === 0) {
+    console.log('scroll event', window.scrollY);
+    if (window.scrollY <= 0) {
       setIsWindowAtTop(true);
     } else {
       setIsWindowAtTop(false);
