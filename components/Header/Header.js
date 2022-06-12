@@ -32,7 +32,7 @@ const panelVariants = {
   },
 };
 
-const navVariants = {
+const mobileNavVariants = {
   open: {
     transition: {
       staggerChildren: 0.1,
@@ -47,7 +47,7 @@ const navVariants = {
   },
 };
 
-const navItemsVariants = {
+const mobileNavItemVariants = {
   open: {
     opacity: 1,
     transition: {
@@ -64,12 +64,31 @@ const navItemsVariants = {
   },
 };
 
+const desktopNavItemVariants = {
+  focused: {
+    opacity: 1,
+    transition: {
+      ease: 'easeInOut',
+      duration: 0.3,
+    },
+  },
+  unfocused: {
+    opacity: 0,
+    transition: {
+      ease: 'easeInOut',
+      duration: 0.3,
+    },
+  },
+};
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isWindowAtTop, setIsWindowAtTop] = useState(true);
+  const [focused, setFocused] = useState(null);
+  // const [selected, setSelected] = useState('Item 1');
 
   const handleScroll = () => {
-    console.log('scroll event', window.scrollY);
+    // console.log('scroll event', window.scrollY);
     if (window.scrollY <= 0) {
       setIsWindowAtTop(true);
     } else {
@@ -127,13 +146,43 @@ const Header = () => {
                   </div>
 
                   {/* Desktop navigation */}
-                  <nav className="-mr-6 hidden md:block">
+
+                  <nav className="-mr-6 hidden md:block" onMouseLeave={() => setFocused(null)}>
                     <ul className="flex">
                       {navigation.map((item) => (
                         <li key={item.name} className="">
                           <Link href={item.href}>
-                            <a className="flex h-[4.5rem] items-center px-6 transition duration-300 hover:text-neutral-500 dark:hover:text-neutral-300">
-                              <span className="text-lg">{item.name}</span>
+                            <a
+                              className="relative flex h-[4.5rem] items-center px-6 outline-0"
+                              // onClick={() => setSelected(item)}
+                              // onKeyDown={(event) =>
+                              //   event.key === 'Enter' ? setSelected(item) : null
+                              // }
+                              onFocus={() => setFocused(item)}
+                              onMouseEnter={() => setFocused(item)}
+                              tabIndex={0}
+                              role="link"
+                            >
+                              <AnimatePresence>
+                                {focused === item ? (
+                                  <motion.div
+                                    className="absolute left-[10%] right-[10%] top-1/4 bottom-1/4 z-0 rounded-xl bg-neutral-100 dark:bg-neutral-700"
+                                    key={item.name}
+                                    initial="unfocused"
+                                    animate="focused"
+                                    exit="unfocused"
+                                    variants={desktopNavItemVariants}
+                                    transition={{
+                                      layout: {
+                                        duration: 0.3,
+                                        ease: 'easeInOut',
+                                      },
+                                    }}
+                                    layoutId="highlight"
+                                  />
+                                ) : null}
+                              </AnimatePresence>
+                              <span className="z-10 text-lg">{item.name}</span>
                             </a>
                           </Link>
                         </li>
@@ -161,7 +210,7 @@ const Header = () => {
                   <RemoveScroll>
                     <motion.nav
                       key="nav"
-                      variants={navVariants}
+                      variants={mobileNavVariants}
                       className="border-t border-neutral-200 dark:border-neutral-800"
                     >
                       {navigation.map((item) => (
@@ -171,7 +220,7 @@ const Header = () => {
                         //     <span className="text-lg">{item.name}</span>
                         //   </Popover.Button>
                         // </Link>
-                        <motion.div key={item.name} variants={navItemsVariants}>
+                        <motion.div key={item.name} variants={mobileNavItemVariants}>
                           <Popover.Button
                             as="a"
                             href={item.href}
