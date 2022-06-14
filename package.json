@@ -15,6 +15,7 @@
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
     "@netlify/classnames-template-literals": "^1.0.3",
+    "@next/bundle-analyzer": "^12.1.6",
     "@react-three/fiber": "^8.0.24",
     "framer-motion": "^6.3.11",
     "next": "^12.1.6",
