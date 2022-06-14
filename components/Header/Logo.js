@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFeather } from '@fortawesome/free-solid-svg-icons';
-import { motion } from 'framer-motion';
+import { m, LazyMotion, domAnimation } from 'framer-motion';
 
 const iconVariants = {
   rest: {
@@ -28,25 +28,27 @@ const iconVariants = {
 };
 
 const Logo = () => (
-  <Link href="/" passHref>
-    <motion.a
-      className="cursor-pointer"
-      initial="rest"
-      animate="rest"
-      whileHover="hover"
-      whileTap="tap"
-    >
-      <div className="flex items-center space-x-3">
-        <motion.div variants={iconVariants}>
-          <FontAwesomeIcon icon={faFeather} className="text-xl md:text-2xl" />
-        </motion.div>
-        <div className="">
-          <span className="sr-only">Robin Wittkamp</span>
-          <span className="font-gilroy text-xl font-extrabold md:text-2xl">Robin Wittkamp</span>
+  <LazyMotion features={domAnimation}>
+    <Link href="/" passHref>
+      <m.a
+        className="cursor-pointer"
+        initial="rest"
+        animate="rest"
+        whileHover="hover"
+        whileTap="tap"
+      >
+        <div className="flex items-center space-x-3">
+          <m.div variants={iconVariants}>
+            <FontAwesomeIcon icon={faFeather} className="text-xl md:text-2xl" />
+          </m.div>
+          <div className="">
+            <span className="sr-only">Robin Wittkamp</span>
+            <span className="font-gilroy text-xl font-extrabold md:text-2xl">Robin Wittkamp</span>
+          </div>
         </div>
-      </div>
-    </motion.a>
-  </Link>
+      </m.a>
+    </Link>
+  </LazyMotion>
 );
 
 export default Logo;
