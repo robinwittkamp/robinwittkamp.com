@@ -28,7 +28,7 @@ const iconVariants = {
 };
 
 const Logo = () => (
-  <LazyMotion features={domAnimation}>
+  <LazyMotion features={domAnimation} strict>
     <Link href="/" passHref>
       <m.a
         className="cursor-pointer"

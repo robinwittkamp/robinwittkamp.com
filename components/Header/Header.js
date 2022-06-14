@@ -102,7 +102,7 @@ const Header = () => {
   });
 
   return (
-    <LazyMotion features={domMax}>
+    <LazyMotion features={domMax} strict>
       <Popover>
         {({ open }) => (
           <m.header
