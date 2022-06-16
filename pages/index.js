@@ -1,7 +1,14 @@
+import Image from 'next/image';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Button from '../components/Form/LinkButton';
+
+import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro-v2.png';
+import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro-v2.png';
+import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro_v2.png';
+import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro_v2.png';
+import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro_v2.png';
 
 const Home = () => (
   <Layout>
@@ -29,7 +36,68 @@ const Home = () => (
 
         {/* Image container */}
         <div className="lg:flex-1">
-          <div className="h-[24rem] rounded-[2rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]" />
+          {/* <div className="h-[24rem] rounded-[2rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]" /> */}
+          {/* Spacing container */}
+          <div className="relative h-[20rem]">
+            {/* Image 1 */}
+            <div
+              // className="relative h-[24rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]"
+              className="absolute left-0 top-1/2 -translate-y-1/2"
+            >
+              <Image
+                // className="object-contain"
+                // className="max-h-[24rem]"
+                // className="overflow-visible p-16 drop-shadow-xl"
+                src={webBuddyMockup}
+                alt="Klifra website iphone 13 pro mockup"
+                // layout="fill"
+                // layout="responsive"
+                width={214}
+                height={433}
+                // width="100%"
+                // height="100%"
+                // placeholder="blur"
+                quality="100"
+              />
+            </div>
+
+            {/* Image 2 */}
+            <div className="absolute top-1/2 left-1/4 z-10 -translate-y-1/2">
+              <Image
+                // className="object-contain"
+                // className="max-h-[24rem]"
+                // className="absolute top-16"
+                src={klifraMockup}
+                alt="Klifra website iphone 13 pro mockup"
+                // layout="fill"
+                // layout="responsive"
+                width={214}
+                height={433}
+                // width="100%"
+                // height="100%"
+                // placeholder="blur"
+                quality="100"
+              />
+            </div>
+
+            {/* Image 3 */}
+            <div className="absolute top-1/2 left-2/4 -translate-y-1/2">
+              <Image
+                // className="object-contain"
+                // className="max-h-[24rem]"
+                src={energiewerkRuegenMockup}
+                alt="Klifra website iphone 13 pro mockup"
+                // layout="fill"
+                // layout="responsive"
+                width={214}
+                height={433}
+                // width="100%"
+                // height="100%"
+                // placeholder="blur"
+                quality="100"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </Section>
