@@ -33,8 +33,18 @@ Agencies
 * [cuberto.com](https://cuberto.com)
 * [metalab.com](https://metalab.com)
 * [smuv.studio](https://www.smuv.studio)
+* [skyward.digital](https://skyward.digital/)
 
 Person
 * [nelson.co](https://nelson.co)
 * [danspratling.dev](https://danspratling.dev)
 * [vijayverma.co](https://vijayverma.co)
+* [Danial Jack - Demo](https://portfolio-tailwind.preview.uideck.com/demos/personal)
+* [Natalie E. Watson - Demo](https://websitedemos.net/personal-portfolio-02)
+* [Maxime Heckel](https://maximeheckel.com/)
+* [Maxime Heckel - Blog](https://blog.maximeheckel.com/)
+* [Michal Jawinski](https://michaljawinski.com/)
+* [Carlos Hernández Gómez](https://karliky.com)
+* [Shahid Shaikh - old](https://shahid-old.netlify.app/)
+* [Shahid Shaikh - current](https://www.shahidshaikh.com/)
+* [Shahid Shaikh - new](https://shahid-v2.netlify.app/)
