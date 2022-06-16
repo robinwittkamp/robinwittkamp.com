@@ -13,7 +13,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@headlessui/react": "^1.6.4",
-    "@heroicons/react": "^1.0.6",
     "@netlify/classnames-template-literals": "^1.0.3",
     "@next/bundle-analyzer": "^12.1.6",
     "@react-three/fiber": "^8.0.26",
