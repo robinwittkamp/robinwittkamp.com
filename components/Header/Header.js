@@ -106,7 +106,7 @@ const Header = () => {
       <Popover>
         {({ open }) => (
           <m.header
-            className={`fixed top-0 z-10 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-transparent bg-white backdrop-blur-lg transition-[border] duration-300 dark:bg-neutral-900 md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-white/90 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
+            className={`fixed top-0 z-50 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-transparent bg-white backdrop-blur-lg transition-[border] duration-300 dark:bg-neutral-900 md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-white/90 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
               isOpen
                 ? 'bg-white backdrop-blur-none dark:bg-neutral-900 [@supports(backdrop-filter:blur(0))]:bg-white/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/100'
                 : ''
