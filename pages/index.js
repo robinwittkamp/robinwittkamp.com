@@ -53,6 +53,7 @@ const Home = () => (
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
+                layout="fixed"
                 width={253}
                 height={512}
                 // width="100%"
@@ -74,6 +75,7 @@ const Home = () => (
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
+                layout="fixed"
                 width={285}
                 height={576}
                 // width="100%"
@@ -93,6 +95,7 @@ const Home = () => (
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
+                layout="fixed"
                 width={221}
                 height={448}
                 // width="100%"
