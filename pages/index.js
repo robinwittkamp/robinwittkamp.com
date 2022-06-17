@@ -58,6 +58,7 @@ const Home = () => (
                 // height="100%"
                 // placeholder="blur"
                 quality="100"
+                priority
               />
             </div>
 
@@ -77,6 +78,7 @@ const Home = () => (
                 // height="100%"
                 // placeholder="blur"
                 quality="100"
+                priority
               />
             </div>
 
@@ -95,6 +97,7 @@ const Home = () => (
                 // height="100%"
                 // placeholder="blur"
                 quality="100"
+                priority
               />
             </div>
           </div>
