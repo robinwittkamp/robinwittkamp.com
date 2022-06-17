@@ -5,7 +5,7 @@ import Footer from './Footer';
 const Layout = ({ children }) => (
   <>
     <Header />
-    <main className="min-w-[20rem]">{children}</main>
+    <main className="min-w-[20rem] overflow-hidden md:overflow-auto">{children}</main>
     <Footer />
   </>
 );
