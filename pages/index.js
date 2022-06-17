@@ -14,7 +14,7 @@ const Home = () => (
   <Layout>
     <Head />
 
-    <Section id="home">
+    <Section id="home" first>
       {/* 50/50 container */}
       <div className="space-y-16 lg:flex lg:items-center lg:space-x-16 lg:space-y-0">
         {/* Text container */}
@@ -38,7 +38,7 @@ const Home = () => (
         <div className="lg:flex-1">
           {/* <div className="h-[24rem] rounded-[2rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]" /> */}
           {/* Spacing container */}
-          <div className="relative h-[28rem]">
+          <div className="relative mx-auto h-[36rem]">
             {/* Image 1 */}
             <div
               // className="relative h-[24rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]"
@@ -52,8 +52,8 @@ const Home = () => (
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
-                width={221}
-                height={448}
+                width={253}
+                height={512}
                 // width="100%"
                 // height="100%"
                 // placeholder="blur"
@@ -72,8 +72,8 @@ const Home = () => (
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
-                width={221}
-                height={448}
+                width={285}
+                height={576}
                 // width="100%"
                 // height="100%"
                 // placeholder="blur"
