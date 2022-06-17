@@ -38,7 +38,7 @@ const Home = () => (
         <div className="lg:flex-1">
           {/* <div className="h-[24rem] rounded-[2rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]" /> */}
           {/* Spacing container */}
-          <div className="relative h-[20rem]">
+          <div className="relative h-[28rem]">
             {/* Image 1 */}
             <div
               // className="relative h-[24rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]"
@@ -52,8 +52,8 @@ const Home = () => (
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
-                width={214}
-                height={433}
+                width={221}
+                height={448}
                 // width="100%"
                 // height="100%"
                 // placeholder="blur"
@@ -62,7 +62,7 @@ const Home = () => (
             </div>
 
             {/* Image 2 */}
-            <div className="absolute top-1/2 left-1/4 z-10 -translate-y-1/2">
+            <div className="absolute top-1/2 left-1/2 z-10 -translate-y-1/2 -translate-x-1/2">
               <Image
                 // className="object-contain"
                 // className="max-h-[24rem]"
@@ -71,8 +71,8 @@ const Home = () => (
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
-                width={214}
-                height={433}
+                width={221}
+                height={448}
                 // width="100%"
                 // height="100%"
                 // placeholder="blur"
@@ -81,7 +81,7 @@ const Home = () => (
             </div>
 
             {/* Image 3 */}
-            <div className="absolute top-1/2 left-2/4 -translate-y-1/2">
+            <div className="absolute top-1/2 right-0 -translate-y-1/2">
               <Image
                 // className="object-contain"
                 // className="max-h-[24rem]"
@@ -89,8 +89,8 @@ const Home = () => (
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
-                width={214}
-                height={433}
+                width={221}
+                height={448}
                 // width="100%"
                 // height="100%"
                 // placeholder="blur"
