@@ -13,7 +13,7 @@ class CustomDocument extends Document {
         className="bg-white text-neutral-900 antialiased dark:bg-neutral-900 dark:text-white"
       >
         <Head />
-        <body className="">
+        <body className="overflow-x-hidden">
           <Main />
           <NextScript />
         </body>
