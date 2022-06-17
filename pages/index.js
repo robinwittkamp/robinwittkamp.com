@@ -67,7 +67,7 @@ const Home = () => (
                 // className="object-contain"
                 // className="max-h-[24rem]"
                 // className="absolute top-16"
-                src={klifraMockup}
+                src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
@@ -85,7 +85,7 @@ const Home = () => (
               <Image
                 // className="object-contain"
                 // className="max-h-[24rem]"
-                src={energiewerkRuegenMockup}
+                src={klifraMockup}
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
                 // layout="responsive"
