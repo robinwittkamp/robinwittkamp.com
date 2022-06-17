@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import NextImage from 'next/image';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
@@ -44,7 +44,7 @@ const Home = () => (
               // className="relative h-[24rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]"
               className="absolute left-0 top-1/2 -translate-y-1/2"
             >
-              <Image
+              <NextImage
                 // className="object-contain"
                 // className="max-h-[24rem]"
                 // className="overflow-visible p-16 drop-shadow-xl"
@@ -63,7 +63,7 @@ const Home = () => (
 
             {/* Image 2 */}
             <div className="absolute top-1/2 left-1/2 z-10 -translate-y-1/2 -translate-x-1/2">
-              <Image
+              <NextImage
                 // className="object-contain"
                 // className="max-h-[24rem]"
                 // className="absolute top-16"
@@ -82,7 +82,7 @@ const Home = () => (
 
             {/* Image 3 */}
             <div className="absolute top-1/2 right-0 -translate-y-1/2">
-              <Image
+              <NextImage
                 // className="object-contain"
                 // className="max-h-[24rem]"
                 src={klifraMockup}
