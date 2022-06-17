@@ -35,14 +35,15 @@ const Home = () => (
         </div>
 
         {/* Image container */}
-        <div className="lg:flex-1">
+        <div className="flex justify-center lg:flex-1">
           {/* <div className="h-[24rem] rounded-[2rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]" /> */}
+
           {/* Spacing container */}
-          <div className="relative mx-auto h-[36rem]">
+          <div className="mx-auto flex items-center -space-x-24">
             {/* Image 1 */}
             <div
               // className="relative h-[24rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]"
-              className="absolute left-0 top-1/2 -translate-y-1/2"
+              className=""
             >
               <NextImage
                 // className="object-contain"
@@ -63,11 +64,12 @@ const Home = () => (
             </div>
 
             {/* Image 2 */}
-            <div className="absolute top-1/2 left-1/2 z-10 -translate-y-1/2 -translate-x-1/2">
+            <div className="">
               <NextImage
                 // className="object-contain"
                 // className="max-h-[24rem]"
                 // className="absolute top-16"
+                className="z-10"
                 src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
                 // layout="fill"
@@ -83,7 +85,7 @@ const Home = () => (
             </div>
 
             {/* Image 3 */}
-            <div className="absolute top-1/2 right-0 -translate-y-1/2">
+            <div className="">
               <NextImage
                 // className="object-contain"
                 // className="max-h-[24rem]"
