@@ -35,75 +35,76 @@ const Home = () => (
         </div>
 
         {/* Image container */}
-        <div className="flex justify-center lg:flex-1">
-          {/* <div className="h-[24rem] rounded-[2rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]" /> */}
+        <div className="lg:flex-1">
+          {/* Flex container */}
+          <div className="flex justify-center">
+            {/* Spacing container */}
+            <div className="mx-auto flex items-center -space-x-24">
+              {/* Image 1 */}
+              <div
+                // className="relative h-[24rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]"
+                className=""
+              >
+                <NextImage
+                  // className="object-contain"
+                  // className="max-h-[24rem]"
+                  // className="overflow-visible p-16 drop-shadow-xl"
+                  src={webBuddyMockup}
+                  alt="Klifra website iphone 13 pro mockup"
+                  // layout="fill"
+                  // layout="responsive"
+                  layout="fixed"
+                  width={253}
+                  height={512}
+                  // width="100%"
+                  // height="100%"
+                  // placeholder="blur"
+                  quality="100"
+                  // priority
+                />
+              </div>
 
-          {/* Spacing container */}
-          <div className="mx-auto flex items-center -space-x-24">
-            {/* Image 1 */}
-            <div
-              // className="relative h-[24rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]"
-              className=""
-            >
-              <NextImage
-                // className="object-contain"
-                // className="max-h-[24rem]"
-                // className="overflow-visible p-16 drop-shadow-xl"
-                src={webBuddyMockup}
-                alt="Klifra website iphone 13 pro mockup"
-                // layout="fill"
-                // layout="responsive"
-                layout="fixed"
-                width={253}
-                height={512}
-                // width="100%"
-                // height="100%"
-                // placeholder="blur"
-                quality="100"
-                // priority
-              />
-            </div>
+              {/* Image 2 */}
+              <div className="">
+                <NextImage
+                  // className="object-contain"
+                  // className="max-h-[24rem]"
+                  // className="absolute top-16"
+                  className="z-10"
+                  src={energiewerkRuegenMockup}
+                  alt="Klifra website iphone 13 pro mockup"
+                  // layout="fill"
+                  // layout="responsive"
+                  layout="fixed"
+                  width={285}
+                  height={576}
+                  // width="100%"
+                  // height="100%"
+                  // placeholder="blur"
+                  quality="100"
+                  // priority
+                />
+              </div>
 
-            {/* Image 2 */}
-            <div className="">
-              <NextImage
-                // className="object-contain"
-                // className="max-h-[24rem]"
-                // className="absolute top-16"
-                className="z-10"
-                src={energiewerkRuegenMockup}
-                alt="Klifra website iphone 13 pro mockup"
-                // layout="fill"
-                // layout="responsive"
-                layout="fixed"
-                width={285}
-                height={576}
-                // width="100%"
-                // height="100%"
-                // placeholder="blur"
-                quality="100"
-                // priority
-              />
-            </div>
-
-            {/* Image 3 */}
-            <div className="">
-              <NextImage
-                // className="object-contain"
-                // className="max-h-[24rem]"
-                src={klifraMockup}
-                alt="Klifra website iphone 13 pro mockup"
-                // layout="fill"
-                // layout="responsive"
-                layout="fixed"
-                width={221}
-                height={448}
-                // width="100%"
-                // height="100%"
-                // placeholder="blur"
-                quality="100"
-                // priority
-              />
+              {/* Image 3 */}
+              <div className="">
+                <NextImage
+                  // className="object-contain"
+                  // className="max-h-[24rem]"
+                  src={klifraMockup}
+                  alt="Klifra website iphone 13 pro mockup"
+                  // layout="fill"
+                  // layout="responsive"
+                  layout="fixed"
+                  width={221}
+                  height={448}
+                  // width="100%"
+                  // height="100%"
+                  // placeholder="blur"
+                  quality="100"
+                  // priority
+                />
+              </div>
             </div>
           </div>
         </div>
