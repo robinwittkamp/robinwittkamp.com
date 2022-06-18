@@ -39,7 +39,7 @@ const Logo = () => (
       >
         <div className="flex items-center space-x-3">
           <m.div className="w-5 md:w-6" variants={iconVariants}>
-            <FontAwesomeIcon icon={faFeather} />
+            <FontAwesomeIcon icon={faFeather} className="text-xl md:text-2xl" />
           </m.div>
           <div className="">
             <span className="sr-only">Robin Wittkamp</span>
