@@ -81,7 +81,7 @@ const Home = () => (
                   // height="100%"
                   // placeholder="blur"
                   // quality="100"
-                  priority
+                  // priority
                 />
               </div>
 
