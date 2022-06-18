@@ -3,6 +3,7 @@ import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import LinkButton from '../components/Form/LinkButton';
+import ProjectCard from '../components/Cards/ProjectCard';
 
 import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro-v3.png';
 import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro-v2.png';
@@ -119,8 +120,26 @@ const Home = () => (
     </Section>
 
     <Section id="work">
-      <span className="font-bold text-rose-500">Some of my projects.</span>
-      <h2 className="mt-4">Latest work</h2>
+      <span className="block text-center font-bold text-rose-500">Some of my projects.</span>
+      <h2 className="mt-4 text-center">Latest work</h2>
+      {/* Cards container */}
+      <div className="mt-8 space-y-8 md:mt-16">
+        <ProjectCard
+          heading="Robert Denier"
+          link="https://robertdenier.de"
+          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+        />
+        <ProjectCard
+          heading="Energiewerk Rügen"
+          link="https://energiewerk-ruegen.de"
+          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+        />
+        <ProjectCard
+          heading="Ferienwohnung Putbus"
+          link="https://ferienwohnung-putbus.de"
+          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+        />
+      </div>
     </Section>
 
     <Section id="contact">
