@@ -2,7 +2,7 @@ import NextImage from 'next/image';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
-import Button from '../components/Form/LinkButton';
+import LinkButton from '../components/Form/LinkButton';
 
 import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro-v3.png';
 import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro-v2.png';
@@ -26,12 +26,12 @@ const Home = () => (
               I build fast, reliable websites with a beautiful design and focus on user experience.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button link="#work" variant="primary">
+              <LinkButton link="#work" variant="primary">
                 View projects
-              </Button>
-              <Button link="#contact" variant="secondary">
+              </LinkButton>
+              <LinkButton link="#contact" variant="secondary">
                 Contact
-              </Button>
+              </LinkButton>
             </div>
           </div>
         </div>
