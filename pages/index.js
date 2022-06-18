@@ -16,28 +16,30 @@ const Home = () => (
 
     <Section id="home" first>
       {/* 50/50 container */}
-      <div className="space-y-16 lg:flex lg:items-center lg:space-x-16 lg:space-y-0">
+      <div className="space-y-16 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-16 lg:space-y-0">
         {/* Text container */}
-        <div className="lg:flex-1">
-          <span className="font-bold text-blue-500">Creative web developer</span>
-          <h1 className="mt-4">Hi 👋🏻, I&apos;m Robin.</h1>
-          <p className="mt-4 max-w-md text-xl text-neutral-500 dark:text-neutral-300">
-            I build fast, reliable websites with a beautiful design and focus on user experience.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Button link="#work" variant="primary">
-              View projects
-            </Button>
-            <Button link="#contact" variant="secondary">
-              Contact
-            </Button>
+        <div className="lg:flex lg:items-center">
+          <div>
+            <span className="font-bold text-blue-500">Creative web developer</span>
+            <h1 className="mt-4">Hi 👋🏻, I&apos;m Robin.</h1>
+            <p className="mt-4 max-w-md text-xl text-neutral-500 dark:text-neutral-300">
+              I build fast, reliable websites with a beautiful design and focus on user experience.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Button link="#work" variant="primary">
+                View projects
+              </Button>
+              <Button link="#contact" variant="secondary">
+                Contact
+              </Button>
+            </div>
           </div>
         </div>
 
         {/* Image container */}
-        <div className="lg:flex-1">
+        <div className="">
           {/* Flex container */}
-          <div className="flex justify-center">
+          <div className="flex justify-center lg:justify-start">
             {/* Spacing container */}
             <div className="mx-auto flex items-center">
               {/* Image 1 */}
