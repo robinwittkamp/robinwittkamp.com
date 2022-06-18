@@ -39,12 +39,9 @@ const Home = () => (
           {/* Flex container */}
           <div className="flex justify-center">
             {/* Spacing container */}
-            <div className="mx-auto flex items-center -space-x-24">
+            <div className="mx-auto flex items-center">
               {/* Image 1 */}
-              <div
-                // className="relative h-[24rem] bg-neutral-100 dark:bg-neutral-700 lg:h-[32rem]"
-                className=""
-              >
+              <div className="">
                 <NextImage
                   // className="object-contain"
                   // className="max-h-[24rem]"
@@ -65,7 +62,7 @@ const Home = () => (
               </div>
 
               {/* Image 2 */}
-              <div className="">
+              <div className="-ml-24">
                 <NextImage
                   // className="object-contain"
                   // className="max-h-[24rem]"
@@ -87,7 +84,7 @@ const Home = () => (
               </div>
 
               {/* Image 3 */}
-              <div className="">
+              <div className="-ml-16">
                 <NextImage
                   // className="object-contain"
                   // className="max-h-[24rem]"
