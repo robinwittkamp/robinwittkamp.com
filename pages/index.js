@@ -58,7 +58,7 @@ const Home = () => (
                   // width="100%"
                   // height="100%"
                   // placeholder="blur"
-                  quality="100"
+                  // quality="100"
                   // priority
                 />
               </div>
@@ -80,7 +80,7 @@ const Home = () => (
                   // width="100%"
                   // height="100%"
                   // placeholder="blur"
-                  quality="100"
+                  // quality="100"
                   priority
                 />
               </div>
@@ -100,7 +100,7 @@ const Home = () => (
                   // width="100%"
                   // height="100%"
                   // placeholder="blur"
-                  quality="100"
+                  // quality="100"
                   // priority
                 />
               </div>
