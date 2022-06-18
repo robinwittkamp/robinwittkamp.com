@@ -147,7 +147,11 @@ const Header = () => {
                     </div>
 
                     {/* Desktop navigation */}
-                    <nav className="-mr-6 hidden md:block" onMouseLeave={() => setFocused(null)}>
+                    <nav
+                      className="-mr-6 hidden md:block"
+                      onMouseLeave={() => setFocused(null)}
+                      onBlur={() => setFocused(null)}
+                    >
                       <ul className="flex">
                         {navigation.map((item) => (
                           <li key={item.name} className="">
@@ -159,7 +163,9 @@ const Header = () => {
                                 //   event.key === 'Enter' ? setSelected(item) : null
                                 // }
                                 onFocus={() => setFocused(item)}
+                                // onBlur={() => setFocused(null)}
                                 onMouseEnter={() => setFocused(item)}
+                                // onMouseLeave={() => setFocused(null)}
                                 tabIndex={0}
                                 role="link"
                               >
