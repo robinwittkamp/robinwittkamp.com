@@ -22,7 +22,7 @@ const Home = () => (
         <div className="lg:flex lg:items-center">
           <div>
             <span className="font-bold text-blue-500">Creative web developer</span>
-            <h1 className="mt-4">Hi 👋🏻, I&apos;m Robin.</h1>
+            <h1 className="mt-4">Hi, I&apos;m Robin</h1>
             <p className="mt-4 max-w-md text-xl text-neutral-500 dark:text-neutral-400">
               I build fast, reliable websites with a beautiful design and focus on user experience.
             </p>
