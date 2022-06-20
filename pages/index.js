@@ -30,9 +30,9 @@ const Home = () => (
               <LinkButton link="#work" variant="primary">
                 View projects
               </LinkButton>
-              <LinkButton link="#contact" variant="secondary">
+              {/* <LinkButton link="#contact" variant="secondary">
                 Contact
-              </LinkButton>
+              </LinkButton> */}
             </div>
           </div>
         </div>
