@@ -23,7 +23,7 @@ const Home = () => (
           <div>
             <span className="font-bold text-blue-500">Creative web developer</span>
             <h1 className="mt-4">Hi 👋🏻, I&apos;m Robin.</h1>
-            <p className="mt-4 max-w-md text-xl text-neutral-500 dark:text-neutral-300">
+            <p className="mt-4 max-w-md text-xl text-neutral-500 dark:text-neutral-400">
               I build fast, reliable websites with a beautiful design and focus on user experience.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -114,7 +114,7 @@ const Home = () => (
     <Section id="about">
       <span className="font-bold text-purple-500">First things first.</span>
       <h2 className="mt-4">About me</h2>
-      <p className="mt-4 text-xl text-neutral-500 dark:text-neutral-300">
+      <p className="mt-4 text-xl text-neutral-500 dark:text-neutral-400">
         The technologies I currently use the most are Next.js, React.js and WordPress.
       </p>
     </Section>
