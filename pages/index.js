@@ -15,96 +15,96 @@ const Home = () => (
   <Layout>
     <Head />
 
-    <Section id="home" first>
-      {/* 50/50 container */}
-      <div className="space-y-16 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-16 lg:space-y-0">
-        {/* Text container */}
-        <div className="lg:flex lg:items-center">
-          <div>
-            <span className="font-bold text-blue-500">Creative web developer</span>
-            <h1 className="mt-4">Hi, I&apos;m Robin</h1>
-            <p className="mt-4 max-w-md text-xl text-neutral-500 dark:text-neutral-400">
-              I build fast, reliable websites with a beautiful design and focus on user experience.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <LinkButton link="#work" variant="primary">
-                View projects
-              </LinkButton>
-              {/* <LinkButton link="#contact" variant="secondary">
+    <Section id="home">
+      {/* Text container */}
+      <div>
+        {/* <span className="block text-center font-bold text-blue-500">
+              Creative web developer from Germany
+            </span> */}
+        <h1 className="mx-auto mt-8 max-w-screen-lg text-center">
+          Beautiful websites that improve your business
+        </h1>
+        <p className="mx-auto mt-8 max-w-md text-center text-xl text-neutral-500 dark:text-neutral-400">
+          Hi, I&apos;m Robin. I build fast, reliable websites with a beautiful design and focus on
+          user experience.
+        </p>
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <LinkButton link="#work" variant="primary">
+            View projects
+          </LinkButton>
+          {/* <LinkButton link="#contact" variant="secondary">
                 Contact
               </LinkButton> */}
-            </div>
-          </div>
         </div>
+      </div>
 
-        {/* Image container */}
-        <div className="">
-          {/* Flex container */}
-          <div className="flex justify-center lg:justify-start">
-            {/* Spacing container */}
-            <div className="mx-auto flex items-center">
-              {/* Image 1 */}
-              <div className="">
-                <NextImage
-                  // className="object-contain"
-                  // className="max-h-[24rem]"
-                  // className="overflow-visible p-16 drop-shadow-xl"
-                  src={webBuddyMockup}
-                  alt="Klifra website iphone 13 pro mockup"
-                  // layout="fill"
-                  // layout="responsive"
-                  layout="fixed"
-                  width={253}
-                  height={512}
-                  // width="100%"
-                  // height="100%"
-                  // placeholder="blur"
-                  // quality="100"
-                  // priority
-                />
-              </div>
+      {/* Image container */}
+      <div className="mt-16">
+        {/* Flex container */}
+        <div className="flex justify-center lg:justify-start">
+          {/* Spacing container */}
+          <div className="mx-auto flex items-center">
+            {/* Image 1 */}
+            <div className="">
+              <NextImage
+                // className="object-contain"
+                // className="max-h-[24rem]"
+                // className="overflow-visible p-16 drop-shadow-xl"
+                src={webBuddyMockup}
+                alt="Klifra website iphone 13 pro mockup"
+                // layout="fill"
+                // layout="responsive"
+                layout="fixed"
+                width={253}
+                height={512}
+                // width="100%"
+                // height="100%"
+                // placeholder="blur"
+                // quality="100"
+                // priority
+              />
+            </div>
 
-              {/* Image 2 */}
-              <div className="-ml-24">
-                <NextImage
-                  // className="object-contain"
-                  // className="max-h-[24rem]"
-                  // className="absolute top-16"
-                  className="z-10"
-                  src={energiewerkRuegenMockup}
-                  alt="Klifra website iphone 13 pro mockup"
-                  // layout="fill"
-                  // layout="responsive"
-                  layout="fixed"
-                  width={285}
-                  height={576}
-                  // width="100%"
-                  // height="100%"
-                  // placeholder="blur"
-                  // quality="100"
-                  // priority
-                />
-              </div>
+            {/* Image 2 */}
+            <div className="-ml-24">
+              <NextImage
+                // className="object-contain"
+                // className="max-h-[24rem]"
+                // className="absolute top-16"
+                className="z-10"
+                src={energiewerkRuegenMockup}
+                alt="Klifra website iphone 13 pro mockup"
+                // layout="fill"
+                // layout="responsive"
+                layout="fixed"
+                width={285}
+                height={576}
+                // width="100%"
+                // height="100%"
+                // placeholder="blur"
+                // quality="100"
+                // priority
+              />
+            </div>
 
-              {/* Image 3 */}
-              <div className="-ml-16">
-                <NextImage
-                  // className="object-contain"
-                  // className="max-h-[24rem]"
-                  src={klifraMockup}
-                  alt="Klifra website iphone 13 pro mockup"
-                  // layout="fill"
-                  // layout="responsive"
-                  layout="fixed"
-                  width={221}
-                  height={448}
-                  // width="100%"
-                  // height="100%"
-                  // placeholder="blur"
-                  // quality="100"
-                  // priority
-                />
-              </div>
+            {/* Image 3 */}
+            <div className="-ml-16">
+              <NextImage
+                // className="object-contain"
+                // className="max-h-[24rem]"
+                src={klifraMockup}
+                alt="Klifra website iphone 13 pro mockup"
+                // layout="fill"
+                // layout="responsive"
+                layout="fixed"
+                width={221}
+                height={448}
+                // width="100%"
+                // height="100%"
+                // placeholder="blur"
+                // quality="100"
+                // priority
+              />
             </div>
           </div>
         </div>
