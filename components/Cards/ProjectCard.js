@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import LinkButton from '../Form/LinkButton';
 
 const ProjectCard = ({ heading, link, text }) => (
-  <div className="rounded-[2rem] border border-neutral-100 bg-white p-8 shadow-xl dark:border-neutral-700 dark:bg-neutral-800 md:p-12">
+  <div className="rounded-[2rem] border border-neutral-100 bg-white px-6 py-8 shadow-xl dark:border-neutral-700 dark:bg-neutral-800 sm:px-8 lg:p-12">
     <div className="">
       <span className="block font-gilroy text-3xl font-bold md:text-4xl lg:text-4xl xl:text-4xl">
         {heading}
