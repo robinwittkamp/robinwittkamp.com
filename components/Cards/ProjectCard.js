@@ -6,7 +6,9 @@ import LinkButton from '../Form/LinkButton';
 const ProjectCard = ({ heading, link, text }) => (
   <div className="rounded-[2rem] border border-neutral-100 bg-white p-8 shadow-xl dark:border-neutral-700 dark:bg-neutral-800 md:p-12">
     <div className="">
-      <h4 className="">{heading}</h4>
+      <span className="block font-gilroy text-3xl font-bold md:text-4xl lg:text-4xl xl:text-4xl">
+        {heading}
+      </span>
       <p className="mt-6 text-lg text-neutral-500 dark:text-neutral-400">{text}</p>
       <div className="mt-6">
         <LinkButton link={link} variant="tertiary">
