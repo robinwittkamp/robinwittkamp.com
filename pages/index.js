@@ -112,16 +112,16 @@ const Home = () => (
     </Section>
 
     <Section id="about">
-      <span className="font-bold text-purple-500">First things first.</span>
-      <h2 className="mt-4">About me</h2>
+      {/* <span className="font-bold text-purple-500">First things first.</span> */}
+      <h2 className="">About me</h2>
       <p className="mt-4 text-xl text-neutral-500 dark:text-neutral-400">
         The technologies I currently use the most are Next.js, React.js and WordPress.
       </p>
     </Section>
 
     <Section id="work">
-      <span className="block text-center font-bold text-rose-500">Some of my projects.</span>
-      <h2 className="mt-4 text-center">Latest work</h2>
+      {/* <span className="block text-center font-bold text-rose-500">Some of my projects.</span> */}
+      <h2 className="text-center">Latest work</h2>
       {/* Cards container */}
       <div className="mt-8 space-y-8 md:mt-16">
         <ProjectCard
@@ -143,8 +143,8 @@ const Home = () => (
     </Section>
 
     <Section id="contact">
-      <span className="font-bold text-amber-500">Let&apos;s work together.</span>
-      <h2 className="mt-4">Contact</h2>
+      {/* <span className="font-bold text-amber-500">Let&apos;s work together.</span> */}
+      <h2 className="">Contact</h2>
     </Section>
 
     {/* <Section id="">
