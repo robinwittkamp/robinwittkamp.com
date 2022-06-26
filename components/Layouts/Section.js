@@ -9,11 +9,12 @@ const Section = ({ children, first, id }) => (
 Section.propTypes = {
   children: PropTypes.node.isRequired,
   first: PropTypes.bool,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
 };
 
 Section.defaultProps = {
   first: false,
+  id: null,
 };
 
 export default Section;
