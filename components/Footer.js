@@ -18,7 +18,7 @@ const Footer = () => (
           {/* Top/Right container */}
           <div className="md:flex md:flex-1 md:justify-end">
             {/* Languages */}
-            <ul className="flex justify-center">
+            <ul className="flex flex-row sm:justify-center">
               {languages.map((item) => (
                 <li key={item.name}>
                   <Link href="#">
@@ -34,7 +34,7 @@ const Footer = () => (
           {/* Middle container */}
           <div className="md:flex md:flex-1 md:justify-center">
             {/* Links */}
-            <ul className="flex justify-center">
+            <ul className="flex flex-row sm:justify-center">
               {navigation.map((item) => (
                 <li key={item.name}>
                   <Link href={item.href}>
@@ -50,7 +50,7 @@ const Footer = () => (
           {/* Bottom/left container */}
           <div className="md:flex md:flex-1 md:justify-start">
             {/* Copyright notice */}
-            <span className="block py-2 px-2 text-center text-gray-500 dark:text-neutral-400">
+            <span className="block py-2 px-2 text-gray-500 dark:text-neutral-400 sm:text-center">
               &copy; 2022 Robin Wittkamp
             </span>
           </div>
