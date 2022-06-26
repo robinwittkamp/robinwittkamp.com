@@ -6,10 +6,10 @@ import { RemoveScroll } from 'react-remove-scroll';
 import Logo from './Logo';
 
 const navigation = [
-  // { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Work', href: '#work' },
-  { name: 'Contact', href: '#contact' },
+  // { name: 'Home', href: '/#home' },
+  { name: 'About', href: '/#about' },
+  { name: 'Work', href: '/#work' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 const hamburgerLine =
