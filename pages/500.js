@@ -1,13 +1,14 @@
-import Link from 'next/link';
 import Head from '../components/Head';
 import Layout from '../components/Layout';
+import ErrorLayout from '../components/Layouts/ErrorLayout';
 
 const Custom500 = () => (
   <Layout>
     <Head title="Server-side error occurred - Robin Wittkamp" />
-    <span>{'<(☉︵☉)>'}</span>
-    <h1>Server-side error occurred</h1>
-    <Link href="/">Home</Link>
+    <ErrorLayout
+      headingText="Server error"
+      bodyText="The server encountered an internal error or misconfiguration and was unable to complete your request."
+    />
   </Layout>
 );
 
