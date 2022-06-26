@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Header from './Header/Header';
 import Footer from './Footer';
 
-const Layout = ({ children }) => (
+const PageLayout = ({ children }) => (
   <>
     <Header />
     <main className="min-w-[20rem] overflow-hidden md:overflow-auto">{children}</main>
@@ -10,8 +10,8 @@ const Layout = ({ children }) => (
   </>
 );
 
-Layout.propTypes = {
+PageLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default PageLayout;

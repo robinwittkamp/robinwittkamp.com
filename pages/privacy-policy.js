@@ -1,14 +1,14 @@
 import Head from '../components/Head';
-import Layout from '../components/Layout';
-import Section from '../components/Section';
+import PageLayout from '../components/Layouts/PageLayout';
+import Section from '../components/Layouts/Section';
 
 const PrivacyPolicy = () => (
-  <Layout>
+  <PageLayout>
     <Head title="Privacy policy - Robin Wittkamp" />
     <Section first>
       <h1>Privacy policy</h1>
     </Section>
-  </Layout>
+  </PageLayout>
 );
 
 export default PrivacyPolicy;

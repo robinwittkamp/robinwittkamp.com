@@ -1,14 +1,14 @@
 import Head from '../components/Head';
-import Layout from '../components/Layout';
-import Section from '../components/Section';
+import PageLayout from '../components/Layouts/PageLayout';
+import Section from '../components/Layouts/Section';
 
 const Imprint = () => (
-  <Layout>
+  <PageLayout>
     <Head title="Imprint - Robin Wittkamp" />
     <Section first>
       <h1>Imprint</h1>
     </Section>
-  </Layout>
+  </PageLayout>
 );
 
 export default Imprint;

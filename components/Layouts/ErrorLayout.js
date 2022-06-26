@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import LinkButton from '../Form/LinkButton';
-import Section from '../Section';
+import Section from './Section';
 
 const ErrorLayout = ({ headingText, bodyText }) => (
   <Section classes="h-screen max-h-[56rem]" first>

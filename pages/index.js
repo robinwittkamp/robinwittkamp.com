@@ -1,7 +1,7 @@
 import NextImage from 'next/image';
 import Head from '../components/Head';
-import Layout from '../components/Layout';
-import Section from '../components/Section';
+import PageLayout from '../components/Layouts/PageLayout';
+import Section from '../components/Layouts/Section';
 import LinkButton from '../components/Form/LinkButton';
 import ProjectCard from '../components/Cards/ProjectCard';
 
@@ -12,7 +12,7 @@ import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-
 import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro_v2.png';
 
 const Home = () => (
-  <Layout>
+  <PageLayout>
     <Head />
 
     <Section id="home" first>
@@ -155,7 +155,7 @@ const Home = () => (
       <h5 className="">Heading 5</h5>
       <h6 className="">Heading 6</h6>
     </Section> */}
-  </Layout>
+  </PageLayout>
 );
 
 export default Home;
