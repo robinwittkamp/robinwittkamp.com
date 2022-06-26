@@ -21,14 +21,14 @@ const Home = () => (
         {/* <span className="block text-center font-bold text-blue-500">
               Creative web developer from Germany
             </span> */}
-        <h1 className="mx-auto mt-8 max-w-screen-lg text-center">
+        <h1 className="mt-8 max-w-screen-lg sm:mx-auto sm:text-center">
           Beautiful websites that improve your business
         </h1>
-        <p className="mx-auto mt-8 max-w-md text-center text-xl text-neutral-500 dark:text-neutral-400">
+        <p className="mt-8 max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center">
           Hi, I&apos;m Robin. I build fast, reliable websites with a beautiful design and focus on
           user experience.
         </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
+        <div className="mt-8 sm:flex sm:flex-wrap sm:justify-center sm:gap-4">
           <LinkButton link="#work" variant="primary">
             View projects
           </LinkButton>
