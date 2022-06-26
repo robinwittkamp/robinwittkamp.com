@@ -1,10 +1,13 @@
 import Head from '../components/Head';
 import Layout from '../components/Layout';
+import Section from '../components/Section';
 
 const Imprint = () => (
   <Layout>
     <Head title="Imprint - Robin Wittkamp" />
-    <h1>Imprint</h1>
+    <Section first>
+      <h1>Imprint</h1>
+    </Section>
   </Layout>
 );
 
