@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center"><img width="128" alt="robin wittkamp logo" src=""></p>
+<h1 align="center">Robin Wittkamp</h1>
+<p align="center">My personal website build with Next.js</p>
+<p align="center"><a href="https://robinwittkamp.com" target="_blank" noopener="noopener">robinwittkamp.com</a></p>
 
-## Getting Started
+## General requirements
+- [npm](https://nodejs.org/en/download/current/)
+- [git](https://git-scm.com/downloads)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### macOS
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+If you want to use `brew` in console, install [Homebrew](https://brew.sh/):
+```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Install **npm** [here](https://nodejs.org/en/download/current/) or ```brew install node```
+2. **Download the project** with [GitHub Desktop](https://desktop.github.com/) or
+```git clone https://github.com/devschippi/webbuddy.git``` (download **git** [here](https://git-scm.com/downloads) or  ```brew install git```)
+3. ```cd``` into project root (where `package.json` is located)
+4. Install **dependencies** ```npm install```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Windows
 
-## Learn More
+If you want to use `choco` in console, install [Chocolatey](https://chocolatey.org/install).
 
-To learn more about Next.js, take a look at the following resources:
+1. Install **npm** [here](https://nodejs.org/en/download/current/) or ```choco install nodejs -y```
+2. **Download the project** with [GitHub Desktop](https://desktop.github.com/) or
+```git clone https://github.com/devschippi/webbuddy.git```  (download **git** [here](https://git-scm.com/downloads) or  ```choco install git -y```)
+3. ```cd``` into project root (where `package.json` is located)
+4. Install **dependencies** ```npm install```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Quick start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. ```cd``` into project root (where `package.json` is located)
+2. Run **start** script ```npm run dev```
+3. Open <a href="http://localhost:3000" target="_blank" noopener="noopener">http://localhost:3000</a> with your browser to see the result.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## npm scripts
+- ```npm run dev``` - 
+- ```npm run build``` - 
+- ```npm run start``` - 
+- ```npm run lint``` - 
+- ```ANALYZE=true npm run build``` - 
