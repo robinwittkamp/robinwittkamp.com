@@ -47,20 +47,11 @@ const Home = () => (
             {/* Image 1 */}
             <div className="">
               <NextImage
-                // className="object-contain"
-                // className="max-h-[24rem]"
-                // className="overflow-visible p-16 drop-shadow-xl"
                 src={webBuddyMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                // layout="fill"
-                // layout="responsive"
                 layout="fixed"
                 width={253}
                 height={512}
-                // width="100%"
-                // height="100%"
-                // placeholder="blur"
-                // quality="100"
                 // priority
               />
             </div>
@@ -68,21 +59,12 @@ const Home = () => (
             {/* Image 2 */}
             <div className="-ml-24 md:ml-4 lg:ml-12">
               <NextImage
-                // className="object-contain"
-                // className="max-h-[24rem]"
-                // className="absolute top-16"
                 className="z-10"
                 src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                // layout="fill"
-                // layout="responsive"
                 layout="fixed"
                 width={285}
                 height={576}
-                // width="100%"
-                // height="100%"
-                // placeholder="blur"
-                // quality="100"
                 // priority
               />
             </div>
@@ -90,19 +72,11 @@ const Home = () => (
             {/* Image 3 */}
             <div className="-ml-24 md:ml-4 lg:ml-12">
               <NextImage
-                // className="object-contain"
-                // className="max-h-[24rem]"
                 src={klifraMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                // layout="fill"
-                // layout="responsive"
                 layout="fixed"
                 width={253}
                 height={512}
-                // width="100%"
-                // height="100%"
-                // placeholder="blur"
-                // quality="100"
                 // priority
               />
             </div>
