@@ -21,7 +21,7 @@ const Home = () => (
         {/* <span className="block text-center font-bold text-blue-500">
               Creative web developer from Germany
             </span> */}
-        <h1 className="max-w-screen-lg sm:mx-auto sm:text-center">
+        <h1 className="sm:mx-auto sm:text-center md:max-w-screen-md lg:max-w-screen-lg">
           Beautiful websites that improve your business
         </h1>
         <p className="mt-8 max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center">
@@ -66,7 +66,7 @@ const Home = () => (
             </div>
 
             {/* Image 2 */}
-            <div className="-ml-24">
+            <div className="-ml-24 md:ml-4 lg:ml-12">
               <NextImage
                 // className="object-contain"
                 // className="max-h-[24rem]"
@@ -88,7 +88,7 @@ const Home = () => (
             </div>
 
             {/* Image 3 */}
-            <div className="-ml-16">
+            <div className="-ml-24 md:ml-4 lg:ml-12">
               <NextImage
                 // className="object-contain"
                 // className="max-h-[24rem]"
@@ -97,8 +97,8 @@ const Home = () => (
                 // layout="fill"
                 // layout="responsive"
                 layout="fixed"
-                width={221}
-                height={448}
+                width={253}
+                height={512}
                 // width="100%"
                 // height="100%"
                 // placeholder="blur"
