@@ -97,7 +97,7 @@ const Home = () => (
       {/* <span className="block text-center font-bold text-rose-500">Some of my projects.</span> */}
       <h2 className="text-center">Latest work</h2>
       {/* Cards container */}
-      <div className="mt-8 space-y-8 md:mt-16">
+      <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
         <ProjectCard
           heading="Robert Denier"
           link="https://robertdenier.de"
