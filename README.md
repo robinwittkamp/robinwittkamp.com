@@ -3,7 +3,7 @@
 <p align="center">My personal website build with Next.js</p>
 <p align="center"><a href="https://robinwittkamp.com" target="_blank" noopener="noopener">robinwittkamp.com</a></p>
 
-## General requirements
+## Requirements
 - [npm](https://nodejs.org/en/download/current/)
 - [git](https://git-scm.com/downloads)
 
@@ -34,7 +34,7 @@ If you want to use `choco` in console, install [Chocolatey](https://chocolatey.o
 ## Quick start
 
 1. ```cd``` into project root (where `package.json` is located)
-2. Run **start** script ```npm run dev```
+2. Run **dev** script ```npm run dev```
 3. Open <a href="http://localhost:3000" target="_blank" noopener="noopener">http://localhost:3000</a> with your browser to see the result.
 
 ## npm scripts
