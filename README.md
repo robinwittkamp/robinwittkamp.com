@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="96" alt="robin wittkamp logo" src="https://user-images.githubusercontent.com/13024361/175958472-93683c88-aaaa-44bd-9508-b17b162ed5b3.png">
+  <img width="96" alt="robin wittkamp logo" src="https://user-images.githubusercontent.com/13024361/175959380-0c483c9c-5368-450f-a607-e8e3775a0c09.png">
 </p>
 <h1 align="center">Robin Wittkamp</h1>
 <p align="center">My personal website build with Next.js</p>
