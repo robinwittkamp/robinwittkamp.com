@@ -64,8 +64,8 @@ const LinkButton = ({ children, link, external, variant }) => {
     <Link href={link}>
       <a
         className={classes}
-        target={external ? '_blank' : false}
-        noopener={external ? 'noopener' : false}
+        target={external ? '_blank' : undefined}
+        noopener={external ? 'noopener' : undefined}
       >
         {children}
       </a>
