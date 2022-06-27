@@ -113,6 +113,21 @@ const Home = () => (
           link="https://ferienwohnung-putbus.de"
           text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
         />
+        <ProjectCard
+          heading="WebBuddy"
+          link="https://webbuddy.robinwittkamp.com"
+          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+        />
+        <ProjectCard
+          heading="klifra"
+          link="https://klifra.robinwittkamp.com"
+          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+        />
+        <ProjectCard
+          heading="Bauraum MV"
+          link="https://bauraum-mv.de"
+          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+        />
       </div>
     </Section>
 
