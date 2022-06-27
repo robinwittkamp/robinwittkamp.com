@@ -1,7 +1,11 @@
-<p align="center"><img width="128" alt="robin wittkamp logo" src=""></p>
+<p align="center">
+  <img width="96" alt="robin wittkamp logo" src="https://user-images.githubusercontent.com/13024361/175959380-0c483c9c-5368-450f-a607-e8e3775a0c09.png">
+</p>
 <h1 align="center">Robin Wittkamp</h1>
 <p align="center">My personal website build with Next.js</p>
-<p align="center"><a href="https://robinwittkamp.com" rel="noopener">robinwittkamp.com</a></p>
+<p align="center">
+  <a href="https://robinwittkamp.com" rel="noopener">robinwittkamp.com</a>
+</p>
 
 ## Requirements
 - [npm](https://nodejs.org/en/download/current/)
