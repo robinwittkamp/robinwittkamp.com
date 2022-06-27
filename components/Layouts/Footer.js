@@ -21,7 +21,7 @@ const Footer = () => (
             <ul className="flex flex-row sm:justify-center">
               {languages.map((item) => (
                 <li key={item.name}>
-                  <Link href="#">
+                  <Link href="/#">
                     <a className="block py-2 px-2 text-gray-600 dark:text-neutral-300">
                       {item.name}
                     </a>
