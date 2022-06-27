@@ -5,11 +5,11 @@ import Section from '../components/Layouts/Section';
 import LinkButton from '../components/Form/LinkButton';
 import ProjectCard from '../components/Cards/ProjectCard';
 
-import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro-v3.png';
-import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro-v2.png';
-import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro_v2.png';
-import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro_v2.png';
-import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro_v2.png';
+import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
+// import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
+import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
+// import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
+import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 
 const Home = () => (
   <PageLayout>
