@@ -1,7 +1,7 @@
 <p align="center"><img width="128" alt="robin wittkamp logo" src=""></p>
 <h1 align="center">Robin Wittkamp</h1>
 <p align="center">My personal website build with Next.js</p>
-<p align="center"><a href="https://robinwittkamp.com" target="_blank" rel="noopener">robinwittkamp.com</a></p>
+<p align="center"><a href="https://robinwittkamp.com" rel="noopener">robinwittkamp.com</a></p>
 
 ## Requirements
 - [npm](https://nodejs.org/en/download/current/)
@@ -35,7 +35,7 @@ If you want to use `choco` in console, install [Chocolatey](https://chocolatey.o
 
 1. ```cd``` into project root (where `package.json` is located)
 2. Run **dev** script ```npm run dev```
-3. Open <a href="http://localhost:3000" target="_blank" rel="noopener">http://localhost:3000</a> with your browser to see the result.
+3. Open <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a> with your browser to see the result
 
 ## npm scripts
 - ```npm run dev``` - 
