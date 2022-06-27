@@ -39,10 +39,6 @@
   },
   "plugins": [
     "react"
-    // "react-hooks",
-    // "import",
-    // "jsx-a11y",
-    // "prettier"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
