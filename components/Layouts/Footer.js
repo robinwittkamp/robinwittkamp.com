@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFeather } from '@fortawesome/free-solid-svg-icons';
+import { faFeather, faFileCode } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faXing, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const languages = [{ name: 'Deutsch' }, { name: 'English' }];
@@ -32,8 +32,8 @@ const Footer = () => (
               icon={faFeather}
               className="w-8 text-neutral-400 dark:text-neutral-500"
             />
-            <span className="mt-8 block max-w-xs text-neutral-500 dark:text-neutral-400">
-              Fast and reliable websites with a beautiful design and focus on user experience.
+            <span className="mt-8 block max-w-[18rem] text-neutral-500 dark:text-neutral-400">
+              Fast websites with a beautiful design and focus on user experience.
             </span>
             {/* Social icons */}
             <div className="mt-8 flex flex-wrap items-center space-x-8">
@@ -144,7 +144,10 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              View this website on GitHub
+              <div className="flex items-center space-x-2">
+                <FontAwesomeIcon icon={faFileCode} className="w-3" />
+                <span className="">View website on GitHub</span>
+              </div>
             </a>
           </div>
 
