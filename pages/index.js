@@ -21,10 +21,10 @@ const Home = () => (
         {/* <span className="block text-center font-bold text-blue-500">
               Creative web developer from Germany
             </span> */}
-        <h1 className="sm:mx-auto sm:text-center md:max-w-screen-md lg:max-w-screen-lg">
+        <h1 className="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
           Beautiful websites that improve your business
         </h1>
-        <p className="mt-8 max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center">
+        <p className="mt-8 max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
           Hi, I&apos;m Robin. I build fast, reliable websites with a beautiful design and focus on
           user experience.
         </p>
