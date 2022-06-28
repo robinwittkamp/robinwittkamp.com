@@ -11,9 +11,9 @@ const ProjectCard = ({ heading, link, text }) => (
       </span>
       <p className="mt-6 text-lg text-neutral-500 dark:text-neutral-400">{text}</p>
       <div className="mt-6">
-        <LinkButton link={link} variant="tertiary" external>
+        <LinkButton link={link} variant="secondary" external>
           <span>Visit website</span>
-          <FontAwesomeIcon icon={faAngleRight} className="ml-2 w-3" />
+          <FontAwesomeIcon icon={faAngleRight} className="ml-2 w-2.5" />
         </LinkButton>
       </div>
     </div>
