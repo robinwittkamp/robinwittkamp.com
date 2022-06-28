@@ -13,7 +13,7 @@ const ProjectCard = ({ heading, link, text }) => (
       <div className="mt-6">
         <LinkButton link={link} variant="tertiary" external>
           <span>Visit website</span>
-          <FontAwesomeIcon icon={faAngleRight} className="ml-2 w-3 text-xl" />
+          <FontAwesomeIcon icon={faAngleRight} className="ml-2 w-3" />
         </LinkButton>
       </div>
     </div>
