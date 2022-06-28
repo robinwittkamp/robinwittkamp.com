@@ -42,7 +42,7 @@ const Home = () => (
       </div>
 
       {/* Image container */}
-      <div className="mt-16">
+      <div className="mt-24">
         {/* Flex container */}
         <div className="flex justify-center lg:justify-start">
           {/* Spacing container */}
@@ -139,7 +139,7 @@ const Home = () => (
       <h2 className="">Contact</h2>
     </Section>
 
-    {/* <Section id="">
+    {/* <Section id="test">
       <h1 className="">Heading 1</h1>
       <h2 className="">Heading 2</h2>
       <h3 className="">Heading 3</h3>
