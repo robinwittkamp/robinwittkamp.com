@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFeather } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faXing, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const languages = [{ name: 'Deutsch' }, { name: 'English' }];
@@ -22,19 +23,23 @@ const Footer = () => (
     <div className="px-4 sm:px-8">
       {/* Margin container */}
       <div className="mx-auto max-w-screen-xl ">
-        {/* 4 columns container */}
+        {/* First Row, 4 columns container */}
         <div className="space-y-8 md:flex md:flex-wrap md:justify-between lg:space-y-0">
           {/* 1 column */}
           <div className="md:flex-[1_1_100%] lg:flex-[2_2_0%]">
             {/* Logo */}
-            <span className="font-gilroy text-xl font-extrabold text-neutral-700 dark:text-neutral-200 md:text-2xl">
-              Robin Wittkamp
+            <FontAwesomeIcon
+              icon={faFeather}
+              className="w-8 text-neutral-400 dark:text-neutral-500"
+            />
+            <span className="mt-8 block max-w-xs text-neutral-500 dark:text-neutral-400">
+              Fast and reliable websites with a beautiful design and focus on user experience.
             </span>
             {/* Social icons */}
-            <div className="mt-6 flex flex-wrap items-center space-x-8">
+            <div className="mt-8 flex flex-wrap items-center space-x-8">
               {/* GitHub */}
               <a
-                className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+                className="text-neutral-500 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
                 href="https://github.com/robinwittkamp"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -44,7 +49,7 @@ const Footer = () => (
               </a>
               {/* LinkedIn */}
               <a
-                className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+                className="text-neutral-500 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
                 href="https://www.linkedin.com/in/robinwittkamp"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,7 +59,7 @@ const Footer = () => (
               </a>
               {/* Xing */}
               <a
-                className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+                className="text-neutral-500 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
                 href="https://www.xing.com/profile/Robin_Wittkamp2"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,7 +69,7 @@ const Footer = () => (
               </a>
               {/* Twitter */}
               <a
-                className="text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
+                className="text-neutral-500 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white"
                 href="https://twitter.com/robinwittkamp"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -127,16 +132,9 @@ const Footer = () => (
               ))}
             </ul>
           </div>
-
-          {/* 5 column */}
-          {/* <div className="md:flex-1 lg:flex-1"> */}
-          {/* Social */}
-          {/* <span className="block font-bold text-neutral-700 dark:text-neutral-200">Social</span>
-            <div className="mt-2">Icons</div> */}
-          {/* </div> */}
         </div>
 
-        {/* 2 columns container */}
+        {/* Second row, 2 columns container */}
         <div className="mt-8 border-t border-neutral-200 pt-8 dark:border-neutral-800 md:mt-16 md:flex md:flex-row-reverse ">
           <div className="md:flex md:flex-1 md:justify-end">
             {/* Link to repository */}
