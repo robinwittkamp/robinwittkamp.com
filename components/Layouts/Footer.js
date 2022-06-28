@@ -146,7 +146,7 @@ const Footer = () => (
             >
               <div className="flex items-center space-x-2">
                 <FontAwesomeIcon icon={faFileCode} className="w-3" />
-                <span className="">View website on GitHub</span>
+                <span className="">View this website on GitHub</span>
               </div>
             </a>
           </div>
