@@ -154,7 +154,7 @@ const Footer = () => (
           <div className="md:flex-1">
             {/* Copyright notice */}
             <span className="inline-block py-2 text-neutral-500 dark:text-neutral-400">
-              &copy; 2022 Robin Wittkamp
+              &copy; {new Date().getFullYear()} Robin Wittkamp
             </span>
           </div>
         </div>
