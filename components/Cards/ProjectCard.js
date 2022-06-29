@@ -15,7 +15,7 @@ const ProjectCard = ({ title, description, href }) => (
       <div className="mt-6">
         <LinkButton href={href} variant="secondary" external>
           <span>Visit website</span>
-          <FontAwesomeIcon icon={faAngleRight} className="ml-2 w-2.5" />
+          <FontAwesomeIcon icon={faAngleRight} className="ml-2 text-lg" />
         </LinkButton>
       </div>
     </div>

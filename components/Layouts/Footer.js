@@ -30,7 +30,7 @@ const Footer = () => (
             {/* Logo */}
             <FontAwesomeIcon
               icon={faFeather}
-              className="w-8 text-neutral-400 dark:text-neutral-500"
+              className="text-3xl text-neutral-400 dark:text-neutral-500"
             />
             <span className="mt-8 block max-w-[18rem] text-neutral-500 dark:text-neutral-400">
               Fast websites with a beautiful design and focus on user experience.
@@ -44,7 +44,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faGithub} className="w-6" />
+                <FontAwesomeIcon icon={faGithub} className="text-2xl" />
                 <span className="sr-only">GitHub</span>
               </a>
               {/* LinkedIn */}
@@ -54,7 +54,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faLinkedin} className="w-6" />
+                <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
                 <span className="sr-only">LinkedIn</span>
               </a>
               {/* Xing */}
@@ -64,7 +64,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faXing} className="w-6" />
+                <FontAwesomeIcon icon={faXing} className="text-2xl" />
                 <span className="sr-only">Xing</span>
               </a>
               {/* Twitter */}
@@ -74,7 +74,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faTwitter} className="w-6" />
+                <FontAwesomeIcon icon={faTwitter} className="text-2xl" />
                 <span className="sr-only">Twitter</span>
               </a>
             </div>
