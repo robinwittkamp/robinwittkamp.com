@@ -11,6 +11,45 @@ import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
 // import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
 import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 
+const projects = [
+  {
+    name: 'Robert Denier',
+    href: 'https://robertdenier.de',
+    description:
+      'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
+  },
+  {
+    name: 'Energiewerk Rügen',
+    href: 'https://energiewerk-ruegen.de',
+    description:
+      'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
+  },
+  {
+    name: 'Ferienwohnung Putbus',
+    href: 'https://ferienwohnung-putbus.de',
+    description:
+      'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
+  },
+  {
+    name: 'WebBuddy',
+    href: 'https://webbuddy.robinwittkamp.com',
+    description:
+      'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
+  },
+  {
+    name: 'Klifra',
+    href: 'https://klifra.robinwittkamp.com',
+    description:
+      'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
+  },
+  {
+    name: 'Bauraum MV',
+    href: 'https://bauraum-mv.de',
+    description:
+      'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
+  },
+];
+
 const Home = () => (
   <PageLayout>
     <Head />
@@ -101,36 +140,14 @@ const Home = () => (
       <h2 className="text-center">Latest work</h2>
       {/* Cards container */}
       <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
-        <ProjectCard
-          heading="Robert Denier"
-          link="https://robertdenier.de"
-          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
-        />
-        <ProjectCard
-          heading="Energiewerk Rügen"
-          link="https://energiewerk-ruegen.de"
-          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
-        />
-        <ProjectCard
-          heading="Ferienwohnung Putbus"
-          link="https://ferienwohnung-putbus.de"
-          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
-        />
-        <ProjectCard
-          heading="WebBuddy"
-          link="https://webbuddy.robinwittkamp.com"
-          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
-        />
-        <ProjectCard
-          heading="klifra"
-          link="https://klifra.robinwittkamp.com"
-          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
-        />
-        <ProjectCard
-          heading="Bauraum MV"
-          link="https://bauraum-mv.de"
-          text="Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
-        />
+        {projects.map((item) => (
+          <ProjectCard
+            key={item.name}
+            heading={item.name}
+            link={item.href}
+            text={item.description}
+          />
+        ))}
       </div>
     </Section>
 
