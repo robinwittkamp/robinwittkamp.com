@@ -16,16 +16,16 @@ const variants = {
     dark:text-neutral-900
     dark:hover:bg-neutral-200`,
   secondary: `
-    border-neutral-100
+    border-neutral-200
     bg-neutral-200
     text-neutral-800
-    hover:border-neutral-200
+    hover:border-neutral-300
     hover:bg-neutral-300
     hover:text-neutral-900
-    dark:border-neutral-800
+    dark:border-neutral-700
     dark:bg-neutral-700
     dark:text-neutral-100
-    dark:hover:border-neutral-700
+    dark:hover:border-neutral-600
     dark:hover:bg-neutral-600
     dark:hover:text-white`,
   tertiary: `
