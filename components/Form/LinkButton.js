@@ -43,7 +43,7 @@ const variants = {
     dark:hover:text-neutral-100`,
 };
 
-const LinkButton = ({ children, link, external, variant }) => {
+const LinkButton = ({ children, variant, href, external }) => {
   const variantClasses = variants[variant];
 
   const classes = ctl(
@@ -61,7 +61,7 @@ const LinkButton = ({ children, link, external, variant }) => {
   );
 
   return (
-    <Link href={link}>
+    <Link href={href}>
       <a
         className={classes}
         target={external ? '_blank' : undefined}
@@ -76,7 +76,7 @@ const LinkButton = ({ children, link, external, variant }) => {
 LinkButton.propTypes = {
   children: PropTypes.node.isRequired,
   external: PropTypes.bool,
-  link: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
   variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
 };
 

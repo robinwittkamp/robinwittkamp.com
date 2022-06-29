@@ -68,7 +68,7 @@ const Home = () => (
           user experience.
         </p>
         <div className="mt-8 sm:flex sm:flex-wrap sm:justify-center sm:gap-4">
-          <LinkButton link="#work" variant="primary">
+          <LinkButton href="#work" variant="primary">
             View projects
           </LinkButton>
           {/* <LinkButton link="#contact" variant="secondary">
@@ -143,9 +143,9 @@ const Home = () => (
         {projects.map((item) => (
           <ProjectCard
             key={item.name}
-            heading={item.name}
-            link={item.href}
-            text={item.description}
+            title={item.name}
+            description={item.description}
+            href={item.href}
           />
         ))}
       </div>

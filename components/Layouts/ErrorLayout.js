@@ -9,7 +9,7 @@ const ErrorLayout = ({ headingText, bodyText }) => (
       {bodyText}
     </p>
     <div className="mt-8 sm:flex sm:justify-center">
-      <LinkButton link="/" variant="secondary">
+      <LinkButton href="/" variant="secondary">
         Home
       </LinkButton>
     </div>
