@@ -4,17 +4,24 @@ import Link from 'next/link';
 
 const variants = {
   primary: `
-    border-neutral-800
-    bg-neutral-800
+    border-neutral-900
+    bg-neutral-900
     text-white
     shadow-lg
-    shadow-blue-500/50
-    hover:bg-neutral-900
+    shadow-black/25
+    hover:border-neutral-800
+    hover:bg-neutral-800
     hover:shadow-md
-    hover:shadow-blue-500/50
+    hover:shadow-black/25
+    dark:border-white
     dark:bg-white
     dark:text-neutral-900
-    dark:hover:bg-neutral-200`,
+    dark:shadow-lg
+    dark:shadow-black/100
+    dark:hover:border-neutral-200
+    dark:hover:bg-neutral-200
+    dark:hover:shadow-md
+    dark:hover:shadow-black/100`,
   secondary: `
     border-neutral-200
     bg-neutral-200
