@@ -18,12 +18,6 @@ const Head = ({ title, og, description }) => (
     <meta name="msapplication-TileColor" content="#171717" />
     <meta key="theme-color-standard" name="theme-color" content="#ffffff" />
     <meta
-      key="theme-color-light"
-      name="theme-color"
-      content="#ffffff"
-      media="(prefers-color-scheme: light)"
-    />
-    <meta
       key="theme-color-dark"
       name="theme-color"
       content="#171717"
