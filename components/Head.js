@@ -17,7 +17,7 @@ const Head = ({ title, og, description }) => (
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#171717" />
     <meta name="msapplication-TileColor" content="#171717" />
     <meta
-      key="theme-color-standard"
+      key="theme-color-light"
       name="theme-color"
       content="#ffffff"
       media="(prefers-color-scheme: light)"
