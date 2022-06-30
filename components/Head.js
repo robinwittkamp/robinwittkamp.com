@@ -16,7 +16,12 @@ const Head = ({ title, og, description }) => (
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#171717" />
     <meta name="msapplication-TileColor" content="#171717" />
-    <meta key="theme-color-standard" name="theme-color" content="#ffffff" />
+    <meta
+      key="theme-color-standard"
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
     <meta
       key="theme-color-dark"
       name="theme-color"
