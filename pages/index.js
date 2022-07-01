@@ -13,37 +13,37 @@ import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 
 const projects = [
   {
-    name: 'Robert Denier',
+    title: 'Robert Denier',
     href: 'https://robertdenier.de',
     description:
       'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
   },
   {
-    name: 'Energiewerk Rügen',
+    title: 'Energiewerk Rügen',
     href: 'https://energiewerk-ruegen.de',
     description:
       'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
   },
   {
-    name: 'Ferienwohnung Putbus',
+    title: 'Ferienwohnung Putbus',
     href: 'https://ferienwohnung-putbus.de',
     description:
       'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
   },
   {
-    name: 'WebBuddy',
+    title: 'WebBuddy',
     href: 'https://webbuddy.robinwittkamp.com',
     description:
       'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
   },
   {
-    name: 'Klifra',
+    title: 'Klifra',
     href: 'https://klifra.robinwittkamp.com',
     description:
       'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
   },
   {
-    name: 'Bauraum MV',
+    title: 'Bauraum MV',
     href: 'https://bauraum-mv.de',
     description:
       'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
@@ -142,8 +142,8 @@ const Home = () => (
       <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
         {projects.map((item) => (
           <ProjectCard
-            key={item.name}
-            title={item.name}
+            key={item.title}
+            title={item.title}
             description={item.description}
             href={item.href}
           />
