@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faTwitter, faXing } from '@fortawesome/free-brands-svg-icons';
 import { faFeather, faFileCode } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faXing, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 const languages = [{ name: 'Deutsch' }, { name: 'English' }];
 

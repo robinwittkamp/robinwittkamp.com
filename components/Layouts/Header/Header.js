@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { Popover } from '@headlessui/react';
-import { m, AnimatePresence, LayoutGroup, LazyMotion, domMax } from 'framer-motion';
+import { AnimatePresence, domMax, LazyMotion, m } from 'framer-motion';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
+
 import Logo from './Logo';
 
 const navigation = [

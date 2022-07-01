@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import NextHead from 'next/head';
+import PropTypes from 'prop-types';
 
 const Head = ({ title, og, description }) => (
   <NextHead>

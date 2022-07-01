@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
 import ctl from '@netlify/classnames-template-literals';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 const variants = {
   primary: `

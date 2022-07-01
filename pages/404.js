@@ -1,6 +1,6 @@
 import Head from '../components/Head';
-import PageLayout from '../components/Layouts/PageLayout';
 import ErrorLayout from '../components/Layouts/ErrorLayout';
+import PageLayout from '../components/Layouts/PageLayout';
 
 const Custom404 = () => (
   <PageLayout>
