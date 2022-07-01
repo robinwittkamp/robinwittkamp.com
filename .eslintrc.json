@@ -2,7 +2,6 @@
   "root": true,
   "env": {
     "browser": true,
-    "commonjs": true,
     "es6": true,
     "node": true
   },
@@ -22,17 +21,12 @@
     "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
-  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 2018,
-    "requireConfigFile": false,
-    "sourceType": "module",
-    "babelOptions": {
-      "configFile": "./.babelrc"
-    }
+    "sourceType": "module"
   },
   "settings": {
     "react": {
