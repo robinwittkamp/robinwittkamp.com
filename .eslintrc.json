@@ -14,6 +14,8 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
+    "plugin:security/recommended",
+    "plugin:sonarjs/recommended",
     "airbnb",
     "airbnb/hooks",
     "next",
@@ -38,7 +40,8 @@
     }
   },
   "plugins": [
-    "react"
+    "react",
+    "simple-import-sort"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
@@ -47,6 +50,8 @@
     "react/function-component-definition": [2, {
       "namedComponents": "arrow-function",
       "unnamedComponents": "arrow-function"
-    }]
+    }],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   }
 }
