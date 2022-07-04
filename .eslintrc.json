@@ -6,6 +6,8 @@
     "node": true
   },
   "extends": [
+    "next",
+    "next/core-web-vitals",
     "eslint:recommended",
     "plugin:flowtype/recommended",
     "plugin:react/recommended",
@@ -17,15 +19,18 @@
     "plugin:sonarjs/recommended",
     "airbnb",
     "airbnb/hooks",
-    "next",
-    "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
+    "babelOptions": {
+      "configFile": "./.babelrc"
+    },
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 2018,
+    "requireConfigFile": false,
     "sourceType": "module"
   },
   "settings": {
