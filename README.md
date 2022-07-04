@@ -2,7 +2,8 @@
   <img width="96" alt="robin wittkamp logo" src="https://user-images.githubusercontent.com/13024361/175959380-0c483c9c-5368-450f-a607-e8e3775a0c09.png">
 </p>
 <h1 align="center">Robin Wittkamp</h1>
-<p align="center">My personal website build with Next.js</p>
+<p align="center">My new personal website build with Next.js</p>
+<p align="center"><strong>*Work in progress*</strong></p>
 <p align="center">
   <a href="https://robinwittkamp.com" rel="noopener">robinwittkamp.com</a>
 </p>
@@ -38,12 +39,10 @@ If you want to use `choco` in console, install [Chocolatey](https://chocolatey.o
 ## Quick start
 
 1. ```cd``` into project root (where `package.json` is located)
-2. Run **dev** script ```npm run dev```
-3. Open <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a> with your browser to see the result
+2. Run the script ```npm run dev```
+3. Open <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a> with your browser
 
 ## npm scripts
-- ```npm run dev``` - 
-- ```npm run build``` - 
-- ```npm run start``` - 
-- ```npm run lint``` - 
-- ```ANALYZE=true npm run build``` - 
+- ```npm run dev``` - Starts the application in development mode on <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a>
+- ```npm run build``` - Builds the application for production usage.
+- ```npm run start``` - Starts the application in production mode on <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a>. The application should be build first.
