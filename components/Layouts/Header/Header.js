@@ -86,7 +86,6 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isWindowAtTop, setIsWindowAtTop] = useState(true);
   const [focused, setFocused] = useState(null);
-  // const [selected, setSelected] = useState('Item 1');
 
   const handleScroll = () => {
     // console.log('scroll event', window.scrollY);
