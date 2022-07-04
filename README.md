@@ -42,8 +42,6 @@ If you want to use `choco` in console, install [Chocolatey](https://chocolatey.o
 3. Open <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a> with your browser to see the result
 
 ## npm scripts
-- ```npm run dev``` - 
-- ```npm run build``` - 
-- ```npm run start``` - 
-- ```npm run lint``` - 
-- ```ANALYZE=true npm run build``` - 
+- ```npm run dev``` - Starts the application in development mode on <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a>
+- ```npm run build``` - Builds the application for production usage.
+- ```npm run start``` - Starts the application in production mode on <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a>. The application should be build first.
