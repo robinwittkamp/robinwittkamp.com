@@ -20,15 +20,15 @@ const panelVariants = {
   open: {
     height: '100vh',
     transition: {
-      ease: 'anticipate',
-      duration: 1,
+      ease: 'easeInOut',
+      duration: 0.5,
     },
   },
   closed: {
     height: 0,
     transition: {
-      ease: 'anticipate',
-      duration: 1,
+      ease: 'easeInOut',
+      duration: 0.5,
     },
   },
 };
