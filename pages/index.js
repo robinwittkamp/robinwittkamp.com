@@ -180,7 +180,7 @@ const Home = () => (
         to contact me.
       </p>
       <div className="mt-8 sm:flex sm:justify-center">
-        <LinkButton href="#work" variant="primary">
+        <LinkButton href="/contact" variant="primary">
           Get in touch
         </LinkButton>
       </div>
