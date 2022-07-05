@@ -64,8 +64,7 @@ const Home = () => (
           Beautiful websites that improve your business
         </h1>
         <p className="mt-8 max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
-          Hi, I&apos;m Robin. I build fast, reliable websites with a beautiful design and focus on
-          user experience.
+          I build fast and reliable websites with a beautiful design that bring joy to your users.
         </p>
         <div className="mt-8 sm:flex sm:flex-wrap sm:justify-center sm:gap-4">
           <LinkButton href="#work" variant="primary">
