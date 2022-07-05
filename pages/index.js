@@ -68,7 +68,7 @@ const Home = () => (
           I build fast and reliable websites with a beautiful design that bring joy to your users.
         </p>
         <div className="mt-8 sm:flex sm:flex-wrap sm:justify-center sm:gap-4">
-          <LinkButton href="#work" variant="primary">
+          <LinkButton href="/work" variant="primary">
             View projects
           </LinkButton>
           {/* <LinkButton link="#contact" variant="secondary">

@@ -8,7 +8,7 @@ const languages = [{ name: 'Deutsch' }, { name: 'English' }];
 const mainNavigation = [
   { name: 'Home', href: '/home' },
   { name: 'About', href: '/about' },
-  { name: 'Work', href: '/#work' },
+  { name: 'Work', href: '/work' },
   { name: 'Contact', href: '/contact' },
 ];
 
