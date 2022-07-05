@@ -68,14 +68,13 @@ const LinkButton = ({ children, variant, href, external }) => {
   );
 
   return (
-    <Link href={href}>
-      <a
-        className={classes}
-        target={external ? '_blank' : undefined}
-        rel={external ? 'noopener noreferrer' : undefined}
-      >
-        {children}
-      </a>
+    <Link
+      className={classes}
+      href={href}
+      rel={external ? 'noopener noreferrer' : undefined}
+      target={external ? '_blank' : undefined}
+    >
+      {children}
     </Link>
   );
 };

@@ -2,14 +2,13 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 const TextLink = ({ children, external, href }) => (
-  <Link href={href}>
-    <a
-      className="text-blue-500 transition hover:text-blue-600"
-      target={external ? '_blank' : undefined}
-      rel={external ? 'noopener noreferrer' : undefined}
-    >
-      {children}
-    </a>
+  <Link
+    className="text-blue-500 transition hover:text-blue-600"
+    href={href}
+    rel={external ? 'noopener noreferrer' : undefined}
+    target={external ? '_blank' : undefined}
+  >
+    {children}
   </Link>
 );
 

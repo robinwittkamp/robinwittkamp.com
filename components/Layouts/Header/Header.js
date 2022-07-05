@@ -155,44 +155,43 @@ const Header = () => {
                       <ul className="flex">
                         {navigation.map((item) => (
                           <li key={item.name} className="">
-                            <Link href={item.href}>
-                              <a
-                                className="relative flex h-[4.5rem] items-center px-6 outline-0"
-                                // onClick={() => setSelected(item)}
-                                // onKeyDown={(event) =>
-                                //   event.key === 'Enter' ? setSelected(item) : null
-                                // }
-                                onFocus={() => setFocused(item)}
-                                // onBlur={() => setFocused(null)}
-                                onMouseEnter={() => setFocused(item)}
-                                // onMouseLeave={() => setFocused(null)}
-                                tabIndex={0}
-                                role="link"
-                              >
-                                {/* <LayoutGroup> */}
-                                <AnimatePresence>
-                                  {focused === item ? (
-                                    <m.div
-                                      // TODO: prevent items from animating to 0 opacity when quickly switching between them
-                                      className="absolute left-[10%] right-[10%] top-1/4 bottom-1/4 z-0 rounded-xl bg-neutral-100 dark:bg-neutral-700"
-                                      key={item.name}
-                                      initial="unfocused"
-                                      animate="focused"
-                                      exit="unfocused"
-                                      variants={desktopNavItemVariants}
-                                      transition={{
-                                        layout: {
-                                          duration: 0.3,
-                                          ease: 'easeInOut',
-                                        },
-                                      }}
-                                      layoutId="highlight"
-                                    />
-                                  ) : null}
-                                </AnimatePresence>
-                                {/* </LayoutGroup> */}
-                                <span className="z-10 text-lg">{item.name}</span>
-                              </a>
+                            <Link
+                              className="relative flex h-[4.5rem] items-center px-6 outline-0"
+                              href={item.href}
+                              // onClick={() => setSelected(item)}
+                              // onKeyDown={(event) =>
+                              //   event.key === 'Enter' ? setSelected(item) : null
+                              // }
+                              onFocus={() => setFocused(item)}
+                              // onBlur={() => setFocused(null)}
+                              onMouseEnter={() => setFocused(item)}
+                              // onMouseLeave={() => setFocused(null)}
+                              tabIndex={0}
+                              role="link"
+                            >
+                              {/* <LayoutGroup> */}
+                              <AnimatePresence>
+                                {focused === item ? (
+                                  <m.div
+                                    // TODO: prevent items from animating to 0 opacity when quickly switching between them
+                                    className="absolute left-[10%] right-[10%] top-1/4 bottom-1/4 z-0 rounded-xl bg-neutral-100 dark:bg-neutral-700"
+                                    key={item.name}
+                                    initial="unfocused"
+                                    animate="focused"
+                                    exit="unfocused"
+                                    variants={desktopNavItemVariants}
+                                    transition={{
+                                      layout: {
+                                        duration: 0.3,
+                                        ease: 'easeInOut',
+                                      },
+                                    }}
+                                    layoutId="highlight"
+                                  />
+                                ) : null}
+                              </AnimatePresence>
+                              {/* </LayoutGroup> */}
+                              <span className="z-10 text-lg">{item.name}</span>
                             </Link>
                           </li>
                         ))}

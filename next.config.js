@@ -14,6 +14,9 @@ const nextConfig = withBundleAnalyzer({
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  experimental: {
+    newNextLinkBehavior: true,
+  },
 });
 
 module.exports = nextConfig;
