@@ -222,15 +222,9 @@ const Header = () => {
                         className="border-t border-neutral-200 dark:border-neutral-800"
                       >
                         {navigation.map((item) => (
-                          // TODO: use next/link
-                          // <Link key={item.name} href={item.href} passHref>
-                          //   <Popover.Button as="a" className="block px-4 py-3 sm:px-8">
-                          //     <span className="text-lg">{item.name}</span>
-                          //   </Popover.Button>
-                          // </Link>
                           <m.div key={item.name} variants={mobileNavItemVariants}>
                             <Popover.Button
-                              as="a"
+                              as={Link}
                               href={item.href}
                               className="block border-b border-neutral-200 px-4 py-3 dark:border-neutral-800 sm:px-8"
                             >
