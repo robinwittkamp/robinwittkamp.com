@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
 const Logo = () => (
-  <Link href="/" passHref>
+  <Link href="/">
     <a className="cursor-pointer">
       <div className="flex items-center space-x-3">
         <FontAwesomeIcon icon={faFeather} className="text-xl md:text-2xl" />
