@@ -7,10 +7,10 @@ const About = () => (
   <PageLayout>
     <Head title="About - Robin Wittkamp" />
     <Section first>
-      <h1 className="text-center">About me</h1>
-      <div className="mt-16 flex">
-        <div className="flex-1" />
-        <div className="flex-1">
+      <h1 className="lg:text-center">About me</h1>
+      <div className="mt-8 lg:mt-16 lg:flex">
+        <div className="lg:flex-1" />
+        <div className="lg:flex-1">
           <p className="text-xl text-neutral-500 dark:text-neutral-400">
             Hi, I&apos;m Robin. Besides my studies I work as a{' '}
             <strong>freelance web developer</strong> and <strong>UI/UX designer</strong>. In 2016 I
