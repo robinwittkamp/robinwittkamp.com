@@ -1,6 +1,7 @@
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Layouts/Section';
+import CtaContactSection from '../components/Sections/CtaContactSection';
 
 const About = () => (
   <PageLayout>
@@ -83,6 +84,8 @@ const About = () => (
         </div>
       </div>
     </Section>
+
+    <CtaContactSection />
   </PageLayout>
 );
 
