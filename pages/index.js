@@ -1,4 +1,4 @@
-import NextImage from 'next/image';
+import Image from 'next/image';
 
 import ProjectCard from '../components/Cards/ProjectCard';
 import LinkButton from '../components/Form/LinkButton';
@@ -88,7 +88,7 @@ const Home = () => (
           <div className="mx-auto flex items-center">
             {/* Image 1 */}
             <div className="">
-              <NextImage
+              <Image
                 src={webBuddyMockup}
                 alt="Klifra website iphone 13 pro mockup"
                 layout="fixed"
@@ -100,7 +100,7 @@ const Home = () => (
 
             {/* Image 2 */}
             <div className="-ml-24 md:ml-4 lg:ml-12">
-              <NextImage
+              <Image
                 className="z-10"
                 src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
@@ -113,7 +113,7 @@ const Home = () => (
 
             {/* Image 3 */}
             <div className="-ml-24 md:ml-4 lg:ml-12">
-              <NextImage
+              <Image
                 src={klifraMockup}
                 alt="Klifra website iphone 13 pro mockup"
                 layout="fixed"
