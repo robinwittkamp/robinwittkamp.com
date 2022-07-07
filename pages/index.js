@@ -138,13 +138,12 @@ const Home = () => (
             <span className="mx-auto block text-xl">LBT Rügen</span>
           </div>
           <div className="flex justify-center sm:flex-[1_1_50%] md:flex-[1_1_25%]">
-            {/* <span className="mx-auto block text-xl">Bauraum MV</span> */}
             <Image
               src={bauraumMvLogo}
               alt="Bauraum MV Logo"
               layout="fixed"
-              width={128}
-              height={32}
+              width={160}
+              height={40}
               unoptimized
             />
           </div>
