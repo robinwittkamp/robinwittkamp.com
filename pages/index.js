@@ -52,6 +52,41 @@ const projects = [
   },
 ];
 
+const logos = [
+  {
+    name: 'LBT Rügen Logo',
+    logo: bauraumMvLogo,
+  },
+  {
+    name: 'Bauraum MV Logo',
+    logo: bauraumMvLogo,
+  },
+  {
+    name: 'Energiewerk Rügen Logo',
+    logo: bauraumMvLogo,
+  },
+  {
+    name: 'LIN-TEC Logo',
+    logo: bauraumMvLogo,
+  },
+  {
+    name: 'Robert Denier Logo',
+    logo: bauraumMvLogo,
+  },
+  {
+    name: 'New Creations Logo',
+    logo: bauraumMvLogo,
+  },
+  {
+    name: 'Therapie Henke Logo',
+    logo: bauraumMvLogo,
+  },
+  {
+    name: 'Kuttig Logo',
+    logo: bauraumMvLogo,
+  },
+];
+
 const Home = () => (
   <PageLayout>
     <Head />
