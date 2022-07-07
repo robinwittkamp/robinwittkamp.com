@@ -107,12 +107,6 @@ const Home = () => (
           <LinkButton href="/work" variant="primary">
             View projects
           </LinkButton>
-          {/* <LinkButton link="#contact" variant="secondary">
-            Contact
-          </LinkButton>
-          <LinkButton link="#contact" variant="tertiary">
-            Click me
-          </LinkButton> */}
         </div>
       </div>
 
