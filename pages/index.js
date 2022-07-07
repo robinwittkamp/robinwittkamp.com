@@ -125,6 +125,40 @@ const Home = () => (
           </div>
         </div>
       </div>
+
+      {/* Company logos */}
+      <div className="mt-32">
+        <span className="block text-center text-xl text-neutral-500 dark:text-neutral-400">
+          Clients I worked with
+        </span>
+        {/* Logos container */}
+        <div className="mt-8 space-y-4 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0">
+          <div className="flex sm:flex-[1_1_50%] sm:justify-center md:flex-[1_1_25%]">
+            <span className="mx-auto block text-xl">LBT Rügen</span>
+          </div>
+          <div className="flex sm:flex-[1_1_50%] sm:justify-center md:flex-[1_1_25%]">
+            <span className="mx-auto block text-xl">Bauraum MV</span>
+          </div>
+          <div className="flex sm:flex-[1_1_50%] sm:justify-center md:flex-[1_1_25%]">
+            <span className="mx-auto block text-xl">Energiewerk Rügen</span>
+          </div>
+          <div className="flex sm:flex-[1_1_50%] sm:justify-center md:flex-[1_1_25%]">
+            <span className="mx-auto block text-xl">LIN-TEC</span>
+          </div>
+          <div className="flex sm:flex-[1_1_50%] sm:justify-center md:flex-[1_1_25%]">
+            <span className="mx-auto block text-xl">Robert Denier</span>
+          </div>
+          <div className="flex sm:flex-[1_1_50%] sm:justify-center md:flex-[1_1_25%]">
+            <span className="mx-auto block text-xl">New Creations</span>
+          </div>
+          <div className="flex sm:flex-[1_1_50%] sm:justify-center md:flex-[1_1_25%]">
+            <span className="mx-auto block text-xl">Therapie Henke</span>
+          </div>
+          <div className="flex sm:flex-[1_1_50%] sm:justify-center md:flex-[1_1_25%]">
+            <span className="mx-auto block text-xl">Kuttig</span>
+          </div>
+        </div>
+      </div>
     </Section>
 
     <Section id="about">
