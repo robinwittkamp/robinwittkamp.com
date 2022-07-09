@@ -103,7 +103,7 @@ const Home = () => (
         <p className="mt-8 max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
           I build fast and reliable websites with a beautiful design that bring joy to your users.
         </p>
-        <div className="mt-8 sm:flex sm:flex-wrap sm:justify-center sm:gap-4">
+        <div className="mt-8 sm:flex sm:justify-center">
           <LinkButton href="/work" variant="primary">
             View projects
           </LinkButton>
@@ -121,7 +121,7 @@ const Home = () => (
               <Image
                 src={webBuddyMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                layout="fixed"
+                // layout="fixed"
                 width={253}
                 height={512}
                 // priority
@@ -134,7 +134,7 @@ const Home = () => (
                 className="z-10"
                 src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                layout="fixed"
+                // layout="fixed"
                 width={285}
                 height={576}
                 priority
@@ -146,7 +146,7 @@ const Home = () => (
               <Image
                 src={klifraMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                layout="fixed"
+                // layout="fixed"
                 width={253}
                 height={512}
                 // priority
