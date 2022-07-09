@@ -170,7 +170,7 @@ const Home = () => (
             <Image
               src={bauraumMvLogo}
               alt="Bauraum MV Logo"
-              layout="fixed"
+              // layout="fixed"
               width={160}
               height={40}
               unoptimized
