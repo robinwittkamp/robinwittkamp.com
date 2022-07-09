@@ -1,10 +1,13 @@
 import { Popover } from '@headlessui/react';
-import { AnimatePresence, domMax, LazyMotion, m } from 'framer-motion';
+import { AnimatePresence, LazyMotion, m } from 'framer-motion';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
 import Logo from './Logo';
+
+const loadFramerMotionFeatures = () =>
+  import('../../Libraries/framerMotionFeatures').then((res) => res.default);
 
 const navigation = [
   // { name: 'Home', href: '/home' },
@@ -102,7 +105,7 @@ const Header = () => {
   });
 
   return (
-    <LazyMotion features={domMax} strict>
+    <LazyMotion features={loadFramerMotionFeatures} strict>
       <Popover>
         {({ open }) => (
           <m.header
