@@ -19,7 +19,7 @@
     "@netlify/classnames-template-literals": "^1.0.3",
     "@next/bundle-analyzer": "^12.2.1",
     "@react-three/fiber": "^8.0.27",
-    "framer-motion": "^6.4.2",
+    "framer-motion": "^6.4.3",
     "next": "^12.2.1",
     "next-seo": "^5.4.0",
     "prop-types": "^15.8.1",
