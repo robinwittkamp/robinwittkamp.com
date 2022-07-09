@@ -16,6 +16,9 @@ const nextConfig = withBundleAnalyzer({
   },
   experimental: {
     newNextLinkBehavior: true,
+    images: {
+      allowFutureImage: true,
+    },
   },
 });
 
