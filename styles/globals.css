@@ -6,14 +6,13 @@
     src: url('/fonts/gilroy-extrabold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
-    font-display: fallback;
-  }
+    font-display: swap
   @font-face {
     font-family: 'Gilroy';
     src: url('/fonts/gilroy-black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
-    font-display: fallback;
+    font-display: swap;
   }
 
   h1, h2, h3, h4, h5, h6 {
