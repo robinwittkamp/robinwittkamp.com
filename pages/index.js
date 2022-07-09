@@ -137,7 +137,7 @@ const Home = () => (
                 layout="fixed"
                 width={285}
                 height={576}
-                // priority
+                priority
               />
             </div>
 
