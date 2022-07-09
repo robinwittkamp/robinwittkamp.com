@@ -116,7 +116,7 @@ const Header = () => {
             } ${
               isWindowAtTop
                 ? 'border-b border-transparent transition-[border] duration-300'
-                : 'border-neutral-900/10 transition-[border] duration-300 dark:border-neutral-50/10'
+                : 'border-b border-neutral-900/10 transition-[border] duration-300 dark:border-neutral-50/10'
             }`}
           >
             <div className="flex-1">
