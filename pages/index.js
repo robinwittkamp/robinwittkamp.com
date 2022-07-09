@@ -208,7 +208,7 @@ const Home = () => (
         over Germany. Today, I increasingly implement websites and web applications that I program
         from scratch. For this I use technologies like{' '}
         <a
-          className="text-blue-500"
+          className="text-blue-600 dark:text-blue-500"
           href="https://reactjs.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -217,7 +217,7 @@ const Home = () => (
         </a>{' '}
         and{' '}
         <a
-          className="text-blue-500"
+          className="text-blue-600 dark:text-blue-500"
           href="https://nextjs.org/"
           target="_blank"
           rel="noopener noreferrer"
