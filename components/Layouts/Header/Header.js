@@ -161,10 +161,6 @@ const Header = () => {
                             <Link
                               className="relative flex h-[4.5rem] items-center px-6 outline-0"
                               href={item.href}
-                              // onClick={() => setSelected(item)}
-                              // onKeyDown={(event) =>
-                              //   event.key === 'Enter' ? setSelected(item) : null
-                              // }
                               onFocus={() => setFocused(item)}
                               // onBlur={() => setFocused(null)}
                               onMouseEnter={() => setFocused(item)}
