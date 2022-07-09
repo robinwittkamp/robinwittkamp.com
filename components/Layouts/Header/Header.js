@@ -168,7 +168,6 @@ const Header = () => {
                               tabIndex={0}
                               role="link"
                             >
-                              {/* <LayoutGroup> */}
                               <AnimatePresence>
                                 {focused === item ? (
                                   <m.div
@@ -189,7 +188,6 @@ const Header = () => {
                                   />
                                 ) : null}
                               </AnimatePresence>
-                              {/* </LayoutGroup> */}
                               <span className="z-10 text-lg">{item.name}</span>
                             </Link>
                           </li>
