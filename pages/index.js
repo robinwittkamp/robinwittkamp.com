@@ -93,7 +93,8 @@ const Home = () => (
   <PageLayout>
     <Head />
 
-    <Section id="home" first>
+    {/* Hero */}
+    <Section first>
       {/* Text container */}
       <div>
         {/* <span className="block text-center font-bold text-blue-500">
@@ -201,7 +202,8 @@ const Home = () => (
       </div>
     </Section>
 
-    <Section id="about">
+    {/* About */}
+    <Section>
       {/* <span className="font-bold text-purple-500">First things first.</span> */}
       <h2 className="">About me</h2>
       <p className="mt-8 text-xl text-neutral-500 dark:text-neutral-400">
@@ -231,7 +233,8 @@ const Home = () => (
       </p>
     </Section>
 
-    <Section id="work">
+    {/* Work */}
+    <Section>
       {/* <span className="block text-center font-bold text-rose-500">Some of my projects.</span> */}
       <h2 className="text-center">Latest work</h2>
       {/* Cards container */}
