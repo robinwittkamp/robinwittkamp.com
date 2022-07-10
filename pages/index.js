@@ -6,11 +6,11 @@ import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Layouts/Section';
 import CtaContactSection from '../components/Sections/CtaContactSection';
-// import BauraumMvLogoComponent from '../images/logos/BauraumMvLogo';
 import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
 import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
 import BauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
+import LinTecLogo from '../public/images/logos/lin-tec_logo.svg';
 // import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
 import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 
@@ -68,7 +68,7 @@ const logos = [
   },
   {
     name: 'LIN-TEC Logo',
-    logo: BauraumMvLogo,
+    logo: LinTecLogo,
   },
   {
     name: 'Robert Denier Logo',
@@ -176,13 +176,13 @@ const Home = () => (
               height={40}
               unoptimized
             /> */}
-            <BauraumMvLogo className="h-11 w-40" />
+            <BauraumMvLogo className="h-10" />
           </div>
           <div className="flex justify-center sm:flex-[1_1_50%] md:flex-[1_1_25%]">
             <span className="mx-auto block text-xl">Energiewerk Rügen</span>
           </div>
           <div className="flex justify-center sm:flex-[1_1_50%] md:flex-[1_1_25%]">
-            <span className="mx-auto block text-xl">LIN-TEC</span>
+            <LinTecLogo className="h-10" />
           </div>
           <div className="flex justify-center sm:flex-[1_1_50%] md:flex-[1_1_25%]">
             <span className="mx-auto block text-xl">Robert Denier</span>
