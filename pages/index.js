@@ -10,6 +10,7 @@ import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
 import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
 import BauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
+import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_logo.svg';
 import LbtRuegenLogo from '../public/images/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/images/logos/lin-tec_logo.svg';
 import RobertDenierLogo from '../public/images/logos/robert_denier_logo.svg';
@@ -66,7 +67,7 @@ const logos = [
   },
   {
     name: 'Energiewerk Rügen Logo',
-    logo: BauraumMvLogo,
+    logo: EnergiewerkRuegenLogo,
   },
   {
     name: 'LIN-TEC Logo',
@@ -183,7 +184,7 @@ const Home = () => (
             <BauraumMvLogo className="h-10" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
-            <span className="mx-auto block text-xl">Energiewerk Rügen</span>
+            <EnergiewerkRuegenLogo className="h-8" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
             <LinTecLogo className="h-10" />
