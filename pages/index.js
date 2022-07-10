@@ -103,8 +103,7 @@ const Home = () => (
         <h1 className="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
           Beautiful websites that improve your business
         </h1>
-        <p className="mt-8 max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
-          I build fast and reliable websites with a beautiful design that bring joy to your users.
+          business goals.
         </p>
         <div className="mt-8 sm:flex sm:justify-center">
           <LinkButton href="/work" variant="primary">
