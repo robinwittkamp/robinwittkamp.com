@@ -6,10 +6,11 @@ import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Layouts/Section';
 import CtaContactSection from '../components/Sections/CtaContactSection';
+// import BauraumMvLogoComponent from '../images/logos/BauraumMvLogo';
 import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
 import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
-import bauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
+import BauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
 // import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
 import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 
@@ -55,35 +56,35 @@ const projects = [
 const logos = [
   {
     name: 'LBT Rügen Logo',
-    logo: bauraumMvLogo,
+    logo: BauraumMvLogo,
   },
   {
     name: 'Bauraum MV Logo',
-    logo: bauraumMvLogo,
+    logo: BauraumMvLogo,
   },
   {
     name: 'Energiewerk Rügen Logo',
-    logo: bauraumMvLogo,
+    logo: BauraumMvLogo,
   },
   {
     name: 'LIN-TEC Logo',
-    logo: bauraumMvLogo,
+    logo: BauraumMvLogo,
   },
   {
     name: 'Robert Denier Logo',
-    logo: bauraumMvLogo,
+    logo: BauraumMvLogo,
   },
   {
     name: 'New Creations Logo',
-    logo: bauraumMvLogo,
+    logo: BauraumMvLogo,
   },
   {
     name: 'Therapie Henke Logo',
-    logo: bauraumMvLogo,
+    logo: BauraumMvLogo,
   },
   {
     name: 'Kuttig Logo',
-    logo: bauraumMvLogo,
+    logo: BauraumMvLogo,
   },
 ];
 
@@ -167,14 +168,15 @@ const Home = () => (
             <span className="mx-auto block text-xl">LBT Rügen</span>
           </div>
           <div className="flex justify-center sm:flex-[1_1_50%] md:flex-[1_1_25%]">
-            <Image
-              src={bauraumMvLogo}
+            {/* <Image
+              src={BauraumMvLogo}
               alt="Bauraum MV Logo"
               // layout="fixed"
               width={160}
               height={40}
               unoptimized
-            />
+            /> */}
+            <BauraumMvLogo className="h-11 w-40" />
           </div>
           <div className="flex justify-center sm:flex-[1_1_50%] md:flex-[1_1_25%]">
             <span className="mx-auto block text-xl">Energiewerk Rügen</span>
