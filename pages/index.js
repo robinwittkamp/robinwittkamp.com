@@ -164,15 +164,15 @@ const Home = () => (
 
       {/* Company logos */}
       <div className="mt-24 sm:mt-32">
-        <span className="block text-center text-xl text-neutral-500 dark:text-neutral-400">
+        <span className="block text-center text-xl font-medium text-neutral-900 dark:text-white sm:text-2xl">
           Clients I worked with
         </span>
         {/* Logos container */}
-        <div className="mt-12 space-y-8 sm:mt-12 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0">
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
+        <div className="mt-12 space-y-8 text-neutral-500 dark:text-neutral-400 sm:mt-12 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
             <LbtRuegenLogo className="h-7" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
             {/* <Image
               src={BauraumMvLogo}
               alt="Bauraum MV Logo"
@@ -183,22 +183,22 @@ const Home = () => (
             /> */}
             <BauraumMvLogo className="h-10" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
             <EnergiewerkRuegenLogo className="h-8" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
             <LinTecLogo className="h-10" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
             <RobertDenierLogo className="h-6" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
             <span className="mx-auto block text-xl">New Creations</span>
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33%] xl:flex-[1_1_25%]">
             <span className="mx-auto block text-xl">Therapie Henke</span>
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33%] xl:flex-[1_1_25%]">
             <span className="mx-auto block text-xl">Kuttig</span>
           </div>
         </div>
