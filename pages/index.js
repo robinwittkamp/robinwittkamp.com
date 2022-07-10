@@ -96,7 +96,7 @@ const Home = () => (
     {/* Hero */}
     <Section first>
       {/* Text container */}
-      <div>
+      <div className="space-y-8">
         {/* <span className="block text-center font-bold text-blue-500">
           Web Developer &bull; UX/UI Designer &bull; Freelancer
         </span> */}
