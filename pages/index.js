@@ -107,7 +107,7 @@ const Home = () => (
           I build fast and reliable websites with a beautiful design that help to achieve your
           business goals.
         </p>
-        <div className="mt-8 sm:flex sm:justify-center">
+        <div className="sm:flex sm:justify-center">
           <LinkButton href="/work" variant="primary">
             View projects
           </LinkButton>
