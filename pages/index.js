@@ -57,7 +57,7 @@ const projects = [
 const logos = [
   {
     name: 'LBT Rügen Logo',
-    logo: BauraumMvLogo,
+    logo: LbtRuegenLogo,
   },
   {
     name: 'Bauraum MV Logo',
