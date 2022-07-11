@@ -9,7 +9,6 @@
     "next",
     "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:flowtype/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/errors",
@@ -21,16 +20,11 @@
     "airbnb/hooks",
     "plugin:prettier/recommended"
   ],
-  "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "babelOptions": {
-      "configFile": "./.babelrc"
-    },
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 2018,
-    "requireConfigFile": false,
     "sourceType": "module"
   },
   "settings": {
