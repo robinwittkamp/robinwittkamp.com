@@ -84,7 +84,7 @@ const logos = [
     classes: 'h-10',
   },
   {
-    name: 'Kuttig Logo',
+    name: 'Kuttig Engineering Logo',
     logo: KuttigEngineeringLogo,
     classes: 'h-11',
   },
@@ -173,7 +173,7 @@ const Home = () => (
               key={item.name}
               className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33.3%]"
             >
-              <item.logo className={item.classes} />
+              <item.logo className={item.classes} aria-label={item.name} />
             </div>
           ))}
         </div>
