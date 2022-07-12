@@ -11,6 +11,7 @@ import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_
 import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
 import BauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
 import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_logo.svg';
+import KuttigEngineeringLogo from '../public/images/logos/kuttig_engineering_logo.svg';
 import LbtRuegenLogo from '../public/images/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/images/logos/lin-tec_logo.svg';
 import NewCreationsLogo from '../public/images/logos/new_creations_logo.svg';
@@ -194,14 +195,13 @@ const Home = () => (
             <RobertDenierLogo className="h-6" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
-            {/* <span className="mx-auto block text-xl">New Creations</span> */}
             <NewCreationsLogo className="h-6" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33%] xl:flex-[1_1_25%]">
             <span className="mx-auto block text-xl">Therapie Henke</span>
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33%] xl:flex-[1_1_25%]">
-            <span className="mx-auto block text-xl">Kuttig</span>
+            <KuttigEngineeringLogo className="h-10" />
           </div>
         </div>
       </div>
