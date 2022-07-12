@@ -10,7 +10,7 @@ import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
 import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
 import BauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
-import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_logo_2.svg';
+import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_logo.svg';
 import KuttigEngineeringLogo from '../public/images/logos/kuttig_engineering_logo.svg';
 import LbtRuegenLogo from '../public/images/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/images/logos/lin-tec_logo.svg';
