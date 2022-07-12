@@ -165,7 +165,7 @@ const Home = () => (
 
       {/* Company logos */}
       <div className="mt-24 sm:mt-32">
-        <span className="block text-center text-xl font-medium text-neutral-400 dark:text-neutral-600">
+        <span className="block text-center text-xl font-medium text-neutral-400 dark:text-neutral-500">
           Clients I worked with
         </span>
         {/* Logos container */}
