@@ -173,7 +173,7 @@ const Home = () => (
               key={item.name}
               className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33.3%]"
             >
-              <item.logo className={item.classes} aria-label={item.name} />
+              <item.logo className={item.classes} />
             </div>
           ))}
         </div>
