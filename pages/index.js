@@ -165,27 +165,27 @@ const Home = () => (
 
       {/* Company logos */}
       <div className="mt-24 sm:mt-32">
-        <span className="block text-center text-xl font-medium text-neutral-900 dark:text-white sm:text-2xl">
+        <span className="block text-center text-xl font-medium text-neutral-400 dark:text-neutral-600">
           Clients I worked with
         </span>
         {/* Logos container */}
-        <div className="mx-auto mt-12 max-w-screen-lg space-y-8 text-neutral-500 dark:text-neutral-400 sm:mt-12 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0">
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
+        <div className="mx-auto mt-12 space-y-8 text-neutral-800 dark:text-neutral-100 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0 md:max-w-2xl lg:max-w-[58rem]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33.3%]">
             <LbtRuegenLogo className="h-7" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33.3%]">
             <EnergiewerkRuegenLogo className="h-8" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33.3%]">
             <RobertDenierLogo className="h-5" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
-            <LinTecLogo className="h-10" />
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33.3%]">
+            <LinTecLogo className="h-9" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33.3%]">
             <BauraumMvLogo className="h-10" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33.3%]">
             <KuttigEngineeringLogo className="h-11" />
           </div>
         </div>
