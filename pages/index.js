@@ -61,34 +61,32 @@ const logos = [
   {
     name: 'LBT Rügen Logo',
     logo: LbtRuegenLogo,
-  },
-  {
-    name: 'Bauraum MV Logo',
-    logo: BauraumMvLogo,
+    classes: 'h-7',
   },
   {
     name: 'Energiewerk Rügen Logo',
     logo: EnergiewerkRuegenLogo,
-  },
-  {
-    name: 'LIN-TEC Logo',
-    logo: LinTecLogo,
+    classes: 'h-8',
   },
   {
     name: 'Robert Denier Logo',
     logo: RobertDenierLogo,
+    classes: 'h-5',
   },
   {
-    name: 'New Creations Logo',
-    logo: BauraumMvLogo,
+    name: 'LIN-TEC Logo',
+    logo: LinTecLogo,
+    classes: 'h-9',
   },
   {
-    name: 'Therapie Henke Logo',
+    name: 'Bauraum MV Logo',
     logo: BauraumMvLogo,
+    classes: 'h-10',
   },
   {
     name: 'Kuttig Logo',
     logo: BauraumMvLogo,
+    classes: 'h-11',
   },
 ];
 
