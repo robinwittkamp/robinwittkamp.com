@@ -174,14 +174,6 @@ const Home = () => (
             <LbtRuegenLogo className="h-7" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
-            {/* <Image
-              src={BauraumMvLogo}
-              alt="Bauraum MV Logo"
-              // layout="fixed"
-              width={160}
-              height={40}
-              unoptimized
-            /> */}
             <BauraumMvLogo className="h-10" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
