@@ -128,7 +128,7 @@ const Home = () => (
               <Image
                 src={webBuddyMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                // layout="fixed"
+                layout="fixed"
                 width={253}
                 height={512}
                 // priority
@@ -141,7 +141,7 @@ const Home = () => (
                 className="z-10"
                 src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                // layout="fixed"
+                layout="fixed"
                 width={285}
                 height={576}
                 priority
@@ -153,7 +153,7 @@ const Home = () => (
               <Image
                 src={klifraMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                // layout="fixed"
+                layout="fixed"
                 width={253}
                 height={512}
                 // priority
@@ -165,7 +165,7 @@ const Home = () => (
 
       {/* Company logos */}
       <div className="mt-24 sm:mt-32">
-        <span className="block text-center text-xl font-medium text-neutral-500 dark:text-neutral-400">
+        <span className="block text-center text-xl text-neutral-500 dark:text-neutral-400">
           Clients I worked with
         </span>
         {/* Logos container */}
