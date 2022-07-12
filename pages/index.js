@@ -10,7 +10,7 @@ import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
 import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
 import BauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
-import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_logo.svg';
+import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_logo_2.svg';
 import KuttigEngineeringLogo from '../public/images/logos/kuttig_engineering_logo.svg';
 import LbtRuegenLogo from '../public/images/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/images/logos/lin-tec_logo.svg';
@@ -174,16 +174,16 @@ const Home = () => (
             <LbtRuegenLogo className="h-7" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
-            <BauraumMvLogo className="h-10" />
+            <EnergiewerkRuegenLogo className="h-8" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
-            <EnergiewerkRuegenLogo className="h-8" />
+            <RobertDenierLogo className="h-5" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
             <LinTecLogo className="h-10" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
-            <RobertDenierLogo className="h-6" />
+            <BauraumMvLogo className="h-10" />
           </div>
           <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33%]">
             <KuttigEngineeringLogo className="h-11" />
