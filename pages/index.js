@@ -14,7 +14,6 @@ import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_log
 import KuttigEngineeringLogo from '../public/images/logos/kuttig_engineering_logo.svg';
 import LbtRuegenLogo from '../public/images/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/images/logos/lin-tec_logo.svg';
-import NewCreationsLogo from '../public/images/logos/new_creations_logo.svg';
 import RobertDenierLogo from '../public/images/logos/robert_denier_logo.svg';
 // import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
 import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
@@ -170,11 +169,11 @@ const Home = () => (
           Clients I worked with
         </span>
         {/* Logos container */}
-        <div className="mt-12 space-y-8 text-neutral-500 dark:text-neutral-400 sm:mt-12 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0">
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
+        <div className="mx-auto mt-12 max-w-screen-lg space-y-8 text-neutral-500 dark:text-neutral-400 sm:mt-12 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
             <LbtRuegenLogo className="h-7" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
             {/* <Image
               src={BauraumMvLogo}
               alt="Bauraum MV Logo"
@@ -185,23 +184,17 @@ const Home = () => (
             /> */}
             <BauraumMvLogo className="h-10" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
             <EnergiewerkRuegenLogo className="h-8" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
             <LinTecLogo className="h-10" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%]">
             <RobertDenierLogo className="h-6" />
           </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33%] xl:flex-[1_1_25%]">
-            <NewCreationsLogo className="h-6" />
-          </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33%] xl:flex-[1_1_25%]">
-            <span className="mx-auto block text-xl">Therapie Henke</span>
-          </div>
-          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33%] xl:flex-[1_1_25%]">
-            <KuttigEngineeringLogo className="h-10" />
+          <div className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[0_1_33%]">
+            <KuttigEngineeringLogo className="h-11" />
           </div>
         </div>
       </div>
