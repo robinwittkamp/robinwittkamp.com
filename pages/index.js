@@ -183,14 +183,16 @@ const Home = () => (
     <Section>
       {/* <span className="font-bold text-purple-500">First things first.</span> */}
       <h2 className="">About me</h2>
-      <p className="mt-8 text-xl text-neutral-500 dark:text-neutral-400">
-        Hi, I&apos;m Robin. Besides my studies I work as a <strong>freelance web developer</strong>{' '}
-        and <strong>UI/UX designer</strong>. In 2018 I registered a <strong>business</strong> and
+      <p className="mt-8 text-xl text-neutral-500 dark:text-neutral-400 lg:text-2xl">
+        Hi, I&apos;m Robin. Besides my studies I work as a{' '}
+        <span className="text-neutral-800 dark:text-neutral-300">freelance web developer</span> and{' '}
+        <span className="text-neutral-800 dark:text-neutral-300">UI/UX designer</span>. In 2018 I
+        registered a <span className="text-neutral-800 dark:text-neutral-300">business</span> and
         since then I&apos;ve been implementing websites for companies and organizations from all
         over Germany. Today, I increasingly implement websites and web applications that I program
         from scratch. For this I use technologies like{' '}
         <a
-          className="text-blue-600 dark:text-blue-500"
+          className="text-blue-600 dark:text-blue-400"
           href="https://reactjs.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -199,7 +201,7 @@ const Home = () => (
         </a>{' '}
         and{' '}
         <a
-          className="text-blue-600 dark:text-blue-500"
+          className="text-blue-600 dark:text-blue-400"
           href="https://nextjs.org/"
           target="_blank"
           rel="noopener noreferrer"
