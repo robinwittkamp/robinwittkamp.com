@@ -98,9 +98,11 @@ const Home = () => (
     <Section first>
       {/* Text container */}
       <div className="space-y-8">
-        {/* <span className="block text-center font-bold text-blue-500">
-          Web Developer &bull; UX/UI Designer &bull; Freelancer
-        </span> */}
+        <div className="flex sm:justify-center">
+          <span className="block rounded-full border border-neutral-200 bg-neutral-50 px-4 py-1 text-center font-medium text-neutral-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400">
+            Developer &bull; Designer &bull; Freelancer
+          </span>
+        </div>
         <h1 className="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
           Beautiful websites that improve your business
         </h1>
