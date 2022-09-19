@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 import ProjectCard from '../components/Cards/ProjectCard';
 import LinkButton from '../components/Form/LinkButton';

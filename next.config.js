@@ -16,10 +16,8 @@ const nextConfig = withBundleAnalyzer({
   },
   experimental: {
     newNextLinkBehavior: true,
-    images: {
-      allowFutureImage: true,
-    },
   },
+  swcMinify: true,
 
   // SVGR
   webpack(config) {
