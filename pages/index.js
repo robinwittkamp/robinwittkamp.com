@@ -105,8 +105,8 @@ const Home = () => (
           Beautiful websites that improve your business
         </h1>
         <p className="max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
-          I build fast and reliable websites with a beautiful design that help to achieve your
-          business goals.
+          Fast and reliable websites with a beautiful design that help to achieve your business
+          goals.
         </p>
         <div className="sm:flex sm:justify-center">
           <LinkButton href="/work" variant="primary">
