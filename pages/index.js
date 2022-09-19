@@ -134,9 +134,8 @@ const Home = () => (
             </div>
 
             {/* Image 2 */}
-            <div className="-ml-24 md:ml-4 lg:ml-12">
+            <div className="z-10 -ml-24 md:ml-4 lg:ml-12">
               <Image
-                className="z-10"
                 src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
                 layout="fixed"
