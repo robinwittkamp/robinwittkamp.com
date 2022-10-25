@@ -1,5 +1,5 @@
 import ctl from '@netlify/classnames-template-literals';
-import Link from 'next/link';
+// import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 const variants = {
@@ -68,14 +68,14 @@ const LinkButton = ({ children, variant, href, external }) => {
   );
 
   return (
-    <Link
+    <a
       className={classes}
       href={href}
       rel={external ? 'noopener noreferrer' : undefined}
       target={external ? '_blank' : undefined}
     >
       {children}
-    </Link>
+    </a>
   );
 };
 

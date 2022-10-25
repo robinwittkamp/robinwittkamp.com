@@ -1,9 +1,9 @@
 import { faFeather } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 const Logo = () => (
-  <Link className="cursor-pointer" href="/">
+  <a className="cursor-pointer" href="/">
     <div className="flex items-center space-x-3">
       <FontAwesomeIcon icon={faFeather} className="text-xl md:text-2xl" />
       <div className="flex items-center">
@@ -11,7 +11,7 @@ const Logo = () => (
         <span className="font-gilroy text-xl font-black md:text-2xl">Robin Wittkamp</span>
       </div>
     </div>
-  </Link>
+  </a>
 );
 
 export default Logo;

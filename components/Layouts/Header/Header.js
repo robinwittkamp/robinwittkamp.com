@@ -1,6 +1,6 @@
 import { Popover } from '@headlessui/react';
 import { AnimatePresence, LazyMotion, m } from 'framer-motion';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
@@ -158,7 +158,7 @@ const Header = () => {
                       <ul className="flex">
                         {navigation.map((item) => (
                           <li key={item.name} className="">
-                            <Link
+                            <a
                               className="relative flex h-[4.5rem] items-center px-6 outline-0"
                               href={item.href}
                               onFocus={() => setFocused(item)}
@@ -189,7 +189,7 @@ const Header = () => {
                                 ) : null}
                               </AnimatePresence>
                               <span className="z-10 text-lg">{item.name}</span>
-                            </Link>
+                            </a>
                           </li>
                         ))}
                       </ul>
@@ -221,7 +221,7 @@ const Header = () => {
                         {navigation.map((item) => (
                           <m.div key={item.name} variants={mobileNavItemVariants}>
                             <Popover.Button
-                              as={Link}
+                              as="a"
                               href={item.href}
                               className="block border-b border-neutral-200 px-4 py-3 dark:border-neutral-800 sm:px-8"
                             >
