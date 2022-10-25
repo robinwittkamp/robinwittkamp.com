@@ -87,33 +87,33 @@ const desktopNavItemVariants = {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [isWindowAtTop, setIsWindowAtTop] = useState(true);
+  const [isWindowAtTop, setIsWindowAtTop] = useState(true);
   const [focused, setFocused] = useState(null);
 
-  // const handleScroll = () => {
-  //   // console.log('scroll event', window.scrollY);
-  //   if (window.scrollY <= 0) {
-  //     setIsWindowAtTop(true);
-  //   } else {
-  //     setIsWindowAtTop(false);
-  //   }
-  // };
+  const handleScroll = () => {
+    // console.log('scroll event', window.scrollY);
+    if (window.scrollY <= 0) {
+      setIsWindowAtTop(true);
+    } else {
+      setIsWindowAtTop(false);
+    }
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // });
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
 
   return (
     <LazyMotion features={loadFramerMotionFeatures} strict>
       <Popover>
         {({ open }) => (
           <m.header
-            className={`fixed top-0 z-50 flex min-h-[3rem] w-full min-w-[20rem] items-center bg-white backdrop-blur-lg transition duration-300 dark:bg-neutral-900 md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-white/90 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
+            className={`fixed top-0 z-50 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-transparent bg-white backdrop-blur-lg transition duration-300 dark:bg-neutral-900 md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-white/90 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
               isOpen
                 ? 'bg-white backdrop-blur-none dark:bg-neutral-900 [@supports(backdrop-filter:blur(0))]:bg-white/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/100'
                 : ''
-            }`}
+            } ${isWindowAtTop ? '' : 'border-neutral-900/10 dark:border-neutral-50/10'}`}
           >
             <div className="flex-1">
               {/* x-Paddings */}
