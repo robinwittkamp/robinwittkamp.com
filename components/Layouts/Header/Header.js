@@ -90,19 +90,19 @@ const Header = () => {
   const [isWindowAtTop, setIsWindowAtTop] = useState(true);
   const [focused, setFocused] = useState(null);
 
-  // const handleScroll = () => {
-  //   // console.log('scroll event', window.scrollY);
-  //   if (window.scrollY <= 0) {
-  //     setIsWindowAtTop(true);
-  //   } else {
-  //     setIsWindowAtTop(false);
-  //   }
-  // };
+  const handleScroll = () => {
+    // console.log('scroll event', window.scrollY);
+    if (window.scrollY <= 0) {
+      setIsWindowAtTop(true);
+    } else {
+      setIsWindowAtTop(false);
+    }
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // });
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
 
   return (
     <LazyMotion features={loadFramerMotionFeatures} strict>
@@ -113,7 +113,7 @@ const Header = () => {
               isOpen
                 ? 'bg-white backdrop-blur-none dark:bg-neutral-900 [@supports(backdrop-filter:blur(0))]:bg-white/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/100'
                 : ''
-            }`}
+            } ${isWindowAtTop ? '' : 'border-neutral-900/10 dark:border-neutral-50/10'}`}
           >
             <div className="flex-1">
               {/* x-Paddings */}
