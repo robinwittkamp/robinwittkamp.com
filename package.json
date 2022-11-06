@@ -18,6 +18,7 @@
     "@headlessui/react": "^1.7.4",
     "@netlify/classnames-template-literals": "^1.0.3",
     "@next/bundle-analyzer": "^13.0.2",
+    "@next/font": "^13.0.2",
     "@svgr/webpack": "^6.5.1",
     "framer-motion": "^7.6.4",
     "next": "^13.0.2",
