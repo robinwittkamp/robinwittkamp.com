@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from 'next/image';
 
 import ProjectCard from '../components/Cards/ProjectCard';
 import LinkButton from '../components/Form/LinkButton';
@@ -128,7 +128,7 @@ const Home = () => (
               <Image
                 src={webBuddyMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                layout="fixed"
+                // layout="fixed"
                 width={253}
                 height={512}
                 // priority
@@ -140,7 +140,7 @@ const Home = () => (
               <Image
                 src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                layout="fixed"
+                // layout="fixed"
                 width={285}
                 height={576}
                 priority
@@ -152,7 +152,7 @@ const Home = () => (
               <Image
                 src={klifraMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                layout="fixed"
+                // layout="fixed"
                 width={253}
                 height={512}
                 // priority
