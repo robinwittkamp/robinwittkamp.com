@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin, faTwitter, faXing } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faFeather } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import Link from 'next/link';
+import Link from 'next/link';
 
 const languages = [{ name: 'Deutsch' }, { name: 'English' }];
 
@@ -105,12 +105,12 @@ const Footer = () => (
             <ul className="mt-2">
               {legalNavigation.map((item) => (
                 <li key={item.name}>
-                  <a
+                  <Link
                     href={item.href}
                     className="inline-block py-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -125,12 +125,12 @@ const Footer = () => (
             <ul className="mt-2">
               {languages.map((item) => (
                 <li key={item.name}>
-                  <a
+                  <Link
                     href="/#"
                     className="inline-block py-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
