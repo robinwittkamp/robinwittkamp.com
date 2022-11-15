@@ -20,7 +20,7 @@
     "@next/bundle-analyzer": "^13.0.3",
     "@next/font": "^13.0.3",
     "@svgr/webpack": "^6.5.1",
-    "framer-motion": "^7.6.6",
+    "framer-motion": "^7.6.7",
     "next": "^13.0.3",
     "next-seo": "^5.14.1",
     "prop-types": "^15.8.1",
