@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin, faTwitter, faXing } from '@fortawesome/free-brands-svg-icons';
-import { faFeather, faFileCode } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faFeather } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import Link from 'next/link';
 
@@ -148,8 +148,8 @@ const Footer = () => (
               rel="noopener noreferrer"
             >
               <div className="flex items-center space-x-2">
-                <FontAwesomeIcon icon={faFileCode} className="w-3" />
-                <span className="">View this website on GitHub</span>
+                <FontAwesomeIcon icon={faCode} className="w-3" />
+                <span className="">View code on GitHub</span>
               </div>
             </a>
           </div>
