@@ -2,6 +2,7 @@
   "useTabs": false,
   "semi": true,
   "printWidth": 100,
+  "singleQuote": true,
   "overrides": [
     {
       "files": ["*.html", "*.php"],
@@ -10,7 +11,7 @@
       }
     },
     {
-      "files": ["*.js"],
+      "files": ["*.js", "*jsx", "*.ts", "*tsx"],
       "options": {
         "singleQuote": true
       }

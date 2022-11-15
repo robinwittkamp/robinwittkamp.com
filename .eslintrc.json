@@ -18,14 +18,18 @@
     "plugin:sonarjs/recommended",
     "airbnb",
     "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
     "ecmaVersion": 2018,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "settings": {
     "react": {
@@ -34,10 +38,11 @@
   },
   "plugins": [
     "react",
-    "simple-import-sort"
+    "simple-import-sort",
+    "@typescript-eslint"
   ],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/state-in-constructor": "off",
     "react/react-in-jsx-scope": "off",
     "react/function-component-definition": [2, {
