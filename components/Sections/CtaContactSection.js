@@ -1,5 +1,5 @@
 import LinkButton from '../Form/LinkButton';
-import Section from '../Layouts/Section';
+import Section from './Section';
 
 const CtaContactSection = () => (
   <Section classes="">

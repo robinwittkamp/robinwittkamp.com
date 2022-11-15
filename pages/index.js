@@ -4,7 +4,7 @@ import ProjectCard from '../components/Cards/ProjectCard';
 import LinkButton from '../components/Form/LinkButton';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
-import Section from '../components/Layouts/Section';
+import Section from '../components/Sections/Section';
 import CtaContactSection from '../components/Sections/CtaContactSection';
 import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';

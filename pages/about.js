@@ -1,7 +1,7 @@
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
-import Section from '../components/Layouts/Section';
 import CtaContactSection from '../components/Sections/CtaContactSection';
+import Section from '../components/Sections/Section';
 import TextBlock from '../components/Text/TextBlock';
 import TextLink from '../components/Text/TextLink';
 

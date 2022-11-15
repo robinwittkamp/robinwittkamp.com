@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-import Footer from './Footer';
-import Header from './Header/Header';
+import Footer from '../Footer';
+import Header from '../Header';
 
 const PageLayout = ({ children }) => (
   <>

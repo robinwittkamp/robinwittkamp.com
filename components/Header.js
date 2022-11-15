@@ -7,7 +7,7 @@ import { RemoveScroll } from 'react-remove-scroll';
 import Logo from './Logo';
 
 const loadFramerMotionFeatures = () =>
-  import('../../Libraries/framerMotionFeatures').then((res) => res.default);
+  import('./Libraries/framerMotionFeatures').then((res) => res.default);
 
 const navigation = [
   // { name: 'Home', href: '/home' },
