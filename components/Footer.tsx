@@ -2,6 +2,7 @@ import { faGithub, faLinkedin, faTwitter, faXing } from '@fortawesome/free-brand
 import { faCode, faFeather } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import { ReactElement } from 'react';
 
 const languages = [{ name: 'Deutsch' }, { name: 'English' }];
 
@@ -17,7 +18,7 @@ const legalNavigation = [
   { name: 'Privacy policy', href: '/privacy-policy' },
 ];
 
-const Footer = () => (
+const Footer = (): ReactElement => (
   <footer className="min-w-[20rem] pb-8 pt-16 md:pb-16">
     {/* Padding container */}
     <div className="px-4 sm:px-8">
