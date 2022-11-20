@@ -1,10 +1,16 @@
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PropTypes from 'prop-types';
+import { ReactElement } from 'react';
 
 import LinkButton from '../Form/LinkButton';
 
-const ProjectCard = ({ title, description, href }) => (
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  href: string;
+}
+
+const ProjectCard = ({ title, description, href }: ProjectCardProps): ReactElement => (
   <div className="rounded-[2rem] border border-neutral-200 bg-white px-6 py-8 shadow-lg dark:border-neutral-700 dark:bg-neutral-800 dark:shadow-lg dark:shadow-black sm:px-8 lg:p-12">
     <div className="">
       <span className="block text-2xl font-bold sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl">
@@ -22,11 +28,5 @@ const ProjectCard = ({ title, description, href }) => (
     </div>
   </div>
 );
-
-ProjectCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-};
 
 export default ProjectCard;
