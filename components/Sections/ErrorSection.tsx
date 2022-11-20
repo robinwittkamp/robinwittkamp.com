@@ -1,9 +1,15 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import { ReactElement } from 'react';
 
 import LinkButton from '../Form/LinkButton';
 import Section from './Section';
 
-const ErrorLayout = ({ headingText, bodyText }) => (
+interface ErrorLayoutProps {
+  headingText: string;
+  bodyText: string;
+}
+
+const ErrorLayout = ({ headingText, bodyText }: ErrorLayoutProps): ReactElement => (
   <Section classes="h-screen max-h-[56rem]" first>
     <h1 className="max-w-screen-lg sm:mx-auto sm:text-center">{headingText}</h1>
     <p className="mt-8 max-w-2xl text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center">
@@ -17,9 +23,9 @@ const ErrorLayout = ({ headingText, bodyText }) => (
   </Section>
 );
 
-ErrorLayout.propTypes = {
-  headingText: PropTypes.string.isRequired,
-  bodyText: PropTypes.string.isRequired,
-};
+// ErrorLayout.propTypes = {
+//   headingText: PropTypes.string.isRequired,
+//   bodyText: PropTypes.string.isRequired,
+// };
 
 export default ErrorLayout;
