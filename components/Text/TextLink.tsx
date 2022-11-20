@@ -1,7 +1,14 @@
 import Link from 'next/link';
-import PropTypes from 'prop-types';
+import { ReactElement, ReactNode } from 'react';
+// import PropTypes from 'prop-types';
 
-const TextLink = ({ children, external, href }) => (
+interface TextLinkProps {
+  children: ReactNode;
+  external?: boolean;
+  href: string;
+}
+
+const TextLink = ({ children, external = false, href }: TextLinkProps): ReactElement => (
   <Link
     className="text-blue-500 transition hover:text-blue-600"
     href={href}
@@ -12,14 +19,14 @@ const TextLink = ({ children, external, href }) => (
   </Link>
 );
 
-TextLink.propTypes = {
-  children: PropTypes.string.isRequired,
-  external: PropTypes.bool,
-  href: PropTypes.string.isRequired,
-};
+// TextLink.propTypes = {
+//   children: PropTypes.string.isRequired,
+//   external: PropTypes.bool,
+//   href: PropTypes.string.isRequired,
+// };
 
-TextLink.defaultProps = {
-  external: false,
-};
+// TextLink.defaultProps = {
+//   external: false,
+// };
 
 export default TextLink;
