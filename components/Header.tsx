@@ -1,7 +1,7 @@
 import { Popover } from '@headlessui/react';
 import { AnimatePresence, LazyMotion, m } from 'framer-motion';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
 import Logo from './Logo';
@@ -85,7 +85,7 @@ const desktopNavItemVariants = {
   },
 };
 
-const Header = () => {
+const Header = (): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [isWindowAtTop, setIsWindowAtTop] = useState(true);
   const [focused, setFocused] = useState(null);
