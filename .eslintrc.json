@@ -49,6 +49,7 @@
       "namedComponents": "arrow-function",
       "unnamedComponents": "arrow-function"
     }],
+    "react/require-default-props": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error"
   }
