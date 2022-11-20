@@ -1,7 +1,18 @@
+// import PropTypes from 'prop-types';
 import NextHead from 'next/head';
-import PropTypes from 'prop-types';
+import { ReactElement } from 'react';
 
-const Head = ({ title, og, description }) => (
+interface HeadProps {
+  title?: string;
+  og?: string;
+  description?: string;
+}
+
+const Head = ({
+  title = 'Robin Wittkamp - Fast, reliable and beautiful websites',
+  og = 'og.png',
+  description = `Hi, I'm Robin. I build fast, reliable websites with a simple, modern design and focus on a high level of user experience.`,
+}: HeadProps): ReactElement => (
   <NextHead>
     {/* Title */}
     <title>{title}</title>
@@ -31,17 +42,17 @@ const Head = ({ title, og, description }) => (
   </NextHead>
 );
 
-Head.propTypes = {
-  title: PropTypes.string,
-  og: PropTypes.string,
-  description: PropTypes.string,
-};
+// Head.propTypes = {
+//   title: PropTypes.string,
+//   og: PropTypes.string,
+//   description: PropTypes.string,
+// };
 
-Head.defaultProps = {
-  title: 'Robin Wittkamp - Fast, reliable and beautiful websites',
-  og: 'og.png',
-  description:
-    "Hi, I'm Robin. I build fast, reliable websites with a simple, modern design and focus on a high level of user experience.",
-};
+// Head.defaultProps = {
+//   title: 'Robin Wittkamp - Fast, reliable and beautiful websites',
+//   og: 'og.png',
+//   description:
+//     "Hi, I'm Robin. I build fast, reliable websites with a simple, modern design and focus on a high level of user experience.",
+// };
 
 export default Head;
