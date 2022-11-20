@@ -1,6 +1,19 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import { ReactElement, ReactNode } from 'react';
 
-const Section = ({ children, classes, first, id }) => (
+interface SectionProps {
+  children: ReactNode;
+  classes?: string;
+  first?: boolean;
+  id?: string | undefined;
+}
+
+const Section = ({
+  children,
+  classes = '',
+  first = false,
+  id = undefined,
+}: SectionProps): ReactElement => (
   <section
     id={id}
     className={`py-20 px-4 sm:py-32 sm:px-8 ${first ? 'pt-28 lg:pt-40' : ''} ${classes}`}
@@ -9,17 +22,17 @@ const Section = ({ children, classes, first, id }) => (
   </section>
 );
 
-Section.propTypes = {
-  children: PropTypes.node.isRequired,
-  classes: PropTypes.string,
-  first: PropTypes.bool,
-  id: PropTypes.string,
-};
+// Section.propTypes = {
+//   children: PropTypes.node.isRequired,
+//   classes: PropTypes.string,
+//   first: PropTypes.bool,
+//   id: PropTypes.string,
+// };
 
-Section.defaultProps = {
-  classes: '',
-  first: false,
-  id: null,
-};
+// Section.defaultProps = {
+//   classes: '',
+//   first: false,
+//   id: null,
+// };
 
 export default Section;
