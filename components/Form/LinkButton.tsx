@@ -1,6 +1,14 @@
 import ctl from '@netlify/classnames-template-literals';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
+import { ReactElement, ReactNode } from 'react';
+// import PropTypes from 'prop-types';
+
+interface LinkButtonProps {
+  children: ReactNode;
+  external?: boolean;
+  href: string;
+  variant: 'primary' | 'secondary' | 'tertiary';
+}
 
 const variants = {
   primary: `
@@ -50,7 +58,12 @@ const variants = {
     dark:hover:text-neutral-100`,
 };
 
-const LinkButton = ({ children, variant, href, external }) => {
+const LinkButton = ({
+  children,
+  external = false,
+  href,
+  variant,
+}: LinkButtonProps): ReactElement => {
   const variantClasses = variants[variant];
 
   const classes = ctl(
@@ -79,15 +92,15 @@ const LinkButton = ({ children, variant, href, external }) => {
   );
 };
 
-LinkButton.propTypes = {
-  children: PropTypes.node.isRequired,
-  external: PropTypes.bool,
-  href: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
-};
+// LinkButton.propTypes = {
+//   children: PropTypes.node.isRequired,
+//   external: PropTypes.bool,
+//   href: PropTypes.string.isRequired,
+//   variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
+// };
 
-LinkButton.defaultProps = {
-  external: false,
-};
+// LinkButton.defaultProps = {
+//   external: false,
+// };
 
 export default LinkButton;
