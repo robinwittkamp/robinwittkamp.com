@@ -2,7 +2,7 @@
 import { ReactElement, ReactNode } from 'react';
 
 interface TextBlockProps {
-  children: ReactNode;
+  children: ReactNode | ReactNode[] | string;
 }
 
 const TextBlock = ({ children }: TextBlockProps): ReactElement => (
