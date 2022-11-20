@@ -1,9 +1,14 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import { ReactElement, ReactNode } from 'react';
 
 import Footer from '../Footer';
 import Header from '../Header';
 
-const PageLayout = ({ children }) => (
+interface PageLayoutProps {
+  children: ReactNode;
+}
+
+const PageLayout = ({ children }: PageLayoutProps): ReactElement => (
   <>
     <Header />
     <main className="min-w-[20rem] overflow-hidden md:overflow-auto">{children}</main>
@@ -11,8 +16,8 @@ const PageLayout = ({ children }) => (
   </>
 );
 
-PageLayout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+// PageLayout.propTypes = {
+//   children: PropTypes.node.isRequired,
+// };
 
 export default PageLayout;
