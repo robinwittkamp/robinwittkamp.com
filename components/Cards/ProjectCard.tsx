@@ -2,7 +2,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ReactElement } from 'react';
 
-import LinkButton from '../Form/LinkButton';
+import LinkButton from '../Buttons/LinkButton';
 
 interface ProjectCardProps {
   title: string;

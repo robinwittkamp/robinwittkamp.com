@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
+import LinkButton from '../components/Buttons/LinkButton';
 import ProjectCard from '../components/Cards/ProjectCard';
-import LinkButton from '../components/Form/LinkButton';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';

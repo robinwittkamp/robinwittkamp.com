@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import LinkButton from '../Form/LinkButton';
+import LinkButton from '../Buttons/LinkButton';
 import Section from './Section';
 
 const CtaContactSection = (): ReactElement => (
