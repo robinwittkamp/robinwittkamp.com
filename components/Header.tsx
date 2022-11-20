@@ -1,7 +1,8 @@
 import { Popover } from '@headlessui/react';
 import { AnimatePresence, LazyMotion, m } from 'framer-motion';
 import Link from 'next/link';
-import { ReactElement, useEffect, useState } from 'react';
+import type { ReactElement } from 'react';
+import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
 import Logo from './Logo';
