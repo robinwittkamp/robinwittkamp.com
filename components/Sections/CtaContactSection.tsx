@@ -1,7 +1,9 @@
+import { ReactElement } from 'react';
+
 import LinkButton from '../Form/LinkButton';
 import Section from './Section';
 
-const CtaContactSection = () => (
+const CtaContactSection = (): ReactElement => (
   <Section classes="">
     <div className="rounded-[2rem] bg-neutral-100 px-6 py-12 dark:bg-neutral-800 sm:p-16 lg:p-24">
       <h2 className="sm:text-center">Let&apos;s work together</h2>
