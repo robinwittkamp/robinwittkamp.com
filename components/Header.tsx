@@ -9,6 +9,11 @@ import Logo from './Logo';
 const loadFramerMotionFeatures = () =>
   import('./Libraries/framerMotionFeatures').then((res) => res.default);
 
+interface NavigationProps {
+  name: string;
+  href: string;
+}
+
 const navigation = [
   // { name: 'Home', href: '/home' },
   { name: 'About', href: '/about' },
@@ -88,7 +93,7 @@ const desktopNavItemVariants = {
 const Header = (): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [isWindowAtTop, setIsWindowAtTop] = useState(true);
-  const [focused, setFocused] = useState(null);
+  const [focused, setFocused] = useState<NavigationProps>();
 
   const handleScroll = () => {
     // console.log('scroll event', window.scrollY);
@@ -152,8 +157,8 @@ const Header = (): ReactElement => {
                     {/* Desktop navigation */}
                     <nav
                       className="-mr-6 hidden md:block"
-                      onMouseLeave={() => setFocused(null)}
-                      onBlur={() => setFocused(null)}
+                      onMouseLeave={() => setFocused(undefined)}
+                      onBlur={() => setFocused(undefined)}
                     >
                       <ul className="flex">
                         {navigation.map((item) => (
