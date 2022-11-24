@@ -1,6 +1,6 @@
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ReactElement } from 'react';
+import type { ReactElement } from 'react';
 
 import LinkButton from '../Buttons/LinkButton';
 

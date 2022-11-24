@@ -2,7 +2,7 @@ import { faGithub, faLinkedin, faTwitter, faXing } from '@fortawesome/free-brand
 import { faCode, faFeather } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { ReactElement } from 'react';
+import type { ReactElement } from 'react';
 
 const languages = [{ name: 'Deutsch' }, { name: 'English' }];
 

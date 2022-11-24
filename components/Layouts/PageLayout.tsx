@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import { ReactElement, ReactNode } from 'react';
+import type { ReactElement, ReactNode } from 'react';
 
 import Footer from '../Footer';
 import Header from '../Header';

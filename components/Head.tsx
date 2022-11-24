@@ -1,6 +1,6 @@
 // import PropTypes from 'prop-types';
 import NextHead from 'next/head';
-import { ReactElement } from 'react';
+import type { ReactElement } from 'react';
 
 interface HeadProps {
   title?: string;
@@ -10,7 +10,6 @@ interface HeadProps {
 
 const Head = ({
   title = 'Robin Wittkamp - Fast, reliable and beautiful websites',
-  og = 'og.png',
   description = `Hi, I'm Robin. I build fast, reliable websites with a simple, modern design and focus on a high level of user experience.`,
 }: HeadProps): ReactElement => (
   <NextHead>

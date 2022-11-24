@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import { ReactElement } from 'react';
+import type { ReactElement } from 'react';
 
 import LinkButton from '../Buttons/LinkButton';
 import Section from './Section';

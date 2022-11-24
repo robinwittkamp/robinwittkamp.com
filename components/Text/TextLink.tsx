@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ReactElement, ReactNode } from 'react';
+import type { ReactElement, ReactNode } from 'react';
 // import PropTypes from 'prop-types';
 
 interface TextLinkProps {
