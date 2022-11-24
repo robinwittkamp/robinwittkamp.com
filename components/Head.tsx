@@ -4,7 +4,6 @@ import type { ReactElement } from 'react';
 
 interface HeadProps {
   title?: string;
-  og?: string;
   description?: string;
 }
 
