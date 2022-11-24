@@ -29,6 +29,7 @@
     "react-remove-scroll": "^2.5.5"
   },
   "devDependencies": {
+    "@tsconfig/next-strictest": "^1.0.0",
     "@types/node": "18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
