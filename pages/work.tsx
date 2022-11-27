@@ -3,6 +3,7 @@ import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';
 import Section from '../components/Sections/Section';
+import Heading from '../components/Text/Heading';
 
 const projects = [
   {
@@ -47,7 +48,9 @@ const Work = () => (
   <PageLayout>
     <Head title="Work - Robin Wittkamp" />
     <Section first>
-      <h1 className="text-center">Latest work</h1>
+      <Heading variant="h1" classes="text-center">
+        Latest work
+      </Heading>
       {/* Cards container */}
       <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
         {projects.map((item) => (

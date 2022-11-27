@@ -6,6 +6,7 @@ import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';
 import Section from '../components/Sections/Section';
+import Heading from '../components/Text/Heading';
 import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
 import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
@@ -103,9 +104,12 @@ const Home = () => (
             Developer &bull; Designer &bull; Freelancer
           </span>
         </div>
-        <h1 className="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
+        <Heading
+          variant="h1"
+          classes="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg"
+        >
           Beautiful websites that improve your business
-        </h1>
+        </Heading>
         <p className="max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
           Fast and reliable websites with a beautiful design that help to achieve your business
           goals.
@@ -184,7 +188,7 @@ const Home = () => (
     {/* About */}
     <Section>
       {/* <span className="font-bold text-purple-500">First things first.</span> */}
-      <h2 className="">About me</h2>
+      <Heading variant="h2">About me</Heading>
       <p className="mt-8 text-xl text-neutral-500 dark:text-neutral-400 lg:text-2xl">
         Hi, I&apos;m Robin. Besides my studies I work as a{' '}
         <span className="text-neutral-800 dark:text-neutral-300">freelance web developer</span> and{' '}
@@ -217,7 +221,9 @@ const Home = () => (
     {/* Work */}
     <Section>
       {/* <span className="block text-center font-bold text-rose-500">Some of my projects.</span> */}
-      <h2 className="text-center">Latest work</h2>
+      <Heading variant="h2" classes="text-center">
+        Latest work
+      </Heading>
       {/* Cards container */}
       <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
         {projects.map((item) => (

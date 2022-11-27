@@ -2,6 +2,7 @@ import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';
 import Section from '../components/Sections/Section';
+import Heading from '../components/Text/Heading';
 import TextBlock from '../components/Text/TextBlock';
 import TextLink from '../components/Text/TextLink';
 
@@ -9,7 +10,9 @@ const About = () => (
   <PageLayout>
     <Head title="About - Robin Wittkamp" />
     <Section first>
-      <h1 className="lg:text-center">About me</h1>
+      <Heading variant="h1" classes="lg:text-center">
+        About me
+      </Heading>
       <div className="mt-8 lg:mt-16 lg:flex">
         <div className="lg:flex-1" />
         <div className="lg:flex-1">

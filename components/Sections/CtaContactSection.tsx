@@ -1,12 +1,15 @@
 import type { ReactElement } from 'react';
 
 import LinkButton from '../Buttons/LinkButton';
+import Heading from '../Text/Heading';
 import Section from './Section';
 
 const CtaContactSection = (): ReactElement => (
   <Section classes="">
     <div className="rounded-[2rem] bg-neutral-100 px-6 py-12 dark:bg-neutral-800 sm:p-16 lg:p-24">
-      <h2 className="sm:text-center">Let&apos;s work together</h2>
+      <Heading variant="h2" classes="sm:text-center">
+        Let&apos;s work together
+      </Heading>
       <p className="mt-8 max-w-lg text-xl text-neutral-600 dark:text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl   lg:text-2xl">
         If you are interested in building a project together or if you have any questions, feel free
         to contact me.
