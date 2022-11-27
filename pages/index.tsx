@@ -7,7 +7,7 @@ import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';
 import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
-import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
+// import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
 import klifraBrowser from '../public/images/klifra_browser_3_2x.png';
 // import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
