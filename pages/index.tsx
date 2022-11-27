@@ -129,7 +129,7 @@ const Home = () => (
           {/* Spacing container */}
           <div className="mx-auto flex items-center">
             {/* Browser image */}
-            <Image src={klifraBrowser} alt="Klifra website" className="" priority />
+            <Image src={klifraBrowser} alt="Klifra website" className="" width={1280} priority />
 
             {/* Image 1 */}
             {/* <div className="">
