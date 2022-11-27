@@ -9,7 +9,8 @@ import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
 import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
-import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
+import klifraBrowser from '../public/images/klifra_browser_3_2x.png';
+// import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
 import BauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
 import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_logo.svg';
 import KuttigEngineeringLogo from '../public/images/logos/kuttig_engineering_logo.svg';
@@ -17,7 +18,7 @@ import LbtRuegenLogo from '../public/images/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/images/logos/lin-tec_logo.svg';
 import RobertDenierLogo from '../public/images/logos/robert_denier_logo.svg';
 // import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
-import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
+// import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 
 const projects = [
   {
@@ -127,41 +128,40 @@ const Home = () => (
         <div className="flex justify-center lg:justify-start">
           {/* Spacing container */}
           <div className="mx-auto flex items-center">
+            {/* Browser image */}
+            <Image src={klifraBrowser} alt="Klifra website" className="" priority />
+
             {/* Image 1 */}
-            <div className="">
+            {/* <div className="">
               <Image
                 src={webBuddyMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                // layout="fixed"
                 width={253}
                 height={512}
-                // priority
               />
-            </div>
+            </div> */}
 
             {/* Image 2 */}
-            <div className="z-10 -ml-24 md:ml-4 lg:ml-12">
+            {/* <div className="z-10 -ml-24 md:ml-4 lg:ml-12"> */}
+            {/* <div className="">
               <Image
                 src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                // layout="fixed"
                 width={285}
                 height={576}
                 priority
               />
-            </div>
+            </div> */}
 
             {/* Image 3 */}
-            <div className="-ml-24 md:ml-4 lg:ml-12">
+            {/* <div className="-ml-24 md:ml-4 lg:ml-12">
               <Image
                 src={klifraMockup}
                 alt="Klifra website iphone 13 pro mockup"
-                // layout="fixed"
                 width={253}
                 height={512}
-                // priority
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
