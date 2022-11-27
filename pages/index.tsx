@@ -97,7 +97,10 @@ const Home = () => (
     <Head />
 
     {/* Hero */}
-    <Section first classes="bg-gradient-radial from-neutral-800 to-transparent">
+    <Section
+      first
+      // classes="bg-gradient-radial from-neutral-800 to-transparent"
+    >
       {/* Text container */}
       <div className="space-y-8">
         <div className="flex sm:justify-center">
