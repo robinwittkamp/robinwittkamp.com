@@ -12,7 +12,9 @@ const Logo = (): ReactElement => (
       <RobinWittkampLogo className="h-6 md:h-7" />
       <div className="flex items-center">
         <span className="sr-only">Robin Wittkamp</span>
-        <span className="font-gilroy text-xl font-black md:text-2xl">Robin Wittkamp</span>
+        <span className="whitespace-nowrap font-gilroy text-xl font-black md:text-2xl">
+          Robin Wittkamp
+        </span>
       </div>
     </div>
   </Link>
