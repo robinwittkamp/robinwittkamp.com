@@ -178,7 +178,7 @@ const Header = (): ReactElement => {
                                 {focused === item ? (
                                   <m.div
                                     // TODO: prevent items from animating to 0 opacity when quickly switching between them
-                                    className="absolute left-[10%] right-[10%] top-1/4 bottom-1/4 z-0 rounded-xl bg-neutral-100 dark:bg-neutral-700"
+                                    className="absolute inset-x-[10%] inset-y-1/4 z-0 rounded-xl bg-neutral-100 dark:bg-neutral-700"
                                     key={item.name}
                                     initial="unfocused"
                                     animate="focused"
