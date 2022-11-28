@@ -76,18 +76,18 @@ const mobileNavItemVariants = {
 
 const desktopNavItemVariants = {
   focused: {
-    opacity: 1,
-    transition: {
-      ease: 'easeInOut',
-      duration: 0.3,
-    },
+    // opacity: 1,
+    // transition: {
+    //   ease: 'easeInOut',
+    //   duration: 0.3,
+    // },
   },
   unfocused: {
-    opacity: 0,
-    transition: {
-      ease: 'easeInOut',
-      duration: 0.3,
-    },
+    // opacity: 0,
+    // transition: {
+    //   ease: 'easeInOut',
+    //   duration: 0.3,
+    // },
   },
 };
 
