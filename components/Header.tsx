@@ -172,7 +172,7 @@ const Header = (): ReactElement => {
                               onMouseEnter={() => setFocused(item)}
                               // onMouseLeave={() => setFocused(null)}
                               tabIndex={0}
-                              role="link"
+                              // role="link"
                             >
                               <AnimatePresence>
                                 {focused === item ? (
