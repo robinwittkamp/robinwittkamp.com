@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
-// import PropTypes from 'prop-types';
 
 interface TextLinkProps {
   children: ReactNode;
@@ -18,15 +17,5 @@ const TextLink = ({ children, external = false, href }: TextLinkProps): ReactEle
     {children}
   </Link>
 );
-
-// TextLink.propTypes = {
-//   children: PropTypes.string.isRequired,
-//   external: PropTypes.bool,
-//   href: PropTypes.string.isRequired,
-// };
-
-// TextLink.defaultProps = {
-//   external: false,
-// };
 
 export default TextLink;

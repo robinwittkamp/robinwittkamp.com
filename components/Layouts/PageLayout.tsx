@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import type { ReactElement, ReactNode } from 'react';
 
 import Footer from '../Footer';
@@ -15,9 +14,5 @@ const PageLayout = ({ children }: PageLayoutProps): ReactElement => (
     <Footer />
   </>
 );
-
-// PageLayout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// };
 
 export default PageLayout;

@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import type { ReactElement } from 'react';
 
 import LinkButton from '../Buttons/LinkButton';
@@ -23,10 +22,5 @@ const ErrorLayout = ({ headingText, bodyText }: ErrorLayoutProps): ReactElement 
     </div>
   </Section>
 );
-
-// ErrorLayout.propTypes = {
-//   headingText: PropTypes.string.isRequired,
-//   bodyText: PropTypes.string.isRequired,
-// };
 
 export default ErrorLayout;

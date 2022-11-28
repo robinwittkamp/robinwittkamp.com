@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import type { ReactElement, ReactNode } from 'react';
 
 interface SectionProps {
@@ -21,18 +20,5 @@ const Section = ({
     <div className="mx-auto max-w-screen-xl">{children}</div>
   </section>
 );
-
-// Section.propTypes = {
-//   children: PropTypes.node.isRequired,
-//   classes: PropTypes.string,
-//   first: PropTypes.bool,
-//   id: PropTypes.string,
-// };
-
-// Section.defaultProps = {
-//   classes: '',
-//   first: false,
-//   id: null,
-// };
 
 export default Section;

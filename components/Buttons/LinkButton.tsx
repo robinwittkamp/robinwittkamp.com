@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
-// import PropTypes from 'prop-types';
 
 interface LinkButtonProps {
   children: ReactNode;
@@ -39,16 +38,5 @@ const LinkButton = ({
     </Link>
   );
 };
-
-// LinkButton.propTypes = {
-//   children: PropTypes.node.isRequired,
-//   external: PropTypes.bool,
-//   href: PropTypes.string.isRequired,
-//   variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']).isRequired,
-// };
-
-// LinkButton.defaultProps = {
-//   external: false,
-// };
 
 export default LinkButton;
