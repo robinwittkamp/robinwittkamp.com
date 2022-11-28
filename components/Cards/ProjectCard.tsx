@@ -19,7 +19,7 @@ const ProjectCard = ({ title, description, href }: ProjectCardProps): ReactEleme
       <p className="mt-6 text-lg text-neutral-400 lg:text-xl">{description}</p>
       <div className="mt-6">
         <LinkButton href={href} variant="secondary" external>
-          <span>Visit website</span>
+          <span className="whitespace-nowrap">Visit website</span>
           <FontAwesomeIcon icon={faAngleRight} className="ml-2 text-lg" />
         </LinkButton>
       </div>
