@@ -132,10 +132,10 @@ const Home = () => (
           {/* Spacing container */}
           <div className="mx-auto flex items-center">
             {/* Browser image */}
-            <Image src={klifraBrowser} alt="Klifra website" className="" width={1280} priority />
+            <Image src={klifraBrowser} alt="Klifra website" width={1280} priority />
 
             {/* Image 1 */}
-            {/* <div className="">
+            {/* <div>
               <Image
                 src={webBuddyMockup}
                 alt="Klifra website iphone 13 pro mockup"
@@ -146,7 +146,7 @@ const Home = () => (
 
             {/* Image 2 */}
             {/* <div className="z-10 -ml-24 md:ml-4 lg:ml-12"> */}
-            {/* <div className="">
+            {/* <div>
               <Image
                 src={energiewerkRuegenMockup}
                 alt="Klifra website iphone 13 pro mockup"
@@ -241,15 +241,6 @@ const Home = () => (
     </Section>
 
     <CtaContactSection />
-
-    {/* <Section id="test">
-      <h1 className="">Heading 1</h1>
-      <h2 className="">Heading 2</h2>
-      <h3 className="">Heading 3</h3>
-      <h4 className="">Heading 4</h4>
-      <h5 className="">Heading 5</h5>
-      <h6 className="">Heading 6</h6>
-    </Section> */}
   </PageLayout>
 );
 

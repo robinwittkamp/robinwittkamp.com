@@ -163,7 +163,7 @@ const Header = (): ReactElement => {
                     >
                       <ul className="flex">
                         {navigation.map((item) => (
-                          <li key={item.name} className="">
+                          <li key={item.name}>
                             <Link
                               className="relative flex h-[4.5rem] items-center px-6 outline-0"
                               href={item.href}

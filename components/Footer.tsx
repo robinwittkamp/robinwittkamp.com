@@ -150,7 +150,7 @@ const Footer = (): ReactElement => (
             >
               <div className="flex items-center space-x-2">
                 <FontAwesomeIcon icon={faCode} className="w-3" />
-                <span className="">View code on GitHub</span>
+                <span>View code on GitHub</span>
               </div>
             </a>
           </div>
