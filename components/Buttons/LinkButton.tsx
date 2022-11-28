@@ -1,4 +1,4 @@
-import ctl from '@netlify/classnames-template-literals';
+import clsx from 'clsx';
 import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
 // import PropTypes from 'prop-types';
@@ -11,30 +11,9 @@ interface LinkButtonProps {
 }
 
 const variants = {
-  primary: `
-    border-white
-    bg-white
-    text-neutral-900
-    shadow-lg
-    shadow-black/100
-    hover:border-neutral-200
-    hover:bg-neutral-200
-    hover:shadow-md
-    hover:shadow-black/100`,
-  secondary: `
-    border-neutral-700
-    bg-neutral-700
-    text-neutral-100
-    hover:border-neutral-600
-    hover:bg-neutral-600
-    hover:text-white`,
-  tertiary: `
-    border-neutral-800
-    bg-neutral-900
-    text-neutral-300
-    hover:border-neutral-700
-    hover:bg-neutral-800
-    hover:text-neutral-100`,
+  primary: `border-white bg-white text-neutral-900 shadow-lg shadow-black/100 hover:border-neutral-200 hover:bg-neutral-200 hover:shadow-md hover:shadow-black/100`,
+  secondary: `border-neutral-700 bg-neutral-700 text-neutral-100 hover:border-neutral-600 hover:bg-neutral-600 hover:text-white`,
+  tertiary: `border-neutral-800 bg-neutral-900 text-neutral-300 hover:border-neutral-700 hover:bg-neutral-800 hover:text-neutral-100`,
 };
 
 const LinkButton = ({
@@ -45,18 +24,8 @@ const LinkButton = ({
 }: LinkButtonProps): ReactElement => {
   const variantClasses = variants[variant];
 
-  const classes = ctl(
-    `inline-flex
-    items-center
-    rounded-2xl
-    border
-    px-6
-    py-3
-    text-lg
-    font-extrabold
-    transition
-    duration-300
-    ${variantClasses}`
+  const classes = clsx(
+    `inline-flex items-center rounded-2xl border px-6 py-3 text-lg font-extrabold transition duration-300 ${variantClasses}`
   );
 
   return (
