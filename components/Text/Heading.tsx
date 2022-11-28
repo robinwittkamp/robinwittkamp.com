@@ -1,8 +1,8 @@
 import clsx from 'clsx';
-import type { ReactElement } from 'react';
+import type { ReactElement, ReactNode } from 'react';
 
 interface HeadingProps {
-  children: string;
+  children: ReactNode | ReactNode[] | string;
   classes?: string;
   variant: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 }
