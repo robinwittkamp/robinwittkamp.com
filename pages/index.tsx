@@ -112,7 +112,10 @@ const Home = () => (
           variant="h1"
           classes="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg"
         >
-          Beautiful websites that improve your business
+          <span className="bg-gradient-to-tr from-red-600 to-amber-500 bg-clip-text text-transparent">
+            Beautiful
+          </span>{' '}
+          websites that improve your business
         </Heading>
         <p className="max-w-md text-xl text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
           Fast and reliable websites with a beautiful design that help to achieve your business
