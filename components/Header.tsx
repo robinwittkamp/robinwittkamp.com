@@ -168,9 +168,9 @@ const Header = (): ReactElement => {
                               className="relative flex h-[4.5rem] items-center px-6 outline-0"
                               href={item.href}
                               onFocus={() => setFocused(item)}
-                              // onBlur={() => setFocused(null)}
+                              // onBlur={() => setFocused(undefined)}
                               onMouseEnter={() => setFocused(item)}
-                              // onMouseLeave={() => setFocused(null)}
+                              // onMouseLeave={() => setFocused(undefined)}
                               tabIndex={0}
                               // role="link"
                             >
