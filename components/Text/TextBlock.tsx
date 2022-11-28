@@ -6,7 +6,7 @@ interface TextBlockProps {
 }
 
 const TextBlock = ({ children }: TextBlockProps): ReactElement => (
-  <p className="text-xl text-neutral-500 dark:text-neutral-400">{children}</p>
+  <p className="text-xl text-neutral-400">{children}</p>
 );
 
 // TextBlock.propTypes = {

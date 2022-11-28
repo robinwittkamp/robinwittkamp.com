@@ -23,7 +23,7 @@ const navigation = [
 ];
 
 const hamburgerLine =
-  'h-[2px] w-full rounded-full bg-neutral-900 transform duration-300 group-focus:bg-neutral-500 group-hover:bg-neutral-500 dark:bg-white dark:group-focus:bg-neutral-300 dark:group-hover:bg-neutral-300';
+  'h-[2px] w-full rounded-full bg-white transform duration-300 group-focus:bg-neutral-300 group-hover:bg-neutral-300';
 
 const panelVariants = {
   open: {
@@ -115,11 +115,11 @@ const Header = (): ReactElement => {
       <Popover>
         {({ open }) => (
           <m.header
-            className={`fixed top-0 z-50 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-transparent bg-white backdrop-blur-lg dark:bg-neutral-900 md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-white/90 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
+            className={`fixed top-0 z-50 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-transparent bg-neutral-900 backdrop-blur-lg md:h-[4.5rem] [@supports(backdrop-filter:blur(0))]:bg-neutral-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150 ${
               isOpen
-                ? 'bg-white backdrop-blur-none dark:bg-neutral-900 [@supports(backdrop-filter:blur(0))]:bg-white/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0 [@supports(backdrop-filter:blur(0))]:dark:bg-neutral-900/100'
+                ? 'bg-neutral-900 backdrop-blur-none [@supports(backdrop-filter:blur(0))]:bg-neutral-900/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0'
                 : ''
-            } ${isWindowAtTop ? '' : 'border-neutral-900/10 dark:border-neutral-50/10'}`}
+            } ${isWindowAtTop ? '' : 'border-neutral-50/10'}`}
           >
             <div className="flex-1">
               {/* x-Paddings */}
@@ -178,7 +178,7 @@ const Header = (): ReactElement => {
                                 {focused === item ? (
                                   <m.div
                                     // TODO: prevent items from animating to 0 opacity when quickly switching between them
-                                    className="absolute inset-x-[10%] inset-y-1/4 z-0 rounded-xl bg-neutral-100 dark:bg-neutral-700"
+                                    className="absolute inset-x-[10%] inset-y-1/4 z-0 rounded-xl bg-neutral-700"
                                     key={item.name}
                                     initial="unfocused"
                                     animate="focused"
@@ -222,14 +222,14 @@ const Header = (): ReactElement => {
                       <m.nav
                         key="nav"
                         variants={mobileNavVariants}
-                        className="border-t border-neutral-200 dark:border-neutral-800"
+                        className="border-t border-neutral-800"
                       >
                         {navigation.map((item) => (
                           <m.div key={item.name} variants={mobileNavItemVariants}>
                             <Popover.Button
                               as="a"
                               href={item.href}
-                              className="block border-b border-neutral-200 px-4 py-3 dark:border-neutral-800 sm:px-8"
+                              className="block border-b border-neutral-800 px-4 py-3 sm:px-8"
                             >
                               <span className="text-lg">{item.name}</span>
                             </Popover.Button>

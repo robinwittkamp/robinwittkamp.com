@@ -12,50 +12,29 @@ interface LinkButtonProps {
 
 const variants = {
   primary: `
-    border-neutral-900
-    bg-neutral-900
-    text-white
-    shadow-lg
-    shadow-black/25
-    hover:border-neutral-800
-    hover:bg-neutral-800
-    hover:shadow-md
-    hover:shadow-black/25
-    dark:border-white
-    dark:bg-white
-    dark:text-neutral-900
-    dark:shadow-lg
-    dark:shadow-black/100
-    dark:hover:border-neutral-200
-    dark:hover:bg-neutral-200
-    dark:hover:shadow-md
-    dark:hover:shadow-black/100`,
-  secondary: `
-    border-neutral-200
-    bg-neutral-200
-    text-neutral-800
-    hover:border-neutral-300
-    hover:bg-neutral-300
-    hover:text-neutral-900
-    dark:border-neutral-700
-    dark:bg-neutral-700
-    dark:text-neutral-100
-    dark:hover:border-neutral-600
-    dark:hover:bg-neutral-600
-    dark:hover:text-white`,
-  tertiary: `
-    border-neutral-100
+    border-white
     bg-white
-    text-neutral-700
+    text-neutral-900
+    shadow-lg
+    shadow-black/100
     hover:border-neutral-200
-    hover:bg-neutral-100
-    hover:text-neutral-800
-    dark:border-neutral-800
-    dark:bg-neutral-900
-    dark:text-neutral-300
-    dark:hover:border-neutral-700
-    dark:hover:bg-neutral-800
-    dark:hover:text-neutral-100`,
+    hover:bg-neutral-200
+    hover:shadow-md
+    hover:shadow-black/100`,
+  secondary: `
+    border-neutral-700
+    bg-neutral-700
+    text-neutral-100
+    hover:border-neutral-600
+    hover:bg-neutral-600
+    hover:text-white`,
+  tertiary: `
+    border-neutral-800
+    bg-neutral-900
+    text-neutral-300
+    hover:border-neutral-700
+    hover:bg-neutral-800
+    hover:text-neutral-100`,
 };
 
 const LinkButton = ({

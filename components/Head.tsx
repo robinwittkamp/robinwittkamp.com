@@ -25,7 +25,8 @@ const Head = ({
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#171717" />
     <meta name="msapplication-TileColor" content="#171717" />
-    <meta
+    <meta name="theme-color" content="#171717" />
+    {/* <meta
       key="theme-color-light"
       name="theme-color"
       content="#ffffff"
@@ -36,7 +37,7 @@ const Head = ({
       name="theme-color"
       content="#171717"
       media="(prefers-color-scheme: dark)"
-    />
+    /> */}
   </NextHead>
 );
 

@@ -104,7 +104,7 @@ const Home = () => (
       {/* Text container */}
       <div className="space-y-8">
         <div className="flex sm:justify-center">
-          <span className="block rounded-full border border-neutral-200 bg-neutral-50 px-4 py-1 text-center font-medium text-neutral-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400">
+          <span className="block rounded-full border border-neutral-700 bg-neutral-800 px-4 py-1 text-center font-medium text-neutral-400">
             Developer &bull; Designer &bull; Freelancer
           </span>
         </div>
@@ -114,7 +114,7 @@ const Home = () => (
         >
           Beautiful websites that improve your business
         </Heading>
-        <p className="max-w-md text-xl text-neutral-500 dark:text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
+        <p className="max-w-md text-xl text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
           Fast and reliable websites with a beautiful design that help to achieve your business
           goals.
         </p>
@@ -171,11 +171,9 @@ const Home = () => (
 
       {/* Company logos */}
       <div className="mt-24 sm:mt-32">
-        <span className="block text-center text-xl text-neutral-500 dark:text-neutral-400">
-          Clients I worked with
-        </span>
+        <span className="block text-center text-xl text-neutral-400">Clients I worked with</span>
         {/* Logos container */}
-        <div className="mx-auto mt-12 space-y-8 text-neutral-800 dark:text-neutral-100 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0 md:max-w-2xl lg:max-w-[58rem]">
+        <div className="mx-auto mt-12 space-y-8 text-neutral-100 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0 md:max-w-2xl lg:max-w-[58rem]">
           {logos.map((item) => (
             <div
               key={item.name}
@@ -192,16 +190,16 @@ const Home = () => (
     <Section>
       {/* <span className="font-bold text-purple-500">First things first.</span> */}
       <Heading variant="h2">About me</Heading>
-      <p className="mt-8 text-xl text-neutral-500 dark:text-neutral-400 lg:text-2xl">
+      <p className="mt-8 text-xl text-neutral-400 lg:text-2xl">
         Hi, I&apos;m Robin. Besides my studies I work as a{' '}
-        <span className="text-neutral-800 dark:text-neutral-300">freelance web developer</span> and{' '}
-        <span className="text-neutral-800 dark:text-neutral-300">UI/UX designer</span>. In 2018 I
-        registered a <span className="text-neutral-800 dark:text-neutral-300">business</span> and
-        since then I&apos;ve been implementing websites for companies and organizations from all
-        over Germany. Today, I increasingly implement websites and web applications that I program
-        from scratch. For this I use technologies like{' '}
+        <span className="text-neutral-300">freelance web developer</span> and{' '}
+        <span className="text-neutral-300">UI/UX designer</span>. In 2018 I registered a{' '}
+        <span className="text-neutral-300">business</span> and since then I&apos;ve been
+        implementing websites for companies and organizations from all over Germany. Today, I
+        increasingly implement websites and web applications that I program from scratch. For this I
+        use technologies like{' '}
         <a
-          className="text-blue-600 dark:text-blue-400"
+          className="text-blue-400"
           href="https://reactjs.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -210,7 +208,7 @@ const Home = () => (
         </a>{' '}
         and{' '}
         <a
-          className="text-blue-600 dark:text-blue-400"
+          className="text-blue-400"
           href="https://nextjs.org/"
           target="_blank"
           rel="noopener noreferrer"
