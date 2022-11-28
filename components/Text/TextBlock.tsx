@@ -1,11 +1,15 @@
+import clsx from 'clsx';
 import type { ReactElement, ReactNode } from 'react';
 
 interface TextBlockProps {
   children: ReactNode | ReactNode[] | string;
+  classes?: string;
 }
 
-const TextBlock = ({ children }: TextBlockProps): ReactElement => (
-  <p className="text-xl text-neutral-400">{children}</p>
-);
+const TextBlock = ({ children, classes }: TextBlockProps): ReactElement => {
+  const mergedClasses = clsx(`text-xl text-neutral-400 ${classes}`);
+
+  return <p className={mergedClasses}>{children}</p>;
+};
 
 export default TextBlock;
