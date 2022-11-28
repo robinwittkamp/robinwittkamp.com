@@ -1,5 +1,5 @@
 import { Popover } from '@headlessui/react';
-import { AnimatePresence, LazyMotion, m, useScroll } from 'framer-motion';
+import { AnimatePresence, LazyMotion, m } from 'framer-motion';
 import Link from 'next/link';
 import type { ReactElement } from 'react';
 import { useEffect, useState } from 'react';
@@ -95,18 +95,20 @@ const Header = (): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [isWindowAtTop, setIsWindowAtTop] = useState(true);
   const [focused, setFocused] = useState<NavigationProps>();
-  const { scrollY } = useScroll();
+
+  const handleScroll = () => {
+    // console.log('scroll event', window.scrollY);
+    if (window.scrollY <= 0) {
+      setIsWindowAtTop(true);
+    } else {
+      setIsWindowAtTop(false);
+    }
+  };
 
   useEffect(() => {
-    return scrollY.onChange((scrollPosition) => {
-      // console.log('Page scroll position: ', scrollPosition);
-      if (scrollPosition <= 0) {
-        setIsWindowAtTop(true);
-      } else {
-        setIsWindowAtTop(false);
-      }
-    });
-  }, [scrollY]);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
 
   return (
     <LazyMotion features={loadFramerMotionFeatures} strict>
