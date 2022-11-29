@@ -9,7 +9,15 @@ module.exports = {
     // },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(ellipse 80% 50% at 50% -20%, var(--tw-gradient-stops))',
+        'gradient-radial-hero':
+          'radial-gradient(ellipse 80% 50% at 50% -20%, var(--tw-gradient-stops))',
+      },
+      colors: {
+        robin: {
+          red: '#FF3A2C',
+          orange: '#FFA237',
+          yellow: '#FFC929',
+        },
       },
       fontFamily: {
         gilroy: ['var(--font-gilroy)', ...defaultTheme.fontFamily.sans],

@@ -99,7 +99,7 @@ const Home = () => (
     {/* Hero */}
     <Section
       first
-      // classes="bg-gradient-radial from-neutral-800 to-transparent"
+      // classes="bg-gradient-radial-hero from-orange-500/10 to-transparent"
     >
       {/* Text container */}
       <div className="space-y-8">
