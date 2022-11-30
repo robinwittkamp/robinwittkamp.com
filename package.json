@@ -49,7 +49,7 @@
     "eslint-plugin-security": "^1.5.0",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-sonarjs": "^0.16.0",
-    "eslint-plugin-tailwindcss": "^3.7.0",
+    "eslint-plugin-tailwindcss": "^3.7.1",
     "postcss": "^8.4.19",
     "prettier": "^2.8.0",
     "prettier-plugin-tailwindcss": "^0.2.0",
