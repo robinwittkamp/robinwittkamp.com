@@ -15,5 +15,5 @@ max_line_length = 100
 indent_size = false
 trim_trailing_whitespace = false
 
-[*.{html,svg,php}]
+[*.{html,php}]
 indent_size = 4
