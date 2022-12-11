@@ -11,7 +11,7 @@ import Heading from '../components/Text/Heading';
 // import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
 import KlifraBrowser from '../public/images/klifra_mockup_browser.png';
-import LinTecBrowser from '../public/images/lin-tec_mockup_browser_5.png';
+// import LinTecBrowser from '../public/images/lin-tec_mockup_browser_5.png';
 // import LinTecFuturePadMockup from '../public/images/lin-tec_mockup_future_pad.png';
 // import LinTecMacBookProMockup from '../public/images/lin-tec_mockup_macbook_pro.png';
 import AdessoLogo from '../public/images/logos/adesso_logo.svg';
