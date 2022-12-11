@@ -14,11 +14,11 @@ import KlifraBrowser from '../public/images/klifra_mockup_browser.png';
 // import LinTecBrowser from '../public/images/lin-tec_mockup_browser_5.png';
 // import LinTecFuturePadMockup from '../public/images/lin-tec_mockup_future_pad.png';
 // import LinTecMacBookProMockup from '../public/images/lin-tec_mockup_macbook_pro.png';
-import AdessoLogo from '../public/images/logos/adesso_logo.svg';
+// import AdessoLogo from '../public/images/logos/adesso_logo.svg';
 import BauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
 import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_logo.svg';
 import HowToSosLogo from '../public/images/logos/how_to_sos_logo.svg';
-import HshlLogo from '../public/images/logos/hshl_logo.svg';
+// import HshlLogo from '../public/images/logos/hshl_logo.svg';
 import KuttigEngineeringLogo from '../public/images/logos/kuttig_engineering_logo.svg';
 import LbtRuegenLogo from '../public/images/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/images/logos/lin-tec_logo.svg';
@@ -125,18 +125,18 @@ const clientLogos = [
   },
 ];
 
-const employerLogos = [
-  {
-    name: 'adesso logo',
-    logo: AdessoLogo,
-    svgClassas: 'h-10',
-  },
-  {
-    name: 'HSHL logo',
-    logo: HshlLogo,
-    svgClassas: 'h-7',
-  },
-];
+// const employerLogos = [
+//   {
+//     name: 'adesso logo',
+//     logo: AdessoLogo,
+//     svgClassas: 'h-10',
+//   },
+//   {
+//     name: 'HSHL logo',
+//     logo: HshlLogo,
+//     svgClassas: 'h-7',
+//   },
+// ];
 
 const Home = () => (
   <PageLayout>
