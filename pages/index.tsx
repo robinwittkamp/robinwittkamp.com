@@ -7,16 +7,25 @@ import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';
 import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
+// import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
 // import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
-import klifraBrowser from '../public/images/klifra_browser_3_2x.png';
-// import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
+import KlifraBrowser from '../public/images/klifra_mockup_browser.png';
+import LinTecBrowser from '../public/images/lin-tec_mockup_browser_5.png';
+// import LinTecFuturePadMockup from '../public/images/lin-tec_mockup_future_pad.png';
+// import LinTecMacBookProMockup from '../public/images/lin-tec_mockup_macbook_pro.png';
+import AdessoLogo from '../public/images/logos/adesso_logo.svg';
 import BauraumMvLogo from '../public/images/logos/bauraum_mv_logo.svg';
 import EnergiewerkRuegenLogo from '../public/images/logos/energiewerk_ruegen_logo.svg';
+import HowToSosLogo from '../public/images/logos/how_to_sos_logo.svg';
+import HshlLogo from '../public/images/logos/hshl_logo.svg';
 import KuttigEngineeringLogo from '../public/images/logos/kuttig_engineering_logo.svg';
 import LbtRuegenLogo from '../public/images/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/images/logos/lin-tec_logo.svg';
+import NewCreationsLogo from '../public/images/logos/new_creations_logo.svg';
 import RobertDenierLogo from '../public/images/logos/robert_denier_logo.svg';
+import RuegenNaturUrlaubLogo from '../public/images/logos/ruegen_natur_urlaub_logo.svg';
+import TherapieHenkeLogo from '../public/images/logos/therapie_henke_logo.svg';
 // import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
 // import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 
@@ -59,36 +68,73 @@ const projects = [
   },
 ];
 
-const logos = [
+const clientLogos = [
   {
-    name: 'LBT Rügen Logo',
+    name: 'LBT Rügen logo',
     logo: LbtRuegenLogo,
-    classes: 'h-7',
+    svgClassas: 'h-7',
   },
   {
-    name: 'Energiewerk Rügen Logo',
+    name: 'Energiewerk Rügen logo',
     logo: EnergiewerkRuegenLogo,
-    classes: 'h-8',
+    svgClassas: 'h-7',
   },
   {
-    name: 'Robert Denier Logo',
+    name: 'Robert Denier logo',
     logo: RobertDenierLogo,
-    classes: 'h-5',
+    svgClassas: 'h-5',
   },
   {
-    name: 'LIN-TEC Logo',
+    name: 'LIN-TEC logo',
     logo: LinTecLogo,
-    classes: 'h-9',
+    svgClassas: 'h-8',
   },
   {
-    name: 'Bauraum MV Logo',
+    name: 'Bauraum MV logo',
     logo: BauraumMvLogo,
-    classes: 'h-10',
+    svgClassas: 'h-10',
   },
   {
-    name: 'Kuttig Engineering Logo',
+    name: 'Kuttig Engineering logo',
     logo: KuttigEngineeringLogo,
-    classes: 'h-11',
+    svgClassas: 'h-10',
+  },
+  {
+    name: 'Ruegen Natur Urlaub logo',
+    logo: RuegenNaturUrlaubLogo,
+    wrapperClasses: 'hidden md:flex',
+    svgClassas: 'h-8',
+  },
+  {
+    name: 'How to SOS logo',
+    logo: HowToSosLogo,
+    wrapperClasses: 'hidden md:flex',
+    svgClassas: 'h-10',
+  },
+  {
+    name: 'New Creations logo',
+    logo: NewCreationsLogo,
+    wrapperClasses: 'hidden md:flex',
+    svgClassas: 'h-6',
+  },
+  {
+    name: 'Therapie Henke logo',
+    logo: TherapieHenkeLogo,
+    wrapperClasses: 'hidden xl:flex',
+    svgClassas: 'h-8',
+  },
+];
+
+const employerLogos = [
+  {
+    name: 'adesso logo',
+    logo: AdessoLogo,
+    svgClassas: 'h-10',
+  },
+  {
+    name: 'HSHL logo',
+    logo: HshlLogo,
+    svgClassas: 'h-7',
   },
 ];
 
@@ -129,13 +175,22 @@ const Home = () => (
       </div>
 
       {/* Image container */}
-      <div className="mt-24">
+      <div className="mt-20 md:mt-24">
         {/* Flex container */}
         <div className="flex justify-center lg:justify-start">
           {/* Spacing container */}
-          <div className="mx-auto flex items-center">
+          <div
+            className="flex items-center"
+            // className="-mx-[7.5rem] flex items-center"
+          >
             {/* Browser image */}
-            <Image src={klifraBrowser} alt="Klifra website" width={1280} priority />
+            <Image
+              className="min-w-full"
+              src={KlifraBrowser}
+              alt="Klifra website"
+              width={1520}
+              priority
+            />
 
             {/* Image 1 */}
             {/* <div>
@@ -173,19 +228,35 @@ const Home = () => (
       </div>
 
       {/* Company logos */}
-      <div className="mt-24 sm:mt-32">
-        <span className="block text-center text-xl text-neutral-400">Clients I worked with</span>
+      <div className="mt-20 md:mt-24">
+        <span className="block text-center text-xl text-neutral-400">
+          {/* I worked with companies from all over Germany */}
+          {/* Some of the companies I worked with */}
+          Trusted by businesses from all over Germany like
+        </span>
         {/* Logos container */}
-        <div className="mx-auto mt-12 space-y-8 text-neutral-100 sm:flex sm:flex-wrap sm:gap-y-12 sm:space-y-0 md:max-w-2xl lg:max-w-[58rem]">
-          {logos.map((item) => (
+        {/* <div className="mx-auto mt-8 space-y-8 sm:flex sm:max-w-lg sm:flex-wrap sm:items-center sm:justify-center sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-2xl"> */}
+        <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
+          {clientLogos.map((item) => (
             <div
               key={item.name}
-              className="flex items-center justify-center sm:flex-[1_1_50%] lg:flex-[1_1_33.3%]"
+              className={`flex items-center justify-center ${item.wrapperClasses}`}
             >
-              <item.logo className={item.classes} />
+              <item.logo className={item.svgClassas} />
             </div>
           ))}
         </div>
+        {/* <span className="mt-12 block text-center text-xl text-neutral-400">
+          Businesses I worked for as an intern or student
+        </span> */}
+        {/* <div className="mx-auto mt-8 space-y-8 sm:flex sm:max-w-2xl sm:flex-wrap sm:items-center sm:justify-center sm:gap-y-4 sm:gap-x-12 sm:space-y-0 xl:max-w-full"> */}
+        {/* <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-2 md:gap-x-0 xl:flex xl:max-w-full xl:justify-center xl:gap-x-12">
+          {employerLogos.map((item) => (
+            <div key={item.name} className="flex items-center justify-center">
+              <item.logo className={item.svgClassas} />
+            </div>
+          ))}
+        </div> */}
       </div>
     </Section>
 
