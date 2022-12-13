@@ -219,25 +219,29 @@ const Header = (): ReactElement => {
                     variants={panelVariants}
                     onAnimationStart={() => setIsOpen(true)}
                   >
-                    <RemoveScroll>
-                      <m.nav
-                        key="nav"
-                        variants={mobileNavVariants}
-                        className="border-t border-neutral-800"
-                      >
-                        {navigation.map((item) => (
-                          <m.div key={item.name} variants={mobileNavItemVariants}>
-                            <Popover.Button
-                              as="a"
-                              href={item.href}
-                              className="block border-b border-neutral-800 px-4 py-3 sm:px-8"
-                            >
-                              <span className="text-lg">{item.name}</span>
-                            </Popover.Button>
-                          </m.div>
-                        ))}
-                      </m.nav>
-                    </RemoveScroll>
+                    {({ close }) => (
+                      <RemoveScroll>
+                        <m.nav
+                          key="nav"
+                          variants={mobileNavVariants}
+                          className="border-t border-neutral-800"
+                        >
+                          {navigation.map((item) => (
+                            <m.div key={item.name} variants={mobileNavItemVariants}>
+                              <Link
+                                onClick={() => {
+                                  close();
+                                }}
+                                href={item.href}
+                                className="block border-b border-neutral-800 px-4 py-3 sm:px-8"
+                              >
+                                <span className="text-lg">{item.name}</span>
+                              </Link>
+                            </m.div>
+                          ))}
+                        </m.nav>
+                      </RemoveScroll>
+                    )}
                   </Popover.Panel>
                 )}
               </AnimatePresence>
