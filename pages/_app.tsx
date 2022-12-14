@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import localFont from '@next/font/local';
 import type { AppProps } from 'next/app';
+import { appWithTranslation } from 'next-i18next';
 
 config.autoAddCss = false;
 
@@ -31,4 +32,4 @@ const App = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default App;
+export default appWithTranslation(App);
