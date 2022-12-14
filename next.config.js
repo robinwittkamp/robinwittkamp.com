@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /** @type {import('next').NextConfig} */
 
 // Next.js bundle analyzer
@@ -6,14 +7,17 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
+const { i18n } = require('./next-i18next.config');
+
 // Next.js config
 const nextConfig = withBundleAnalyzer({
-  reactStrictMode: true,
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  i18n,
+  reactStrictMode: true,
 
   // SVGR
   webpack(config) {
