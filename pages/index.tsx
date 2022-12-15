@@ -1,4 +1,6 @@
+import type { GetStaticProps } from 'next';
 import Image from 'next/image';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import LinkButton from '../components/Buttons/LinkButton';
 import ProjectCard from '../components/Cards/ProjectCard';
@@ -313,5 +315,13 @@ const Home = () => (
     <CtaContactSection />
   </PageLayout>
 );
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'header', 'index', 'footer'])),
+    },
+  };
+};
 
 export default Home;
