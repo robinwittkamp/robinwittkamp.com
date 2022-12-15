@@ -6,22 +6,23 @@ import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import type { ReactElement } from 'react';
 
-// const languages = [
-//   { name: 'Deutsch', locale: 'de' },
-//   { name: 'English', locale: 'en' },
-// ];
+type MainNavItemProps = {
+  id: number;
+  name: string;
+  href: string;
+};
 
-// const mainNavigation = [
-//   { name: 'Home', href: '/' },
-//   { name: 'About', href: '/about' },
-//   { name: 'Work', href: '/work' },
-//   { name: 'Contact', href: '/contact' },
-// ];
+type LegalNavItemProps = {
+  id: number;
+  name: string;
+  href: string;
+};
 
-// const legalNavigation = [
-//   { name: 'Imprint', href: '/imprint' },
-//   { name: 'Privacy policy', href: '/privacy-policy' },
-// ];
+type LanguageNavItemProps = {
+  id: number;
+  name: string;
+  locale: string;
+};
 
 const Footer = (): ReactElement => {
   const router = useRouter();
@@ -97,16 +98,18 @@ const Footer = (): ReactElement => {
               {/* Main navigation */}
               <span className="block font-bold text-neutral-200">{t('mainNav.title')}</span>
               <ul className="mt-2">
-                {t('mainNav.items', { returnObjects: true }).map((item) => (
-                  <li key={item.id}>
-                    <a
-                      href={item.href}
-                      className="inline-block py-2 text-neutral-400 hover:text-white"
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
+                {t<string, MainNavItemProps[]>('mainNav.items', { returnObjects: true }).map(
+                  (item) => (
+                    <li key={item.id}>
+                      <a
+                        href={item.href}
+                        className="inline-block py-2 text-neutral-400 hover:text-white"
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
 
@@ -115,16 +118,18 @@ const Footer = (): ReactElement => {
               {/* Legal navigation */}
               <span className="block font-bold text-neutral-200">{t('legalNav.title')}</span>
               <ul className="mt-2">
-                {t('legalNav.items', { returnObjects: true }).map((item) => (
-                  <li key={item.id}>
-                    <Link
-                      href={item.href}
-                      className="inline-block py-2 text-neutral-400 hover:text-white"
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
+                {t<string, LegalNavItemProps[]>('legalNav.items', { returnObjects: true }).map(
+                  (item) => (
+                    <li key={item.id}>
+                      <Link
+                        href={item.href}
+                        className="inline-block py-2 text-neutral-400 hover:text-white"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
 
@@ -133,7 +138,9 @@ const Footer = (): ReactElement => {
               {/* Languages */}
               <span className="block font-bold text-neutral-200">{t('languageNav.title')}</span>
               <ul className="mt-2">
-                {t('languageNav.items', { returnObjects: true }).map((item) => (
+                {t<string, LanguageNavItemProps[]>('languageNav.items', {
+                  returnObjects: true,
+                }).map((item) => (
                   <li key={item.id}>
                     <button
                       type="button"
