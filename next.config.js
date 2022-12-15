@@ -17,6 +17,7 @@ const nextConfig = withBundleAnalyzer({
     ignoreDuringBuilds: true,
   },
   i18n,
+  // ignoreBuildErrors: true,
   reactStrictMode: true,
 
   // SVGR
