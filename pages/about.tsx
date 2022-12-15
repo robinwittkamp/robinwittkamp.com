@@ -82,7 +82,7 @@ const About = () => {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['header', 'about', 'footer'])),
+      ...(await serverSideTranslations(locale as string, ['header', 'about', 'footer'])),
     },
   };
 };

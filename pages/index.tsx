@@ -319,7 +319,7 @@ const Home = () => (
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'header', 'index', 'footer'])),
+      ...(await serverSideTranslations(locale as string, ['common', 'header', 'index', 'footer'])),
     },
   };
 };
