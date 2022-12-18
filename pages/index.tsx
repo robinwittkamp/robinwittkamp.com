@@ -166,16 +166,15 @@ const Home = () => {
             classes="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center lg:max-w-3xl xl:max-w-4xl xl:text-7xl"
           >
             <span className="bg-gradient-to-tr from-red-600 to-amber-400 bg-clip-text text-transparent">
-              {t('heroSection.heading_one')}
+              {t('heroSection.heading-one')}
             </span>
-            {t('heroSection.heading_two')}
+            {t('heroSection.heading-two')}
           </Heading>
           <p className="max-w-md text-xl text-rusty-400 sm:mx-auto sm:text-center lg:max-w-[45rem] lg:text-2xl">
             {t('heroSection.subheading')}
           </p>
           <div className="sm:flex sm:justify-center">
             <LinkButton href="/work" variant="primary">
-              {/* View projects */}
               {t('heroSection.button')}
             </LinkButton>
           </div>
