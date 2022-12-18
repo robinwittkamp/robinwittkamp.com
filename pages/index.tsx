@@ -192,7 +192,7 @@ const Home = () => {
                 className="min-w-full"
                 src={KlifraBrowser}
                 alt="Klifra website"
-                width={1520}
+                width={1280}
                 priority
               />
             </div>
