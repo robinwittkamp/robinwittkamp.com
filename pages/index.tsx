@@ -1,5 +1,6 @@
 import type { GetStaticProps } from 'next';
 import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import LinkButton from '../components/Buttons/LinkButton';
@@ -140,181 +141,154 @@ const clientLogos = [
 //   },
 // ];
 
-const Home = () => (
-  <PageLayout>
-    <Head />
+const Home = () => {
+  const { t, ready } = useTranslation('index');
+  if (!ready) return <span>loading translations...</span>;
 
-    {/* Hero */}
-    <Section
-      first
-      // classes="bg-gradient-radial-hero from-orange-500/10 to-transparent"
-    >
-      {/* Text container */}
-      <div className="space-y-8">
-        <div className="flex sm:justify-center">
-          <span className="block rounded-full border border-neutral-700 bg-neutral-800 px-4 py-1 text-center font-medium text-neutral-400">
-            Developer &bull; Designer &bull; Freelancer
-          </span>
-        </div>
-        <Heading
-          variant="h1"
-          classes="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg"
-        >
-          <span className="bg-gradient-to-tr from-red-600 to-amber-400 bg-clip-text text-transparent">
-            Beautiful
-          </span>{' '}
-          websites that improve your business
-        </Heading>
-        <p className="max-w-md text-xl text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
-          Fast and reliable websites with a beautiful design that help to achieve your business
-          goals.
-        </p>
-        <div className="sm:flex sm:justify-center">
-          <LinkButton href="/work" variant="primary">
-            View projects
-          </LinkButton>
-        </div>
-      </div>
+  return (
+    <PageLayout>
+      <Head />
 
-      {/* Image container */}
-      <div className="mt-20 md:mt-24">
-        {/* Flex container */}
-        <div className="flex justify-center lg:justify-start">
-          {/* Spacing container */}
-          <div
-            className="flex items-center"
-            // className="-mx-[7.5rem] flex items-center"
+      {/* Hero */}
+      <Section
+        first
+        // classes="bg-gradient-radial-hero from-orange-500/10 to-transparent"
+      >
+        {/* Text container */}
+        <div className="space-y-8">
+          <div className="flex sm:justify-center">
+            <span className="block rounded-full border border-rusty-700 bg-rusty-800 px-4 py-1 text-center font-medium text-rusty-400 lg:text-lg">
+              {t('heroSection.tagline')}
+            </span>
+          </div>
+          <Heading
+            variant="h1"
+            classes="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center lg:max-w-3xl xl:max-w-4xl xl:text-7xl"
           >
-            {/* Browser image */}
-            <Image
-              className="min-w-full"
-              src={KlifraBrowser}
-              alt="Klifra website"
-              width={1520}
-              priority
-            />
-
-            {/* Image 1 */}
-            {/* <div>
-              <Image
-                src={webBuddyMockup}
-                alt="Klifra website iphone 13 pro mockup"
-                width={253}
-                height={512}
-              />
-            </div> */}
-
-            {/* Image 2 */}
-            {/* <div className="z-10 -ml-24 md:ml-4 lg:ml-12"> */}
-            {/* <div>
-              <Image
-                src={energiewerkRuegenMockup}
-                alt="Klifra website iphone 13 pro mockup"
-                width={285}
-                height={576}
-                priority
-              />
-            </div> */}
-
-            {/* Image 3 */}
-            {/* <div className="-ml-24 md:ml-4 lg:ml-12">
-              <Image
-                src={klifraMockup}
-                alt="Klifra website iphone 13 pro mockup"
-                width={253}
-                height={512}
-              />
-            </div> */}
+            <span className="bg-gradient-to-tr from-red-600 to-amber-400 bg-clip-text text-transparent">
+              {t('heroSection.heading_one')}
+            </span>
+            {t('heroSection.heading_two')}
+          </Heading>
+          <p className="max-w-md text-xl text-rusty-400 sm:mx-auto sm:text-center lg:max-w-[45rem] lg:text-2xl">
+            {t('heroSection.subheading')}
+          </p>
+          <div className="sm:flex sm:justify-center">
+            <LinkButton href="/work" variant="primary">
+              {/* View projects */}
+              {t('heroSection.button')}
+            </LinkButton>
           </div>
         </div>
-      </div>
 
-      {/* Company logos */}
-      <div className="mt-20 md:mt-24">
-        <span className="block text-center text-xl text-neutral-400">
-          {/* I worked with companies from all over Germany */}
-          {/* Some of the companies I worked with */}
-          Trusted by businesses from all over Germany like
-        </span>
-        {/* Logos container */}
-        {/* <div className="mx-auto mt-8 space-y-8 sm:flex sm:max-w-lg sm:flex-wrap sm:items-center sm:justify-center sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-2xl"> */}
-        <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
-          {clientLogos.map((item) => (
-            <div
-              key={item.name}
-              className={`flex items-center justify-center ${item.wrapperClasses}`}
-            >
-              <item.logo className={item.svgClassas} />
+        {/* Image container */}
+        <div className="mt-20 md:mt-24">
+          {/* Flex container */}
+          <div className="flex justify-center lg:justify-start">
+            {/* Spacing container */}
+            <div className="flex items-center">
+              {/* Browser image */}
+              <Image
+                className="min-w-full"
+                src={KlifraBrowser}
+                alt="Klifra website"
+                width={1520}
+                priority
+              />
             </div>
-          ))}
+          </div>
         </div>
-        {/* <span className="mt-12 block text-center text-xl text-neutral-400">
+
+        {/* Company logos */}
+        <div className="mt-20 md:mt-24">
+          <span className="block text-center text-xl text-rusty-400">
+            Trusted by businesses like
+          </span>
+          {/* Logos container */}
+          <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
+            {clientLogos.map((item) => (
+              <div
+                key={item.name}
+                className={`flex items-center justify-center ${item.wrapperClasses}`}
+              >
+                <item.logo className={item.svgClassas} />
+              </div>
+            ))}
+          </div>
+          {/* <span className="mt-12 block text-center text-xl text-rusty-400">
           Businesses I worked for as an intern or student
         </span> */}
-        {/* <div className="mx-auto mt-8 space-y-8 sm:flex sm:max-w-2xl sm:flex-wrap sm:items-center sm:justify-center sm:gap-y-4 sm:gap-x-12 sm:space-y-0 xl:max-w-full"> */}
-        {/* <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-2 md:gap-x-0 xl:flex xl:max-w-full xl:justify-center xl:gap-x-12">
+          {/* <div className="mx-auto mt-8 space-y-8 sm:flex sm:max-w-2xl sm:flex-wrap sm:items-center sm:justify-center sm:gap-y-4 sm:gap-x-12 sm:space-y-0 xl:max-w-full"> */}
+          {/* <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-2 md:gap-x-0 xl:flex xl:max-w-full xl:justify-center xl:gap-x-12">
           {employerLogos.map((item) => (
             <div key={item.name} className="flex items-center justify-center">
               <item.logo className={item.svgClassas} />
             </div>
           ))}
         </div> */}
-      </div>
-    </Section>
+        </div>
+      </Section>
 
-    {/* About */}
-    <Section>
-      {/* <span className="font-bold text-purple-500">First things first.</span> */}
-      <Heading variant="h2">About me</Heading>
-      <p className="mt-8 text-xl text-neutral-400 lg:text-2xl">
-        Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
-        designer. In 2018 I registered a business and since then I&apos;ve been implementing
-        websites for companies and organizations from all over Germany. Today, I increasingly
-        implement websites and web applications that I program from scratch. For this I use
-        technologies like{' '}
-        <a
-          className="text-blue-400"
-          href="https://reactjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React.js
-        </a>{' '}
-        and{' '}
-        <a
-          className="text-blue-400"
-          href="https://nextjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Next.js
-        </a>{' '}
-        .
-      </p>
-    </Section>
+      {/* About */}
+      <Section>
+        {/* <span className="font-bold text-purple-500">First things first.</span> */}
+        <Heading variant="h2">About me</Heading>
+        <div className="md:flex md:gap-16">
+          <p className="mt-8 text-xl text-rusty-400 md:flex-1 lg:text-2xl">
+            Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
+            designer. In 2018 I registered a business and since then I&apos;ve been implementing
+            websites for companies and organizations from all over Germany. Today, I increasingly
+            implement websites and web applications that I program from scratch. For this I use
+            technologies like{' '}
+            <a
+              className="text-blue-400"
+              href="https://reactjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              React.js
+            </a>{' '}
+            and{' '}
+            <a
+              className="text-blue-400"
+              href="https://nextjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Next.js
+            </a>{' '}
+            .
+          </p>
+          <div className="md:mt-0 md:flex-1">
+            <div className="mx-auto mt-8 aspect-square max-w-lg rounded-2xl bg-rusty-800" />
+            {/* <Image src={Profil} alt="Robin" width={400} height={400} className="rounded-2xl" /> */}
+          </div>
+        </div>
+      </Section>
 
-    {/* Work */}
-    <Section>
-      {/* <span className="block text-center font-bold text-rose-500">Some of my projects.</span> */}
-      <Heading variant="h2" classes="text-center">
-        Latest work
-      </Heading>
-      {/* Cards container */}
-      <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
-        {projects.map((item) => (
-          <ProjectCard
-            key={item.title}
-            title={item.title}
-            description={item.description}
-            href={item.href}
-          />
-        ))}
-      </div>
-    </Section>
+      {/* Work */}
+      <Section>
+        {/* <span className="block text-center font-bold text-rose-500">Some of my projects.</span> */}
+        <Heading variant="h2" classes="text-center">
+          Latest work
+        </Heading>
+        {/* Cards container */}
+        <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
+          {projects.map((item) => (
+            <ProjectCard
+              key={item.title}
+              title={item.title}
+              description={item.description}
+              href={item.href}
+            />
+          ))}
+        </div>
+      </Section>
 
-    <CtaContactSection />
-  </PageLayout>
-);
+      <CtaContactSection />
+    </PageLayout>
+  );
+};
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
