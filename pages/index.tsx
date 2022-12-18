@@ -192,7 +192,8 @@ const Home = () => {
                 className="min-w-full"
                 src={KlifraBrowser}
                 alt="Klifra website"
-                width={1280}
+                // width={1280}
+                sizes="(max-width: 640px) 576px, (max-width: 768px) 704px, (max-width: 1024px) 960px, 1280px"
                 priority
               />
             </div>
