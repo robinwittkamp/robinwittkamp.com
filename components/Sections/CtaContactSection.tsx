@@ -6,11 +6,11 @@ import Section from './Section';
 
 const CtaContactSection = (): ReactElement => (
   <Section classes="">
-    <div className="rounded-[2rem] bg-neutral-800 px-6 py-12 sm:p-16 lg:p-24">
+    <div className="rounded-[2rem] bg-gradient-to-tr from-rusty-800/50 to-rusty-700/50 px-6 py-12 sm:p-16 lg:p-24">
       <Heading variant="h2" classes="sm:text-center">
         Let&apos;s work together
       </Heading>
-      <p className="mt-8 max-w-lg text-xl text-neutral-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
+      <p className="mt-8 max-w-lg text-xl text-rusty-400 sm:mx-auto sm:text-center lg:max-w-xl lg:text-2xl">
         If you are interested in building a project together or if you have any questions, feel free
         to contact me.
       </p>

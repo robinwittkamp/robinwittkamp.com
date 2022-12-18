@@ -46,13 +46,13 @@ const Footer = (): ReactElement => {
             {/* 1 column */}
             <div className="md:flex-[1_1_100%] lg:flex-[2_2_0%]">
               {/* Logo */}
-              <FontAwesomeIcon icon={faFeather} className="text-3xl text-neutral-500" />
-              <span className="mt-8 block max-w-[18rem] text-neutral-400">{t('description')}</span>
+              <FontAwesomeIcon icon={faFeather} className="text-3xl text-rusty-500" />
+              <span className="mt-8 block max-w-[18rem] text-rusty-400">{t('description')}</span>
               {/* Social icons */}
               <div className="mt-8 flex flex-wrap items-center space-x-8">
                 {/* GitHub */}
                 <a
-                  className="text-neutral-400 hover:text-white"
+                  className="text-rusty-400 hover:text-white"
                   href="https://github.com/robinwittkamp"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -62,7 +62,7 @@ const Footer = (): ReactElement => {
                 </a>
                 {/* LinkedIn */}
                 <a
-                  className="text-neutral-400 hover:text-white"
+                  className="text-rusty-400 hover:text-white"
                   href="https://www.linkedin.com/in/robinwittkamp"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -72,7 +72,7 @@ const Footer = (): ReactElement => {
                 </a>
                 {/* Xing */}
                 <a
-                  className="text-neutral-400 hover:text-white"
+                  className="text-rusty-400 hover:text-white"
                   href="https://www.xing.com/profile/Robin_Wittkamp2"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -82,7 +82,7 @@ const Footer = (): ReactElement => {
                 </a>
                 {/* Twitter */}
                 <a
-                  className="text-neutral-400 hover:text-white"
+                  className="text-rusty-400 hover:text-white"
                   href="https://twitter.com/robinwittkamp"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -96,14 +96,14 @@ const Footer = (): ReactElement => {
             {/* 2 column */}
             <div className="md:flex-1 lg:flex-1">
               {/* Main navigation */}
-              <span className="block font-bold text-neutral-200">{t('mainNav.title')}</span>
+              <span className="block font-bold text-rusty-200">{t('mainNav.title')}</span>
               <ul className="mt-2">
                 {t<string, MainNavItemProps[]>('mainNav.items', { returnObjects: true }).map(
                   (item) => (
                     <li key={item.id}>
                       <a
                         href={item.href}
-                        className="inline-block py-2 text-neutral-400 hover:text-white"
+                        className="inline-block py-2 text-rusty-400 hover:text-white"
                       >
                         {item.name}
                       </a>
@@ -116,14 +116,14 @@ const Footer = (): ReactElement => {
             {/* 3 column */}
             <div className="md:flex-1 lg:flex-1">
               {/* Legal navigation */}
-              <span className="block font-bold text-neutral-200">{t('legalNav.title')}</span>
+              <span className="block font-bold text-rusty-200">{t('legalNav.title')}</span>
               <ul className="mt-2">
                 {t<string, LegalNavItemProps[]>('legalNav.items', { returnObjects: true }).map(
                   (item) => (
                     <li key={item.id}>
                       <Link
                         href={item.href}
-                        className="inline-block py-2 text-neutral-400 hover:text-white"
+                        className="inline-block py-2 text-rusty-400 hover:text-white"
                       >
                         {item.name}
                       </Link>
@@ -136,7 +136,7 @@ const Footer = (): ReactElement => {
             {/* 4 column */}
             <div className="md:flex-1 lg:flex-1">
               {/* Languages */}
-              <span className="block font-bold text-neutral-200">{t('languageNav.title')}</span>
+              <span className="block font-bold text-rusty-200">{t('languageNav.title')}</span>
               <ul className="mt-2">
                 {t<string, LanguageNavItemProps[]>('languageNav.items', {
                   returnObjects: true,
@@ -146,7 +146,7 @@ const Footer = (): ReactElement => {
                       type="button"
                       // href="/"
                       // locale={item.locale}
-                      className="inline-block py-2 text-neutral-400 hover:text-white"
+                      className="inline-block py-2 text-rusty-400 hover:text-white"
                       onClick={() => onLanguageClick(item.locale)}
                     >
                       {item.name}
@@ -158,11 +158,11 @@ const Footer = (): ReactElement => {
           </div>
 
           {/* Second row, 2 columns container */}
-          <div className="mt-8 border-t border-neutral-800 pt-8 md:mt-16 md:flex md:flex-row-reverse ">
+          <div className="mt-8 border-t border-rusty-800 pt-8 md:mt-16 md:flex md:flex-row-reverse ">
             <div className="md:flex md:flex-1 md:justify-end">
               {/* Link to repository */}
               <a
-                className="inline-block py-2 text-neutral-400 hover:text-white"
+                className="inline-block py-2 text-rusty-400 hover:text-white"
                 href="https://github.com/robinwittkamp/robinwittkamp.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -176,7 +176,7 @@ const Footer = (): ReactElement => {
 
             <div className="md:flex-1">
               {/* Copyright notice */}
-              <span className="inline-block py-2 text-neutral-400">
+              <span className="inline-block py-2 text-rusty-400">
                 &copy; {new Date().getFullYear()} Robin Wittkamp
               </span>
             </div>
