@@ -158,8 +158,8 @@ const Footer = (): ReactElement => {
           </div>
 
           {/* Second row, 2 columns container */}
-          <div className="mt-8 border-t border-rusty-800 pt-8 md:mt-16 md:flex md:flex-row-reverse ">
-            <div className="md:flex md:flex-1 md:justify-end">
+          <div className="mt-8 border-t border-rusty-800 pt-8 md:mt-16 lg:flex lg:flex-row-reverse ">
+            <div className="lg:flex lg:flex-1 lg:justify-end">
               {/* Link to repository */}
               <a
                 className="inline-block py-2 text-rusty-400 hover:text-white"
@@ -174,7 +174,12 @@ const Footer = (): ReactElement => {
               </a>
             </div>
 
-            <div className="md:flex-1">
+            <div className="lg:flex-1">
+              {/* Made with */}
+              <span className="block py-2 text-rusty-400 lg:text-center">{t('madeWith')}</span>
+            </div>
+
+            <div className="lg:flex-1">
               {/* Copyright notice */}
               <span className="inline-block py-2 text-rusty-400">
                 &copy; {new Date().getFullYear()} Robin Wittkamp

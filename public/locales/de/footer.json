@@ -55,5 +55,6 @@
       }
     ]
   },
+  "madeWith": "Erstellt mit Next.js, TailwindCSS & Framer Motion",
   "linkToGitHubTitle": "Code auf GitHub ansehen"
 }
