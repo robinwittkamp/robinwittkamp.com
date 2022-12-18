@@ -32,6 +32,13 @@ import TherapieHenkeLogo from '../public/images/logos/therapie_henke_logo.svg';
 // import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
 // import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 
+type ProjectProps = {
+  id: number;
+  title: string;
+  href: string;
+  description: string;
+};
+
 const projects = [
   {
     title: 'Robert Denier',
@@ -232,7 +239,7 @@ const Home = () => {
       {/* About */}
       <Section>
         {/* <span className="font-bold text-purple-500">First things first.</span> */}
-        <Heading variant="h2">About me</Heading>
+        <Heading variant="h2">{t('aboutSection.heading')}</Heading>
         <div className="md:flex md:gap-16">
           <p className="mt-8 text-xl text-rusty-400 md:flex-1 lg:text-2xl">
             Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
@@ -274,14 +281,16 @@ const Home = () => {
         </Heading>
         {/* Cards container */}
         <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
-          {projects.map((item) => (
-            <ProjectCard
-              key={item.title}
-              title={item.title}
-              description={item.description}
-              href={item.href}
-            />
-          ))}
+          {t<string, ProjectProps[]>('workSection.projects', { returnObjects: true }).map(
+            (item) => (
+              <ProjectCard
+                key={item.id}
+                title={item.title}
+                description={item.description}
+                href={item.href}
+              />
+            )
+          )}
         </div>
       </Section>
 
