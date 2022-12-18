@@ -16,10 +16,11 @@ interface NavigationProps {
 }
 
 const navigation = [
-  { name: 'Home', href: '/' },
+  // { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Services', href: '/services' },
+  // { name: 'Services', href: '/services' },
   { name: 'Work', href: '/work' },
+  // { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ];
 
