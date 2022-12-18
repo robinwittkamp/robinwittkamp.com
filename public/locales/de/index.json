@@ -6,5 +6,50 @@
     "subheading": "Ich entwerfe und entwickle Webseiten und Webanwendungen seit über vier Jahren als Freelancer. Studiert   habe ich Computervisualistik und Design an der Hochschule Hamm-Lippstadt.",
     "button": "Projekte ansehen",
     "logosDescription": "Erfolgreiche Zusammenarbeit mit Unternehmen aus ganz Deutschland"
+  },
+  "aboutSection": {
+    "heading": "Über mich",
+    "paragraph": ""
+  },
+  "workSection": {
+    "heading": "Latest work",
+    "projects": [
+      {
+        "id": "1",
+        "title": "Robert Denier",
+        "href": "https://robertdenier.de",
+        "description": "Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+      },
+      {
+        "id": "2",
+        "title": "Energiewerk Rügen",
+        "href": "https://energiewerk-ruegen.de",
+        "description": "Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+      },
+      {
+        "id": "3",
+        "title": "Ferienwohnung Putbus",
+        "href": "https://ferienwohnung-putbus.de",
+        "description": "Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+      },
+      {
+        "id": "4",
+        "title": "WebBuddy",
+        "href": "https://webbuddy.robinwittkamp.com",
+        "description": "Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+      },
+      {
+        "id": "5",
+        "title": "Klifra",
+        "href": "https://klifra.robinwittkamp.com",
+        "description": "Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+      },
+      {
+        "id": "6",
+        "title": "Bauraum MV",
+        "href": "https://bauraum-mv.de",
+        "description": "Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
+      }
+    ]
   }
 }
