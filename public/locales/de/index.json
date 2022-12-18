@@ -1,9 +1,10 @@
 {
   "heroSection": {
     "tagline": "Hallo 👋🏻, ich bin Robin.",
-    "heading-one": "Entwickler",
-    "heading-two": " und Designer mit Begeisterung für Tech",
-    "subheading": "Ich entwerfe und entwickle Webseiten und Webanwendungen seit über vier Jahren als Freiberufler. Studiert   habe ich Computervisualistik und Design an der Hochschule Hamm-Lippstadt.",
-    "button": "Projekte ansehen"
+    "headingOne": "Entwickler",
+    "headingTwo": " und Designer mit Begeisterung für Tech",
+    "subheading": "Ich entwerfe und entwickle Webseiten und Webanwendungen seit über vier Jahren als Freelancer. Studiert   habe ich Computervisualistik und Design an der Hochschule Hamm-Lippstadt.",
+    "button": "Projekte ansehen",
+    "logosDescription": "Erfolgreiche Zusammenarbeit mit Unternehmen aus ganz Deutschland"
   }
 }

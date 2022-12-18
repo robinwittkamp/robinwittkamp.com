@@ -1,9 +1,10 @@
 {
   "heroSection": {
     "tagline": "Hi there 👋🏻, I'm Robin.",
-    "heading-one": "Developer",
-    "heading-two": " and designer passionate about tech",
+    "headingOne": "Developer",
+    "headingTwo": " and designer passionate about tech",
     "subheading": "I've designed and developed websites and web apps for over four years as a freelancer. I studied visual computing and design at the Hamm-Lippstadt University of Applied Sciences.",
-    "button": "View projects"
+    "button": "View projects",
+    "logosDescription": "Trusted by businesses from all over Germany"
   }
 }

@@ -166,9 +166,9 @@ const Home = () => {
             classes="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center lg:max-w-3xl xl:max-w-4xl xl:text-7xl"
           >
             <span className="bg-gradient-to-tr from-red-600 to-amber-400 bg-clip-text text-transparent">
-              {t('heroSection.heading-one')}
+              {t('heroSection.headingOne')}
             </span>
-            {t('heroSection.heading-two')}
+            {t('heroSection.headingTwo')}
           </Heading>
           <p className="max-w-md text-xl text-rusty-400 sm:mx-auto sm:text-center lg:max-w-[45rem] lg:text-2xl">
             {t('heroSection.subheading')}
@@ -202,7 +202,7 @@ const Home = () => {
         {/* Company logos */}
         <div className="mt-20 md:mt-24">
           <span className="block text-center text-xl text-rusty-400">
-            Trusted by businesses like
+            {t('heroSection.logosDescription')}
           </span>
           {/* Logos container */}
           <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
