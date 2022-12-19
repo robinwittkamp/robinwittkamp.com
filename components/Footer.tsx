@@ -157,8 +157,11 @@ const Footer = (): ReactElement => {
             </div>
           </div>
 
+          {/* Line */}
+          <div className="mt-8 h-px bg-gradient-to-r from-rusty-900/0 via-rusty-700/75 to-rusty-900/0 md:mt-16" />
+
           {/* Second row, 2 columns container */}
-          <div className="mt-8 border-t border-rusty-800 pt-8 md:mt-16 lg:flex lg:flex-row-reverse ">
+          <div className="pt-8 lg:flex lg:flex-row-reverse ">
             <div className="lg:flex lg:flex-1 lg:justify-end">
               {/* Link to repository */}
               <a
