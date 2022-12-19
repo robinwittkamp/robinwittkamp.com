@@ -5,6 +5,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import LinkButton from '../components/Buttons/LinkButton';
 import ProjectCard from '../components/Cards/ProjectCard';
+import Grid from '../components/Grid';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';
@@ -157,7 +158,11 @@ const Home = () => {
       <Head />
 
       {/* Hero */}
-      <Section first classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent">
+      <Section
+        first
+        classes="relative bg-gradient-radial-hero from-rusty-800/50 to-transparent overflow-hidden"
+      >
+        <Grid />
         {/* Text container */}
         <div className="">
           <div className="flex sm:justify-center">
