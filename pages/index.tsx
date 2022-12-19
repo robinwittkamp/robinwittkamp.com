@@ -159,7 +159,7 @@ const Home = () => {
       {/* Hero */}
       <Section first classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent">
         {/* Text container */}
-        <div className="space-y-8">
+        <div className="">
           <div className="flex sm:justify-center">
             <span className="block rounded-full border border-rusty-700 bg-rusty-800 px-4 py-1 text-center font-medium text-rusty-400 lg:text-lg">
               {t('heroSection.tagline')}
@@ -167,17 +167,17 @@ const Home = () => {
           </div>
           <Heading
             variant="h1"
-            classes="max-w-lg sm:mx-auto sm:max-w-xl sm:text-center lg:max-w-3xl xl:max-w-4xl xl:text-7xl"
+            classes="mt-8 max-w-lg sm:mx-auto sm:max-w-xl sm:text-center lg:max-w-3xl xl:max-w-4xl xl:text-7xl"
           >
             <span className="bg-gradient-to-tr from-red-600 to-amber-400 bg-clip-text text-transparent">
               {t('heroSection.headingOne')}
             </span>
             {t('heroSection.headingTwo')}
           </Heading>
-          <p className="max-w-md text-xl text-rusty-400 sm:mx-auto sm:text-center lg:max-w-[45rem] lg:text-2xl">
+          <p className="mt-8 max-w-md text-xl text-rusty-400 sm:mx-auto sm:text-center lg:max-w-[45rem] lg:text-2xl">
             {t('heroSection.subheading')}
           </p>
-          <div className="sm:flex sm:justify-center">
+          <div className="mt-8 sm:flex sm:justify-center">
             <LinkButton href="/work" variant="primary">
               {t('heroSection.button')}
             </LinkButton>
