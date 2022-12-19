@@ -238,36 +238,38 @@ const Home = () => {
 
       {/* About */}
       <Section classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent">
-        {/* <span className="font-bold text-purple-500">First things first.</span> */}
-        <Heading variant="h2">{t('aboutSection.heading')}</Heading>
         <div className="md:flex md:gap-16">
-          <p className="mt-8 text-xl text-rusty-400 md:flex-1 lg:text-2xl">
-            Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
-            designer. In 2018 I registered a business and since then I&apos;ve been implementing
-            websites for companies and organizations from all over Germany. Today, I increasingly
-            implement websites and web applications that I program from scratch. For this I use
-            technologies like{' '}
-            <a
-              className="text-blue-400"
-              href="https://reactjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React.js
-            </a>{' '}
-            and{' '}
-            <a
-              className="text-blue-400"
-              href="https://nextjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Next.js
-            </a>{' '}
-            .
-          </p>
-          <div className="md:mt-0 md:flex-1">
-            <div className="mx-auto mt-8 aspect-square max-w-lg rounded-2xl bg-rusty-800" />
+          <div className="md:flex-1">
+            {/* <span className="font-bold text-purple-500">First things first.</span> */}
+            <Heading variant="h2">{t('aboutSection.heading')}</Heading>
+            <p className="mt-4 text-xl text-rusty-400 lg:mt-8 lg:text-2xl">
+              Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
+              designer. In 2018 I registered a business and since then I&apos;ve been implementing
+              websites for companies and organizations from all over Germany. Today, I increasingly
+              implement websites and web applications that I program from scratch. For this I use
+              technologies like{' '}
+              <a
+                className="text-blue-400"
+                href="https://reactjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                React.js
+              </a>{' '}
+              and{' '}
+              <a
+                className="text-blue-400"
+                href="https://nextjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Next.js
+              </a>{' '}
+              .
+            </p>
+          </div>
+          <div className="md:flex-1">
+            <div className="mx-auto mt-12 aspect-square max-w-lg rounded-2xl bg-rusty-800 md:mt-0" />
             {/* <Image src={Profil} alt="Robin" width={400} height={400} className="rounded-2xl" /> */}
           </div>
         </div>
