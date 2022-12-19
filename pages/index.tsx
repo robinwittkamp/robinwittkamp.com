@@ -274,7 +274,7 @@ const Home = () => {
       <Section>
         {/* <span className="block text-center font-bold text-rose-500">Some of my projects.</span> */}
         <Heading variant="h2" classes="text-center">
-          Latest work
+          {t('workSection.heading')}
         </Heading>
         {/* Cards container */}
         <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
