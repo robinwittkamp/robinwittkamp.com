@@ -233,8 +233,11 @@ const Home = () => {
         </div>
       </Section>
 
+      {/* Line */}
+      <div className="h-px bg-gradient-to-r from-rusty-950/100 via-rusty-700 to-rusty-950/0" />
+
       {/* About */}
-      <Section classes="bg-gradient-radial-hero from-rusty-500/10 to-transparent">
+      <Section classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent">
         {/* <span className="font-bold text-purple-500">First things first.</span> */}
         <Heading variant="h2">{t('aboutSection.heading')}</Heading>
         <div className="md:flex md:gap-16">
