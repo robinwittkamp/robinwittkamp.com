@@ -157,10 +157,7 @@ const Home = () => {
       <Head />
 
       {/* Hero */}
-      <Section
-        first
-        // classes="bg-gradient-radial-hero from-orange-500/10 to-transparent"
-      >
+      <Section first classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent">
         {/* Text container */}
         <div className="space-y-8">
           <div className="flex sm:justify-center">
@@ -237,7 +234,7 @@ const Home = () => {
       </Section>
 
       {/* About */}
-      <Section>
+      <Section classes="bg-gradient-radial-hero from-rusty-500/10 to-transparent">
         {/* <span className="font-bold text-purple-500">First things first.</span> */}
         <Heading variant="h2">{t('aboutSection.heading')}</Heading>
         <div className="md:flex md:gap-16">
