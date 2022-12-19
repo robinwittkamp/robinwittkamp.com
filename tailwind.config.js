@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-radial-hero':
-          'radial-gradient(ellipse 80% 50% at 50% -20%, var(--tw-gradient-stops))',
+          'radial-gradient(ellipse 50% 50% at 50% 0%, var(--tw-gradient-stops))',
       },
       colors: {
         robin: {
