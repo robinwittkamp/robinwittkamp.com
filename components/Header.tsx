@@ -48,7 +48,7 @@ const mobileNavVariants = {
   open: {
     transition: {
       staggerChildren: 0.1,
-      delayChildren: 0.1,
+      // delayChildren: 0.5,
     },
   },
   closed: {
@@ -63,15 +63,15 @@ const mobileNavItemVariants = {
   open: {
     opacity: 1,
     transition: {
-      ease: 'anticipate',
-      duration: 1,
+      ease: 'easeIn',
+      duration: 0.3,
     },
   },
   closed: {
     opacity: 0,
     transition: {
-      ease: 'anticipate',
-      duration: 0.5,
+      ease: 'easeOut',
+      duration: 0.2,
     },
   },
 };
