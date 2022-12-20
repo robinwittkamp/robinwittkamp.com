@@ -13,7 +13,10 @@ const Grid = (): ReactElement => {
         <div key={index} className="flex">
           {/* Columns */}
           {Array.from({ length: columns }, (_, index) => (
-            <div key={index} className="m-px h-16 w-16 flex-initial bg-rusty-950" />
+            <div
+              key={index}
+              className="m-px h-[calc(4rem-2px)] w-[calc(4rem-2px)] flex-initial bg-rusty-950"
+            />
           ))}
         </div>
       ))}
