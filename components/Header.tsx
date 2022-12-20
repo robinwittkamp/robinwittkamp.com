@@ -117,7 +117,7 @@ const Header = (): ReactElement => {
       <Popover>
         {({ open }) => (
           <m.header
-            className={`fixed top-0 z-50 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-transparent transition md:h-[4.5rem] ${
+            className={`fixed top-0 z-50 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-transparent transition-[height] md:h-[4.5rem] ${
               isOpen
                 ? 'bg-rusty-900 backdrop-blur-none [@supports(backdrop-filter:blur(0))]:bg-rusty-900/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0'
                 : ''
