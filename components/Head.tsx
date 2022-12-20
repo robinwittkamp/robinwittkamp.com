@@ -22,9 +22,9 @@ const Head = ({
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#171717" />
-    <meta name="msapplication-TileColor" content="#171717" />
-    <meta name="theme-color" content="#171717" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#141313" />
+    <meta name="msapplication-TileColor" content="#141313" />
+    <meta name="theme-color" content="#141313" />
     {/* <meta
       key="theme-color-light"
       name="theme-color"
@@ -34,7 +34,7 @@ const Head = ({
     <meta
       key="theme-color-dark"
       name="theme-color"
-      content="#171717"
+      content="#141313"
       media="(prefers-color-scheme: dark)"
     /> */}
   </NextHead>
