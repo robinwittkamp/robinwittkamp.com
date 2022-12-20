@@ -1,7 +1,9 @@
 import { useTranslation } from 'next-i18next';
 import type { ReactElement } from 'react';
 
+import ThreeDimensionGrid from '../3dGrid';
 import LinkButton from '../Buttons/LinkButton';
+// import Grid from '../Grid';
 import Heading from '../Text/Heading';
 import Section from './Section';
 
@@ -11,7 +13,9 @@ const CtaContactSection = (): ReactElement => {
 
   return (
     <Section classes="">
-      <div className="rounded-[2rem] bg-gradient-to-tr from-rusty-800/50 to-rusty-700/50 px-6 py-12 sm:p-16 lg:p-24">
+      <div className="relative overflow-hidden rounded-[2rem] border border-neutral-800 bg-gradient-to-tr from-rusty-900/50 to-rusty-800 px-6 py-12 sm:p-16 lg:p-24">
+        <ThreeDimensionGrid />
+        {/* <Grid /> */}
         <Heading variant="h2" classes="sm:text-center">
           {t('ctaContactSection.heading')}
         </Heading>
