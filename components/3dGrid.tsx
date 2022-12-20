@@ -1,13 +1,13 @@
 import type { ReactElement } from 'react';
 
 const Grid = (): ReactElement => {
-  const rows = 64;
-  const columns = 64;
+  const rows = 7;
+  const columns = 40;
 
   return (
-    <div className="pointer-events-none absolute top-0 left-1/2 -z-50 h-full -translate-x-1/2 bg-white">
+    <div className="pointer-events-none absolute top-0 left-1/2 -z-50 h-full -translate-x-1/2">
       {/* 3D effect */}
-      <div className="origin-[50%_100%] [transform:perspective(5000px)rotateX(20deg)]">
+      <div className="origin-[50%_100%] bg-gradient-radial-hero from-transparent to-neutral-700 [transform:perspective(250px)rotateX(25deg)]">
         {/* Rows */}
         {Array.from({ length: rows }, (_, index) => (
           <div key={index} className="flex">
