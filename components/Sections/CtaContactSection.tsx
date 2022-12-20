@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import type { ReactElement } from 'react';
 
-import ThreeDimensionGrid from '../3dGrid';
+// import ThreeDimensionGrid from '../3dGrid';
 import LinkButton from '../Buttons/LinkButton';
 // import Grid from '../Grid';
 import Heading from '../Text/Heading';
