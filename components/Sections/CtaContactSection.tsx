@@ -13,7 +13,7 @@ const CtaContactSection = (): ReactElement => {
 
   return (
     <Section classes="">
-      <div className="relative overflow-hidden rounded-[2rem] border border-neutral-800 bg-gradient-to-tr from-rusty-900/50 to-rusty-800 px-6 py-12 sm:p-16 lg:p-24">
+      <div className="relative overflow-hidden rounded-[2rem] border border-neutral-700/50 bg-gradient-to-tr from-rusty-900 to-rusty-800 px-6 py-12 sm:p-16 lg:p-24">
         {/* <ThreeDimensionGrid /> */}
         {/* <Grid /> */}
         <Heading variant="h2" classes="sm:text-center">
