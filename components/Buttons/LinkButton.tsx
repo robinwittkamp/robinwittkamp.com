@@ -10,7 +10,7 @@ interface LinkButtonProps {
 }
 
 const variants = {
-  primary: `border-0 border-transparent bg-gradient-to-tr from-red-700 to-amber-500 text-white shadow-lg shadow-black/50 hover:border-rusty-200 hover:bg-rusty-200 hover:shadow-md hover:shadow-black/50`,
+  primary: `border-0 border-transparent bg-gradient-to-tr from-red-700 to-amber-500 text-white shadow-lg shadow-black/25 hover:brightness-110 hover:shadow-md hover:shadow-black/25`,
   secondary: `border-rusty-700 bg-rusty-700 text-rusty-100 hover:border-rusty-600 hover:bg-rusty-600 hover:text-white`,
   tertiary: `border-rusty-800 bg-rusty-900 text-rusty-300 hover:border-rusty-700 hover:bg-rusty-800 hover:text-rusty-100`,
 };
