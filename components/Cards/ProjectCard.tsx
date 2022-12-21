@@ -4,11 +4,11 @@ import type { ReactElement } from 'react';
 
 import LinkButton from '../Buttons/LinkButton';
 
-interface ProjectCardProps {
+type ProjectCardProps = {
   title: string;
   description: string;
   href: string;
-}
+};
 
 const ProjectCard = ({ title, description, href }: ProjectCardProps): ReactElement => (
   <div className="rounded-[2rem] border border-rusty-700/50 bg-gradient-to-tr from-rusty-800/50 to-rusty-700/50 px-6 py-8 shadow-xl shadow-black/30 sm:px-8 lg:p-12">

@@ -4,10 +4,10 @@ import LinkButton from '../Buttons/LinkButton';
 import Heading from '../Text/Heading';
 import Section from './Section';
 
-interface ErrorLayoutProps {
+type ErrorLayoutProps = {
   headingText: string;
   bodyText: string;
-}
+};
 
 const ErrorLayout = ({ headingText, bodyText }: ErrorLayoutProps): ReactElement => (
   <Section classes="h-screen max-h-[56rem]" first>

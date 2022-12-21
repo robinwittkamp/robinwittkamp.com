@@ -2,12 +2,12 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
 
-interface LinkButtonProps {
+type LinkButtonProps = {
   children: ReactNode;
   external?: boolean;
   href: string;
   variant: 'primary' | 'secondary' | 'tertiary';
-}
+};
 
 const variants = {
   primary: `border-0 border-transparent bg-gradient-to-tr from-red-700 to-amber-500 text-white shadow-lg shadow-black/25 hover:brightness-110 hover:shadow-md hover:shadow-black/25`,

@@ -1,11 +1,11 @@
 import type { ReactElement, ReactNode } from 'react';
 
-interface SectionProps {
+type SectionProps = {
   children: ReactNode;
   classes?: string;
   first?: boolean;
   id?: string | undefined;
-}
+};
 
 const Section = ({
   children,

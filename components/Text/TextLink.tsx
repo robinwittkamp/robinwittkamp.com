@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
 
-interface TextLinkProps {
+type TextLinkProps = {
   children: ReactNode;
   external?: boolean;
   href: string;
-}
+};
 
 const TextLink = ({ children, external = false, href }: TextLinkProps): ReactElement => (
   <Link

@@ -1,10 +1,10 @@
 import clsx from 'clsx';
 import type { ReactElement, ReactNode } from 'react';
 
-interface TextBlockProps {
+type TextBlockProps = {
   children: ReactNode | ReactNode[] | string;
   classes?: string;
-}
+};
 
 const TextBlock = ({ children, classes }: TextBlockProps): ReactElement => {
   const mergedClasses = clsx(`text-xl text-rusty-400 ${classes}`);

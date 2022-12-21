@@ -1,10 +1,10 @@
 import NextHead from 'next/head';
 import type { ReactElement } from 'react';
 
-interface HeadProps {
+type HeadProps = {
   title?: string;
   description?: string;
-}
+};
 
 const Head = ({
   title = 'Robin Wittkamp - Fast, reliable and beautiful websites',

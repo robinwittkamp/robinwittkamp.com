@@ -11,11 +11,11 @@ import Logo from './Logo';
 const loadFramerMotionFeatures = () =>
   import('./Libraries/framerMotionFeatures').then((res) => res.default);
 
-interface MainNavItemProps {
+type MainNavItemProps = {
   id: number;
   name: string;
   href: string;
-}
+};
 
 // const navigation = [
 //   { name: 'Home', href: '/' },

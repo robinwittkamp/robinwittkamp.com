@@ -3,9 +3,9 @@ import type { ReactElement, ReactNode } from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
 
-interface PageLayoutProps {
+type PageLayoutProps = {
   children: ReactNode;
-}
+};
 
 const PageLayout = ({ children }: PageLayoutProps): ReactElement => (
   <>
