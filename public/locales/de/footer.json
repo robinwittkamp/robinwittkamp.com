@@ -6,17 +6,17 @@
       {
         "id": "1",
         "name": "Home",
-        "href": "/"
+        "href": "/#home"
       },
       {
         "id": "2",
         "name": "Über",
-        "href": "/about"
+        "href": "/#about"
       },
       {
         "id": "3",
         "name": "Projekte",
-        "href": "/work"
+        "href": "/#work"
       },
       {
         "id": "4",
