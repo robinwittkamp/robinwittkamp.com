@@ -95,15 +95,15 @@ const desktopNavItemVariants = {
 
 const Header = (): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isWindowAtTop, setIsWindowAtTop] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [focused, setFocused] = useState<NavigationProps>();
 
   const handleScroll = () => {
     // console.log('scroll event', window.scrollY);
     if (window.scrollY <= 0) {
-      setIsWindowAtTop(true);
+      setIsScrolled(false);
     } else {
-      setIsWindowAtTop(false);
+      setIsScrolled(true);
     }
   };
 
@@ -117,14 +117,14 @@ const Header = (): ReactElement => {
       <Popover>
         {({ open }) => (
           <m.header
-            className={`fixed top-0 z-50 flex min-h-[3rem] w-full min-w-[20rem] items-center border-b border-transparent transition-[height] md:h-[4.5rem] ${
+            className={`fixed top-0 z-50 flex min-h-[3rem] w-full min-w-[20rem] items-center overflow-hidden border-b border-transparent transition duration-300 md:h-[4.5rem] ${
+              isScrolled
+                ? 'border-rusty-50/10 bg-rusty-900 backdrop-blur-lg [@supports(backdrop-filter:blur(0))]:bg-rusty-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150'
+                : ''
+            } ${
               isOpen
                 ? 'bg-rusty-900 backdrop-blur-none [@supports(backdrop-filter:blur(0))]:bg-rusty-900/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0'
                 : ''
-            } ${
-              isWindowAtTop
-                ? ''
-                : 'border-rusty-50/10 bg-rusty-900 backdrop-blur-lg [@supports(backdrop-filter:blur(0))]:bg-rusty-900/90 [@supports(backdrop-filter:saturate(0))]:backdrop-saturate-150'
             }`}
           >
             <div className="flex-1">
