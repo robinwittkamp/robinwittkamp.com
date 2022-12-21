@@ -1,6 +1,7 @@
 import { Popover } from '@headlessui/react';
 import { AnimatePresence, LazyMotion, m } from 'framer-motion';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 import type { ReactElement } from 'react';
 import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
@@ -10,19 +11,20 @@ import Logo from './Logo';
 const loadFramerMotionFeatures = () =>
   import('./Libraries/framerMotionFeatures').then((res) => res.default);
 
-interface NavigationProps {
+interface MainNavItemProps {
+  id: number;
   name: string;
   href: string;
 }
 
-const navigation = [
-  // { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  // { name: 'Services', href: '/services' },
-  { name: 'Work', href: '/work' },
-  // { name: 'Blog', href: '/blog' },
-  { name: 'Contact', href: '/contact' },
-];
+// const navigation = [
+//   { name: 'Home', href: '/' },
+//   { name: 'About', href: '/about' },
+//   { name: 'Services', href: '/services' },
+//   { name: 'Work', href: '/work' },
+//   { name: 'Blog', href: '/blog' },
+//   { name: 'Contact', href: '/contact' },
+// ];
 
 const hamburgerLine =
   'h-[2px] w-full rounded-full bg-white transform duration-300 group-focus:bg-rusty-300 group-hover:bg-rusty-300';
@@ -112,6 +114,9 @@ const Header = (): ReactElement => {
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
+  const { t, ready } = useTranslation('header');
+  if (!ready) return <span>loading translations...</span>;
+
   return (
     <LazyMotion features={loadFramerMotionFeatures} strict>
       <Popover>
@@ -168,7 +173,9 @@ const Header = (): ReactElement => {
                       onBlur={() => setFocused(undefined)}
                     >
                       <ul className="flex">
-                        {navigation.map((item) => (
+                        {t<string, MainNavItemProps[]>('mainNav.items', {
+                          returnObjects: true,
+                        }).map((item) => (
                           <li key={item.name}>
                             <Link
                               className="relative flex h-[4.5rem] items-center px-6 outline-0"
@@ -231,7 +238,9 @@ const Header = (): ReactElement => {
                           variants={mobileNavVariants}
                           className="border-t border-rusty-800"
                         >
-                          {navigation.map((item) => (
+                          {t<string, MainNavItemProps[]>('mainNav.items', {
+                            returnObjects: true,
+                          }).map((item) => (
                             <m.div key={item.name} variants={mobileNavItemVariants}>
                               <Link
                                 onClick={() => {
