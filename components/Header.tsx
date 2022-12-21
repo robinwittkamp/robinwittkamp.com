@@ -215,7 +215,7 @@ const Header = (): ReactElement => {
                 {open && (
                   <Popover.Panel
                     static
-                    className="h-screen md:hidden"
+                    className="h-screen [will-change:filter] md:hidden"
                     as={m.div}
                     key="panel"
                     initial="closed"
