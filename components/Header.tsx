@@ -123,7 +123,7 @@ const Header = (): ReactElement => {
                 : ''
             } ${
               isOpen
-                ? 'bg-rusty-900 backdrop-blur-none [@supports(backdrop-filter:blur(0))]:bg-rusty-900/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0'
+                ? 'bg-rusty-900 backdrop-blur-lg [@supports(backdrop-filter:blur(0))]:bg-rusty-900/100 [@supports(backdrop-filter:blur(0))]:backdrop-saturate-0'
                 : ''
             }`}
           >
