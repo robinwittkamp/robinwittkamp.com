@@ -98,7 +98,7 @@ const desktopNavItemVariants = {
 const Header = (): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [focused, setFocused] = useState<NavigationProps>();
+  const [focused, setFocused] = useState<MainNavItemProps>();
 
   const handleScroll = () => {
     // console.log('scroll event', window.scrollY);
