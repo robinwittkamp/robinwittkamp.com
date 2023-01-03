@@ -18,12 +18,12 @@ type MainNavItemProps = {
 };
 
 // const navigation = [
-//   { name: 'Home', href: '/' },
-//   { name: 'About', href: '/about' },
-//   { name: 'Services', href: '/services' },
-//   { name: 'Work', href: '/work' },
-//   { name: 'Blog', href: '/blog' },
-//   { name: 'Contact', href: '/contact' },
+//   // { id: 1, name: 'Home', href: '/' },
+//   { id: 2, name: 'About', href: '/#about' },
+//   // { id: 3, name: 'Services', href: '/services' },
+//   { id: 4, name: 'Work', href: '/#work' },
+//   // { id: 5, name: 'Blog', href: '/blog' },
+//   { id: 6, name: 'Contact', href: '/contact' },
 // ];
 
 const hamburgerLine =
@@ -114,6 +114,12 @@ const Header = (): ReactElement => {
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
+  // useEffect(() => {
+  //   console.log('focused nav item:', focused);
+  //   console.log('nav items:');
+  //   console.log(t('mainNav.items'));
+  // }, [focused]);
+
   const { t, ready } = useTranslation('header');
   if (!ready) return <span>loading translations...</span>;
 
@@ -173,10 +179,11 @@ const Header = (): ReactElement => {
                       onBlur={() => setFocused(undefined)}
                     >
                       <ul className="flex">
+                        {/* {navigation.map((item) => ( */}
                         {t<string, MainNavItemProps[]>('mainNav.items', {
                           returnObjects: true,
                         }).map((item) => (
-                          <li key={item.name}>
+                          <li key={item.id}>
                             <Link
                               className="relative flex h-[4.5rem] items-center px-6 outline-0"
                               href={item.href}
@@ -187,12 +194,14 @@ const Header = (): ReactElement => {
                               tabIndex={0}
                               // role="link"
                             >
+                              {/* {console.log('item:', item)}
+                              {console.log('focused:', focused)} */}
                               <AnimatePresence>
                                 {focused === item ? (
                                   <m.div
                                     // TODO: prevent items from animating to 0 opacity when quickly switching between them
                                     className="absolute inset-x-[10%] inset-y-1/4 z-0 rounded-xl bg-rusty-700"
-                                    key={item.name}
+                                    key={item.id}
                                     initial="unfocused"
                                     animate="focused"
                                     exit="unfocused"
