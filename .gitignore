@@ -38,3 +38,6 @@ yarn-error.log*
 
 # npm
 .npmrc
+
+backend/
+frontend/
