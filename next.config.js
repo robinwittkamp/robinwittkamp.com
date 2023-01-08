@@ -17,6 +17,9 @@ const nextConfig = withBundleAnalyzer({
     ignoreDuringBuilds: true,
   },
   i18n,
+  images: {
+    loader: 'custom',
+  },
   // ignoreBuildErrors: true,
   reactStrictMode: true,
 
