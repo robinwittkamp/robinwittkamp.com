@@ -11,6 +11,9 @@ const { i18n } = require('./next-i18next.config');
 
 // Next.js config
 const nextConfig = withBundleAnalyzer({
+  env: {
+    storyblokApiToken: process.env.STORYBLOK_PUBLIC_TOKEN,
+  },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
