@@ -3,6 +3,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import localFont from '@next/font/local';
+import { apiPlugin, storyblokInit } from '@storyblok/react';
 import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 
@@ -22,6 +23,11 @@ const gilroy = localFont({
     },
   ],
   variable: '--font-gilroy',
+});
+
+storyblokInit({
+  accessToken: process.env.storyblokApiToken,
+  use: [apiPlugin],
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
