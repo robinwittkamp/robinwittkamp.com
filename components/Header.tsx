@@ -199,6 +199,7 @@ const Header = (): ReactElement => {
                       onBlur={() => setFocused(undefined)}
                     >
                       <ul className="flex">
+                        {/* TODO: Using 'navigation' loaded with next-i18next doesn't work. Why? */}
                         {/* {t<string, MainNavItemProps[]>('mainNav.items', {
                           returnObjects: true,
                         }).map((item) => ( */}
