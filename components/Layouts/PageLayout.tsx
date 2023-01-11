@@ -9,9 +9,9 @@ type PageLayoutProps = {
 
 const PageLayout = ({ children }: PageLayoutProps): ReactElement => (
   <>
-    <Header />
+    {/* <Header /> */}
     <main className="min-w-[20rem] overflow-hidden md:overflow-auto">{children}</main>
-    <Footer />
+    {/* <Footer /> */}
   </>
 );
 
