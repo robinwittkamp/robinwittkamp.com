@@ -5,7 +5,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import localFont from '@next/font/local';
 import { apiPlugin, storyblokInit } from '@storyblok/react';
 import type { AppProps } from 'next/app';
-import { appWithTranslation } from 'next-i18next';
+// import { appWithTranslation } from 'next-i18next';
 
 config.autoAddCss = false;
 
@@ -38,4 +38,4 @@ const App = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default appWithTranslation(App);
+export default App;
