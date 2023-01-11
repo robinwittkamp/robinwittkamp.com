@@ -169,6 +169,9 @@ const Header = (): ReactElement => {
                     <div className="-mr-3 md:hidden">
                       <Popover.Button className="group inline-flex items-center justify-center rounded-md px-3 py-2 focus:outline-none">
                         <span className="sr-only">Open menu</span>
+                        {/* <span className="rounded-xl bg-rusty-800 px-3 py-0.5 font-medium">
+                          {t('mainNav.title')}
+                        </span> */}
                         {/* Animated hamburger icon */}
                         <div
                           className="flex h-8 w-6 flex-col items-center justify-center"
