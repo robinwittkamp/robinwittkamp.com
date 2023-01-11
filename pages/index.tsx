@@ -163,7 +163,7 @@ const Home = () => {
         id="home"
         classes="relative bg-gradient-radial-hero from-rusty-800/50 to-transparent overflow-hidden"
       >
-        <Grid />
+        {/* <Grid /> */}
         {/* Text container */}
         <div className="">
           <div className="flex sm:justify-center">
