@@ -184,7 +184,7 @@ const Home = () => {
             {t('heroSection.subheading')}
           </p>
           <div className="mt-8 sm:flex sm:justify-center">
-            <LinkButton href="/work" variant="primary">
+            <LinkButton href="/#work" variant="primary">
               {t('heroSection.button')}
             </LinkButton>
           </div>
