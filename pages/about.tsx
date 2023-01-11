@@ -1,5 +1,5 @@
 import type { GetStaticProps } from 'next';
-import { useTranslation } from 'next-i18next';
+// import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import Head from '../components/Head';
@@ -11,7 +11,7 @@ import TextBlock from '../components/Text/TextBlock';
 import TextLink from '../components/Text/TextLink';
 
 const About = () => {
-  const { t } = useTranslation('about');
+  // const { t } = useTranslation('about');
   // if (!ready) return <span>loading translations...</span>;
 
   return (
@@ -19,7 +19,7 @@ const About = () => {
       <Head title="About - Robin Wittkamp" />
       <Section first>
         <Heading variant="h1" classes="lg:text-center">
-          {t('heading')}
+          {/* {t('heading')} */}
         </Heading>
         <div className="mt-8 lg:mt-16 lg:flex">
           <div className="lg:flex-1" />
