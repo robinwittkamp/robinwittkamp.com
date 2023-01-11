@@ -1,8 +1,9 @@
+import { getStoryblokApi, useStoryblokState } from '@storyblok/react';
 import type { GetStaticProps } from 'next';
 import Image from 'next/image';
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+// import { useTranslation } from 'next-i18next';
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Grid from '../components/Backgrounds/Grid';
 import LinkButton from '../components/Buttons/LinkButton';
 import ProjectCard from '../components/Cards/ProjectCard';
@@ -149,9 +150,16 @@ const clientLogos = [
 //   },
 // ];
 
-const Home = () => {
-  const { t, ready } = useTranslation('index');
-  if (!ready) return <span>loading translations...</span>;
+const Home = ({ story }) => {
+  const page = useStoryblokState(story);
+  const heroSection = page.content.body[0];
+
+  // if (!story.content) {
+  //   return <div>Loading...</div>;
+  // }
+
+  // const { t, ready } = useTranslation('index');
+  // if (!ready) return <span>loading translations...</span>;
 
   return (
     <PageLayout>
@@ -168,7 +176,8 @@ const Home = () => {
         <div className="">
           <div className="flex sm:justify-center">
             <span className="block rounded-full border border-rusty-700 bg-rusty-800 px-4 py-1 text-center font-medium text-rusty-400 lg:text-lg">
-              {t('heroSection.tagline')}
+              {/* {t('heroSection.tagline')} */}
+              {heroSection.tagline}
             </span>
           </div>
           <Heading
@@ -176,16 +185,20 @@ const Home = () => {
             classes="mt-8 max-w-lg sm:mx-auto sm:max-w-xl sm:text-center lg:max-w-3xl xl:max-w-4xl xl:text-7xl"
           >
             <span className="bg-gradient-to-tr from-red-600 to-amber-400 bg-clip-text text-transparent">
-              {t('heroSection.headingOne')}
+              {/* {t('heroSection.headingOne')} */}
+              {/* {heroSection.heading} */}
             </span>
-            {t('heroSection.headingTwo')}
+            {/* {t('heroSection.headingTwo')} */}
+            {heroSection.heading}
           </Heading>
           <p className="mt-8 max-w-md text-xl text-rusty-400 sm:mx-auto sm:text-center lg:max-w-[45rem] lg:text-2xl">
-            {t('heroSection.subheading')}
+            {/* {t('heroSection.subheading')} */}
+            {heroSection.subheading}
           </p>
           <div className="mt-8 sm:flex sm:justify-center">
             <LinkButton href="/work" variant="primary">
-              {t('heroSection.button')}
+              {/* {t('heroSection.button')} */}
+              {heroSection.button_text}
             </LinkButton>
           </div>
         </div>
@@ -212,7 +225,7 @@ const Home = () => {
         {/* Company logos */}
         <div className="mt-20 md:mt-24">
           <span className="block text-center text-xl text-rusty-400">
-            {t('heroSection.logosDescription')}
+            {/* {t('heroSection.logosDescription')} */}
           </span>
           {/* Logos container */}
           <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
@@ -247,7 +260,7 @@ const Home = () => {
         <div className="md:flex md:gap-16">
           <div className="md:flex-1">
             {/* <span className="font-bold text-purple-500">First things first.</span> */}
-            <Heading variant="h2">{t('aboutSection.heading')}</Heading>
+            <Heading variant="h2">{/* {t('aboutSection.heading')} */}</Heading>
             <p className="mt-4 text-xl text-rusty-400 lg:mt-8 lg:text-2xl">
               Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
               designer. In 2018 I registered a business and since then I&apos;ve been implementing
@@ -285,11 +298,11 @@ const Home = () => {
       <Section id="work">
         {/* <span className="block text-center font-bold text-rose-500">Some of my projects.</span> */}
         <Heading variant="h2" classes="text-center">
-          {t('workSection.heading')}
+          {/* {t('workSection.heading')} */}
         </Heading>
         {/* Cards container */}
         <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
-          {t<string, ProjectProps[]>('workSection.projects', { returnObjects: true }).map(
+          {/* {t<string, ProjectProps[]>('workSection.projects', { returnObjects: true }).map(
             (item) => (
               <ProjectCard
                 key={item.id}
@@ -298,19 +311,33 @@ const Home = () => {
                 href={item.href}
               />
             )
-          )}
+          )} */}
         </div>
       </Section>
 
-      <CtaContactSection />
+      {/* <CtaContactSection /> */}
     </PageLayout>
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async () => {
+  const slug = 'pages/home';
+
+  const storyblokParameters = {
+    version: 'published', // or 'published'
+    // language: locale,
+  };
+
+  const storyblokApi = getStoryblokApi();
+  const { data } = await storyblokApi.get(`cdn/stories/${slug}`, storyblokParameters);
+
   return {
     props: {
-      ...(await serverSideTranslations(locale as string, ['common', 'header', 'index', 'footer'])),
+      // next-i18next"
+      // ...(await serverSideTranslations(locale as string, ['common', 'header', 'index', 'footer'])),
+      // @storyblok/react
+      story: data ? data.story : false,
+      // key: data ? data.story.id : false,
     },
   };
 };
