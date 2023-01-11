@@ -240,10 +240,13 @@ const Home = () => {
       </Section>
 
       {/* Line */}
-      <div className="h-px bg-gradient-to-r from-rusty-950/100 via-rusty-700 to-rusty-950/0" />
+      {/* <div className="h-px bg-gradient-to-r from-rusty-950/100 via-rusty-700 to-rusty-950/0" /> */}
 
       {/* About */}
-      <Section id="about" classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent">
+      <Section
+        id="about"
+        // classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent"
+      >
         <div className="md:flex md:gap-16">
           <div className="md:flex-1">
             {/* <span className="font-bold text-purple-500">First things first.</span> */}
