@@ -15,7 +15,7 @@ const loadFramerMotionFeatures = () =>
   import('./Libraries/framerMotionFeatures').then((res) => res.default);
 
 type MainNavItemProps = {
-  id: number;
+  id: string;
   name: string;
   href: string;
 };
