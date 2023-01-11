@@ -185,7 +185,7 @@ const Header = (): ReactElement => {
                           <div className={`${hamburgerLine} mt-1.5 ${open ? 'opacity-0' : ''}`} />
                           <div
                             className={`${hamburgerLine} mt-1.5 ${
-                              open ? '-translate-y-[0.5rem] -rotate-45' : ''
+                              open ? 'translate-y-[-0.5rem] -rotate-45' : ''
                             }`}
                           />
                         </div>
