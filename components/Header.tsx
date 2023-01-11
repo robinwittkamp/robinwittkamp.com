@@ -1,11 +1,14 @@
 import { Popover } from '@headlessui/react';
 import { AnimatePresence, LazyMotion, m } from 'framer-motion';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import type { ReactElement } from 'react';
 import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
+import headerDe from '../public/locales/de/header.json';
+import headerEn from '../public/locales/en/header.json';
 import Logo from './Logo';
 
 const loadFramerMotionFeatures = () =>
@@ -17,13 +20,22 @@ type MainNavItemProps = {
   href: string;
 };
 
-// const navigation = [
+// const navigationEn = [
 //   // { id: 1, name: 'Home', href: '/' },
 //   { id: 2, name: 'About', href: '/#about' },
 //   // { id: 3, name: 'Services', href: '/services' },
 //   { id: 4, name: 'Work', href: '/#work' },
 //   // { id: 5, name: 'Blog', href: '/blog' },
 //   { id: 6, name: 'Contact', href: '/contact' },
+// ];
+
+// const navigationDe = [
+//   // { id: 1, name: 'Home', href: '/' },
+//   { id: 2, name: 'Über mich', href: '/#about' },
+//   // { id: 3, name: 'Leistungen', href: '/services' },
+//   { id: 4, name: 'Projekte', href: '/#work' },
+//   // { id: 5, name: 'Blog', href: '/blog' },
+//   { id: 6, name: 'Kontakt', href: '/contact' },
 // ];
 
 const hamburgerLine =
@@ -99,6 +111,11 @@ const Header = (): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [focused, setFocused] = useState<MainNavItemProps>();
+
+  const router = useRouter();
+  const { locale } = router;
+  const header = locale === 'en' ? headerEn : headerDe;
+  const navigation = header.mainNav.items;
 
   const handleScroll = () => {
     // console.log('scroll event', window.scrollY);
@@ -179,10 +196,10 @@ const Header = (): ReactElement => {
                       onBlur={() => setFocused(undefined)}
                     >
                       <ul className="flex">
-                        {/* {navigation.map((item) => ( */}
-                        {t<string, MainNavItemProps[]>('mainNav.items', {
+                        {/* {t<string, MainNavItemProps[]>('mainNav.items', {
                           returnObjects: true,
-                        }).map((item) => (
+                        }).map((item) => ( */}
+                        {navigation.map((item) => (
                           <li key={item.id}>
                             <Link
                               className="relative flex h-[4.5rem] items-center px-6 outline-0"
