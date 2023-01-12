@@ -253,7 +253,8 @@ const Home = () => {
             {/* <span className="font-bold text-purple-500">First things first.</span> */}
             <Heading variant="h2">{t('aboutSection.heading')}</Heading>
             <p className="mt-4 text-xl text-rusty-400 lg:mt-8 lg:text-2xl">
-              Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
+              {t('aboutSection.paragraphOne')}
+              {/* Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
               designer. In 2018 I registered a business and since then I&apos;ve been implementing
               websites for companies and organizations from all over Germany. Today, I increasingly
               implement websites and web applications that I program from scratch. For this I use
@@ -275,7 +276,10 @@ const Home = () => {
               >
                 Next.js
               </a>{' '}
-              .
+              . */}
+            </p>
+            <p className="mt-4 text-xl text-rusty-400 lg:mt-6 lg:text-2xl">
+              {t('aboutSection.paragraphTwo')}
             </p>
           </div>
           <div className="md:flex-1">

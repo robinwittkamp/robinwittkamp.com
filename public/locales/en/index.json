@@ -9,7 +9,8 @@
   },
   "aboutSection": {
     "heading": "About me",
-    "paragraph": ""
+    "paragraphOne": "6 years ago I became interested in web development and user interfaces. As a result, I started my studies at the University of Applied Sciences Hamm-Lippstadt in Computer Visualization and Design. During my studies, I worked as a student assistant in various web and design projects.",
+    "paragraphTwo": "In 2018, I additionally registered a business. Since then, I have been building websites and web applications for companies from Germany as a freelancer. For the implementation of projects I use both proven technologies like WordPress and more modern technologies like React.js or Next.js."
   },
   "workSection": {
     "heading": "Latest work",
