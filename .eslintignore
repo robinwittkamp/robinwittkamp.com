@@ -2,3 +2,5 @@
 node_modules/
 # build folders
 .next/
+# trash folders
+temp/
