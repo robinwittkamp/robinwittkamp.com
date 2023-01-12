@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import type { ReactElement } from 'react';
 
-import RobinWittkampLogo from '../public/images/logos/robin_wittkamp_logo.svg';
+import RobinWittkampLogo from '../public/logos/robin_wittkamp_logo.svg';
 
 const Logo = (): ReactElement => (
   <Link className="cursor-pointer" href="/">
