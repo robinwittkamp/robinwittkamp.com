@@ -14,9 +14,10 @@ import Heading from '../components/Text/Heading';
 // import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
 // import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
-import KlifraBrowser from '../public/images/klifra_mockup_browser.png';
+// import KlifraBrowserMockupMockup from '../public/images/klifra_mockup_browser.png';
+import KlifraPadMockup from '../public/images/klifra_mockup_pad.png';
 // import LinTecBrowser from '../public/images/lin-tec_mockup_browser_5.png';
-// import LinTecFuturePadMockup from '../public/images/lin-tec_mockup_future_pad.png';
+// import LinTecPadMockup from '../public/images/lin-tec_mockup_pad.png';
 // import LinTecMacBookProMockup from '../public/images/lin-tec_mockup_macbook_pro.png';
 // import AdessoLogo from '../public/images/logos/adesso_logo.svg';
 import BauraumMvLogo from '../public/logos/bauraum_mv_logo.svg';
@@ -199,7 +200,7 @@ const Home = () => {
               {/* Browser image */}
               <Image
                 className="min-w-full"
-                src={KlifraBrowser}
+                src={KlifraPadMockup}
                 alt="Klifra website"
                 // width={1280}
                 sizes="(max-width: 375px) 343px, (max-width: 640px) 576px, (max-width: 768px) 704px, (max-width: 1024px) 960px, 1280px"
