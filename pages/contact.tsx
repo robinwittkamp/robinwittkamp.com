@@ -8,7 +8,7 @@ import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
 
 const Contact = () => {
-  const { t, ready } = useTranslation('imprint');
+  const { t, ready } = useTranslation('contact');
   if (!ready) return <span>Loading translations...</span>;
 
   return (
