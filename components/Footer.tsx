@@ -33,7 +33,7 @@ const Footer = (): ReactElement => {
   };
 
   const { t, ready } = useTranslation('footer');
-  if (!ready) return <span>loading translations...</span>;
+  if (!ready) return <span>Loading translations...</span>;
 
   return (
     <footer className="min-w-[20rem] pb-8 pt-16 md:pb-16">

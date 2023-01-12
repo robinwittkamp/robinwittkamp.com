@@ -152,11 +152,11 @@ const clientLogos = [
 
 const Home = () => {
   const { t, ready } = useTranslation('index');
-  if (!ready) return <span>loading translations...</span>;
+  if (!ready) return <span>Loading translations...</span>;
 
   return (
     <PageLayout>
-      <Head />
+      <Head title={t('title')} description={t('description')} />
 
       {/* Hero */}
       <Section

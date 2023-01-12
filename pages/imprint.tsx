@@ -8,14 +8,14 @@ import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
 
 const Imprint = () => {
-  const { t, ready } = useTranslation('index');
-  if (!ready) return <span>loading translations...</span>;
+  const { t, ready } = useTranslation('imprint');
+  if (!ready) return <span>Loading translations...</span>;
 
   return (
     <PageLayout>
-      <Head title="Imprint - Robin Wittkamp" />
+      <Head title={t('title')} description={t('description')} noIndex />
       <Section first>
-        <Heading variant="h1">Imprint</Heading>
+        <Heading variant="h1">{t('heading')}</Heading>
       </Section>
     </PageLayout>
   );

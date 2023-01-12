@@ -138,7 +138,7 @@ const Header = (): ReactElement => {
   // }, [focused]);
 
   const { t, ready } = useTranslation('header');
-  if (!ready) return <span>loading translations...</span>;
+  if (!ready) return <span>Loading translations...</span>;
 
   return (
     <LazyMotion features={loadFramerMotionFeatures} strict>

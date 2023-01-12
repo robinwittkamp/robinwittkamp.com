@@ -2,20 +2,18 @@ import NextHead from 'next/head';
 import type { ReactElement } from 'react';
 
 type HeadProps = {
-  title?: string;
-  description?: string;
+  title: string;
+  description: string;
+  noIndex?: boolean;
 };
 
-const Head = ({
-  title = 'Robin Wittkamp - Fast, reliable and beautiful websites',
-  description = `Hi, I'm Robin. I build fast, reliable websites with a simple, modern design and focus on a high level of user experience.`,
-}: HeadProps): ReactElement => (
+const Head = ({ title, description, noIndex = false }: HeadProps): ReactElement => (
   <NextHead>
     {/* Title */}
     <title>{title}</title>
     {/* SEO */}
     <meta name="description" content={description} />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content={`${noIndex ? 'noindex' : 'index'}, nofollow`} />
     {/* Favicon & colors */}
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

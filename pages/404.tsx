@@ -7,16 +7,13 @@ import PageLayout from '../components/Layouts/PageLayout';
 import ErrorSection from '../components/Sections/ErrorSection';
 
 const Custom404 = () => {
-  const { t, ready } = useTranslation('index');
-  if (!ready) return <span>loading translations...</span>;
+  const { t, ready } = useTranslation('404');
+  if (!ready) return <span>Loading translations...</span>;
 
   return (
     <PageLayout>
-      <Head title="Page not found - Robin Wittkamp" />
-      <ErrorSection
-        headingText="Page not found"
-        bodyText="The link you followed may be broken, or the page may have been removed."
-      />
+      <Head title={t('title')} description={t('description')} noIndex />
+      <ErrorSection headingText={t('heading')} bodyText={t('body')} />
     </PageLayout>
   );
 };

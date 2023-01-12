@@ -8,14 +8,14 @@ import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
 
 const PrivacyPolicy = () => {
-  const { t, ready } = useTranslation('index');
+  const { t, ready } = useTranslation('privacy-policy');
   if (!ready) return <span>loading translations...</span>;
 
   return (
     <PageLayout>
-      <Head title="Privacy policy - Robin Wittkamp" />
+      <Head title={t('title')} description={t('description')} noIndex />
       <Section first>
-        <Heading variant="h1">Privacy policy</Heading>
+        <Heading variant="h1">{t('heading')}</Heading>
       </Section>
     </PageLayout>
   );
