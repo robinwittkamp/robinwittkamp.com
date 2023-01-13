@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /
-
-Sitemap: https://robinwittkamp.com/sitemap_index.xml
