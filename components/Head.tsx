@@ -13,7 +13,7 @@ const Head = ({ title, description, noIndex = false }: HeadProps): ReactElement 
     <title>{title}</title>
     {/* SEO */}
     <meta name="description" content={description} />
-    <meta name="robots" content={`${noIndex ? 'noindex' : 'index'}, nofollow`} />
+    <meta name="robots" content={`${noIndex ? 'noindex' : 'index'}, follow`} />
     {/* Favicon & colors */}
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
