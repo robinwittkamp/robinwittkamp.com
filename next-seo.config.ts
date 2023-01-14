@@ -4,7 +4,7 @@ const config: DefaultSeoProps = {
   // title: 'Robin Wittkamp',
   // defaultTitle: 'Robin Wittkamp',
   // titleTemplate: '%s - Robin Wittkamp',
-  // description: 'Tips, updates, new features and technologies, all about the JavaScript language',
+  // description: '',
   canonical: 'https://robinwittkamp.com/',
   additionalMetaTags: [
     {
@@ -61,7 +61,7 @@ const config: DefaultSeoProps = {
     url: 'https://robinwittkamp.com/',
     siteName: 'Robin Wittkamp',
     // title: 'Robin Wittkamp',
-    // description: 'Open Graph Description',
+    // description: '',
   },
   twitter: {
     handle: '@robinwittkamp',
