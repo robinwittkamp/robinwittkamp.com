@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://robinwittkamp.com',
+  siteUrl: process.env.SITE_URL,
   generateRobotsTxt: true,
   // generateIndexSitemap: false,
   robotsTxtOptions: {
@@ -15,11 +15,11 @@ module.exports = {
   exclude: ['*/404', '*/500', '*/imprint', '*/privacy-policy', '*/de', '*/de/*'],
   alternateRefs: [
     {
-      href: 'https://robinwittkamp.com',
+      href: process.env.SITE_URL,
       hrefLang: 'en',
     },
     {
-      href: 'https://robinwittkamp.com/de',
+      href: process.env.SITE_URL,
       hrefLang: 'de',
     },
   ],
