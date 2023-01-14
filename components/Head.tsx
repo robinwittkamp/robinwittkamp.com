@@ -53,6 +53,10 @@ const Head = ({ title, description, noIndex = false }: HeadProps): ReactElement 
         }}
         languageAlternates={[
           {
+            hrefLang: currentLang,
+            href: `${process.env.SITE_URL}${currentLangRoute}${currentPath}`,
+          },
+          {
             hrefLang: alternativeLang,
             href: `${process.env.SITE_URL}${alternativeLangRoute}${currentPath}`,
           },
