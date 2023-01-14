@@ -11,6 +11,9 @@ const { i18n } = require('./next-i18next.config');
 
 // Next.js config
 const nextConfig = withBundleAnalyzer({
+  env: {
+    SITE_URL: process.env.SITE_URL,
+  },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
