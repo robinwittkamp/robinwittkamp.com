@@ -68,7 +68,7 @@ const config: DefaultSeoProps = {
   openGraph: {
     type: 'website',
     // locale: 'en_US',
-    url: 'https://robinwittkamp.com/',
+    // url: 'https://robinwittkamp.com/',
     siteName: 'Robin Wittkamp',
     // title: 'Robin Wittkamp',
     // description: '',
