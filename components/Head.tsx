@@ -12,19 +12,51 @@ type HeadProps = {
 const Head = ({ title, description, noIndex = false }: HeadProps): ReactElement => {
   const router = useRouter();
   const { locale } = router;
-  const currentLang = locale === 'en' ? 'en-US' : 'de-DE';
+
+  let currentLang = '';
+  let alternativeLang = '';
+  let currentLangRoute = '';
+  let alternativeLangRoute = '';
+
+  if (locale === 'en') {
+    currentLang = 'en-US';
+    alternativeLang = 'de-DE';
+    currentLangRoute = '/';
+    alternativeLangRoute = 'de';
+  } else {
+    currentLang = 'de-DE';
+    alternativeLang = 'en-US';
+    currentLangRoute = '/de';
+    alternativeLangRoute = '';
+  }
+
+  let currentPath = '';
+
+  if (router.asPath === '/') {
+    currentPath = '';
+  } else {
+    currentPath = `${router.asPath}/`;
+  }
 
   return (
     <>
       <NextSeo
         title={title}
         description={description}
+        canonical={`${process.env.SITE_URL}${currentLangRoute}${currentPath}`}
         noindex={noIndex}
         openGraph={{
           title,
           description,
+          url: `${process.env.SITE_URL}${currentLangRoute}${currentPath}`,
           locale: currentLang,
         }}
+        languageAlternates={[
+          {
+            hrefLang: alternativeLang,
+            href: `${process.env.SITE_URL}${alternativeLangRoute}${currentPath}`,
+          },
+        ]}
       />
       {/* <NextHead>
         <title>{title}</title>
