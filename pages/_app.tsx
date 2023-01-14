@@ -5,6 +5,9 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import localFont from '@next/font/local';
 import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
+import { DefaultSeo } from 'next-seo';
+
+import SEO from '../next-seo.config';
 
 config.autoAddCss = false;
 
@@ -27,6 +30,7 @@ const gilroy = localFont({
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <div className={`${gilroy.variable} font-sans`}>
+      <DefaultSeo {...SEO} />
       <Component {...pageProps} />
     </div>
   );
