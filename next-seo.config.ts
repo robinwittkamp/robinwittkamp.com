@@ -5,7 +5,17 @@ const config: DefaultSeoProps = {
   // defaultTitle: 'Robin Wittkamp',
   // titleTemplate: '%s - Robin Wittkamp',
   // description: '',
-  canonical: 'https://robinwittkamp.com/',
+  // canonical: 'https://robinwittkamp.com/',
+  // languageAlternates: [
+  //   {
+  //     hrefLang: 'en',
+  //     href: 'https://robinwittkamp.com/',
+  //   },
+  //   {
+  //     hrefLang: 'de',
+  //     href: 'https://robinwittkamp.com/de/',
+  //   },
+  // ],
   additionalMetaTags: [
     {
       name: 'viewport',
