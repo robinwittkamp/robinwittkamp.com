@@ -292,62 +292,65 @@ const Home = () => {
           </div>
           <div className="md:flex-1">
             {/* Margin container */}
-            <div className="mt-8 space-y-4 md:mt-4 lg:mt-8">
+            <div className="mt-8 md:mt-4 lg:mt-8">
               {/* Skills */}
               <Heading variant="h5">{t('aboutSection.skills.heading')}</Heading>
-              {/* Languages */}
-              <div className="">
-                <h6 className="text-xl font-medium text-rusty-100">
-                  {t('aboutSection.skills.languages.heading')}
-                </h6>
-                <p className="mt-2 text-xl text-rusty-400">
-                  {t('aboutSection.skills.languages.paragraph')}
-                </p>
-              </div>
-              {/* Frontend */}
-              <div className="">
-                <h6 className="text-xl font-medium text-rusty-100 ">
-                  {t('aboutSection.skills.frontend.heading')}
-                </h6>
-                <p className="mt-2 text-xl text-rusty-400">
-                  {t('aboutSection.skills.frontend.paragraph')}
-                </p>
-              </div>
-              {/* Backend */}
-              <div className="">
-                <h6 className="text-xl font-medium text-rusty-100 ">
-                  {t('aboutSection.skills.backend.heading')}
-                </h6>
-                <p className="mt-2 text-xl text-rusty-400">
-                  {t('aboutSection.skills.backend.paragraph')}
-                </p>
-              </div>
-              {/* CMS */}
-              <div className="">
-                <h6 className="text-xl font-medium text-rusty-100 ">
-                  {t('aboutSection.skills.cms.heading')}
-                </h6>
-                <p className="mt-2 text-xl text-rusty-400">
-                  {t('aboutSection.skills.cms.paragraph')}
-                </p>
-              </div>
-              {/* Dev tools */}
-              <div className="">
-                <h6 className="text-xl font-medium text-rusty-100 ">
-                  {t('aboutSection.skills.devTools.heading')}
-                </h6>
-                <p className="mt-2 text-xl text-rusty-400">
-                  {t('aboutSection.skills.devTools.paragraph')}
-                </p>
-              </div>
-              {/* Design tools */}
-              <div className="">
-                <h6 className="text-xl font-medium text-rusty-100 ">
-                  {t('aboutSection.skills.designTools.heading')}
-                </h6>
-                <p className="mt-2 text-xl text-rusty-400">
-                  {t('aboutSection.skills.designTools.paragraph')}
-                </p>
+              {/* Vertical space container */}
+              <div className="mt-4 space-y-4">
+                {/* Languages */}
+                <div className="">
+                  <h6 className="text-xl font-medium text-rusty-100">
+                    {t('aboutSection.skills.languages.heading')}
+                  </h6>
+                  <p className="mt-2 text-xl text-rusty-400">
+                    {t('aboutSection.skills.languages.paragraph')}
+                  </p>
+                </div>
+                {/* Frontend */}
+                <div className="">
+                  <h6 className="text-xl font-medium text-rusty-100 ">
+                    {t('aboutSection.skills.frontend.heading')}
+                  </h6>
+                  <p className="mt-2 text-xl text-rusty-400">
+                    {t('aboutSection.skills.frontend.paragraph')}
+                  </p>
+                </div>
+                {/* Backend */}
+                <div className="">
+                  <h6 className="text-xl font-medium text-rusty-100 ">
+                    {t('aboutSection.skills.backend.heading')}
+                  </h6>
+                  <p className="mt-2 text-xl text-rusty-400">
+                    {t('aboutSection.skills.backend.paragraph')}
+                  </p>
+                </div>
+                {/* CMS */}
+                <div className="">
+                  <h6 className="text-xl font-medium text-rusty-100 ">
+                    {t('aboutSection.skills.cms.heading')}
+                  </h6>
+                  <p className="mt-2 text-xl text-rusty-400">
+                    {t('aboutSection.skills.cms.paragraph')}
+                  </p>
+                </div>
+                {/* Dev tools */}
+                <div className="">
+                  <h6 className="text-xl font-medium text-rusty-100 ">
+                    {t('aboutSection.skills.devTools.heading')}
+                  </h6>
+                  <p className="mt-2 text-xl text-rusty-400">
+                    {t('aboutSection.skills.devTools.paragraph')}
+                  </p>
+                </div>
+                {/* Design tools */}
+                <div className="">
+                  <h6 className="text-xl font-medium text-rusty-100 ">
+                    {t('aboutSection.skills.designTools.heading')}
+                  </h6>
+                  <p className="mt-2 text-xl text-rusty-400">
+                    {t('aboutSection.skills.designTools.paragraph')}
+                  </p>
+                </div>
               </div>
               {/* <ul className="mt-4 space-y-2 lg:mt-6 lg:space-y-4">
               {t<string, SkillsProps[]>('aboutSection.skills.languages.items', {
