@@ -41,6 +41,11 @@ type ProjectProps = {
   description: string;
 };
 
+type SkillsProps = {
+  id: number;
+  name: string;
+};
+
 // const projects = [
 //   {
 //     title: 'Robert Denier',
@@ -248,43 +253,127 @@ const Home = () => {
         id="about"
         // classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent"
       >
-        <div className="md:flex md:gap-16">
+        {/* <span className="font-bold text-purple-500">First things first.</span> */}
+        <Heading variant="h2">{t('aboutSection.heading')}</Heading>
+        <div className="md:flex md:gap-16 lg:gap-24">
           <div className="md:flex-1">
-            {/* <span className="font-bold text-purple-500">First things first.</span> */}
-            <Heading variant="h2">{t('aboutSection.heading')}</Heading>
-            <p className="mt-4 text-xl text-rusty-400 lg:mt-8 lg:text-2xl">
-              {t('aboutSection.paragraphOne')}
-              {/* Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
-              designer. In 2018 I registered a business and since then I&apos;ve been implementing
-              websites for companies and organizations from all over Germany. Today, I increasingly
-              implement websites and web applications that I program from scratch. For this I use
-              technologies like{' '}
-              <a
-                className="text-blue-400"
-                href="https://reactjs.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                React.js
-              </a>{' '}
-              and{' '}
-              <a
-                className="text-blue-400"
-                href="https://nextjs.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Next.js
-              </a>{' '}
-              . */}
-            </p>
-            <p className="mt-4 text-xl text-rusty-400 lg:mt-6 lg:text-2xl">
-              {t('aboutSection.paragraphTwo')}
-            </p>
+            {/* Margin container */}
+            <div className="mt-6 lg:mt-8">
+              <p className="text-xl text-rusty-400 lg:text-2xl">
+                {t('aboutSection.paragraphOne')}
+                {/* Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
+                designer. In 2018 I registered a business and since then I&apos;ve been implementing
+                websites for companies and organizations from all over Germany. Today, I increasingly
+                implement websites and web applications that I program from scratch. For this I use
+                technologies like{' '}
+                <a
+                  className="text-blue-400"
+                  href="https://reactjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  React.js
+                </a>{' '}
+                and{' '}
+                <a
+                  className="text-blue-400"
+                  href="https://nextjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Next.js
+                </a>{' '}
+                . */}
+              </p>
+              <p className="mt-4 text-xl text-rusty-400 lg:mt-6 lg:text-2xl">
+                {t('aboutSection.paragraphTwo')}
+              </p>
+            </div>
           </div>
           <div className="md:flex-1">
-            <div className="mx-auto mt-12 aspect-square max-w-lg rounded-2xl bg-rusty-800 md:mt-0" />
-            {/* <Image src={Profil} alt="Robin" width={400} height={400} className="rounded-2xl" /> */}
+            {/* Margin container */}
+            <div className="mt-8 space-y-4 md:mt-4 lg:mt-8">
+              {/* Skills */}
+              <Heading variant="h5">{t('aboutSection.skills.heading')}</Heading>
+              {/* Languages */}
+              <div className="">
+                <h6 className="text-xl font-medium text-rusty-100">
+                  {t('aboutSection.skills.languages.heading')}
+                </h6>
+                <p className="mt-2 text-xl text-rusty-400">
+                  {t('aboutSection.skills.languages.paragraph')}
+                </p>
+              </div>
+              {/* Frontend */}
+              <div className="">
+                <h6 className="text-xl font-medium text-rusty-100 ">
+                  {t('aboutSection.skills.frontend.heading')}
+                </h6>
+                <p className="mt-2 text-xl text-rusty-400">
+                  {t('aboutSection.skills.frontend.paragraph')}
+                </p>
+              </div>
+              {/* Backend */}
+              <div className="">
+                <h6 className="text-xl font-medium text-rusty-100 ">
+                  {t('aboutSection.skills.backend.heading')}
+                </h6>
+                <p className="mt-2 text-xl text-rusty-400">
+                  {t('aboutSection.skills.backend.paragraph')}
+                </p>
+              </div>
+              {/* CMS */}
+              <div className="">
+                <h6 className="text-xl font-medium text-rusty-100 ">
+                  {t('aboutSection.skills.cms.heading')}
+                </h6>
+                <p className="mt-2 text-xl text-rusty-400">
+                  {t('aboutSection.skills.cms.paragraph')}
+                </p>
+              </div>
+              {/* Dev tools */}
+              <div className="">
+                <h6 className="text-xl font-medium text-rusty-100 ">
+                  {t('aboutSection.skills.devTools.heading')}
+                </h6>
+                <p className="mt-2 text-xl text-rusty-400">
+                  {t('aboutSection.skills.devTools.paragraph')}
+                </p>
+              </div>
+              {/* Design tools */}
+              <div className="">
+                <h6 className="text-xl font-medium text-rusty-100 ">
+                  {t('aboutSection.skills.designTools.heading')}
+                </h6>
+                <p className="mt-2 text-xl text-rusty-400">
+                  {t('aboutSection.skills.designTools.paragraph')}
+                </p>
+              </div>
+              {/* <ul className="mt-4 space-y-2 lg:mt-6 lg:space-y-4">
+              {t<string, SkillsProps[]>('aboutSection.skills.languages.items', {
+                returnObjects: true,
+              }).map((item) => (
+                <li key={item.id} className="flex items-center space-x-2">
+                  <span className="text-xl text-rusty-400">{item.name}</span>
+                </li>
+              ))}
+              </ul> */}
+              {/* <Heading variant="h6" classes="mt-4 lg:mt-8">
+                Frameworks
+              </Heading>
+              <ul className="mt-4 space-y-2 lg:mt-6 lg:space-y-4">
+                {t<string, SkillsProps[]>('aboutSection.skills.frameworks.items', {
+                  returnObjects: true,
+                }).map((item) => (
+                  <li key={item.name} className="flex items-center space-x-2">
+                    <span className="text-xl text-rusty-400">{item.name}</span>
+                  </li>
+                ))}
+              </ul> */}
+              {/* Profil image */}
+              {/* <div className="mx-auto mt-12 aspect-square max-w-lg rounded-2xl bg-rusty-800 md:mt-0" /> */}
+              {/* <Image src={Profil} alt="Robin" width={400} height={400} className="rounded-2xl" /> */}
+            </div>
           </div>
         </div>
       </Section>
