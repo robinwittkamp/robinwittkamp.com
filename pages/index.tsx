@@ -41,10 +41,10 @@ type ProjectProps = {
   description: string;
 };
 
-type SkillsProps = {
-  id: number;
-  name: string;
-};
+// type SkillsProps = {
+//   id: number;
+//   name: string;
+// };
 
 // const projects = [
 //   {
