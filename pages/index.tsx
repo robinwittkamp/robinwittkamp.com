@@ -267,27 +267,6 @@ const Home = () => {
                   </div>
                 ))}
               </div>
-              {/* <ul className="mt-4 space-y-2 lg:mt-6 lg:space-y-4">
-              {t<string, SkillsProps[]>('aboutSection.skills.languages.items', {
-                returnObjects: true,
-              }).map((item) => (
-                <li key={item.id} className="flex items-center space-x-2">
-                  <span className="text-xl text-rusty-400">{item.name}</span>
-                </li>
-              ))}
-              </ul> */}
-              {/* <Heading variant="h6" classes="mt-4 lg:mt-8">
-                Frameworks
-              </Heading>
-              <ul className="mt-4 space-y-2 lg:mt-6 lg:space-y-4">
-                {t<string, SkillsProps[]>('aboutSection.skills.frameworks.items', {
-                  returnObjects: true,
-                }).map((item) => (
-                  <li key={item.name} className="flex items-center space-x-2">
-                    <span className="text-xl text-rusty-400">{item.name}</span>
-                  </li>
-                ))}
-              </ul> */}
               {/* Profil image */}
               {/* <div className="mx-auto mt-12 aspect-square max-w-lg rounded-2xl bg-rusty-800 md:mt-0" /> */}
               {/* <Image src={Profil} alt="Robin" width={400} height={400} className="rounded-2xl" /> */}
