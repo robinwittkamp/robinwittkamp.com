@@ -178,7 +178,7 @@ const Home = () => {
 
         {/* Company logos */}
         <div className="mt-20 md:mt-24">
-          <span className="block text-center text-xl text-rusty-400">
+          <span className="block text-center text-lg text-rusty-400 md:text-xl">
             {t('heroSection.logosDescription')}
           </span>
           {/* Logos container */}
