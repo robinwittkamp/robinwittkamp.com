@@ -11,8 +11,8 @@
   },
   "aboutSection": {
     "heading": "About me",
-    "paragraphOne": "My interest in designing and implementing user interfaces started 6 years ago. As a result, I began my studies at the University of Applied Sciences Hamm-Lippstadt in Computer Visualization and Design. During my studies, I worked as a student assistant in various web and design projects.",
-    "paragraphTwo": "In 2018, I additionally registered a business. Since then, I have been building websites and web applications for companies from Germany as a freelancer. For the implementation of projects I use both proven technologies like WordPress and more modern technologies like React.js or Next.js.",
+    "paragraphOne": "My interest in designing and implementing user interfaces started 6 years ago. As a result I began my studies at the University of Applied Sciences Hamm-Lippstadt in the field of computer visualization and design. During my studies I worked as a student assistant in various web and design projects. This included e.g. the frontend development of an ERP software for a medium-sized company.",
+    "paragraphTwo": "In 2018, I additionally registered a business alongside my studies. Since then, I have been building websites and web applications for companies from Germany as a freelancer. For the implementation of projects I use both proven technologies like WordPress and more modern technologies like React.js or Next.js. My tasks also include the design of user interfaces as well as the administration of servers, domains and web hosting.",
     "skills": {
       "heading": "Skills",
       "items": [
@@ -29,7 +29,7 @@
           "paragraph": "Node.js, Express.js, MySQL, Rest API"
         },
         {
-          "heading": "Content Management Systems",
+          "heading": "Content Management System",
           "paragraph": "WordPress, Strapi, Sanity"
         },
         {
