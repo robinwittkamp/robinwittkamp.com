@@ -239,9 +239,9 @@ const Home = () => {
                   returnObjects: true,
                 }).map((item) => (
                   <div key={item.heading}>
-                    <h6 className="text-base font-medium text-rusty-200 md:text-lg">
+                    <h2 className="text-base font-medium text-rusty-200 md:text-lg">
                       {item.heading}
-                    </h6>
+                    </h2>
                     <p className="mt-1 text-lg text-rusty-400 md:text-xl">{item.paragraph}</p>
                   </div>
                 ))}
