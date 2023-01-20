@@ -48,14 +48,14 @@
     "projects": [
       {
         "id": "1",
-        "title": "Robert Denier",
-        "href": "https://robertdenier.de",
+        "title": "Energiewerk Rügen",
+        "href": "https://energiewerk-ruegen.de",
         "description": "Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
       },
       {
         "id": "2",
-        "title": "Energiewerk Rügen",
-        "href": "https://energiewerk-ruegen.de",
+        "title": "Robert Denier",
+        "href": "https://robertdenier.de",
         "description": "Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu."
       },
       {
