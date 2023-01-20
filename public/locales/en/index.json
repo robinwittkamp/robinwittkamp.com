@@ -33,6 +33,10 @@
           "paragraph": "WordPress, Strapi, Sanity"
         },
         {
+          "heading": "Hosting & Deployment",
+          "paragraph": "Plesk, Vercel"
+        },
+        {
           "heading": "Development tools",
           "paragraph": "Git, npm, Visual Studio Code, ESLint, Prettier"
         },
