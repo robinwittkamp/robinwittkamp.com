@@ -37,8 +37,9 @@ import TherapieHenkeLogo from '../public/logos/therapie_henke_logo.svg';
 type ProjectProps = {
   id: number;
   title: string;
-  href: string;
   description: string;
+  buttonText: string;
+  href: string;
 };
 
 type SkillsProps = {
@@ -266,6 +267,7 @@ const Home = () => {
                 key={item.id}
                 title={item.title}
                 description={item.description}
+                buttonText={item.buttonText}
                 href={item.href}
               />
             )
