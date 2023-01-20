@@ -214,7 +214,6 @@ const Home = () => {
         id="about"
         // classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent"
       >
-        {/* <span className="font-bold text-purple-500">First things first.</span> */}
         <Heading variant="h2">{t('aboutSection.heading')}</Heading>
         <div className="md:flex md:gap-16 lg:gap-24">
           <div className="md:flex-1">
@@ -252,7 +251,6 @@ const Home = () => {
 
       {/* Work */}
       <Section id="work">
-        {/* <span className="block text-center font-bold text-rose-500">Some of my projects.</span> */}
         <Heading variant="h2" classes="text-center">
           {t('workSection.heading')}
         </Heading>
