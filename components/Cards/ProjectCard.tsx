@@ -13,7 +13,7 @@ type ProjectCardProps = {
 const ProjectCard = ({ title, description, href }: ProjectCardProps): ReactElement => (
   <div className="rounded-[2rem] border border-rusty-700/50 bg-gradient-to-tr from-rusty-800/50 to-rusty-700/50 px-6 py-8 shadow-xl shadow-black/30 sm:px-8 lg:p-12">
     <div className="">
-      <span className="block text-2xl font-bold sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl">
+      <span className="block text-2xl font-bold text-rusty-100 sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl">
         {title}
       </span>
       <p className="mt-6 text-lg text-rusty-400 lg:text-xl">{description}</p>
