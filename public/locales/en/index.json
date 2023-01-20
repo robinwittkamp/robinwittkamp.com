@@ -63,7 +63,7 @@
       },
       "devTools": {
         "heading": "Development tools",
-        "paragraph": "Visual Studio Code, ESLint, Prettier"
+        "paragraph": "Git, npm, Visual Studio Code, ESLint, Prettier"
       },
       "designTools": {
         "heading": "Design tools",
