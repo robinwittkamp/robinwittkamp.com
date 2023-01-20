@@ -15,60 +15,32 @@
     "paragraphTwo": "Im Jahr 2018 meldete ich zusätzlich ein Gewerbe an. Seitdem implementiere ich als Freelancer Webseiten und Webanwendungen für Unternehmen aus Deutschland. Für die Umsetzung von Projekten verwende ich sowohl bewährte Technologien wie WordPress als auch modernere Technologien wie React.js oder Next.js.",
     "skills": {
       "heading": "Kenntnisse",
-      "languages": {
-        "heading": "Sprachen",
-        "paragraph": "HTML, CSS, JavaScript, TypeScript, PHP, Python, Java",
-        "items": [
-          {
-            "id": "1",
-            "name": "HTML"
-          },
-          {
-            "id": "2",
-            "name": "CSS"
-          },
-          {
-            "id": "3",
-            "name": "JavaScript"
-          },
-          {
-            "id": "4",
-            "name": "TypeScript"
-          },
-          {
-            "id": "4",
-            "name": "PHP"
-          },
-          {
-            "id": "5",
-            "name": "Python"
-          },
-          {
-            "id": "6",
-            "name": "Java"
-          }
-        ]
-      },
-      "frontend": {
-        "heading": "Frontend",
-        "paragraph": "React.js, Next.js, TailwindCSS, Framer Motion, Three.js"
-      },
-      "backend": {
-        "heading": "Backend",
-        "paragraph": "Node.js, Express.js, MySQL, Rest-API"
-      },
-      "cms": {
-        "heading": "Content Management Systeme",
-        "paragraph": "WordPress, Strapi, Sanity"
-      },
-      "devTools": {
-        "heading": "Entwickler-Tools",
-        "paragraph": "Git, npm, Visual Studio Code, ESLint, Prettier"
-      },
-      "designTools": {
-        "heading": "Design-Tools",
-        "paragraph": "Figma, Photoshop, Illustrator"
-      }
+      "items": [
+        {
+          "heading": "Sprachen",
+          "paragraph": "HTML, CSS, JavaScript, TypeScript, PHP, Python, Java"
+        },
+        {
+          "heading": "Frontend",
+          "paragraph": "React.js, Next.js, TailwindCSS, Framer Motion, Three.js"
+        },
+        {
+          "heading": "Backend",
+          "paragraph": "Node.js, Express.js, MySQL, Rest-API"
+        },
+        {
+          "heading": "Content Management Systeme",
+          "paragraph": "WordPress, Strapi, Sanity"
+        },
+        {
+          "heading": "Entwickler-Tools",
+          "paragraph": "Git, npm, Visual Studio Code, ESLint, Prettier"
+        },
+        {
+          "heading": "Design-Tools",
+          "paragraph": "Figma, Photoshop, Illustrator"
+        }
+      ]
     }
   },
   "workSection": {

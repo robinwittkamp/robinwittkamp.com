@@ -15,60 +15,32 @@
     "paragraphTwo": "In 2018, I additionally registered a business. Since then, I have been building websites and web applications for companies from Germany as a freelancer. For the implementation of projects I use both proven technologies like WordPress and more modern technologies like React.js or Next.js.",
     "skills": {
       "heading": "Skills",
-      "languages": {
-        "heading": "Languages",
-        "paragraph": "HTML, CSS, JavaScript, TypeScript, PHP, Python, Java",
-        "items": [
-          {
-            "id": "1",
-            "name": "HTML"
-          },
-          {
-            "id": "2",
-            "name": "CSS"
-          },
-          {
-            "id": "3",
-            "name": "JavaScript"
-          },
-          {
-            "id": "4",
-            "name": "TypeScript"
-          },
-          {
-            "id": "4",
-            "name": "PHP"
-          },
-          {
-            "id": "5",
-            "name": "Python"
-          },
-          {
-            "id": "6",
-            "name": "Java"
-          }
-        ]
-      },
-      "frontend": {
-        "heading": "Frontend",
-        "paragraph": "React.js, Next.js, TailwindCSS, Framer Motion, Three.js"
-      },
-      "backend": {
-        "heading": "Backend",
-        "paragraph": "Node.js, Express.js, MySQL, Rest API"
-      },
-      "cms": {
-        "heading": "Content Management Systems",
-        "paragraph": "WordPress, Strapi, Sanity"
-      },
-      "devTools": {
-        "heading": "Development tools",
-        "paragraph": "Git, npm, Visual Studio Code, ESLint, Prettier"
-      },
-      "designTools": {
-        "heading": "Design tools",
-        "paragraph": "Figma, Photoshop, Illustrator"
-      }
+      "items": [
+        {
+          "heading": "Languages",
+          "paragraph": "HTML, CSS, JavaScript, TypeScript, PHP, Python, Java"
+        },
+        {
+          "heading": "Frontend",
+          "paragraph": "React.js, Next.js, TailwindCSS, Framer Motion, Three.js"
+        },
+        {
+          "heading": "Backend",
+          "paragraph": "Node.js, Express.js, MySQL, Rest API"
+        },
+        {
+          "heading": "Content Management Systems",
+          "paragraph": "WordPress, Strapi, Sanity"
+        },
+        {
+          "heading": "Development tools",
+          "paragraph": "Git, npm, Visual Studio Code, ESLint, Prettier"
+        },
+        {
+          "heading": "Design tools",
+          "paragraph": "Figma, Photoshop, Illustrator"
+        }
+      ]
     }
   },
   "workSection": {
