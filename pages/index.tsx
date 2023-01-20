@@ -229,15 +229,19 @@ const Home = () => {
             {/* Margin container */}
             <div className="mt-8 md:mt-4 lg:mt-8">
               {/* Skills */}
-              <Heading variant="h5">{t('aboutSection.skills.heading')}</Heading>
+              <h5 className="text-2xl font-bold text-rusty-100 sm:text-3xl lg:text-4xl">
+                {t('aboutSection.skills.heading')}
+              </h5>
               {/* Vertical space container */}
               <div className="mt-4 space-y-4">
                 {t<string, SkillsProps[]>('aboutSection.skills.items', {
                   returnObjects: true,
                 }).map((item) => (
                   <div key={item.heading}>
-                    <h6 className="text-xl font-medium text-rusty-100">{item.heading}</h6>
-                    <p className="mt-2 text-xl text-rusty-400">{item.paragraph}</p>
+                    <h6 className="text-base font-medium text-rusty-200 md:text-lg">
+                      {item.heading}
+                    </h6>
+                    <p className="mt-1 text-lg text-rusty-400 md:text-xl">{item.paragraph}</p>
                   </div>
                 ))}
               </div>
