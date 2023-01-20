@@ -220,32 +220,7 @@ const Home = () => {
           <div className="md:flex-1">
             {/* Margin container */}
             <div className="mt-6 lg:mt-8">
-              <p className="text-xl text-rusty-400 lg:text-2xl">
-                {t('aboutSection.paragraphOne')}
-                {/* Hi, I&apos;m Robin. Besides my studies I work as a freelance web developer and UI/UX
-                designer. In 2018 I registered a business and since then I&apos;ve been implementing
-                websites for companies and organizations from all over Germany. Today, I increasingly
-                implement websites and web applications that I program from scratch. For this I use
-                technologies like{' '}
-                <a
-                  className="text-blue-400"
-                  href="https://reactjs.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  React.js
-                </a>{' '}
-                and{' '}
-                <a
-                  className="text-blue-400"
-                  href="https://nextjs.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Next.js
-                </a>{' '}
-                . */}
-              </p>
+              <p className="text-xl text-rusty-400 lg:text-2xl">{t('aboutSection.paragraphOne')}</p>
               <p className="mt-4 text-xl text-rusty-400 lg:mt-6 lg:text-2xl">
                 {t('aboutSection.paragraphTwo')}
               </p>
