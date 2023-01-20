@@ -33,6 +33,7 @@ const LinkButton = ({
       href={href}
       rel={external ? 'noopener noreferrer' : undefined}
       target={external ? '_blank' : undefined}
+      scroll={external}
     >
       {children}
     </Link>

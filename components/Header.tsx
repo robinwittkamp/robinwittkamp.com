@@ -214,6 +214,7 @@ const Header = (): ReactElement => {
                               // onMouseLeave={() => setFocused(undefined)}
                               tabIndex={0}
                               // role="link"
+                              scroll={false}
                             >
                               {/* {console.log('item:', item)}
                               {console.log('focused:', focused)} */}
@@ -278,6 +279,7 @@ const Header = (): ReactElement => {
                                 }}
                                 href={item.href}
                                 className="block border-b border-rusty-800 px-4 py-3 sm:px-8"
+                                scroll={false}
                               >
                                 <span className="text-lg">{item.name}</span>
                               </Link>

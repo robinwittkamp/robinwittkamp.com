@@ -101,12 +101,13 @@ const Footer = (): ReactElement => {
                 {t<string, MainNavItemProps[]>('mainNav.items', { returnObjects: true }).map(
                   (item) => (
                     <li key={item.id}>
-                      <a
-                        href={item.href}
+                      <Link
                         className="inline-block py-2 text-rusty-400 hover:text-white"
+                        href={item.href}
+                        scroll={false}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   )
                 )}
@@ -122,8 +123,8 @@ const Footer = (): ReactElement => {
                   (item) => (
                     <li key={item.id}>
                       <Link
-                        href={item.href}
                         className="inline-block py-2 text-rusty-400 hover:text-white"
+                        href={item.href}
                       >
                         {item.name}
                       </Link>
@@ -143,11 +144,9 @@ const Footer = (): ReactElement => {
                 }).map((item) => (
                   <li key={item.id}>
                     <button
-                      type="button"
-                      // href="/"
-                      // locale={item.locale}
                       className="inline-block py-2 text-rusty-400 hover:text-white"
                       onClick={() => onLanguageClick(item.locale)}
+                      type="button"
                     >
                       {item.name}
                     </button>
