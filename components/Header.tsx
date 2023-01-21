@@ -2,13 +2,12 @@ import { Popover } from '@headlessui/react';
 import { AnimatePresence, LazyMotion, m } from 'framer-motion';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useTranslation } from 'next-i18next';
 import type { ReactElement } from 'react';
 import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
-import headerDe from '../public/locales/de/header.json';
-import headerEn from '../public/locales/en/header.json';
+import headerLocalDe from '../public/locales/de/header.json';
+import headerLocalEn from '../public/locales/en/header.json';
 import Logo from './Logo';
 
 const loadFramerMotionFeatures = () =>
@@ -96,8 +95,7 @@ const Header = (): ReactElement => {
 
   const router = useRouter();
   const { locale } = router;
-  const header = locale === 'en' ? headerEn : headerDe;
-  const navigation = header.mainNav.items;
+  const t = locale === 'en' ? headerLocalEn : headerLocalDe;
 
   const handleScroll = () => {
     // console.log('scroll event', window.scrollY);
@@ -112,9 +110,6 @@ const Header = (): ReactElement => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   });
-
-  const { t, ready } = useTranslation('header');
-  if (!ready) return <span>Loading translations...</span>;
 
   return (
     <LazyMotion features={loadFramerMotionFeatures} strict>
@@ -144,10 +139,7 @@ const Header = (): ReactElement => {
                     {/* Mobil menu button */}
                     <div className="-mr-3 md:hidden">
                       <Popover.Button className="group inline-flex items-center justify-center rounded-md px-3 py-2 focus:outline-none">
-                        <span className="sr-only">{t('mainNav.title')}</span>
-                        {/* <span className="rounded-xl bg-rusty-800 px-3 py-0.5 font-medium">
-                          {t('mainNav.title')}
-                        </span> */}
+                        <span className="sr-only">{t.mainNav.title}</span>
                         {/* Animated hamburger icon */}
                         <div
                           className="flex h-8 w-6 flex-col items-center justify-center"
@@ -175,11 +167,7 @@ const Header = (): ReactElement => {
                       onBlur={() => setFocused(undefined)}
                     >
                       <ul className="flex">
-                        {/* TODO: Using 'navigation' loaded with next-i18next doesn't work. Why? */}
-                        {/* {t<string, MainNavItemProps[]>('mainNav.items', {
-                          returnObjects: true,
-                        }).map((item) => ( */}
-                        {navigation.map((item) => (
+                        {t.mainNav.items.map((item) => (
                           <li key={item.id}>
                             <Link
                               className="relative flex h-[4.5rem] items-center px-6 outline-0"
@@ -245,9 +233,7 @@ const Header = (): ReactElement => {
                           variants={mobileNavVariants}
                           className="border-t border-rusty-800"
                         >
-                          {t<string, MainNavItemProps[]>('mainNav.items', {
-                            returnObjects: true,
-                          }).map((item) => (
+                          {t.mainNav.items.map((item) => (
                             <m.div key={item.name} variants={mobileNavItemVariants}>
                               <Link
                                 onClick={() => {
