@@ -98,7 +98,6 @@ const Header = (): ReactElement => {
   const t = locale === 'en' ? headerLocalEn : headerLocalDe;
 
   const handleScroll = () => {
-    // console.log('scroll event', window.scrollY);
     if (window.scrollY <= 0) {
       setIsScrolled(false);
     } else {
@@ -173,19 +172,13 @@ const Header = (): ReactElement => {
                               className="relative flex h-[4.5rem] items-center px-6 outline-0"
                               href={item.href}
                               onFocus={() => setFocused(item)}
-                              // onBlur={() => setFocused(undefined)}
                               onMouseEnter={() => setFocused(item)}
-                              // onMouseLeave={() => setFocused(undefined)}
                               tabIndex={0}
-                              // role="link"
                               scroll={false}
                             >
-                              {/* {console.log('item:', item)}
-                              {console.log('focused:', focused)} */}
                               <AnimatePresence>
                                 {focused === item ? (
                                   <m.div
-                                    // TODO: prevent items from animating to 0 opacity when quickly switching between them
                                     className="absolute inset-x-[10%] inset-y-1/4 z-0 rounded-xl bg-rusty-700"
                                     key={item.id}
                                     initial="unfocused"
