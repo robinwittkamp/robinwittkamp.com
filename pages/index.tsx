@@ -11,18 +11,9 @@ import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';
 import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
-// import klifraMockup from '../public/images/klifra_mockup_iphone-13-pro.png';
-// import energiewerkRuegenMockup from '../public/images/energiewerk-ruegen_mockup_iphone-13-pro.png';
-// import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
-// import KlifraBrowserMockupMockup from '../public/images/klifra_mockup_browser.png';
 import KlifraPadMockup from '../public/images/klifra_mockup_pad.png';
-// import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
-// import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 import localDe from '../public/locales/de/index.json';
 import localEn from '../public/locales/en/index.json';
-// import LinTecBrowser from '../public/images/lin-tec_mockup_browser_5.png';
-// import LinTecPadMockup from '../public/images/lin-tec_mockup_pad.png';
-// import LinTecMacBookProMockup from '../public/images/lin-tec_mockup_macbook_pro.png';
 // import AdessoLogo from '../public/images/logos/adesso_logo.svg';
 import BauraumMvLogo from '../public/logos/bauraum_mv_logo.svg';
 import EnergiewerkRuegenLogo from '../public/logos/energiewerk_ruegen_logo.svg';
@@ -35,19 +26,6 @@ import NewCreationsLogo from '../public/logos/new_creations_logo.svg';
 import RobertDenierLogo from '../public/logos/robert_denier_logo.svg';
 import RuegenNaturUrlaubLogo from '../public/logos/ruegen_natur_urlaub_logo.svg';
 import TherapieHenkeLogo from '../public/logos/therapie_henke_logo.svg';
-
-// type ProjectProps = {
-//   id: number;
-//   title: string;
-//   description: string;
-//   buttonText: string;
-//   href: string;
-// };
-
-// type SkillsProps = {
-//   heading: string;
-//   paragraph: string;
-// };
 
 const clientLogos = [
   {
