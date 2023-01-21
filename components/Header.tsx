@@ -20,24 +20,6 @@ type MainNavItemProps = {
   href: string;
 };
 
-// const navigationEn = [
-//   // { id: 1, name: 'Home', href: '/' },
-//   { id: 2, name: 'About', href: '/#about' },
-//   // { id: 3, name: 'Services', href: '/services' },
-//   { id: 4, name: 'Work', href: '/#work' },
-//   // { id: 5, name: 'Blog', href: '/blog' },
-//   { id: 6, name: 'Contact', href: '/contact' },
-// ];
-
-// const navigationDe = [
-//   // { id: 1, name: 'Home', href: '/' },
-//   { id: 2, name: 'Über mich', href: '/#about' },
-//   // { id: 3, name: 'Leistungen', href: '/services' },
-//   { id: 4, name: 'Projekte', href: '/#work' },
-//   // { id: 5, name: 'Blog', href: '/blog' },
-//   { id: 6, name: 'Kontakt', href: '/contact' },
-// ];
-
 const hamburgerLine =
   'h-[2px] w-full rounded-full bg-white transform duration-300 group-focus:bg-rusty-300 group-hover:bg-rusty-300';
 
@@ -130,12 +112,6 @@ const Header = (): ReactElement => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   });
-
-  // useEffect(() => {
-  //   console.log('focused nav item:', focused);
-  //   console.log('nav items:');
-  //   console.log(t('mainNav.items'));
-  // }, [focused]);
 
   const { t, ready } = useTranslation('header');
   if (!ready) return <span>Loading translations...</span>;
