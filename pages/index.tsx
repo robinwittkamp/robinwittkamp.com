@@ -1,7 +1,7 @@
-import type { GetStaticProps } from 'next';
+// import type { GetStaticProps } from 'next';
 import Image from 'next/image';
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 
 // import Grid from '../components/Backgrounds/Grid';
 import LinkButton from '../components/Buttons/LinkButton';
@@ -16,6 +16,10 @@ import Heading from '../components/Text/Heading';
 // import fewoPutbusMockup from '../public/images/ferienwohnung-putbus_mockup_iphone-13-pro.png';
 // import KlifraBrowserMockupMockup from '../public/images/klifra_mockup_browser.png';
 import KlifraPadMockup from '../public/images/klifra_mockup_pad.png';
+// import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
+// import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
+import localDe from '../public/locales/de/index.json';
+import localEn from '../public/locales/en/index.json';
 // import LinTecBrowser from '../public/images/lin-tec_mockup_browser_5.png';
 // import LinTecPadMockup from '../public/images/lin-tec_mockup_pad.png';
 // import LinTecMacBookProMockup from '../public/images/lin-tec_mockup_macbook_pro.png';
@@ -31,21 +35,19 @@ import NewCreationsLogo from '../public/logos/new_creations_logo.svg';
 import RobertDenierLogo from '../public/logos/robert_denier_logo.svg';
 import RuegenNaturUrlaubLogo from '../public/logos/ruegen_natur_urlaub_logo.svg';
 import TherapieHenkeLogo from '../public/logos/therapie_henke_logo.svg';
-// import robertDenierMockup from '../public/images/robert-denier_mockup_iphone-13-pro.png';
-// import webBuddyMockup from '../public/images/webbuddy_mockup_iphone-13-pro.png';
 
-type ProjectProps = {
-  id: number;
-  title: string;
-  description: string;
-  buttonText: string;
-  href: string;
-};
+// type ProjectProps = {
+//   id: number;
+//   title: string;
+//   description: string;
+//   buttonText: string;
+//   href: string;
+// };
 
-type SkillsProps = {
-  heading: string;
-  paragraph: string;
-};
+// type SkillsProps = {
+//   heading: string;
+//   paragraph: string;
+// };
 
 const clientLogos = [
   {
@@ -118,12 +120,13 @@ const clientLogos = [
 // ];
 
 const Home = () => {
-  const { t, ready } = useTranslation('index');
-  if (!ready) return <span>Loading translations...</span>;
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? localEn : localDe;
 
   return (
     <PageLayout>
-      <Head title={t('title')} description={t('description')} />
+      <Head title={t.title} description={t.description} />
 
       {/* Hero */}
       <Section
@@ -136,7 +139,7 @@ const Home = () => {
         <div className="">
           <div className="flex sm:justify-center">
             <span className="block rounded-full border border-rusty-700 bg-rusty-800 px-4 py-1 text-center font-medium text-rusty-400 lg:text-lg">
-              {t('heroSection.tagline')}
+              {t.heroSection.tagline}
             </span>
           </div>
           <Heading
@@ -144,16 +147,16 @@ const Home = () => {
             classes="mt-8 max-w-lg sm:mx-auto sm:max-w-xl sm:text-center lg:max-w-3xl xl:max-w-4xl xl:text-7xl"
           >
             <span className="bg-gradient-to-tr from-red-600 to-amber-400 bg-clip-text text-transparent">
-              {t('heroSection.headingOne')}
+              {t.heroSection.headingOne}
             </span>
-            {t('heroSection.headingTwo')}
+            {t.heroSection.headingTwo}
           </Heading>
           <p className="mt-8 max-w-md text-xl text-rusty-400 sm:mx-auto sm:text-center lg:max-w-[45rem] lg:text-2xl">
-            {t('heroSection.subheading')}
+            {t.heroSection.subheading}
           </p>
           <div className="mt-8 sm:flex sm:justify-center">
             <LinkButton href="/#work" variant="primary">
-              {t('heroSection.button')}
+              {t.heroSection.button}
             </LinkButton>
           </div>
         </div>
@@ -180,7 +183,7 @@ const Home = () => {
         {/* Company logos */}
         <div className="mt-20 md:mt-24">
           <span className="block text-center text-lg text-rusty-400 md:text-xl">
-            {t('heroSection.logosDescription')}
+            {t.heroSection.logosDescription}
           </span>
           {/* Logos container */}
           <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
@@ -215,14 +218,14 @@ const Home = () => {
         id="about"
         // classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent"
       >
-        <Heading variant="h2">{t('aboutSection.heading')}</Heading>
+        <Heading variant="h2">{t.aboutSection.heading}</Heading>
         <div className="md:flex md:gap-16 lg:gap-24">
           <div className="md:flex-1">
             {/* Margin container */}
             <div className="mt-6 lg:mt-8">
-              <p className="text-xl text-rusty-400 lg:text-2xl">{t('aboutSection.paragraphOne')}</p>
+              <p className="text-xl text-rusty-400 lg:text-2xl">{t.aboutSection.paragraphOne}</p>
               <p className="mt-4 text-xl text-rusty-400 lg:mt-6 lg:text-2xl">
-                {t('aboutSection.paragraphTwo')}
+                {t.aboutSection.paragraphTwo}
               </p>
             </div>
           </div>
@@ -231,13 +234,11 @@ const Home = () => {
             <div className="mt-8 md:mt-4 lg:mt-8">
               {/* Skills */}
               <h2 className="text-2xl font-bold text-rusty-100 sm:text-3xl lg:text-4xl">
-                {t('aboutSection.skills.heading')}
+                {t.aboutSection.skills.heading}
               </h2>
               {/* Vertical space container */}
               <div className="mt-4 space-y-4">
-                {t<string, SkillsProps[]>('aboutSection.skills.items', {
-                  returnObjects: true,
-                }).map((item) => (
+                {t.aboutSection.skills.items.map((item) => (
                   <div key={item.heading}>
                     <h3 className="text-base font-medium text-rusty-200 md:text-lg">
                       {item.heading}
@@ -257,21 +258,19 @@ const Home = () => {
       {/* Work */}
       <Section id="work">
         <Heading variant="h2" classes="text-center">
-          {t('workSection.heading')}
+          {t.workSection.heading}
         </Heading>
         {/* Cards container */}
         <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
-          {t<string, ProjectProps[]>('workSection.projects', { returnObjects: true }).map(
-            (item) => (
-              <ProjectCard
-                key={item.id}
-                title={item.title}
-                description={item.description}
-                buttonText={item.buttonText}
-                href={item.href}
-              />
-            )
-          )}
+          {t.workSection.projects.map((item) => (
+            <ProjectCard
+              key={item.id}
+              title={item.title}
+              description={item.description}
+              buttonText={item.buttonText}
+              href={item.href}
+            />
+          ))}
         </div>
       </Section>
 
@@ -280,12 +279,12 @@ const Home = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale as string, ['common', 'header', 'index', 'footer'])),
-    },
-  };
-};
+// export const getStaticProps: GetStaticProps = async ({ locale }) => {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale as string, ['common', 'index', 'footer'])),
+//     },
+//   };
+// };
 
 export default Home;

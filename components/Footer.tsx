@@ -3,37 +3,38 @@ import { faCode, faFeather } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useTranslation } from 'next-i18next';
 import type { ReactElement } from 'react';
 
-type MainNavItemProps = {
-  id: number;
-  name: string;
-  href: string;
-};
+import localDe from '../public/locales/de/footer.json';
+import localEn from '../public/locales/en/footer.json';
 
-type LegalNavItemProps = {
-  id: number;
-  name: string;
-  href: string;
-};
+// type MainNavItemProps = {
+//   id: number;
+//   name: string;
+//   href: string;
+// };
 
-type LanguageNavItemProps = {
-  id: number;
-  name: string;
-  locale: string;
-};
+// type LegalNavItemProps = {
+//   id: number;
+//   name: string;
+//   href: string;
+// };
+
+// type LanguageNavItemProps = {
+//   id: number;
+//   name: string;
+//   locale: string;
+// };
 
 const Footer = (): ReactElement => {
   const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? localEn : localDe;
 
   const onLanguageClick = (newLocale: string) => {
     const { pathname, asPath, query } = router;
     router.push({ pathname, query }, asPath, { locale: newLocale, scroll: false });
   };
-
-  const { t, ready } = useTranslation('footer');
-  if (!ready) return <span>Loading translations...</span>;
 
   return (
     <footer className="min-w-[20rem] pb-8 pt-16 md:pb-16">
@@ -47,7 +48,7 @@ const Footer = (): ReactElement => {
             <div className="md:flex-[1_1_100%] lg:flex-[2_2_0%]">
               {/* Logo */}
               <FontAwesomeIcon icon={faFeather} className="text-3xl text-rusty-500" />
-              <span className="mt-8 block max-w-[18rem] text-rusty-400">{t('description')}</span>
+              <span className="mt-8 block max-w-[18rem] text-rusty-400">{t.description}</span>
               {/* Social icons */}
               <div className="mt-8 flex flex-wrap items-center space-x-8">
                 {/* GitHub */}
@@ -96,52 +97,46 @@ const Footer = (): ReactElement => {
             {/* 2 column */}
             <div className="md:flex-1 lg:flex-1">
               {/* Main navigation */}
-              <span className="block font-bold text-rusty-200">{t('mainNav.title')}</span>
+              <span className="block font-bold text-rusty-200">{t.mainNav.title}</span>
               <ul className="mt-2">
-                {t<string, MainNavItemProps[]>('mainNav.items', { returnObjects: true }).map(
-                  (item) => (
-                    <li key={item.id}>
-                      <Link
-                        className="inline-block py-2 text-rusty-400 hover:text-white"
-                        href={item.href}
-                        scroll={false}
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  )
-                )}
+                {t.mainNav.items.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      className="inline-block py-2 text-rusty-400 hover:text-white"
+                      href={item.href}
+                      scroll={false}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             {/* 3 column */}
             <div className="md:flex-1 lg:flex-1">
               {/* Legal navigation */}
-              <span className="block font-bold text-rusty-200">{t('legalNav.title')}</span>
+              <span className="block font-bold text-rusty-200">{t.legalNav.title}</span>
               <ul className="mt-2">
-                {t<string, LegalNavItemProps[]>('legalNav.items', { returnObjects: true }).map(
-                  (item) => (
-                    <li key={item.id}>
-                      <Link
-                        className="inline-block py-2 text-rusty-400 hover:text-white"
-                        href={item.href}
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  )
-                )}
+                {t.legalNav.items.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      className="inline-block py-2 text-rusty-400 hover:text-white"
+                      href={item.href}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             {/* 4 column */}
             <div className="md:flex-1 lg:flex-1">
               {/* Languages */}
-              <span className="block font-bold text-rusty-200">{t('languageNav.title')}</span>
+              <span className="block font-bold text-rusty-200">{t.languageNav.title}</span>
               <ul className="mt-2">
-                {t<string, LanguageNavItemProps[]>('languageNav.items', {
-                  returnObjects: true,
-                }).map((item) => (
+                {t.languageNav.items.map((item) => (
                   <li key={item.id}>
                     <button
                       className="inline-block py-2 text-rusty-400 hover:text-white"
@@ -171,14 +166,14 @@ const Footer = (): ReactElement => {
               >
                 <div className="flex items-center space-x-2">
                   <FontAwesomeIcon icon={faCode} className="w-3" />
-                  <span>{t('linkToGitHubTitle')}</span>
+                  <span>{t.linkToGitHubTitle}</span>
                 </div>
               </a>
             </div>
 
             <div className="lg:flex-1">
               {/* Made with */}
-              <span className="block py-2 text-rusty-400 lg:text-center">{t('madeWith')}</span>
+              <span className="block py-2 text-rusty-400 lg:text-center">{t.madeWith}</span>
             </div>
 
             <div className="lg:flex-1">

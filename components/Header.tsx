@@ -6,8 +6,8 @@ import type { ReactElement } from 'react';
 import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
-import headerLocalDe from '../public/locales/de/header.json';
-import headerLocalEn from '../public/locales/en/header.json';
+import localDe from '../public/locales/de/header.json';
+import localEn from '../public/locales/en/header.json';
 import Logo from './Logo';
 
 const loadFramerMotionFeatures = () =>
@@ -95,7 +95,7 @@ const Header = (): ReactElement => {
 
   const router = useRouter();
   const { locale } = router;
-  const t = locale === 'en' ? headerLocalEn : headerLocalDe;
+  const t = locale === 'en' ? localEn : localDe;
 
   const handleScroll = () => {
     if (window.scrollY <= 0) {

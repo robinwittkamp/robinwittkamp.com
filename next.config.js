@@ -7,8 +7,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
-const { i18n } = require('./next-i18next.config');
-
 // Next.js config
 const nextConfig = withBundleAnalyzer({
   env: {
@@ -19,7 +17,10 @@ const nextConfig = withBundleAnalyzer({
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-  i18n,
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'de'],
+  },
   // ignoreBuildErrors: true,
   reactStrictMode: true,
 
