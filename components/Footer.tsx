@@ -8,24 +8,6 @@ import type { ReactElement } from 'react';
 import localDe from '../public/locales/de/footer.json';
 import localEn from '../public/locales/en/footer.json';
 
-// type MainNavItemProps = {
-//   id: number;
-//   name: string;
-//   href: string;
-// };
-
-// type LegalNavItemProps = {
-//   id: number;
-//   name: string;
-//   href: string;
-// };
-
-// type LanguageNavItemProps = {
-//   id: number;
-//   name: string;
-//   locale: string;
-// };
-
 const Footer = (): ReactElement => {
   const router = useRouter();
   const { locale } = router;
