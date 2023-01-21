@@ -3,7 +3,6 @@ import Image from 'next/image';
 // import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 
-// import Grid from '../components/Backgrounds/Grid';
 import LinkButton from '../components/Buttons/LinkButton';
 import ProjectCard from '../components/Cards/ProjectCard';
 import Head from '../components/Head';
@@ -112,7 +111,6 @@ const Home = () => {
         id="home"
         classes="relative bg-gradient-radial-hero from-rusty-800/50 to-transparent overflow-hidden"
       >
-        {/* <Grid /> */}
         {/* Text container */}
         <div className="">
           <div className="flex sm:justify-center">
