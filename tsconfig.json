@@ -1,5 +1,4 @@
 {
-  "extends": "@tsconfig/next-strictest/tsconfig.json",
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -10,6 +9,17 @@
     "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "importsNotUsedAsValues": "error",
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "incremental": true,
