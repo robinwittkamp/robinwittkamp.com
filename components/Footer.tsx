@@ -38,7 +38,7 @@ const Footer = (): ReactElement => {
               <div className="mt-8 flex flex-wrap items-center space-x-8">
                 {/* GitHub */}
                 <a
-                  className="text-rusty-400 hover:text-white"
+                  className="text-rusty-400 transition-colors hover:text-white"
                   href="https://github.com/robinwittkamp"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -48,7 +48,7 @@ const Footer = (): ReactElement => {
                 </a>
                 {/* LinkedIn */}
                 <a
-                  className="text-rusty-400 hover:text-white"
+                  className="text-rusty-400 transition-colors hover:text-white"
                   href="https://www.linkedin.com/in/robinwittkamp"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -58,7 +58,7 @@ const Footer = (): ReactElement => {
                 </a>
                 {/* Xing */}
                 <a
-                  className="text-rusty-400 hover:text-white"
+                  className="text-rusty-400 transition-colors hover:text-white"
                   href="https://www.xing.com/profile/Robin_Wittkamp2"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const Footer = (): ReactElement => {
                 </a>
                 {/* Twitter */}
                 <a
-                  className="text-rusty-400 hover:text-white"
+                  className="text-rusty-400 transition-colors hover:text-white"
                   href="https://twitter.com/robinwittkamp"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -87,7 +87,7 @@ const Footer = (): ReactElement => {
                 {t.mainNav.items.map((item) => (
                   <li key={item.id}>
                     <Link
-                      className="inline-block py-2 text-rusty-400 hover:text-white"
+                      className="inline-block py-2 text-rusty-400 transition-colors hover:text-white"
                       href={item.href}
                       scroll={false}
                     >
@@ -106,7 +106,7 @@ const Footer = (): ReactElement => {
                 {t.legalNav.items.map((item) => (
                   <li key={item.id}>
                     <Link
-                      className="inline-block py-2 text-rusty-400 hover:text-white"
+                      className="inline-block py-2 text-rusty-400 transition-colors hover:text-white"
                       href={item.href}
                     >
                       {item.name}
@@ -124,7 +124,7 @@ const Footer = (): ReactElement => {
                 {t.languageNav.items.map((item) => (
                   <li key={item.id}>
                     <button
-                      className="inline-block py-2 text-rusty-400 hover:text-white"
+                      className="inline-block py-2 text-rusty-400 transition-colors hover:text-white"
                       onClick={() => onLanguageClick(item.locale)}
                       type="button"
                     >
@@ -144,7 +144,7 @@ const Footer = (): ReactElement => {
             <div className="lg:flex lg:flex-1 lg:justify-end">
               {/* Link to repository */}
               <a
-                className="inline-block py-2 text-rusty-400 hover:text-white"
+                className="inline-block py-2 text-rusty-400 transition-colors hover:text-white"
                 href="https://github.com/robinwittkamp/robinwittkamp.com"
                 target="_blank"
                 rel="noopener noreferrer"
