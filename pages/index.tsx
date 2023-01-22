@@ -236,7 +236,7 @@ const Home = () => {
           {t.workSection.heading}
         </Heading>
         {/* Cards container */}
-        <div className="mt-8 space-y-8 md:mt-16 md:space-y-16">
+        <div className="mt-8 space-y-8 md:mt-16 md:space-y-16 lg:grid lg:grid-cols-2 lg:gap-8 lg:space-y-0 xl:gap-12">
           {t.workSection.projects.map((item) => (
             <ProjectCard
               key={item.id}
