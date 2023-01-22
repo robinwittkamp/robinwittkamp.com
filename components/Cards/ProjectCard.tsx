@@ -30,7 +30,7 @@ const ProjectCard = ({
       />
     </div>
     {/* Text container */}
-    <div className="px-6 py-8 sm:px-8 lg:p-12">
+    <div className="p-6 sm:p-8 md:p-10">
       <span className="block text-2xl font-bold text-rusty-100 sm:text-3xl lg:text-4xl">
         {title}
       </span>
