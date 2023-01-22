@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import type { ReactElement } from 'react';
 
-import localDe from '../../public/locales/de/common.json';
-import colocalEn from '../../public/locales/en/common.json';
+import localDe from '../../locales/de/common';
+import colocalEn from '../../locales/en/common';
 import LinkButton from '../Buttons/LinkButton';
 import Heading from '../Text/Heading';
 import Section from './Section';

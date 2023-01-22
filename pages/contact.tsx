@@ -6,8 +6,8 @@ import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
-import localDe from '../public/locales/de/contact.json';
-import localEn from '../public/locales/en/contact.json';
+import localDe from '../locales/de/contact';
+import localEn from '../locales/en/contact';
 
 const Contact = () => {
   const router = useRouter();

@@ -6,8 +6,8 @@ import type { ReactElement } from 'react';
 import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
-import localDe from '../public/locales/de/header.json';
-import localEn from '../public/locales/en/header.json';
+import localDe from '../locales/de/header';
+import localEn from '../locales/en/header';
 import Logo from './Logo';
 
 const loadFramerMotionFeatures = () =>

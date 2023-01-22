@@ -2,13 +2,13 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import type { ReactElement } from 'react';
 
+import localDe from '../locales/de/footer';
+import localEn from '../locales/en/footer';
 import GithubIcon from '../public/icons/fa-brands/github.svg';
 import LinkedinIcon from '../public/icons/fa-brands/linkedin.svg';
 import TwitterIcon from '../public/icons/fa-brands/twitter.svg';
 import XingIcon from '../public/icons/fa-brands/xing.svg';
 import CodeIcon from '../public/icons/fa-solid/code-solid.svg';
-import localDe from '../public/locales/de/footer.json';
-import localEn from '../public/locales/en/footer.json';
 import RobinWittkampLogo from '../public/logos/robin_wittkamp_logo.svg';
 
 const Footer = (): ReactElement => {

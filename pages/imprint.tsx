@@ -6,8 +6,8 @@ import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
-import localDe from '../public/locales/de/imprint.json';
-import localEn from '../public/locales/en/imprint.json';
+import localDe from '../locales/de/imprint';
+import localEn from '../locales/en/imprint';
 
 const Imprint = () => {
   const router = useRouter();

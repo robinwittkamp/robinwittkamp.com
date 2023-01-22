@@ -5,8 +5,8 @@ import { useRouter } from 'next/router';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import ErrorSection from '../components/Sections/ErrorSection';
-import localDe from '../public/locales/de/404.json';
-import localEn from '../public/locales/en/404.json';
+import localDe from '../locales/de/404';
+import localEn from '../locales/en/404';
 
 const Custom404 = () => {
   const router = useRouter();

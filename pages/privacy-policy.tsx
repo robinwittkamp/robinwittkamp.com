@@ -6,8 +6,8 @@ import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
-import localDe from '../public/locales/de/privacy-policy.json';
-import localEn from '../public/locales/en/privacy-policy.json';
+import localDe from '../locales/de/privacy-policy';
+import localEn from '../locales/en/privacy-policy';
 
 const PrivacyPolicy = () => {
   const router = useRouter();

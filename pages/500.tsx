@@ -5,8 +5,8 @@ import { useRouter } from 'next/router';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import ErrorSection from '../components/Sections/ErrorSection';
-import localDe from '../public/locales/de/500.json';
-import localEn from '../public/locales/en/500.json';
+import localDe from '../locales/de/500';
+import localEn from '../locales/en/500';
 
 const Custom500 = () => {
   const router = useRouter();
