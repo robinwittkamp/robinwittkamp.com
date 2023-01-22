@@ -148,7 +148,6 @@ const Home = () => {
                 className="min-w-full"
                 src={KlifraPadMockup}
                 alt="Klifra website"
-                // width={1280}
                 sizes="(max-width: 375px) 343px, (max-width: 640px) 576px, (max-width: 768px) 704px, (max-width: 1024px) 960px, 1280px"
                 priority
               />
@@ -245,6 +244,7 @@ const Home = () => {
               description={item.description}
               buttonText={item.buttonText}
               href={item.href}
+              image={item.image}
             />
           ))}
         </div>

@@ -1,8 +1,7 @@
-// import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import type { ReactElement } from 'react';
 
 import AngleRightIcon from '../../public/icons/fa-solid/angle-right-solid.svg';
-// import KlifraPadMockup from '../../public/images/klifra_mockup_pad.png';
 import LinkButton from '../Buttons/LinkButton';
 
 type ProjectCardProps = {
@@ -10,20 +9,25 @@ type ProjectCardProps = {
   description: string;
   buttonText: string;
   href: string;
+  image: StaticImageData;
 };
 
-const ProjectCard = ({ title, description, buttonText, href }: ProjectCardProps): ReactElement => (
+const ProjectCard = ({
+  title,
+  description,
+  buttonText,
+  href,
+  image,
+}: ProjectCardProps): ReactElement => (
   <div className="overflow-hidden rounded-[2rem] border border-rusty-700/50 bg-gradient-to-tr from-rusty-800/50 to-rusty-700/50 shadow-xl shadow-black/30">
     {/* Image container */}
-    <div className="">
-      <div className="aspect-video bg-gradient-to-tr from-rusty-700/50 to-rusty-500/50" />
-      {/* <Image
-        className="h-full w-full rounded-[2rem] object-cover"
-        src={KlifraPadMockup}
-        alt="Website"
-        width={1280}
-        sizes="(max-width: 375px) 343px, (max-width: 640px) 576px, (max-width: 768px) 704px, (max-width: 1024px) 960px, 1280px"
-      /> */}
+    <div className="aspect-video bg-gradient-to-tr from-rusty-700/50 to-rusty-500/50">
+      <Image
+        className="h-full w-full object-cover"
+        src={image}
+        alt={title}
+        sizes="(max-width: 375px) 341px, (max-width: 640px) 574px, (max-width: 768px) 702px, (max-width: 1024px) 958px, 1278px"
+      />
     </div>
     {/* Text container */}
     <div className="px-6 py-8 sm:px-8 lg:p-12">

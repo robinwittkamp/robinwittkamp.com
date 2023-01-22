@@ -1,3 +1,10 @@
+import BauraumDesktop from '../../public/images/bauraum-mv_desktop.png';
+import EnergiewerkDesktop from '../../public/images/energiewerk-ruegen_desktop.png';
+import FewoPutbusDesktop from '../../public/images/ferienwohnung-putbus_desktop.png';
+import KlifraDesktop from '../../public/images/klifra_desktop.png';
+import RobertDenierDesktop from '../../public/images/robertdenier_desktop.png';
+import WebbuddyDesktop from '../../public/images/webbuddy_desktop.png';
+
 export default {
   title: 'Robin Wittkamp - Webentwickler, UI/UX Designer und freelancer',
   description:
@@ -57,50 +64,56 @@ export default {
       {
         id: '1',
         title: 'Energiewerk Rügen',
-        href: 'https://energiewerk-ruegen.de',
         description:
           'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
         buttonText: 'Webseite ansehen',
+        href: 'https://energiewerk-ruegen.de',
+        image: EnergiewerkDesktop,
       },
       {
         id: '2',
         title: 'Robert Denier',
-        href: 'https://robertdenier.de',
         description:
           'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
         buttonText: 'Webseite ansehen',
+        href: 'https://robertdenier.de',
+        image: RobertDenierDesktop,
       },
       {
         id: '3',
         title: 'Ferienwohnung Putbus',
-        href: 'https://ferienwohnung-putbus.de',
         description:
           'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
         buttonText: 'Webseite ansehen',
+        href: 'https://ferienwohnung-putbus.de',
+        image: FewoPutbusDesktop,
       },
       {
         id: '4',
         title: 'WebBuddy',
-        href: 'https://webbuddy.robinwittkamp.com',
         description:
           'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
         buttonText: 'Webseite ansehen',
+        href: 'https://webbuddy.robinwittkamp.com',
+        image: WebbuddyDesktop,
       },
       {
         id: '5',
         title: 'Klifra',
-        href: 'https://klifra.robinwittkamp.com',
         description:
           'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
         buttonText: 'Webseite ansehen',
+        href: 'https://klifra.robinwittkamp.com',
+        image: KlifraDesktop,
       },
       {
         id: '6',
         title: 'Bauraum MV',
-        href: 'https://bauraum-mv.de',
         description:
           'Sed faucibus ligula vel quam ullamcorper varius. Mauris mauris felis, tincidunt et leo ut, mattis bibendum nulla. Nunc aliquet non ipsum sit amet ullamcorper. Cras lacus magna, aliquam id nibh quis, lacinia sollicitudin arcu.',
         buttonText: 'Webseite ansehen',
+        href: 'https://bauraum-mv.de',
+        image: BauraumDesktop,
       },
     ],
   },
