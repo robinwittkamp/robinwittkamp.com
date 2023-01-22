@@ -1,8 +1,7 @@
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import Image from 'next/image';
 import type { ReactElement } from 'react';
 
+import AngleRightIcon from '../../public/icons/fa-solid/angle-right-solid.svg';
 // import KlifraPadMockup from '../../public/images/klifra_mockup_pad.png';
 import LinkButton from '../Buttons/LinkButton';
 
@@ -35,7 +34,7 @@ const ProjectCard = ({ title, description, buttonText, href }: ProjectCardProps)
       <div className="mt-8">
         <LinkButton href={href} variant="secondary" external>
           <span className="whitespace-nowrap">{buttonText}</span>
-          <FontAwesomeIcon icon={faAngleRight} className="ml-2 text-lg" />
+          <AngleRightIcon className="ml-2 h-[1.125rem]" fill="currentColor" />
         </LinkButton>
       </div>
     </div>

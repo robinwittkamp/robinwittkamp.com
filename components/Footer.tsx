@@ -1,12 +1,15 @@
-import { faGithub, faLinkedin, faTwitter, faXing } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faFeather } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import type { ReactElement } from 'react';
 
+import GithubIcon from '../public/icons/fa-brands/github.svg';
+import LinkedinIcon from '../public/icons/fa-brands/linkedin.svg';
+import TwitterIcon from '../public/icons/fa-brands/twitter.svg';
+import XingIcon from '../public/icons/fa-brands/xing.svg';
+import CodeIcon from '../public/icons/fa-solid/code-solid.svg';
 import localDe from '../public/locales/de/footer.json';
 import localEn from '../public/locales/en/footer.json';
+import RobinWittkampLogo from '../public/logos/robin_wittkamp_logo.svg';
 
 const Footer = (): ReactElement => {
   const router = useRouter();
@@ -29,7 +32,7 @@ const Footer = (): ReactElement => {
             {/* 1 column */}
             <div className="md:flex-[1_1_100%] lg:flex-[2_2_0%]">
               {/* Logo */}
-              <FontAwesomeIcon icon={faFeather} className="text-3xl text-rusty-500" />
+              <RobinWittkampLogo className="h-6 md:h-7" />
               <span className="mt-8 block max-w-[18rem] text-rusty-400">{t.description}</span>
               {/* Social icons */}
               <div className="mt-8 flex flex-wrap items-center space-x-8">
@@ -40,7 +43,7 @@ const Footer = (): ReactElement => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faGithub} className="text-2xl" />
+                  <GithubIcon className="h-6" fill="currentColor" />
                   <span className="sr-only">GitHub</span>
                 </a>
                 {/* LinkedIn */}
@@ -50,7 +53,7 @@ const Footer = (): ReactElement => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
+                  <LinkedinIcon className="h-6" fill="currentColor" />
                   <span className="sr-only">LinkedIn</span>
                 </a>
                 {/* Xing */}
@@ -60,7 +63,7 @@ const Footer = (): ReactElement => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faXing} className="text-2xl" />
+                  <XingIcon className="h-6" fill="currentColor" />
                   <span className="sr-only">Xing</span>
                 </a>
                 {/* Twitter */}
@@ -70,7 +73,7 @@ const Footer = (): ReactElement => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faTwitter} className="text-2xl" />
+                  <TwitterIcon className="h-6" fill="currentColor" />
                   <span className="sr-only">Twitter</span>
                 </a>
               </div>
@@ -147,7 +150,7 @@ const Footer = (): ReactElement => {
                 rel="noopener noreferrer"
               >
                 <div className="flex items-center space-x-2">
-                  <FontAwesomeIcon icon={faCode} className="w-3" />
+                  <CodeIcon className="h-3" fill="currentColor" />
                   <span>{t.linkToGitHubTitle}</span>
                 </div>
               </a>

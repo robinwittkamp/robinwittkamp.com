@@ -1,14 +1,10 @@
 import '../styles/globals.css';
-import '@fortawesome/fontawesome-svg-core/styles.css';
 
-import { config } from '@fortawesome/fontawesome-svg-core';
 import localFont from '@next/font/local';
 import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
 
 import SEO from '../next-seo.config';
-
-config.autoAddCss = false;
 
 const gilroy = localFont({
   src: [
