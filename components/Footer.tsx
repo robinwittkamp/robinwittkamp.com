@@ -149,7 +149,7 @@ const Footer = (): ReactElement => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="flex items-center space-x-2">
+                <div className="flex items-baseline space-x-2">
                   <CodeIcon className="h-3" fill="currentColor" />
                   <span>{t.linkToGitHubTitle}</span>
                 </div>
