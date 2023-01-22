@@ -24,7 +24,7 @@ const LinkButton = ({
   const variantClasses = variants[variant];
 
   const classes = clsx(
-    `inline-flex items-center rounded-2xl border px-6 py-3 text-lg font-extrabold transition duration-300 ${variantClasses}`
+    `inline-flex items-center rounded-2xl border px-6 py-3 text-lg font-extrabold transition ${variantClasses}`
   );
 
   return (
