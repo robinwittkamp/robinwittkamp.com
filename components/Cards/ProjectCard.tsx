@@ -23,7 +23,7 @@ const ProjectCard = ({
     {/* Image container */}
     <div className="aspect-video bg-gradient-to-tr from-rusty-700/50 to-rusty-500/50">
       <Image
-        className="h-full w-full object-cover"
+        className="object-cover"
         src={image}
         alt={title}
         sizes="(max-width: 375px) 341px, (max-width: 640px) 574px, (max-width: 768px) 702px, (max-width: 1024px) 958px, 1278px"
