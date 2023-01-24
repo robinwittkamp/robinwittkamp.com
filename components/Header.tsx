@@ -11,7 +11,7 @@ import localEn from '../locales/en/header';
 import Logo from './Logo';
 
 const loadFramerMotionFeatures = () =>
-  import('./Libraries/framerMotionFeatures').then((res) => res.default);
+  import('../lib/framerMotionFeatures').then((res) => res.default);
 
 type MainNavItemProps = {
   id: string;
