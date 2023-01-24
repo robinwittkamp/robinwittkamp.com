@@ -139,20 +139,14 @@ const Home = () => {
 
         {/* Image container */}
         <div className="mt-20 md:mt-24">
-          {/* Flex container */}
-          <div className="flex justify-center lg:justify-start">
-            {/* Spacing container */}
-            <div className="flex items-center">
-              {/* Browser image */}
-              <Image
-                className="min-w-full"
-                src={KlifraPadMockup}
-                alt="Klifra website"
-                sizes="(max-width: 375px) 343px, (max-width: 640px) 576px, (max-width: 768px) 704px, (max-width: 1024px) 960px, 1280px"
-                priority
-              />
-            </div>
-          </div>
+          {/* Browser image */}
+          <Image
+            className="shadow-2xl shadow-black/50"
+            src={KlifraPadMockup}
+            alt="Klifra website"
+            sizes="(max-width: 375px) 343px, (max-width: 640px) 576px, (max-width: 768px) 704px, (max-width: 1024px) 960px, 1280px"
+            priority
+          />
         </div>
 
         {/* Company logos */}
