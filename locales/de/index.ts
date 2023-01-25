@@ -12,7 +12,7 @@ export default {
   heroSection: {
     tagline: 'Hallo 👋🏻, ich bin Robin.',
     headingOne: 'Entwickler',
-    headingTwo: ' und Designer mit Begeisterung für Tech',
+    headingTwo: ' mit Begeisterung für Design und Technologie',
     subheading:
       'Ich entwerfe und entwickle Webseiten und Webanwendungen seit über vier Jahren als Freelancer. Studiert   habe ich Computervisualistik und Design an der Hochschule Hamm-Lippstadt.',
     button: 'Projekte ansehen',

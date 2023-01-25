@@ -120,14 +120,14 @@ const Home = () => {
           </div>
           <Heading
             variant="h1"
-            classes="mt-8 max-w-lg sm:mx-auto sm:max-w-xl sm:text-center lg:max-w-3xl xl:max-w-4xl xl:text-7xl"
+            classes="mt-8 max-w-lg sm:mx-auto sm:max-w-[39rem] sm:text-center lg:max-w-[49rem] xl:max-w-[59rem] xl:text-7xl"
           >
             <span className="bg-gradient-to-tr from-red-600 to-amber-400 bg-clip-text text-transparent">
               {t.heroSection.headingOne}
             </span>
             {t.heroSection.headingTwo}
           </Heading>
-          <p className="mt-8 max-w-md text-xl text-rusty-400 sm:mx-auto sm:text-center lg:max-w-[45rem] lg:text-2xl">
+          <p className="mt-8 max-w-md text-xl text-rusty-400 sm:mx-auto sm:max-w-[38rem] sm:text-center lg:max-w-[45rem] lg:text-2xl">
             {t.heroSection.subheading}
           </p>
           <div className="mt-8 sm:flex sm:justify-center">

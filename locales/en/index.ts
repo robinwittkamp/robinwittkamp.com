@@ -12,7 +12,7 @@ export default {
   heroSection: {
     tagline: "Hi there 👋🏻, I'm Robin.",
     headingOne: 'Developer',
-    headingTwo: ' and designer passionate about tech',
+    headingTwo: ' passionate about design and tech',
     subheading:
       "I've designed and developed websites and web apps for over four years as a freelancer. I studied visual computing and design at the Hamm-Lippstadt University of Applied Sciences.",
     button: 'View projects',
