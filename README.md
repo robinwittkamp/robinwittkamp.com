@@ -8,11 +8,18 @@
   <a href="https://robinwittkamp.com" rel="noopener">robinwittkamp.com</a>
 </p> -->
 
+## Technologies
+
+- **Framework**: [React](https://reactjs.org/) & [Next.js](https://nextjs.org/)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **Language**: [TypeScript](https://typescriptlang.org)
+- **Deployment**: [Vercel](https://vercel.com)
+
 ## Requirements
-- [npm](https://nodejs.org/en/download/current/)
+- [npm](https://nodejs.org/en/download/)
 - [git](https://git-scm.com/downloads)
 
-## Running locally
+## Installation & Quick start
 
 1. Download the project with ```git clone https://github.com/robinwittkamp/robinwittkamp.com.git``` or use your Git client of choice like [GitHub Desktop](https://desktop.github.com/)
 2. ```cd``` into project root (where `package.json` is located)
