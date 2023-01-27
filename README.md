@@ -12,37 +12,15 @@
 - [npm](https://nodejs.org/en/download/current/)
 - [git](https://git-scm.com/downloads)
 
+## Running locally
 
-## Installation
-
-### macOS
-
-If you want to use `brew` in console, install [Homebrew](https://brew.sh/):
-```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
-
-1. Install **npm** [here](https://nodejs.org/en/download/current/) or ```brew install node```
-2. **Download the project** with [GitHub Desktop](https://desktop.github.com/) or
-```git clone https://github.com/devschippi/webbuddy.git``` (download **git** [here](https://git-scm.com/downloads) or  ```brew install git```)
-3. ```cd``` into project root (where `package.json` is located)
-4. Install **dependencies** ```npm install```
-
-### Windows
-
-If you want to use `choco` in console, install [Chocolatey](https://chocolatey.org/install).
-
-1. Install **npm** [here](https://nodejs.org/en/download/current/) or ```choco install nodejs -y```
-2. **Download the project** with [GitHub Desktop](https://desktop.github.com/) or
-```git clone https://github.com/devschippi/webbuddy.git```  (download **git** [here](https://git-scm.com/downloads) or  ```choco install git -y```)
-3. ```cd``` into project root (where `package.json` is located)
-4. Install **dependencies** ```npm install```
-
-## Quick start
-
-1. ```cd``` into project root (where `package.json` is located)
-2. Run the script ```npm run dev```
-3. Open <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a> with your browser
+1. Download the project with ```git clone https://github.com/robinwittkamp/robinwittkamp.com.git``` or use your Git client of choice like [GitHub Desktop](https://desktop.github.com/)
+2. ```cd``` into project root (where `package.json` is located)
+3. Install dependencies with ```npm install```
+4. Run the script ```npm run dev``` to start the app in development mode
+5. Open <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a> with your browser
 
 ## npm scripts
-- ```npm run dev``` - Starts the application in development mode on <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a>
-- ```npm run build``` - Builds the application for production usage.
-- ```npm run start``` - Starts the application in production mode on <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a>. The application should be build first.
+- ```npm run dev``` - Starts the app in development mode on <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a>
+- ```npm run build``` - Builds the app for production usage.
+- ```npm run start``` - Starts the app in production mode on <a href="http://localhost:3000" rel="noopener">http://localhost:3000</a>. The application should be build first.
