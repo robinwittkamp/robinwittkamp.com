@@ -102,12 +102,12 @@ export default {
       },
       {
         id: '5',
-        title: 'Ferienwohnung Putbus',
+        title: 'Onboarder',
         description:
-          'A corporate design including a website for vacation apartments in Putbus on the island of Rügen. The website includes a system for requesting and booking apartments. In addition to WordPress, technologies such as HTML, CSS, JavaScript and PHP were used here.',
-        buttonText: 'View website',
-        href: 'https://ferienwohnung-putbus.de',
-        image: FewoPutbusDesktop,
+          'I completed my project work at Onboarder GmbH & Co. KG in Dortmund. An onboarding platform was designed and developed in cooperation with decision-makers and employees. The resulting web application was realized using technologies such as React.js and SCSS.',
+        buttonText: 'View company website',
+        href: 'https://www.onboarder.de',
+        image: OnboarderPreview,
       },
       {
         id: '6',
@@ -120,12 +120,12 @@ export default {
       },
       {
         id: '7',
-        title: 'Onboarder',
+        title: 'Ferienwohnung Putbus',
         description:
-          'I completed my project work at Onboarder GmbH & Co. KG in Dortmund. An onboarding platform was designed and developed in cooperation with decision-makers and employees. The resulting web application was realized using technologies such as React.js and SCSS.',
-        buttonText: 'View company website',
-        href: 'https://www.onboarder.de',
-        image: OnboarderPreview,
+          'A corporate design including a website for vacation apartments in Putbus on the island of Rügen. The website includes a system for requesting and booking apartments. In addition to WordPress, technologies such as HTML, CSS, JavaScript and PHP were used here.',
+        buttonText: 'View website',
+        href: 'https://ferienwohnung-putbus.de',
+        image: FewoPutbusDesktop,
       },
       {
         id: '8',

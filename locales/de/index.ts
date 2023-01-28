@@ -102,12 +102,12 @@ export default {
       },
       {
         id: '5',
-        title: 'Ferienwohnung Putbus',
+        title: 'Onboarder',
         description:
-          'Ein Corporate Design einschließlich einer Webseite für Ferienwohnungen in Putbus auf Rügen. Die Webseite umfasst ein System zum Anfragen und Buchen von Wohnungen. Neben WordPress kamen hierbei unter anderem Technologien wie HTML, CSS, JavaScript und PHP zum Einsatz.',
-        buttonText: 'Webseite ansehen',
-        href: 'https://ferienwohnung-putbus.de',
-        image: FewoPutbusDesktop,
+          'Meine Projektarbeit absolvierte ich bei der Onboarder Gmbh & Co. KG in Dortmund. In Zusammenarbeit mit den Entscheidungsträgern und Mitarbeitenden wurde eine Onboarding-Plattform konzipiert und entwickelt. Die resultierende Webanwendung wurde mit Technologien wie React.js und SCSS verwirklicht.',
+        buttonText: 'Zum Unternehmen',
+        href: 'https://www.onboarder.de',
+        image: OnboarderPreview,
       },
       {
         id: '6',
@@ -120,12 +120,12 @@ export default {
       },
       {
         id: '7',
-        title: 'Onboarder',
+        title: 'Ferienwohnung Putbus',
         description:
-          'Meine Projektarbeit absolvierte ich bei der Onboarder Gmbh & Co. KG in Dortmund. In Zusammenarbeit mit den Entscheidungsträgern und Mitarbeitenden wurde eine Onboarding-Plattform konzipiert und entwickelt. Die resultierende Webanwendung wurde mit Technologien wie React.js und SCSS verwirklicht.',
-        buttonText: 'Zum Unternehmen',
-        href: 'https://www.onboarder.de',
-        image: OnboarderPreview,
+          'Ein Corporate Design einschließlich einer Webseite für Ferienwohnungen in Putbus auf Rügen. Die Webseite umfasst ein System zum Anfragen und Buchen von Wohnungen. Neben WordPress kamen hierbei unter anderem Technologien wie HTML, CSS, JavaScript und PHP zum Einsatz.',
+        buttonText: 'Webseite ansehen',
+        href: 'https://ferienwohnung-putbus.de',
+        image: FewoPutbusDesktop,
       },
       {
         id: '8',
