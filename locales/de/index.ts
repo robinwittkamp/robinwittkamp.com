@@ -102,21 +102,21 @@ export default {
       },
       {
         id: '5',
-        title: 'Onboarder',
-        description:
-          'Meine Projektarbeit absolvierte ich bei der Onboarder Gmbh & Co. KG in Dortmund. In Zusammenarbeit mit den Entscheidungsträgern und Mitarbeitenden wurde eine Onboarding-Plattform konzipiert und entwickelt. Die resultierende Webanwendung wurde mit Technologien wie React.js und SCSS verwirklicht.',
-        buttonText: 'Zum Unternehmen',
-        href: 'https://www.onboarder.de',
-        image: OnboarderPreview,
-      },
-      {
-        id: '6',
         title: 'Text to Web',
         description:
           'Im Rahmen meiner Bachelorarbeit wurde eine Webanwendung umgesetzt, mit welcher Nutzende aus textlichen Instruktionen resultierende Webinhalte generieren und bearbeiten können. Die Anwendung wurde mit Bilbiotheken wie React.js, Next.js, TailwindCSS und unter der Verwendung von Sprachmodellen wie GPT-3 umgesetzt.',
         buttonText: 'Code ansehen',
         href: 'https://github.com/robinwittkamp/text-to-web',
         image: TextToWebDesktop,
+      },
+      {
+        id: '6',
+        title: 'Onboarder',
+        description:
+          'Meine Projektarbeit absolvierte ich bei der Onboarder Gmbh & Co. KG in Dortmund. In Zusammenarbeit mit den Entscheidungsträgern und Mitarbeitenden wurde eine Onboarding-Plattform konzipiert und entwickelt. Die resultierende Webanwendung wurde mit Technologien wie React.js und SCSS verwirklicht.',
+        buttonText: 'Zum Unternehmen',
+        href: 'https://www.onboarder.de',
+        image: OnboarderPreview,
       },
       {
         id: '7',
