@@ -62,7 +62,7 @@ export default {
     },
   },
   workSection: {
-    heading: 'Meine Projekte',
+    heading: 'Aktuelle Projekte',
     projects: [
       {
         id: '1',
