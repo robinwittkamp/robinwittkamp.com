@@ -17,8 +17,16 @@ const Imprint = () => {
   return (
     <PageLayout>
       <Head title={t.title} description={t.description} noIndex />
-      <Section first>
+      <Section first maxScreenWidth="md">
         <Heading variant="h1">{t.heading}</Heading>
+        <Heading variant="h6" classes="mt-6">
+          {t.subheading1}
+        </Heading>
+        <p className="mt-4 whitespace-pre-line">{t.paragraph1}</p>
+        <Heading variant="h6" classes="mt-6">
+          {t.subheading2}
+        </Heading>
+        <p className="mt-4 whitespace-pre-line">{t.paragraph2}</p>
       </Section>
     </PageLayout>
   );
