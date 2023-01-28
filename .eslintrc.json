@@ -53,6 +53,14 @@
     }],
     "react/require-default-props": "off",
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": [
+          "jsx", "global"
+        ]
+      }
+    ]
   }
 }

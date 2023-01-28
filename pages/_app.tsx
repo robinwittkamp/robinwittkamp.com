@@ -24,10 +24,17 @@ const gilroy = localFont({
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className={`${gilroy.variable} font-sans`}>
+    <>
+      <style jsx global>
+        {`
+          :root {
+            --font-gilroy: ${gilroy.style.fontFamily};
+          }
+        `}
+      </style>
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
-    </div>
+    </>
   );
 };
 
