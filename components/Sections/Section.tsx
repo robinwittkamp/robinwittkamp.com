@@ -1,7 +1,7 @@
 import type { ReactElement, ReactNode } from 'react';
 
 type SectionProps = {
-  children: ReactNode;
+  children: ReactNode | ReactNode[];
   classes?: string;
   first?: boolean;
   id?: string | undefined;
