@@ -17,14 +17,17 @@
     "@svgr/webpack": "^6.5.1",
     "clsx": "^1.2.1",
     "framer-motion": "^8.5.4",
+    "gray-matter": "^4.0.3",
     "next": "^13.1.6",
     "next-seo": "^5.15.0",
     "next-sitemap": "^3.1.48",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.5",
     "react-remove-scroll": "^2.5.5"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
