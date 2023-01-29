@@ -1,15 +1,17 @@
-// import type { GetStaticProps } from 'next';
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import fs from 'fs';
+import matter from 'gray-matter';
+import type { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
+import path from 'path';
+import ReactMarkdown from 'react-markdown';
 
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
-import Heading from '../components/Text/Heading';
 import localDe from '../locales/de/imprint';
 import localEn from '../locales/en/imprint';
 
-const Imprint = () => {
+const Imprint = ({ content }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ? localEn : localDe;
@@ -18,26 +20,37 @@ const Imprint = () => {
     <PageLayout>
       <Head title={t.title} description={t.description} noIndex />
       <Section first maxScreenWidth="md">
-        <Heading variant="h1">{t.heading}</Heading>
-        <Heading variant="h6" classes="mt-6">
-          {t.subheading1}
-        </Heading>
-        <p className="mt-4 whitespace-pre-line">{t.paragraph1}</p>
-        <Heading variant="h6" classes="mt-6">
-          {t.subheading2}
-        </Heading>
-        <p className="mt-4 whitespace-pre-line">{t.paragraph2}</p>
+        {console.log(content)}
+        <div className="prose-a: prose-lg prose-invert prose-headings:font-gilroy prose-p:text-rusty-400 prose-a:text-orange-500">
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
       </Section>
     </PageLayout>
   );
 };
 
-// export const getStaticProps: GetStaticProps = async ({ locale }) => {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale as string, ['common', 'imprint', 'footer'])),
-//     },
-//   };
-// };
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const files = fs.readdirSync(path.join('posts'));
+
+  const posts = files.map((filename) => {
+    const slug = filename.replace('.md', '');
+
+    const readFile = fs.readFileSync(path.join('posts', filename), 'utf-8');
+
+    const { data: frontmatter, content } = matter(readFile);
+
+    return {
+      frontmatter,
+      slug,
+      content,
+    };
+  });
+
+  return {
+    props: {
+      content: posts[0].content,
+    },
+  };
+};
 
 export default Imprint;
