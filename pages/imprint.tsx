@@ -1,15 +1,15 @@
-// import type { GetStaticProps } from 'next';
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import type { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
 import Heading from '../components/Text/Heading';
+import client from '../lib/sanity/client';
 import localDe from '../locales/de/imprint';
 import localEn from '../locales/en/imprint';
 
-const Imprint = () => {
+const Imprint = ({ data }) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ? localEn : localDe;
@@ -27,17 +27,30 @@ const Imprint = () => {
           {t.subheading2}
         </Heading>
         <p className="mt-4 whitespace-pre-line">{t.paragraph2}</p>
+        {/* {console.log(data)} */}
+        <Heading variant="h1" classes="mt-6">
+          {data[0].name}
+        </Heading>
       </Section>
     </PageLayout>
   );
 };
 
-// export const getStaticProps: GetStaticProps = async ({ locale }) => {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale as string, ['common', 'imprint', 'footer'])),
-//     },
-//   };
-// };
+// const client = createClient({
+//   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+//   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+//   apiVersion: process.env.NEXT_PUBLIC_SANITY_API_VERSION,
+//   useCdn: false,
+// });
+
+export const getStaticProps: GetStaticProps = async () => {
+  const data = await client.fetch(`*[_type == "author"]`);
+
+  return {
+    props: {
+      data,
+    },
+  };
+};
 
 export default Imprint;
