@@ -1,7 +1,6 @@
 ---
 
 ---
-
 # Imprint
 
 ###### According to § 5 TMG
