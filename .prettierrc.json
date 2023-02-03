@@ -1,6 +1,4 @@
 {
-  "printWidth": 100,
-  "singleQuote": true,
   "overrides": [
     {
       "files": ["*.js", "*jsx", "*.ts", "*tsx"],
