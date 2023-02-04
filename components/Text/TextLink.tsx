@@ -10,8 +10,6 @@ type TextLinkProps = {
 const TextLink = ({ children, external = false, href }: TextLinkProps): ReactElement => {
   const Tag = external ? 'a' : Link;
 
-  // Set Tag to an 'a' tag if external is true, otherwise set it to a 'Link' tag
-
   return (
     <Tag
       className="text-orange-500 no-underline transition hover:text-orange-400"
