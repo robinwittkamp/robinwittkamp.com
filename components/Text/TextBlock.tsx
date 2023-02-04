@@ -7,7 +7,7 @@ type TextBlockProps = {
 };
 
 const TextBlock = ({ children, classes }: TextBlockProps): ReactElement => {
-  const mergedClasses = clsx(`text-xl text-rusty-400 ${classes}`);
+  const mergedClasses = clsx(`text-xl text-rusty-400 ${classes ?? ''}`);
 
   return <p className={mergedClasses}>{children}</p>;
 };
