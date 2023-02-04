@@ -4,9 +4,11 @@ import { useRouter } from 'next/router';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
-import Heading from '../components/Text/Heading';
-import localDe from '../locales/de/privacy-policy';
-import localEn from '../locales/en/privacy-policy';
+import UnstyledTextWrapper from '../components/Text/UnstyledTextWrapper';
+import localDe from '../locales/de/privacyPolicy';
+import PrivacyPolicyContentDe from '../locales/de/PrivacyPolicyContent';
+import localEn from '../locales/en/privacyPolicy';
+import PrivacyPolicyContentEn from '../locales/en/PrivacyPolicyContent';
 
 const PrivacyPolicy = () => {
   const router = useRouter();
@@ -16,8 +18,10 @@ const PrivacyPolicy = () => {
   return (
     <PageLayout>
       <Head title={t.title} description={t.description} noIndex />
-      <Section first>
-        <Heading variant="h1">{t.heading}</Heading>
+      <Section first maxScreenWidth="md">
+        <UnstyledTextWrapper>
+          {locale === 'en' ? <PrivacyPolicyContentEn /> : <PrivacyPolicyContentDe />}
+        </UnstyledTextWrapper>
       </Section>
     </PageLayout>
   );
