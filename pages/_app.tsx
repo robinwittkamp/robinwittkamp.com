@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import '../styles/globals.css';
 
 import localFont from '@next/font/local';
