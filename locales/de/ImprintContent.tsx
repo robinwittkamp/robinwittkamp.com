@@ -1,4 +1,3 @@
-// import Link from 'next/link';
 import type { ReactElement } from 'react';
 
 import Heading from '../../components/Text/Heading';
