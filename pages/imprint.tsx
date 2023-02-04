@@ -6,9 +6,9 @@ import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
 import UnstyledTextWrapper from '../components/Text/UnstyledTextWrapper';
 import localDe from '../locales/de/imprint';
-import ImprintContentDe from '../locales/de/imprint-content';
+import ImprintContentDe from '../locales/de/ImprintContent';
 import localEn from '../locales/en/imprint';
-import ImprintContentEn from '../locales/en/imprint-content';
+import ImprintContentEn from '../locales/en/ImprintContent';
 
 const Imprint = () => {
   const router = useRouter();
