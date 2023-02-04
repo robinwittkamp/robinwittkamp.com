@@ -145,7 +145,7 @@ const Home = () => {
         <div className="mt-20 md:mt-24">
           {/* Browser image */}
           <Image
-            className="drop-shadow-2xl"
+            className="drop-shadow-[0_25px_25px_rgba(0,0,0,0.5)]"
             src={KlifraPadMockup}
             alt="Klifra website"
             sizes="(max-width: 375px) 343px, (max-width: 640px) 576px, (max-width: 768px) 704px, (max-width: 1024px) 960px, 1280px"
