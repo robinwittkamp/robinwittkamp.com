@@ -306,7 +306,7 @@ const PrivacyPolicyContent = (): ReactElement => (
       optimization of the website (e.g., cookies that provide measurable insights into the web
       audience), shall be stored on the basis of Art. 6 Sect. 1 lit. f GDPR, unless a different
       legal basis is cited. The operator of the website has a legitimate interest in the storage of
-      cookies to ensure the technically error free and optimized provision of the operator’s
+      cookies to ensure the technically error free and optimized provision of the operator`s
       services. If your consent to the storage of the cookies has been requested, the respective
       cookies are stored exclusively on the basis of the consent obtained (Art. 6 Sect. 1 lit. a
       GDPR); this consent may be revoked at any time.
