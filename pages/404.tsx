@@ -1,4 +1,3 @@
-// import type { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 
 import Head from '../components/Head';
@@ -19,13 +18,5 @@ const Custom404 = () => {
     </PageLayout>
   );
 };
-
-// export const getStaticProps: GetStaticProps = async ({ locale }) => {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale as string, ['common', '404', 'footer'])),
-//     },
-//   };
-// };
 
 export default Custom404;

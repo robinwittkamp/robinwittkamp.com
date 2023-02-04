@@ -1,4 +1,3 @@
-// import type { GetStaticProps } from 'next';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
@@ -247,13 +246,5 @@ const Home = () => {
     </PageLayout>
   );
 };
-
-// export const getStaticProps: GetStaticProps = async ({ locale }) => {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale as string, ['common', 'index', 'footer'])),
-//     },
-//   };
-// };
 
 export default Home;

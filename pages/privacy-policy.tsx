@@ -1,4 +1,3 @@
-// import type { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 
 import Head from '../components/Head';
@@ -26,13 +25,5 @@ const PrivacyPolicy = () => {
     </PageLayout>
   );
 };
-
-// export const getStaticProps: GetStaticProps = async ({ locale }) => {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale as string, ['common', 'privacy-policy', 'footer'])),
-//     },
-//   };
-// };
 
 export default PrivacyPolicy;

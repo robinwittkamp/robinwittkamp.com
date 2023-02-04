@@ -1,4 +1,3 @@
-// import type { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 
 import Head from '../components/Head';
@@ -26,13 +25,5 @@ const Imprint = () => {
     </PageLayout>
   );
 };
-
-// export const getStaticProps: GetStaticProps = async ({ locale }) => {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale as string, ['common', 'imprint', 'footer'])),
-//     },
-//   };
-// };
 
 export default Imprint;

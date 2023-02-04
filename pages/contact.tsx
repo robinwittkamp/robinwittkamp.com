@@ -1,4 +1,3 @@
-// import type { GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 
 import Head from '../components/Head';
@@ -25,13 +24,5 @@ const Contact = () => {
     </PageLayout>
   );
 };
-
-// export const getStaticProps: GetStaticProps = async ({ locale }) => {
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale as string, ['common', 'contact', 'footer'])),
-//     },
-//   };
-// };
 
 export default Contact;
