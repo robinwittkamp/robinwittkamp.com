@@ -1,5 +1,4 @@
 // import type { GetStaticProps } from 'next';
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 
 import Head from '../components/Head';

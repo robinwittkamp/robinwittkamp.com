@@ -1,6 +1,5 @@
 // import type { GetStaticProps } from 'next';
 import Image from 'next/image';
-// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 
 import LinkButton from '../components/Buttons/LinkButton';
