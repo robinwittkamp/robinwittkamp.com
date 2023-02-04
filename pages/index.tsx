@@ -28,31 +28,37 @@ const clientLogos = [
   {
     name: 'LBT Rügen logo',
     logo: LbtRuegenLogo,
+    wrapperClasses: '',
     svgClassas: 'h-7',
   },
   {
     name: 'Energiewerk Rügen logo',
     logo: EnergiewerkRuegenLogo,
+    wrapperClasses: '',
     svgClassas: 'h-7',
   },
   {
     name: 'Robert Denier logo',
     logo: RobertDenierLogo,
+    wrapperClasses: '',
     svgClassas: 'h-5',
   },
   {
     name: 'LIN-TEC logo',
     logo: LinTecLogo,
+    wrapperClasses: '',
     svgClassas: 'h-8',
   },
   {
     name: 'Bauraum MV logo',
     logo: BauraumMvLogo,
+    wrapperClasses: '',
     svgClassas: 'h-10',
   },
   {
     name: 'Kuttig Engineering logo',
     logo: KuttigEngineeringLogo,
+    wrapperClasses: '',
     svgClassas: 'h-10',
   },
   {
