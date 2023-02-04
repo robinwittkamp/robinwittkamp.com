@@ -55,6 +55,6 @@ export default {
       },
     ],
   },
-  madeWith: 'Built with Next.js, TailwindCSS & Framer Motion',
-  linkToGitHubTitle: 'View code on GitHub',
+  usedTechnologies: 'Built with Next.js, TailwindCSS & Framer Motion',
+  noteAboutRepo: 'View code on GitHub',
 };

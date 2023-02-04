@@ -151,14 +151,14 @@ const Footer = (): ReactElement => {
               >
                 <div className="flex items-baseline space-x-2">
                   <CodeIcon className="h-3" fill="currentColor" />
-                  <span>{t.linkToGitHubTitle}</span>
+                  <span>{t.noteAboutRepo}</span>
                 </div>
               </a>
             </div>
 
             <div className="lg:flex-1">
               {/* Made with */}
-              <span className="block py-2 text-rusty-400 lg:text-center">{t.madeWith}</span>
+              <span className="block py-2 text-rusty-400 lg:text-center">{t.usedTechnologies}</span>
             </div>
 
             <div className="lg:flex-1">
