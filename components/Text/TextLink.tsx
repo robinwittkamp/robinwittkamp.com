@@ -14,7 +14,7 @@ const TextLink = ({ children, external = false, href }: TextLinkProps): ReactEle
 
   return (
     <Tag
-      className="text-orange-500 transition hover:text-orange-400"
+      className="text-orange-500 no-underline transition hover:text-orange-400"
       href={href}
       rel={external ? 'noopener noreferrer' : undefined}
       target={external ? '_blank' : undefined}
