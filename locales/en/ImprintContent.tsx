@@ -31,7 +31,7 @@ const ImprintContent = (): ReactElement => (
     <Heading variant="h6">EU dispute resolution</Heading>
     <p>
       The European Commission provides a platform for online dispute resolution (ODR):{' '}
-      <TextLink external href="https://ec.europa.eu/consumers/odr">
+      <TextLink href="https://ec.europa.eu/consumers/odr">
         https://ec.europa.eu/consumers/odr
       </TextLink>
       .
@@ -81,10 +81,7 @@ const ImprintContent = (): ReactElement => (
       will remove such content immediately.
     </p>
     <p>
-      Source:{' '}
-      <TextLink external href="https://www.e-recht24.de/">
-        e-recht24.de
-      </TextLink>
+      Source: <TextLink href="https://www.e-recht24.de/">e-recht24.de</TextLink>
     </p>
   </>
 );

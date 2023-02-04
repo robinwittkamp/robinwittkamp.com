@@ -3,11 +3,12 @@ import type { ReactElement, ReactNode } from 'react';
 
 type TextLinkProps = {
   children: ReactNode;
-  external?: boolean;
   href: string;
 };
 
-const TextLink = ({ children, external = false, href }: TextLinkProps): ReactElement => {
+const TextLink = ({ children, href }: TextLinkProps): ReactElement => {
+  const external = href.startsWith('http');
+
   const Tag = external ? 'a' : Link;
 
   return (

@@ -29,7 +29,7 @@ const ImprintContent = (): ReactElement => (
     <Heading variant="h6">EU-Streitschlichtung</Heading>
     <p>
       Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
-      <TextLink external href="https://ec.europa.eu/consumers/odr">
+      <TextLink href="https://ec.europa.eu/consumers/odr">
         https://ec.europa.eu/consumers/odr
       </TextLink>
       .
@@ -85,10 +85,7 @@ const ImprintContent = (): ReactElement => (
       umgehend entfernen.
     </p>
     <p>
-      Quelle:{' '}
-      <TextLink external href="https://www.e-recht24.de/">
-        e-recht24.de
-      </TextLink>
+      Quelle: <TextLink href="https://www.e-recht24.de/">e-recht24.de</TextLink>
     </p>
   </>
 );
