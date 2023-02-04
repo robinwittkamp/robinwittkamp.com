@@ -14,8 +14,6 @@
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:jsx-a11y/recommended",
-    "plugin:security/recommended",
-    "plugin:sonarjs/recommended",
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
@@ -45,6 +43,7 @@
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/jsx-props-no-spreading": "off",
     "react/state-in-constructor": "off",
     "react/react-in-jsx-scope": "off",
     "react/function-component-definition": [2, {
@@ -52,8 +51,6 @@
       "unnamedComponents": "arrow-function"
     }],
     "react/require-default-props": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
     "react/no-unknown-property": [
       2,
       {
@@ -61,6 +58,8 @@
           "jsx", "global"
         ]
       }
-    ]
+    ],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   }
 }
