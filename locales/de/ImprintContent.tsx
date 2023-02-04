@@ -2,6 +2,7 @@
 import type { ReactElement } from 'react';
 
 import Heading from '../../components/Text/Heading';
+import TextLink from '../../components/Text/TextLink';
 
 const ImprintContent = (): ReactElement => (
   <>
@@ -27,8 +28,11 @@ const ImprintContent = (): ReactElement => (
     </p>
     <Heading variant="h6">EU-Streitschlichtung</Heading>
     <p>
-      Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
-      https://ec.europa.eu/consumers/odr.
+      Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
+      <TextLink external href="https://ec.europa.eu/consumers/odr">
+        https://ec.europa.eu/consumers/odr
+      </TextLink>
+      .
       <br />
       Unsere E-Mail-Adresse finden Sie oben im Impressum..
     </p>
@@ -80,7 +84,12 @@ const ImprintContent = (): ReactElement => (
       entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte
       umgehend entfernen.
     </p>
-    <p>Quelle: e-recht24.de</p>
+    <p>
+      Quelle:{' '}
+      <TextLink external href="https://www.e-recht24.de/">
+        e-recht24.de
+      </TextLink>
+    </p>
   </>
 );
 

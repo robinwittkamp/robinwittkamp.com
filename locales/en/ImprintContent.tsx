@@ -2,6 +2,7 @@
 import type { ReactElement } from 'react';
 
 import Heading from '../../components/Text/Heading';
+import TextLink from '../../components/Text/TextLink';
 
 const ImprintContent = (): ReactElement => (
   <>
@@ -29,8 +30,11 @@ const ImprintContent = (): ReactElement => (
     </p>
     <Heading variant="h6">EU dispute resolution</Heading>
     <p>
-      The European Commission provides a platform for online dispute resolution (ODR):
-      https://ec.europa.eu/consumers/odr.
+      The European Commission provides a platform for online dispute resolution (ODR):{' '}
+      <TextLink external href="https://ec.europa.eu/consumers/odr">
+        https://ec.europa.eu/consumers/odr
+      </TextLink>
+      .
       <br />
       Our e-mail address can be found above in the site notice.
     </p>
@@ -76,7 +80,12 @@ const ImprintContent = (): ReactElement => (
       copyright infringements on these pages, please notify us. Upon notification of violations, we
       will remove such content immediately.
     </p>
-    <p>Source: e-recht24.de</p>
+    <p>
+      Source:{' '}
+      <TextLink external href="https://www.e-recht24.de/">
+        e-recht24.de
+      </TextLink>
+    </p>
   </>
 );
 
