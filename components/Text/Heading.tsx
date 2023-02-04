@@ -20,7 +20,7 @@ const Heading = ({ children, classes, variant }: HeadingProps): ReactElement => 
   const Tag = variant;
   const variantClasses = variants[variant];
 
-  const mergedClasses = clsx(`font-gilroy font-black ${variantClasses} ${classes}`);
+  const mergedClasses = clsx(`font-gilroy font-black ${variantClasses} ${classes ?? ''}`);
 
   return <Tag className={mergedClasses}>{children}</Tag>;
 };
