@@ -2,6 +2,7 @@
 import type { ReactElement } from 'react';
 
 import Heading from '../../components/Text/Heading';
+import TextLink from '../../components/Text/TextLink';
 
 const PrivacyPolicyContent = (): ReactElement => (
   <>
@@ -194,8 +195,11 @@ const PrivacyPolicyContent = (): ReactElement => (
       complaint with the competent regulatory authorities. The competent regulatory authority for
       matters related to data protection legislation is the data protection officer of the German
       state in which our company is headquartered. A list of data protection officers and their
-      contact details can be found at the following link:
-      https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.
+      contact details can be found at the following link:{' '}
+      <TextLink href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">
+        https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html
+      </TextLink>
+      .
     </p>
     <p>
       In the event of violations of the GDPR, data subjects are entitled to log a complaint with a
@@ -415,7 +419,9 @@ const PrivacyPolicyContent = (): ReactElement => (
       The basis for the processing of data is Art. 6 Sect. 1 lit. b GDPR, which permits the
       processing of data for the fulfilment of a contract or for pre-contractual actions.
     </p>
-    <p>Source: e-recht24.de</p>
+    <p>
+      Source: <TextLink href="https://www.e-recht24.de/">e-recht24.de</TextLink>
+    </p>
   </>
 );
 
