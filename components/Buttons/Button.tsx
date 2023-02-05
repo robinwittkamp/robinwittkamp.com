@@ -33,33 +33,33 @@ const Button = ({ children, href, type, variant }: ButtonProps): ReactElement =>
 
   // If 'href' prop is used, render a link
   if (href) {
-    const external = href.startsWith('http');
-    const scrollToId = href.startsWith('/#');
+    const isExternal = href.startsWith('http');
+    const hasId = href.startsWith('/#');
 
     // If the link is external, use an anchor tag
-    // const Tag = external ? 'a' : NextLink;
-    // const Tag = external || scrollToId ? 'a' : NextLink;
+    // const Tag = isExternal ? 'a' : NextLink;
+    // const Tag = isExternal || hasId ? 'a' : NextLink;
 
     // return (
     //   <NextLink
     //     className={classes}
     //     href={href}
-    //     rel={external ? 'noopener noreferrer' : undefined}
-    //     target={external ? '_blank' : undefined}
-    //     scroll={scrollToId ? false : undefined}
+    //     rel={isExternal ? 'noopener noreferrer' : undefined}
+    //     target={isExternal ? '_blank' : undefined}
+    //     scroll={hasId ? false : undefined}
     //   >
     //     {children}
     //   </NextLink>
     // );
 
-    // If the link is external or contains an id, use an anchor tag
-    if (external) {
+    // If the link is external, use an anchor tag
+    if (isExternal) {
       return (
         <a
           className={classes}
           href={href}
-          rel={external ? 'noopener noreferrer' : undefined}
-          target={external ? '_blank' : undefined}
+          rel={isExternal ? 'noopener noreferrer' : undefined}
+          target={isExternal ? '_blank' : undefined}
         >
           {children}
         </a>
@@ -68,7 +68,7 @@ const Button = ({ children, href, type, variant }: ButtonProps): ReactElement =>
 
     // If the link is internal, use NextLink
     return (
-      <NextLink className={classes} href={href} scroll={!scrollToId}>
+      <NextLink className={classes} href={href} scroll={!hasId}>
         {children}
       </NextLink>
     );
@@ -83,7 +83,7 @@ const Button = ({ children, href, type, variant }: ButtonProps): ReactElement =>
     );
   }
 
-  // If neither 'href' nor 'type' prop is used, throw an error
+  // If neither 'href' nor 'type' prop is used, show an error
   return <div>Button component requires either a &quot;href&quot; or &quot;type&quot; prop.</div>;
 };
 
