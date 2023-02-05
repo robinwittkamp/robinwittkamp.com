@@ -121,6 +121,7 @@ const Contact = () => {
                   id="message"
                   className="block max-h-[32rem] min-h-[8rem] w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
                   placeholder={t.form.fields.message}
+                  rows={4}
                   aria-invalid={errors.message ? 'true' : 'false'}
                   {...register('message', { required: 'Fill out this field.' })}
                 />
