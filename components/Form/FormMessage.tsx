@@ -13,7 +13,7 @@ const variants = {
 const FormMessage = ({ children, variant }: FormMessageProps): ReactElement => {
   const variantClasses = variants[variant];
 
-  return <div className={`rounded-xl  p-4 text-lg  ${variantClasses}`}>{children}</div>;
+  return <div className={`rounded-xl p-4 text-lg ${variantClasses}`}>{children}</div>;
 };
 
 export default FormMessage;
