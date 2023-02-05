@@ -34,7 +34,7 @@ const Button = ({ children, href, type, variant }: ButtonProps): ReactElement =>
   // If 'href' prop is used, render a link
   if (href) {
     const isExternal = href.startsWith('http');
-    const hasId = href.startsWith('/#');
+    // const hasId = href.startsWith('/#');
 
     // If the link is external, use an anchor tag
     // const Tag = isExternal ? 'a' : NextLink;
@@ -68,7 +68,7 @@ const Button = ({ children, href, type, variant }: ButtonProps): ReactElement =>
 
     // If the link is internal, use NextLink
     return (
-      <NextLink className={classes} href={href} scroll={!hasId}>
+      <NextLink className={classes} href={href} scroll={!href.startsWith('/#')}>
         {children}
       </NextLink>
     );
