@@ -34,14 +34,35 @@ const Contact = () => {
     register,
     handleSubmit,
     // watch,
+    reset,
+    // formState,
     formState: { errors },
   } = useForm<InputsProps>();
 
-  const onSubmit: SubmitHandler<InputsProps> = (data) => console.log(data);
-  // const onSubmit = handleSubmit(data => console.log(data));
-  // const onSubmit = (data) => console.log(data);
+  const onSubmit: SubmitHandler<InputsProps> = (data) => {
+    console.log(data);
 
-  // console.log(watch("example"))
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        console.log('Response received:', response);
+        if (response.status === 200) {
+          console.log('Response succeeded!');
+          // toast('Thank you for contacting us!');
+        } else {
+          console.log('Email/Password is invalid.');
+          // toast('Email/Password is invalid.');
+        }
+      })
+      .catch((error) => console.log(error));
+    reset();
+  };
 
   return (
     <PageLayout>
@@ -71,7 +92,7 @@ const Contact = () => {
               {t.form.heading}
             </Heading>
             {/* Form */}
-            <form className="mt-6 space-y-4" onSubmit={handleSubmit(onSubmit)}>
+            <form className="mt-6 space-y-4" onSubmit={handleSubmit(onSubmit)} method="POST">
               {/* Field: Name */}
               <div className="">
                 {/* Label */}
