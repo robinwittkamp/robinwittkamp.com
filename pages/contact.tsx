@@ -38,7 +38,7 @@ const Contact = () => {
   } = useForm<InputsProps>();
 
   const onSubmit: SubmitHandler<InputsProps> = (data) => {
-    console.log(data);
+    // console.log(data);
 
     fetch('/api/send-email', {
       method: 'POST',
