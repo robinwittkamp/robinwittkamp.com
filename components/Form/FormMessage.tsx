@@ -6,8 +6,8 @@ type FormMessageProps = {
 };
 
 const variants = {
-  error: 'bg-red-900 text-red-200',
-  success: 'bg-green-900 text-green-200',
+  error: 'bg-red-600 text-red-50',
+  success: 'bg-green-600 text-green-50',
 };
 
 const FormMessage = ({ children, variant }: FormMessageProps): ReactElement => {
