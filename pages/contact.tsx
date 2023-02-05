@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
+import LinkButton from '../components/Buttons/LinkButton';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
@@ -8,6 +9,7 @@ import SocialLinks from '../components/Socials/SocialLinks';
 import Heading from '../components/Text/Heading';
 import localDe from '../locales/de/contact';
 import localEn from '../locales/en/contact';
+import PaperPlaneIcon from '../public/icons/fa-solid/paper-plane-solid.svg';
 
 type Inputs = {
   name: string;
@@ -118,9 +120,13 @@ const Contact = () => {
               </div>
 
               {/* Field: Button */}
-              <button className="" type="submit">
+              {/* <button className="" type="submit">
                 {t.form.fields.submit}
-              </button>
+              </button> */}
+              <LinkButton href="/" variant="secondary">
+                <PaperPlaneIcon className="mr-4 h-4" fill="currentColor" />
+                {t.form.fields.submit}
+              </LinkButton>
             </form>
           </div>
         </div>
