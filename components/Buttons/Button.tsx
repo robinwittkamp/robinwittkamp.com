@@ -37,41 +37,41 @@ const Button = ({ children, href, type, variant }: ButtonProps): ReactElement =>
     const scrollToId = href.startsWith('/#');
 
     // If the link is external, use an anchor tag
-    const Tag = external ? 'a' : NextLink;
+    // const Tag = external ? 'a' : NextLink;
     // const Tag = external || scrollToId ? 'a' : NextLink;
 
-    return (
-      <Tag
-        className={classes}
-        href={href}
-        rel={external ? 'noopener noreferrer' : undefined}
-        target={external ? '_blank' : undefined}
-        scroll={scrollToId}
-      >
-        {children}
-      </Tag>
-    );
-
-    // If the link is external or contains an id, use an anchor tag
-    // if (external || scrollToId) {
-    //   return (
-    //     <a
-    //       className={classes}
-    //       href={href}
-    //       rel={external ? 'noopener noreferrer' : undefined}
-    //       target={external ? '_blank' : undefined}
-    //     >
-    //       {children}
-    //     </a>
-    //   );
-    // }
-
-    // If the link is internal, use NextLink
     // return (
-    //   <NextLink className={classes} href={href}>
+    //   <NextLink
+    //     className={classes}
+    //     href={href}
+    //     rel={external ? 'noopener noreferrer' : undefined}
+    //     target={external ? '_blank' : undefined}
+    //     scroll={scrollToId ? false : undefined}
+    //   >
     //     {children}
     //   </NextLink>
     // );
+
+    // If the link is external or contains an id, use an anchor tag
+    if (external) {
+      return (
+        <a
+          className={classes}
+          href={href}
+          rel={external ? 'noopener noreferrer' : undefined}
+          target={external ? '_blank' : undefined}
+        >
+          {children}
+        </a>
+      );
+    }
+
+    // If the link is internal, use NextLink
+    return (
+      <NextLink className={classes} href={href} scroll={!scrollToId}>
+        {children}
+      </NextLink>
+    );
   }
 
   // If prop 'type' is used, render a button
