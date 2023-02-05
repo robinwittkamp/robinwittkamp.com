@@ -51,13 +51,11 @@ const Contact = () => {
       body: JSON.stringify(data),
     })
       .then((response) => {
-        console.log('Response received:', response);
+        // console.log('Response received:', response);
         if (response.status === 200) {
-          console.log('Response succeeded!');
-          // toast('Thank you for contacting us!');
+          console.log(t.form.messages.sendSuccess);
         } else {
-          console.log('Email/Password is invalid.');
-          // toast('Email/Password is invalid.');
+          console.log(t.form.messages.sendError);
         }
       })
       .catch((error) => console.log(error));
@@ -108,7 +106,7 @@ const Contact = () => {
                   type="text"
                   placeholder={t.form.fields.name}
                   aria-invalid={errors.name ? 'true' : 'false'}
-                  {...register('name', { required: 'Fill out this field.' })}
+                  {...register('name', { required: t.form.messages.fieldRequired })}
                 />
                 {/* Error */}
                 <FieldErrorMessage>{errors.name?.message}</FieldErrorMessage>
@@ -129,7 +127,7 @@ const Contact = () => {
                   type="email"
                   placeholder={t.form.fields.email}
                   aria-invalid={errors.email ? 'true' : 'false'}
-                  {...register('email', { required: 'Fill out this field.' })}
+                  {...register('email', { required: t.form.messages.fieldRequired })}
                 />
                 {/* Error */}
                 <FieldErrorMessage>{errors.email?.message}</FieldErrorMessage>
@@ -150,7 +148,7 @@ const Contact = () => {
                   placeholder={t.form.fields.message}
                   rows={4}
                   aria-invalid={errors.message ? 'true' : 'false'}
-                  {...register('message', { required: 'Fill out this field.' })}
+                  {...register('message', { required: t.form.messages.fieldRequired })}
                 />
                 {/* Error */}
                 <FieldErrorMessage>{errors.message?.message}</FieldErrorMessage>
