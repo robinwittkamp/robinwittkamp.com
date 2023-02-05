@@ -81,7 +81,9 @@ const Contact = () => {
                 {/* Input */}
                 <input
                   id="name"
-                  className="block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
+                  className={`block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg ${
+                    errors.name ? 'shadow-[0_0_0_1px_rgba(255,0,0,1)]' : ''
+                  }`}
                   type="text"
                   placeholder={t.form.fields.name}
                   aria-invalid={errors.name ? 'true' : 'false'}
@@ -100,7 +102,9 @@ const Contact = () => {
                 {/* Input */}
                 <input
                   id="email"
-                  className="block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
+                  className={`block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg ${
+                    errors.email ? 'shadow-[0_0_0_1px_rgba(255,0,0,1)]' : ''
+                  }`}
                   type="email"
                   placeholder={t.form.fields.email}
                   aria-invalid={errors.email ? 'true' : 'false'}
@@ -119,7 +123,9 @@ const Contact = () => {
                 {/* Input */}
                 <textarea
                   id="message"
-                  className="block max-h-[32rem] min-h-[8rem] w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
+                  className={`block max-h-[32rem] min-h-[8rem] w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg ${
+                    errors.message ? 'shadow-[0_0_0_1px_rgba(255,0,0,1)]' : ''
+                  }`}
                   placeholder={t.form.fields.message}
                   rows={4}
                   aria-invalid={errors.message ? 'true' : 'false'}
