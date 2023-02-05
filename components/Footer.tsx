@@ -4,12 +4,9 @@ import type { ReactElement } from 'react';
 
 import localDe from '../locales/de/footer';
 import localEn from '../locales/en/footer';
-import GithubIcon from '../public/icons/fa-brands/github.svg';
-import LinkedinIcon from '../public/icons/fa-brands/linkedin.svg';
-import TwitterIcon from '../public/icons/fa-brands/twitter.svg';
-import XingIcon from '../public/icons/fa-brands/xing.svg';
 import CodeIcon from '../public/icons/fa-solid/code-solid.svg';
 import RobinWittkampLogo from '../public/logos/robin_wittkamp_logo.svg';
+import SocialLinks from './Socials/SocialLinks';
 
 const Footer = (): ReactElement => {
   const router = useRouter();
@@ -35,48 +32,7 @@ const Footer = (): ReactElement => {
               <RobinWittkampLogo className="h-6 md:h-7" />
               <span className="mt-8 block max-w-[18rem] text-rusty-400">{t.description}</span>
               {/* Social icons */}
-              <div className="mt-8 flex flex-wrap items-center space-x-8">
-                {/* GitHub */}
-                <a
-                  className="text-rusty-400 transition-colors hover:text-white"
-                  href="https://github.com/robinwittkamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GithubIcon className="h-6" fill="currentColor" />
-                  <span className="sr-only">GitHub</span>
-                </a>
-                {/* LinkedIn */}
-                <a
-                  className="text-rusty-400 transition-colors hover:text-white"
-                  href="https://www.linkedin.com/in/robinwittkamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <LinkedinIcon className="h-6" fill="currentColor" />
-                  <span className="sr-only">LinkedIn</span>
-                </a>
-                {/* Xing */}
-                <a
-                  className="text-rusty-400 transition-colors hover:text-white"
-                  href="https://www.xing.com/profile/Robin_Wittkamp2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <XingIcon className="h-6" fill="currentColor" />
-                  <span className="sr-only">Xing</span>
-                </a>
-                {/* Twitter */}
-                <a
-                  className="text-rusty-400 transition-colors hover:text-white"
-                  href="https://twitter.com/robinwittkamp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <TwitterIcon className="h-6" fill="currentColor" />
-                  <span className="sr-only">Twitter</span>
-                </a>
-              </div>
+              <SocialLinks footer />
             </div>
 
             {/* 2 column */}

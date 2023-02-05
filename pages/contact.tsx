@@ -4,6 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
+import SocialLinks from '../components/Socials/SocialLinks';
 import Heading from '../components/Text/Heading';
 import localDe from '../locales/de/contact';
 import localEn from '../locales/en/contact';
@@ -52,7 +53,7 @@ const Contact = () => {
               {t.contactInformation.social}
             </Heading>
             <div className="mt-6">
-              <div />
+              <SocialLinks />
             </div>
           </div>
 
