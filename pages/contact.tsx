@@ -1,3 +1,4 @@
+import { LazyMotion, m } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
@@ -12,7 +13,11 @@ import SocialLinks from '../components/Socials/SocialLinks';
 import Heading from '../components/Text/Heading';
 import localDe from '../locales/de/contact';
 import localEn from '../locales/en/contact';
+import CircleNotchIcon from '../public/icons/fa-solid/circle-notch-solid.svg';
 import PaperPlaneIcon from '../public/icons/fa-solid/paper-plane-solid.svg';
+
+const loadFramerMotionFeatures = () =>
+  import('../lib/framer-motion/framerMotionFeatures').then((res) => res.default);
 
 type InputsProps = {
   name: string;
@@ -21,8 +26,9 @@ type InputsProps = {
 };
 
 const Contact = () => {
-  const [isSendSuccess, setisSendSuccess] = useState(false);
-  const [isSendError, setisSendError] = useState(false);
+  const [isSendSuccess, setIsSendSuccess] = useState(false);
+  const [isSendError, setIsSendError] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const router = useRouter();
   const { locale } = router;
@@ -39,6 +45,7 @@ const Contact = () => {
 
   const onSubmit: SubmitHandler<InputsProps> = (data) => {
     // console.log(data);
+    setIsSending(true);
 
     fetch('/api/send-email', {
       method: 'POST',
@@ -52,11 +59,13 @@ const Contact = () => {
         // console.log('Response received:', response);
         if (response.status === 200) {
           // console.log(t.form.messages.sendSuccess);
-          setisSendSuccess(true);
+          setIsSendSuccess(true);
+          setIsSending(false);
           reset();
         } else {
           // console.log(t.form.messages.sendError);
-          setisSendError(true);
+          setIsSendError(true);
+          setIsSending(false);
         }
       })
       .catch((error) => console.log(error));
@@ -157,8 +166,24 @@ const Contact = () => {
               {/* Field: Button */}
               <div className="mt-6">
                 <Button type="submit" variant="secondary">
-                  <PaperPlaneIcon className="h-4" fill="currentColor" />
-                  <span className="ml-3">{t.form.fields.submit}</span>
+                  {isSending ? (
+                    <>
+                      <LazyMotion features={loadFramerMotionFeatures} strict>
+                        <m.div
+                          animate={{ rotate: 360 }}
+                          transition={{ ease: 'linear', duration: 2, repeat: Infinity }}
+                        >
+                          <CircleNotchIcon className="h-5" fill="currentColor" />
+                        </m.div>
+                      </LazyMotion>
+                      <span className="ml-3">{t.form.fields.buttonSending}</span>
+                    </>
+                  ) : (
+                    <>
+                      <PaperPlaneIcon className="h-4" fill="currentColor" />
+                      <span className="ml-3">{t.form.fields.buttonSubmit}</span>
+                    </>
+                  )}
                 </Button>
               </div>
 

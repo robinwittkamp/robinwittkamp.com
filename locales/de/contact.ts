@@ -14,7 +14,8 @@ export default {
       name: 'Name',
       email: 'E-Mail',
       message: 'Nachricht',
-      submit: 'Senden',
+      buttonSubmit: 'Senden',
+      buttonSending: 'Sendet',
     },
     messages: {
       fieldRequired: 'Bitte füllen Sie dieses Feld aus.',

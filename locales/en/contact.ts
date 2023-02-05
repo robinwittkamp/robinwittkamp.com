@@ -14,7 +14,8 @@ export default {
       name: 'Name',
       email: 'Email',
       message: 'Message',
-      submit: 'Submit',
+      buttonSubmit: 'Submit',
+      buttonSending: 'Sending',
     },
     messages: {
       fieldRequired: 'This field is required.',
