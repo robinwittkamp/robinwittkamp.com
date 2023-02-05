@@ -9,7 +9,7 @@ export default {
     social: 'Social',
   },
   form: {
-    heading: 'Nachricht senden',
+    heading: 'Eine Nachricht senden',
     fields: {
       name: 'Name',
       email: 'E-Mail',
