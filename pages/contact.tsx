@@ -11,14 +11,18 @@ import localDe from '../locales/de/contact';
 import localEn from '../locales/en/contact';
 import PaperPlaneIcon from '../public/icons/fa-solid/paper-plane-solid.svg';
 
-type Inputs = {
+type InputsProps = {
   name: string;
   email: string;
   message: string;
 };
 
-const FormFieldError = ({ children }: { children: string }) => (
-  <p className="mt-2 text-sm text-[#ff0000]">{children}</p>
+type FieldErrorMessageProps = {
+  children: string | undefined;
+};
+
+const FieldErrorMessage = ({ children }: FieldErrorMessageProps) => (
+  <span className="mt-2 block text-sm text-[#ff0000]">{children}</span>
 );
 
 const Contact = () => {
@@ -31,9 +35,9 @@ const Contact = () => {
     handleSubmit,
     // watch,
     formState: { errors },
-  } = useForm<Inputs>();
+  } = useForm<InputsProps>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<InputsProps> = (data) => console.log(data);
 
   // console.log(watch("example"))
 
@@ -78,10 +82,10 @@ const Contact = () => {
                   className="block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
                   type="text"
                   placeholder={t.form.fields.name}
-                  {...register('name', { required: true })}
+                  {...register('name', { required: 'Fill out this field.' })}
                 />
                 {/* Error */}
-                {errors.name && <FormFieldError>Fill out this field.</FormFieldError>}
+                <FieldErrorMessage>{errors.name?.message}</FieldErrorMessage>
               </div>
 
               {/* Field: Email */}
@@ -96,10 +100,10 @@ const Contact = () => {
                   className="block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
                   type="email"
                   placeholder={t.form.fields.email}
-                  {...register('email', { required: true })}
+                  {...register('email', { required: 'Fill out this field.' })}
                 />
                 {/* Error */}
-                {errors.email && <FormFieldError>Fill out this field.</FormFieldError>}
+                <FieldErrorMessage>{errors.email?.message}</FieldErrorMessage>
               </div>
 
               {/* Field: Message */}
@@ -113,10 +117,10 @@ const Contact = () => {
                   id="message"
                   className="block max-h-[32rem] min-h-[8rem] w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
                   placeholder={t.form.fields.message}
-                  {...register('message', { required: true })}
+                  {...register('message', { required: 'Fill out this field.' })}
                 />
                 {/* Error */}
-                {errors.message && <FormFieldError>Fill out this field.</FormFieldError>}
+                <FieldErrorMessage>{errors.message?.message}</FieldErrorMessage>
               </div>
 
               {/* Field: Button */}
