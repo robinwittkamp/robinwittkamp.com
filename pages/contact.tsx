@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import Button from '../components/Buttons/Button';
@@ -20,6 +21,9 @@ type InputsProps = {
 };
 
 const Contact = () => {
+  const [isSendSuccess, setisSendSuccess] = useState(false);
+  const [isSendError, setisSendError] = useState(false);
+
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ? localEn : localDe;
@@ -48,8 +52,10 @@ const Contact = () => {
         // console.log('Response received:', response);
         if (response.status === 200) {
           console.log(t.form.messages.sendSuccess);
+          setisSendSuccess(true);
         } else {
           console.log(t.form.messages.sendError);
+          setisSendError(true);
         }
       })
       .catch((error) => console.log(error));
@@ -156,10 +162,14 @@ const Contact = () => {
                 <PaperPlaneIcon className="h-4" fill="currentColor" />
                 <span className="ml-3">{t.form.fields.submit}</span>
               </Button>
-              {/* {isSuccess && ( */}
-              {/* <FormMessage variant="error">{t.form.messages.sendError}</FormMessage>
-              <FormMessage variant="success">{t.form.messages.sendSuccess}</FormMessage> */}
-              {/* )} */}
+
+              {/* Messages */}
+              {isSendError && (
+                <FormMessage variant="error">{t.form.messages.sendError}</FormMessage>
+              )}
+              {isSendSuccess && (
+                <FormMessage variant="success">{t.form.messages.sendSuccess}</FormMessage>
+              )}
             </form>
           </div>
         </div>
