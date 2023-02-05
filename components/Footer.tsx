@@ -47,7 +47,7 @@ const Footer = (): ReactElement => {
                     <Link
                       className="inline-block py-2 text-rusty-400 transition-colors hover:text-white"
                       href={item.href}
-                      scroll={false}
+                      scroll={!item.href.startsWith('/#')}
                     >
                       {item.name}
                     </Link>

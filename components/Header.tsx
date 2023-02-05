@@ -17,7 +17,6 @@ type MainNavItemProps = {
   id: string;
   name: string;
   href: string;
-  resetScroll: boolean;
 };
 
 const hamburgerLine =
@@ -175,7 +174,7 @@ const Header = (): ReactElement => {
                               onFocus={() => setFocused(item)}
                               onMouseEnter={() => setFocused(item)}
                               tabIndex={0}
-                              scroll={item.resetScroll}
+                              scroll={!item.href.startsWith('/#')}
                             >
                               <AnimatePresence>
                                 {focused === item ? (
@@ -235,7 +234,7 @@ const Header = (): ReactElement => {
                                 }}
                                 href={item.href}
                                 className="block border-b border-rusty-800 px-4 py-3 sm:px-8"
-                                scroll={item.resetScroll}
+                                scroll={!item.href.startsWith('/#')}
                               >
                                 <span className="text-lg">{item.name}</span>
                               </Link>
