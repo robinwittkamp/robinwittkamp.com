@@ -9,6 +9,7 @@ import { RemoveScroll } from 'react-remove-scroll';
 import localDe from '../locales/de/header';
 import localEn from '../locales/en/header';
 import Logo from './Logo';
+import SocialLinks from './Socials/SocialLinks';
 
 const loadFramerMotionFeatures = () =>
   import('../lib/framer-motion/framerMotionFeatures').then((res) => res.default);
@@ -60,6 +61,24 @@ const mobileNavItemVariants = {
     transition: {
       ease: 'easeIn',
       duration: 0.3,
+    },
+  },
+  closed: {
+    opacity: 0,
+    transition: {
+      ease: 'easeOut',
+      duration: 0.2,
+    },
+  },
+};
+
+const mobileSocials = {
+  open: {
+    opacity: 1,
+    transition: {
+      ease: 'easeIn',
+      duration: 0.3,
+      delay: 0.3,
     },
   },
   closed: {
@@ -241,6 +260,9 @@ const Header = (): ReactElement => {
                             </m.div>
                           ))}
                         </m.nav>
+                        <m.div className="mx-4 mt-12 flex justify-center" variants={mobileSocials}>
+                          <SocialLinks />
+                        </m.div>
                       </RemoveScroll>
                     )}
                   </Popover.Panel>
