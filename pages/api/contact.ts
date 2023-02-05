@@ -1,31 +1,64 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
-const handlerOne = async (req: NextApiRequest, res: NextApiResponse) => {
-  // create reusable transporter object using the default SMTP transport
-  const transporter = nodemailer.createTransport({
-    host: process.env.MAIL_HOST,
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.MAIL_USERNAME,
-      pass: process.env.MAIL_PASSWORD,
-    },
-  });
+type FieldsProps = {
+  name: string;
+  email: string;
+  message: string;
+};
 
-  // send mail with defined transport object
-  const info = await transporter.sendMail({
-    from: `"${req.body.name}" <${req.body.email}>`,
-    to: 'info@robinwittkamp.com',
-    subject: 'Contact form at robinwittkamp.com',
-    text: req.body.message,
-    html: req.body.message,
-  });
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+  const { name, email, message } = req.body as FieldsProps;
 
-  console.log('Message sent: %s', info.response);
-  console.log('Request Body:', req.body);
+  // Return an error if POST method is not used
+  if (req.method !== 'POST') {
+    res.status(405).json({
+      error: 'Only POST method allowed',
+    });
+    return;
+  }
 
-  res.status(200).json({ status: 'OK' });
+  try {
+    if (!name || !name.trim()) {
+      throw new Error('Please provide a valid name.');
+    }
+
+    if (!email || !email.trim()) {
+      throw new Error('Please provide a valid email address.');
+    }
+
+    if (!message || !message.trim()) {
+      throw new Error('Please provide a valid email message.');
+    }
+
+    // create reusable transporter object using the default SMTP transport
+    const transporter = nodemailer.createTransport({
+      host: process.env.MAIL_HOST,
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.MAIL_USERNAME,
+        pass: process.env.MAIL_PASSWORD,
+      },
+    });
+
+    // send mail with defined transport object
+    const info = await transporter.sendMail({
+      from: `"${name}" <${email}>`,
+      to: 'info@robinwittkamp.com',
+      subject: 'Contact form at robinwittkamp.com',
+      text: message,
+      html: message,
+    });
+
+    console.log('Message sent: %s', info.response);
+    console.log('Request Body:', req.body);
+
+    res.status(200).json({ status: 'OK' });
+    // res.status(200).send({ status: 'done', message: 'message has been sent' });
+  } catch (error) {
+    res.status(500).send({ status: 'fail', error: `${error}` });
+  }
 };
 
 // const handlerTwo = async (req, res) => {
@@ -75,4 +108,4 @@ const handlerOne = async (req: NextApiRequest, res: NextApiResponse) => {
 //   res.status(200).json({ status: 'OK' });
 // };
 
-export default handlerOne;
+export default handler;
