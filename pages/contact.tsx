@@ -40,7 +40,7 @@ const Contact = () => {
   const onSubmit: SubmitHandler<InputsProps> = (data) => {
     console.log(data);
 
-    fetch('/api/contact', {
+    fetch('/api/send-email', {
       method: 'POST',
       headers: {
         Accept: 'application/json, text/plain, */*',
