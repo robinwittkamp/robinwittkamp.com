@@ -4,7 +4,6 @@ import type { ReactElement, ReactNode } from 'react';
 
 type LinkButtonProps = {
   children: ReactNode | ReactNode[];
-  external?: boolean;
   href: string;
   variant: 'primary' | 'secondary' | 'tertiary';
 };
@@ -15,14 +14,10 @@ const variants = {
   tertiary: `border border-rusty-700 bg-transparent text-rusty-300 hover:border-rusty-700 hover:bg-rusty-800 hover:text-rusty-100`,
 };
 
-const LinkButton = ({
-  children,
-  external = false,
-  href,
-  variant,
-}: LinkButtonProps): ReactElement => {
-  const variantClasses = variants[variant];
+const LinkButton = ({ children, href, variant }: LinkButtonProps): ReactElement => {
+  const external = href.startsWith('http');
 
+  const variantClasses = variants[variant];
   const classes = clsx(
     `inline-flex items-center rounded-2xl px-6 py-3 text-lg font-extrabold transition ${variantClasses}`
   );
