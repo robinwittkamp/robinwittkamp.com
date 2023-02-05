@@ -10,9 +10,9 @@ type LinkButtonProps = {
 };
 
 const variants = {
-  primary: `border-0 border-transparent bg-gradient-to-tr from-red-700 to-amber-500 text-white shadow-lg shadow-black/25 hover:brightness-110 hover:shadow-md hover:shadow-black/25`,
-  secondary: `border-rusty-700 bg-rusty-800 text-rusty-100 hover:border-rusty-600 hover:bg-rusty-700 hover:text-white`,
-  tertiary: `border-rusty-700 bg-transparent text-rusty-300 hover:border-rusty-700 hover:bg-rusty-800 hover:text-rusty-100`,
+  primary: `border-transparent bg-gradient-to-tr from-red-700 to-amber-500 text-white shadow-lg shadow-black/25 hover:brightness-110 hover:shadow-md hover:shadow-black/25`,
+  secondary: `border border-rusty-700 bg-rusty-800 text-rusty-100 hover:border-rusty-600 hover:bg-rusty-700 hover:text-white`,
+  tertiary: `border border-rusty-700 bg-transparent text-rusty-300 hover:border-rusty-700 hover:bg-rusty-800 hover:text-rusty-100`,
 };
 
 const LinkButton = ({
@@ -24,7 +24,7 @@ const LinkButton = ({
   const variantClasses = variants[variant];
 
   const classes = clsx(
-    `inline-flex items-center rounded-2xl border px-6 py-3 text-lg font-extrabold transition ${variantClasses}`
+    `inline-flex items-center rounded-2xl px-6 py-3 text-lg font-extrabold transition ${variantClasses}`
   );
 
   return (
