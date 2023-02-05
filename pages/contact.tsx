@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import Button from '../components/Buttons/Button';
-import FieldErrorMessage from '../components/Form/FieldErrorMessage';
+import FieldMessage from '../components/Form/FieldMessage';
 import FormMessage from '../components/Form/FormMessage';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
@@ -103,7 +103,7 @@ const Contact = () => {
                   {...register('name', { required: t.form.messages.fieldRequired })}
                 />
                 {/* Error */}
-                <FieldErrorMessage>{errors.name?.message}</FieldErrorMessage>
+                <FieldMessage>{errors.name?.message}</FieldMessage>
               </div>
 
               {/* Field: Email */}
@@ -124,7 +124,7 @@ const Contact = () => {
                   {...register('email', { required: t.form.messages.fieldRequired })}
                 />
                 {/* Error */}
-                <FieldErrorMessage>{errors.email?.message}</FieldErrorMessage>
+                <FieldMessage>{errors.email?.message}</FieldMessage>
               </div>
 
               {/* Field: Message */}
@@ -145,7 +145,7 @@ const Contact = () => {
                   {...register('message', { required: t.form.messages.fieldRequired })}
                 />
                 {/* Error */}
-                <FieldErrorMessage>{errors.message?.message}</FieldErrorMessage>
+                <FieldMessage>{errors.message?.message}</FieldMessage>
               </div>
 
               {/* Field: Button */}

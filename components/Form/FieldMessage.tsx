@@ -1,11 +1,11 @@
 import type { ReactElement } from 'react';
 
-type FieldErrorMessageProps = {
+type FieldMessageProps = {
   children: string | undefined;
 };
 
-const FieldErrorMessage = ({ children }: FieldErrorMessageProps): ReactElement => (
+const FieldMessage = ({ children }: FieldMessageProps): ReactElement => (
   <span className="mt-2 block text-sm text-[#ff0000]">{children}</span>
 );
 
-export default FieldErrorMessage;
+export default FieldMessage;
