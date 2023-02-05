@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const defaultTheme = require('tailwindcss/defaultTheme');
+const forms = require('@tailwindcss/forms');
 const typography = require('@tailwindcss/typography');
 
 module.exports = {
@@ -38,5 +39,5 @@ module.exports = {
       },
     },
   },
-  plugins: [typography()],
+  plugins: [forms(), typography()],
 };
