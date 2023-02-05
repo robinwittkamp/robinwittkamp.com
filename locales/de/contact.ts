@@ -18,9 +18,9 @@ export default {
     },
     messages: {
       fieldRequired: 'Bitte füllen Sie dieses Feld aus.',
-      sendSuccess: 'Vielen Dank für Ihre Nachricht. Sie wurde versendet.',
       sendError:
         'Beim Versuch, Ihre Nachricht zu senden, ist ein Fehler aufgetreten. Bitte versuchen Sie es später nochmal.',
+      sendSuccess: 'Vielen Dank für Ihre Nachricht. Sie wurde versendet.',
     },
   },
 };

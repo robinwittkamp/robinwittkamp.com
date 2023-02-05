@@ -18,8 +18,8 @@ export default {
     },
     messages: {
       fieldRequired: 'This field is required.',
-      sendSuccess: 'Your message has been sent successfully.',
       sendError: 'There was an error trying to send your message. Please try again later.',
+      sendSuccess: 'Your message has been sent successfully.',
     },
   },
 };
