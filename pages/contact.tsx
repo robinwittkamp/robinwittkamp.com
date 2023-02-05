@@ -51,11 +51,11 @@ const Contact = () => {
       .then((response) => {
         // console.log('Response received:', response);
         if (response.status === 200) {
-          console.log(t.form.messages.sendSuccess);
+          // console.log(t.form.messages.sendSuccess);
           setisSendSuccess(true);
           reset();
         } else {
-          console.log(t.form.messages.sendError);
+          // console.log(t.form.messages.sendError);
           setisSendError(true);
         }
       })
