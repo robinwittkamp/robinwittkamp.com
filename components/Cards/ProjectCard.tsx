@@ -2,7 +2,7 @@ import Image, { StaticImageData } from 'next/image';
 import type { ReactElement } from 'react';
 
 import AngleRightIcon from '../../public/icons/fa-solid/angle-right-solid.svg';
-import LinkButton from '../Buttons/LinkButton';
+import Button from '../Buttons/Button';
 
 type ProjectCardProps = {
   title: string;
@@ -35,10 +35,10 @@ const ProjectCard = ({
       <p className="mt-4 text-lg text-rusty-400 md:mt-6 lg:text-xl">{description}</p>
       {buttonText && (
         <div className="mt-6 md:mt-8">
-          <LinkButton href={href} variant="secondary">
+          <Button href={href} variant="secondary">
             <span className="whitespace-nowrap">{buttonText}</span>
             <AngleRightIcon className="ml-2 h-[1.125rem]" fill="currentColor" />
-          </LinkButton>
+          </Button>
         </div>
       )}
     </div>

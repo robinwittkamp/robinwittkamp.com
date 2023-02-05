@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react';
 
-import LinkButton from '../Buttons/LinkButton';
+import Button from '../Buttons/Button';
 import Heading from '../Text/Heading';
 import Section from './Section';
 
@@ -16,9 +16,9 @@ const ErrorLayout = ({ headingText, bodyText }: ErrorLayoutProps): ReactElement 
     </Heading>
     <p className="mt-8 max-w-2xl text-xl text-rusty-400 sm:mx-auto sm:text-center">{bodyText}</p>
     <div className="mt-8 sm:flex sm:justify-center">
-      <LinkButton href="/" variant="secondary">
+      <Button href="/" variant="secondary">
         Home
-      </LinkButton>
+      </Button>
     </div>
   </Section>
 );

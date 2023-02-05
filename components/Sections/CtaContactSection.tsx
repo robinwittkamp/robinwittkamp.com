@@ -3,7 +3,7 @@ import type { ReactElement } from 'react';
 
 import localDe from '../../locales/de/common';
 import colocalEn from '../../locales/en/common';
-import LinkButton from '../Buttons/LinkButton';
+import Button from '../Buttons/Button';
 import Heading from '../Text/Heading';
 import Section from './Section';
 
@@ -22,9 +22,9 @@ const CtaContactSection = (): ReactElement => {
           {t.ctaContactSection.subheading}
         </p>
         <div className="mt-8 sm:flex sm:justify-center">
-          <LinkButton href="/contact" variant="primary">
+          <Button href="/contact" variant="primary">
             {t.ctaContactSection.button}
-          </LinkButton>
+          </Button>
         </div>
       </div>
     </Section>

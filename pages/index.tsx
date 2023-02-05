@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import LinkButton from '../components/Buttons/LinkButton';
+import Button from '../components/Buttons/Button';
 import ProjectCard from '../components/Cards/ProjectCard';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
@@ -135,9 +135,9 @@ const Home = () => {
             {t.heroSection.subheading}
           </p>
           <div className="mt-8 sm:flex sm:justify-center">
-            <LinkButton href="/#work" variant="primary">
+            <Button href="/#work" variant="primary">
               {t.heroSection.button}
-            </LinkButton>
+            </Button>
           </div>
         </div>
 

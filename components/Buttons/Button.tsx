@@ -1,0 +1,90 @@
+import clsx from 'clsx';
+import NextLink from 'next/link';
+import type { ReactElement, ReactNode } from 'react';
+
+type CommonButtonProps = {
+  children: ReactNode | ReactNode[];
+  variant: 'primary' | 'secondary' | 'tertiary';
+};
+
+type ConditionalButtonProps =
+  | {
+      href: string;
+      type?: never;
+    }
+  | {
+      href?: never;
+      type: 'submit' | 'button' | 'reset';
+    };
+
+type ButtonProps = CommonButtonProps & ConditionalButtonProps;
+
+const variants = {
+  primary: `border-transparent bg-gradient-to-tr from-red-700 to-amber-500 text-white shadow-lg shadow-black/25 hover:brightness-110 hover:shadow-md hover:shadow-black/25`,
+  secondary: `border border-rusty-700 bg-rusty-800 text-rusty-100 hover:border-rusty-600 hover:bg-rusty-700 hover:text-white`,
+  tertiary: `border border-rusty-700 bg-transparent text-rusty-300 hover:border-rusty-700 hover:bg-rusty-800 hover:text-rusty-100`,
+};
+
+const Button = ({ children, href, type, variant }: ButtonProps): ReactElement => {
+  const variantClasses = variants[variant];
+  const classes = clsx(
+    `inline-flex items-center rounded-2xl px-6 py-3 text-lg font-extrabold transition ${variantClasses}`
+  );
+
+  // If 'href' prop is used, render a link
+  if (href) {
+    const external = href.startsWith('http');
+    const scrollToId = href.startsWith('/#');
+
+    // If the link is external, use an anchor tag
+    const Tag = external ? 'a' : NextLink;
+    // const Tag = external || scrollToId ? 'a' : NextLink;
+
+    return (
+      <Tag
+        className={classes}
+        href={href}
+        rel={external ? 'noopener noreferrer' : undefined}
+        target={external ? '_blank' : undefined}
+        scroll={scrollToId}
+      >
+        {children}
+      </Tag>
+    );
+
+    // If the link is external or contains an id, use an anchor tag
+    // if (external || scrollToId) {
+    //   return (
+    //     <a
+    //       className={classes}
+    //       href={href}
+    //       rel={external ? 'noopener noreferrer' : undefined}
+    //       target={external ? '_blank' : undefined}
+    //     >
+    //       {children}
+    //     </a>
+    //   );
+    // }
+
+    // If the link is internal, use NextLink
+    // return (
+    //   <NextLink className={classes} href={href}>
+    //     {children}
+    //   </NextLink>
+    // );
+  }
+
+  // If prop 'type' is used, render a button
+  if (type) {
+    return (
+      <button className={classes} type={type}>
+        {children}
+      </button>
+    );
+  }
+
+  // If neither 'href' nor 'type' prop is used, throw an error
+  return <div>Button component requires either a &quot;href&quot; or &quot;type&quot; prop.</div>;
+};
+
+export default Button;

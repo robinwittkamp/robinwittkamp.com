@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import LinkButton from '../components/Buttons/LinkButton';
+import Button from '../components/Buttons/Button';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
@@ -123,10 +123,10 @@ const Contact = () => {
               {/* <button className="" type="submit">
                 {t.form.fields.submit}
               </button> */}
-              <LinkButton href="/" variant="secondary">
+              <Button type="submit" variant="secondary">
                 <PaperPlaneIcon className="h-4" fill="currentColor" />
                 <span className="ml-3">{t.form.fields.submit}</span>
-              </LinkButton>
+              </Button>
             </form>
           </div>
         </div>
