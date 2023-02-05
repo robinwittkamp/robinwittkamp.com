@@ -2,6 +2,8 @@ import { useRouter } from 'next/router';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import Button from '../components/Buttons/Button';
+import FieldErrorMessage from '../components/Form/FieldErrorMessage';
+import FormMessage from '../components/Form/FormMessage';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import Section from '../components/Sections/Section';
@@ -16,14 +18,6 @@ type InputsProps = {
   email: string;
   message: string;
 };
-
-type FieldErrorMessageProps = {
-  children: string | undefined;
-};
-
-const FieldErrorMessage = ({ children }: FieldErrorMessageProps) => (
-  <span className="mt-2 block text-sm text-[#ff0000]">{children}</span>
-);
 
 const Contact = () => {
   const router = useRouter();
@@ -162,6 +156,10 @@ const Contact = () => {
                 <PaperPlaneIcon className="h-4" fill="currentColor" />
                 <span className="ml-3">{t.form.fields.submit}</span>
               </Button>
+              {/* {isSuccess && ( */}
+              {/* <FormMessage variant="error">{t.form.messages.sendError}</FormMessage>
+              <FormMessage variant="success">{t.form.messages.sendSuccess}</FormMessage> */}
+              {/* )} */}
             </form>
           </div>
         </div>
