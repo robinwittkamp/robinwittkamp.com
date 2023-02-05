@@ -90,7 +90,7 @@ const Contact = () => {
               {t.form.heading}
             </Heading>
             {/* Form */}
-            <form className="mt-6 space-y-4" onSubmit={handleSubmit(onSubmit)} method="POST">
+            <form className="mt-6" onSubmit={handleSubmit(onSubmit)} method="POST">
               {/* Field: Name */}
               <div className="">
                 {/* Label */}
@@ -113,7 +113,7 @@ const Contact = () => {
               </div>
 
               {/* Field: Email */}
-              <div className="">
+              <div className="mt-4">
                 {/* Label */}
                 {/* <div className="">
                   <label htmlFor="email">{t.form.fields.email}</label>
@@ -134,7 +134,7 @@ const Contact = () => {
               </div>
 
               {/* Field: Message */}
-              <div className="">
+              <div className="mt-4">
                 {/* Label */}
                 {/* <div className="">
                   <label htmlFor="message">{t.form.fields.message}</label>
@@ -155,20 +155,23 @@ const Contact = () => {
               </div>
 
               {/* Field: Button */}
-              {/* <button className="" type="submit">
-                {t.form.fields.submit}
-              </button> */}
-              <Button type="submit" variant="secondary">
-                <PaperPlaneIcon className="h-4" fill="currentColor" />
-                <span className="ml-3">{t.form.fields.submit}</span>
-              </Button>
+              <div className="mt-6">
+                <Button type="submit" variant="secondary">
+                  <PaperPlaneIcon className="h-4" fill="currentColor" />
+                  <span className="ml-3">{t.form.fields.submit}</span>
+                </Button>
+              </div>
 
               {/* Messages */}
               {isSendError && (
-                <FormMessage variant="error">{t.form.messages.sendError}</FormMessage>
+                <div className="mt-8">
+                  <FormMessage variant="error">{t.form.messages.sendError}</FormMessage>
+                </div>
               )}
               {isSendSuccess && (
-                <FormMessage variant="success">{t.form.messages.sendSuccess}</FormMessage>
+                <div className="mt-8">
+                  <FormMessage variant="success">{t.form.messages.sendSuccess}</FormMessage>
+                </div>
               )}
             </form>
           </div>
