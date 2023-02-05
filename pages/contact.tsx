@@ -38,6 +38,8 @@ const Contact = () => {
   } = useForm<InputsProps>();
 
   const onSubmit: SubmitHandler<InputsProps> = (data) => console.log(data);
+  // const onSubmit = handleSubmit(data => console.log(data));
+  // const onSubmit = (data) => console.log(data);
 
   // console.log(watch("example"))
 
@@ -82,6 +84,7 @@ const Contact = () => {
                   className="block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
                   type="text"
                   placeholder={t.form.fields.name}
+                  aria-invalid={errors.name ? 'true' : 'false'}
                   {...register('name', { required: 'Fill out this field.' })}
                 />
                 {/* Error */}
@@ -100,6 +103,7 @@ const Contact = () => {
                   className="block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
                   type="email"
                   placeholder={t.form.fields.email}
+                  aria-invalid={errors.email ? 'true' : 'false'}
                   {...register('email', { required: 'Fill out this field.' })}
                 />
                 {/* Error */}
@@ -117,6 +121,7 @@ const Contact = () => {
                   id="message"
                   className="block max-h-[32rem] min-h-[8rem] w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:ring-2 focus:ring-white lg:text-lg"
                   placeholder={t.form.fields.message}
+                  aria-invalid={errors.message ? 'true' : 'false'}
                   {...register('message', { required: 'Fill out this field.' })}
                 />
                 {/* Error */}
