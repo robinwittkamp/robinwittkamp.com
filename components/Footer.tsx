@@ -32,7 +32,9 @@ const Footer = (): ReactElement => {
               <RobinWittkampLogo className="h-6 md:h-7" />
               <span className="mt-8 block max-w-[18rem] text-rusty-400">{t.description}</span>
               {/* Social icons */}
-              <SocialLinks footer />
+              <div className="mt-8">
+                <SocialLinks footer />
+              </div>
             </div>
 
             {/* 2 column */}

@@ -11,7 +11,7 @@ type SocialLinksProps = {
 
 const SocialLinks = ({ footer }: SocialLinksProps): ReactElement => {
   return (
-    <div className="mt-8 flex flex-wrap items-center space-x-8">
+    <div className="flex flex-wrap items-center space-x-8">
       {/* GitHub */}
       <a
         className={`${
