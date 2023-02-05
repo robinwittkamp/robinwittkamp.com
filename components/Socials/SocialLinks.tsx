@@ -21,7 +21,7 @@ const SocialLinks = ({ footer }: SocialLinksProps): ReactElement => {
         rel="noopener noreferrer"
         target="_blank"
       >
-        <GithubIcon className={footer ? 'h-6' : 'h-7'} fill="currentColor" />
+        <GithubIcon className={footer ? 'h-6' : 'h-6 lg:h-7'} fill="currentColor" />
         <span className="sr-only">GitHub</span>
       </a>
       {/* LinkedIn */}
@@ -33,7 +33,7 @@ const SocialLinks = ({ footer }: SocialLinksProps): ReactElement => {
         rel="noopener noreferrer"
         target="_blank"
       >
-        <LinkedinIcon className={footer ? 'h-6' : 'h-7'} fill="currentColor" />
+        <LinkedinIcon className={footer ? 'h-6' : 'h-6 lg:h-7'} fill="currentColor" />
         <span className="sr-only">LinkedIn</span>
       </a>
       {/* Xing */}
@@ -45,7 +45,7 @@ const SocialLinks = ({ footer }: SocialLinksProps): ReactElement => {
         rel="noopener noreferrer"
         target="_blank"
       >
-        <XingIcon className={footer ? 'h-6' : 'h-7'} fill="currentColor" />
+        <XingIcon className={footer ? 'h-6' : 'h-6 lg:h-7'} fill="currentColor" />
         <span className="sr-only">Xing</span>
       </a>
       {/* Twitter */}
@@ -57,7 +57,7 @@ const SocialLinks = ({ footer }: SocialLinksProps): ReactElement => {
         rel="noopener noreferrer"
         target="_blank"
       >
-        <TwitterIcon className={footer ? 'h-6' : 'h-7'} fill="currentColor" />
+        <TwitterIcon className={footer ? 'h-6' : 'h-6 lg:h-7'} fill="currentColor" />
         <span className="sr-only">Twitter</span>
       </a>
     </div>
