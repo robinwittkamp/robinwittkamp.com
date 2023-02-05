@@ -53,13 +53,13 @@ const Contact = () => {
         if (response.status === 200) {
           console.log(t.form.messages.sendSuccess);
           setisSendSuccess(true);
+          reset();
         } else {
           console.log(t.form.messages.sendError);
           setisSendError(true);
         }
       })
       .catch((error) => console.log(error));
-    reset();
   };
 
   return (
