@@ -124,8 +124,8 @@ const Contact = () => {
                 {t.form.fields.submit}
               </button> */}
               <LinkButton href="/" variant="secondary">
-                <PaperPlaneIcon className="mr-3 h-4" fill="currentColor" />
-                {t.form.fields.submit}
+                <PaperPlaneIcon className="h-4" fill="currentColor" />
+                <span className="ml-3">{t.form.fields.submit}</span>
               </LinkButton>
             </form>
           </div>
