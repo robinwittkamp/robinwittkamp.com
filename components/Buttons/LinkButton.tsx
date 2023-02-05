@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
 
 type LinkButtonProps = {
-  children: ReactNode;
+  children: ReactNode | ReactNode[];
   external?: boolean;
   href: string;
   variant: 'primary' | 'secondary' | 'tertiary';
