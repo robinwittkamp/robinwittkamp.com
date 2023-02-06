@@ -13,6 +13,7 @@
 - **Styling**: [TailwindCSS](https://tailwindcss.com/)
 - **Language**: [TypeScript](https://typescriptlang.org)
 - **Deployment**: [Vercel](https://vercel.com)
+- **i18n**: English & German
 
 ## Requirements
 - [git](https://git-scm.com/downloads)
