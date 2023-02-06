@@ -113,7 +113,7 @@ export default {
         id: '6',
         title: 'Onboarder',
         description:
-          'I completed my project work at Onboarder GmbH & Co. KG in Dortmund. An onboarding platform was designed and developed in cooperation with decision-makers and employees. The resulting web application was realized using technologies such as React.js and SCSS.',
+          'I completed my project work at Onboarder GmbH & Co. KG in Dortmund. An onboarding platform was designed and developed in cooperation with stakeholders and employees. The resulting web application was realized using technologies such as React.js and SCSS.',
         buttonText: 'View company website',
         href: 'https://www.onboarder.de',
         image: OnboarderPreview,
@@ -131,7 +131,7 @@ export default {
         id: '8',
         title: 'QuizBuddy',
         description:
-          'In the course of my work as a student assistant, a web application was developed in collaboration with employees of the Hamm-Lippstadt University of Applied Sciences. With the application students should be able to learn and practice certain contents of the module web development interactively. Technologies like React.js and CSS were used.',
+          'In the course of my work as a student assistant, a web application was developed in collaboration with employees of Hamm-Lippstadt University of Applied Sciences. With the application students should be able to learn and practice certain contents of the module web development interactively. Technologies like React.js and CSS were used.',
         buttonText: '',
         href: '',
         image: QuizBuddyDesktop,
