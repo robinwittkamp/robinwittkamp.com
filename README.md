@@ -15,8 +15,8 @@
 - **Deployment**: [Vercel](https://vercel.com)
 
 ## Requirements
-- [npm](https://nodejs.org/en/download/)
 - [git](https://git-scm.com/downloads)
+- [npm](https://nodejs.org/en/download/)
 
 ## Installation & Quick start
 
