@@ -17,7 +17,7 @@ export default {
     headingOne: 'Entwickler',
     headingTwo: ' mit Begeisterung für Design und Technologie',
     subheading:
-      'Ich entwerfe und entwickle Webseiten und Webanwendungen seit über vier Jahren als Freelancer. Studiert   habe ich Computervisualistik und Design an der Hochschule Hamm-Lippstadt.',
+      'Ich entwerfe und entwickle Webseiten und Webanwendungen seit über vier Jahren. Studiert habe ich Computervisualistik und Design an der Hochschule Hamm-Lippstadt.',
     button: 'Projekte ansehen',
     logosDescription: 'Erfolgreiche Zusammenarbeit mit Unternehmen aus Deutschland',
   },
@@ -68,7 +68,7 @@ export default {
         id: '1',
         title: 'Energiewerk Rügen',
         description:
-          'Für die Energiewerk Rügen eG wurde sowohl das Corporate Design als auch die Webseite umgesetzt. Die Webseite wurde mit WordPress sowie benutzerdefinierten Theme und Plugins umgesetzt. Zu den verwenden Sprachen gehören HTML, CSS, JavaScript und PHP.',
+          'Für die Energiewerk Rügen eG wurde sowohl das Corporate Design als auch die Webseite umgesetzt. Die Webseite wurde mit WordPress sowie einem benutzerdefinierten Theme und mehreren Plugins umgesetzt. Zu den verwendeten Sprachen gehören HTML, CSS, JavaScript und PHP.',
         buttonText: 'Webseite ansehen',
         href: 'https://energiewerk-ruegen.de',
         image: EnergiewerkDesktop,
@@ -77,7 +77,7 @@ export default {
         id: '2',
         title: 'Robert Denier',
         description:
-          'Corporate Design und Webseite für den Fotograf und Künstler Robert Denier. Die Webseite verwendet ein benutzerdefiniertes Shopsystem basierend auf WooCommerce. Aufbauend auf WordPress und relevatenten Plugins wurden HTML, CSS, JavaScript und PHP verwendet.',
+          'Corporate Design und Webseite für den Fotograf und Künstler Robert Denier. Die Webseite verwendet ein benutzerdefiniertes Shopsystem basierend auf WooCommerce. Aufbauend auf WordPress und relevante Plugins wurden HTML, CSS, JavaScript und PHP verwendet.',
         buttonText: 'Webseite ansehen',
         href: 'https://robertdenier.de',
         image: RobertDenierDesktop,
@@ -104,7 +104,7 @@ export default {
         id: '5',
         title: 'Text to Web',
         description:
-          'Im Rahmen meiner Bachelorarbeit wurde eine Webanwendung umgesetzt, mit welcher Nutzende aus textlichen Instruktionen resultierende Webinhalte generieren und bearbeiten können. Die Anwendung wurde mit Bilbiotheken wie React.js, Next.js, TailwindCSS und unter der Verwendung von Sprachmodellen wie GPT-3 umgesetzt.',
+          'Im Rahmen meiner Bachelorarbeit wurde eine Webanwendung umgesetzt, mit welcher Nutzende aus textlichen Instruktionen resultierende Webinhalte generieren und bearbeiten können. Die Anwendung wurde mit Bibliotheken wie React.js, Next.js, TailwindCSS und unter der Verwendung von Sprachmodellen wie GPT-3 umgesetzt.',
         buttonText: 'Code ansehen',
         href: 'https://github.com/robinwittkamp/text-to-web',
         image: TextToWebDesktop,
@@ -113,7 +113,7 @@ export default {
         id: '6',
         title: 'Onboarder',
         description:
-          'Meine Projektarbeit absolvierte ich bei der Onboarder Gmbh & Co. KG in Dortmund. In Zusammenarbeit mit den Entscheidungsträgern und Mitarbeitenden wurde eine Onboarding-Plattform konzipiert und entwickelt. Die resultierende Webanwendung wurde mit Technologien wie React.js und SCSS verwirklicht.',
+          'Meine Projektarbeit absolvierte ich bei der Onboarder GmbH & Co. KG in Dortmund. In Zusammenarbeit mit den Entscheidungsträgern und Mitarbeitenden wurde eine Onboarding-Plattform konzipiert und entwickelt. Die resultierende Webanwendung wurde mit Technologien wie React.js und SCSS verwirklicht.',
         buttonText: 'Zum Unternehmen',
         href: 'https://www.onboarder.de',
         image: OnboarderPreview,

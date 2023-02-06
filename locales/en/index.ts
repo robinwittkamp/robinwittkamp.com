@@ -17,14 +17,14 @@ export default {
     headingOne: 'Developer',
     headingTwo: ' passionate about design and tech',
     subheading:
-      "I've designed and developed websites and web apps for over four years as a freelancer. I studied visual computing and design at the Hamm-Lippstadt University of Applied Sciences.",
+      "I've designed and developed websites and web apps as a freelancer for over four years. I studied Visual Computing and Design at the Hamm-Lippstadt University of Applied Sciences.",
     button: 'View projects',
     logosDescription: 'Trusted by businesses like',
   },
   aboutSection: {
     heading: 'About me',
     paragraphOne:
-      'My interest in designing and implementing user interfaces started 6 years ago. As a result I began my studies at the University of Applied Sciences Hamm-Lippstadt in the field of computer visualization and design. During my studies I worked as a student assistant in various web and design projects. This included e.g. the frontend development of an ERP software for a medium-sized company.',
+      'My interest in designing and implementing user interfaces started 6 years ago. As a result I began my studies at the University of Applied Sciences Hamm-Lippstadt in the field of Visual Computing and Design. During my studies I worked as a student assistant in various web and design projects. This included e.g. the frontend development of an ERP software for a medium-sized company.',
     paragraphTwo:
       'In 2018, I additionally registered a business alongside my studies. Since then, I have been building websites and web applications for companies from Germany as a freelancer. For the implementation of projects I use both proven technologies like WordPress and more modern technologies like React.js or Next.js. My tasks also include the design of user interfaces as well as the administration of servers, domains and web hosting in general.',
     skills: {
@@ -68,7 +68,7 @@ export default {
         id: '1',
         title: 'Energiewerk Rügen',
         description:
-          'For Energiewerk Rügen eG both the corporate design and the website were implemented. The website was implemented with WordPress as well as custom theme and plugins. The languages used include HTML, CSS, JavaScript and PHP.',
+          'For Energiewerk Rügen eG both the corporate design and the website were implemented. The website was implemented with WordPress as well as a custom theme and several plugins. The languages used include HTML, CSS, JavaScript and PHP.',
         buttonText: 'View website',
         href: 'https://energiewerk-ruegen.de',
         image: EnergiewerkDesktop,
@@ -86,7 +86,7 @@ export default {
         id: '3',
         title: 'WebBuddy',
         description:
-          'A website, which is used as learning content for the module Webtechnologien at the University of Applied Sciences Hamm-Lippstadt. The website was implemented as part of my work as a student assistant. The website uses technologies like SCSS, JavaScript, PHP Pand MySQL.',
+          'A website, which is used as learning content for the module Web Technologies at Hamm-Lippstadt University of Applied Sciences. The website was implemented as part of my work as a student assistant. The website uses technologies like SCSS, JavaScript, PHP Pand MySQL.',
         buttonText: 'View website',
         href: 'https://webbuddy.robinwittkamp.com',
         image: WebBuddyDesktop,
