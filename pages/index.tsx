@@ -148,7 +148,7 @@ const Home = () => {
             className="drop-shadow-[0_25px_25px_rgba(0,0,0,0.5)]"
             src={KlifraPadMockup}
             alt="Klifra website"
-            sizes="(max-width: 375px) 343px, (max-width: 640px) 576px, (max-width: 768px) 704px, (max-width: 1024px) 960px, 1280px"
+            sizes="(max-width: 375px) 343px, (max-width: 640px) 576px, (max-width: 768px) 704px, (max-width: 1024px) 960px, (max-width: 1152px) 1088px, (max-width: 1280px) 1216px, 1280px"
             priority
           />
         </div>
