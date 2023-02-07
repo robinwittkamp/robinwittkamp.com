@@ -26,7 +26,7 @@ const ProjectCard = ({
         className="object-cover"
         src={image}
         alt={title}
-        sizes="(max-width: 375px) 341px, (max-width: 640px) 574px, (max-width: 768px) 702px, (max-width: 1024px) 958px, 1278px"
+        sizes="(max-width: 375px) 341px, (max-width: 640px) 574px, (max-width: 768px) 702px, (max-width: 1024px) 462px, 614px"
       />
     </div>
     {/* Text container */}
