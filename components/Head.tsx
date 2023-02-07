@@ -50,6 +50,14 @@ const Head = ({ title, description, noIndex = false }: HeadProps): ReactElement 
           description,
           url: `${process.env.SITE_URL}${currentLangRoute}${currentPath}`,
           locale: currentLang,
+          images: [
+            {
+              url: `${process.env.SITE_URL}/images/robinwittkamp_og.jpg`,
+              width: 1280,
+              height: 640,
+              alt: 'Robin Wittkamp',
+            },
+          ],
         }}
         languageAlternates={[
           {
