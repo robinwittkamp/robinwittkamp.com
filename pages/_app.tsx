@@ -20,6 +20,7 @@ const gilroy = localFont({
     },
   ],
   variable: '--font-gilroy',
+  display: 'swap',
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
