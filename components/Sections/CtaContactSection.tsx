@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import type { ReactElement } from 'react';
 
 import localDe from '../../locales/de/common';
-import colocalEn from '../../locales/en/common';
+import localEn from '../../locales/en/common';
 import Button from '../Buttons/Button';
 import Heading from '../Text/Heading';
 import Section from './Section';
@@ -10,7 +10,7 @@ import Section from './Section';
 const CtaContactSection = (): ReactElement => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === 'en' ? colocalEn : localDe;
+  const t = locale === 'en' ? localEn : localDe;
 
   return (
     <Section classes="">
