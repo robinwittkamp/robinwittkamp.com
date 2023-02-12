@@ -11,6 +11,7 @@ import localEn from '../locales/en/header';
 import Logo from './Logo';
 import SocialLinks from './Socials/SocialLinks';
 
+// Async load framer-motion
 const loadFramerMotionFeatures = () =>
   import('../lib/framer-motion/framerMotionFeatures').then((res) => res.default);
 
