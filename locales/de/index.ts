@@ -104,7 +104,7 @@ export default {
         id: '5',
         title: 'Text to Web',
         description:
-          'Im Rahmen meiner Bachelorarbeit wurde eine Webanwendung umgesetzt, mit welcher Nutzende aus textlichen Instruktionen resultierende Webinhalte generieren und bearbeiten können. Die Anwendung wurde mit Bibliotheken wie React.js, Next.js, TailwindCSS und unter der Verwendung von Sprachmodellen wie GPT-3 umgesetzt.',
+          'Im Rahmen meiner Bachelorarbeit wurde eine Webanwendung umgesetzt, mit welcher Nutzende durch die Eingabe von textlichen Instruktionen resultierende Webinhalte generieren und bearbeiten können. Die Anwendung wurde mit Bibliotheken wie React.js, Next.js, TailwindCSS und unter der Verwendung von Sprachmodellen wie GPT-3 umgesetzt.',
         buttonText: 'Code ansehen',
         href: 'https://github.com/robinwittkamp/text-to-web',
         image: TextToWebDesktop,
