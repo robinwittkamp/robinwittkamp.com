@@ -84,24 +84,6 @@ export default {
       },
       {
         id: '3',
-        title: 'WebBuddy',
-        description:
-          'Eine Webseite, welche als Lerninhalt für das Modul Webtechnologien an der Hochschule Hamm-Lippstadt zum Einsatz kommt. Die Webseite wurde im Rahmen meiner Arbeit als studentische Hilfskraft umgesetzt. Die Webseite verwendet Technologien wie SCSS, JavaScript, PHP Pund MySQL.',
-        buttonText: 'Webseite ansehen',
-        href: 'https://webbuddy.robinwittkamp.com',
-        image: WebBuddyDesktop,
-      },
-      {
-        id: '4',
-        title: 'Klifra',
-        description:
-          'Eine Webseite, welche im Rahmen des Moduls Webtechnologien an der Hochschule Hamm-Lippstadt umgesetzt wurde. Das Projekt wurde als Gruppenarbeit umgesetzt. Es wurden Technologien wie HTML, CSS, JavaScript und PHP verwendet.',
-        buttonText: 'Webseite ansehen',
-        href: 'https://klifra.robinwittkamp.com',
-        image: KlifraDesktop,
-      },
-      {
-        id: '5',
         title: 'Text to Web',
         description:
           'Im Rahmen meiner Bachelorarbeit wurde eine Webanwendung umgesetzt, mit welcher Nutzende durch die Eingabe von textlichen Instruktionen resultierende Webinhalte generieren und bearbeiten können. Die Anwendung wurde mit Bibliotheken wie React.js, Next.js, TailwindCSS und unter der Verwendung von Sprachmodellen wie GPT-3 umgesetzt.',
@@ -110,13 +92,31 @@ export default {
         image: TextToWebDesktop,
       },
       {
-        id: '6',
+        id: '4',
         title: 'Onboarder',
         description:
           'Meine Projektarbeit absolvierte ich bei der Onboarder GmbH & Co. KG in Dortmund. In Zusammenarbeit mit den Entscheidungsträgern und Mitarbeitenden wurde eine Onboarding-Plattform konzipiert und entwickelt. Die resultierende Webanwendung wurde mit Technologien wie React.js und SCSS verwirklicht.',
         buttonText: 'Zum Unternehmen',
         href: 'https://www.onboarder.de',
         image: OnboarderPreview,
+      },
+      {
+        id: '5',
+        title: 'WebBuddy',
+        description:
+          'Eine Webseite, welche als Lerninhalt für das Modul Webtechnologien an der Hochschule Hamm-Lippstadt zum Einsatz kommt. Die Webseite wurde im Rahmen meiner Arbeit als studentische Hilfskraft umgesetzt. Die Webseite verwendet Technologien wie SCSS, JavaScript, PHP Pund MySQL.',
+        buttonText: 'Webseite ansehen',
+        href: 'https://webbuddy.robinwittkamp.com',
+        image: WebBuddyDesktop,
+      },
+      {
+        id: '6',
+        title: 'Klifra',
+        description:
+          'Eine Webseite, welche im Rahmen des Moduls Webtechnologien an der Hochschule Hamm-Lippstadt umgesetzt wurde. Das Projekt wurde als Gruppenarbeit umgesetzt. Es wurden Technologien wie HTML, CSS, JavaScript und PHP verwendet.',
+        buttonText: 'Webseite ansehen',
+        href: 'https://klifra.robinwittkamp.com',
+        image: KlifraDesktop,
       },
       {
         id: '7',

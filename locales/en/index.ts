@@ -84,24 +84,6 @@ export default {
       },
       {
         id: '3',
-        title: 'WebBuddy',
-        description:
-          'A website, which is used as learning content for the module Web Technologies at Hamm-Lippstadt University of Applied Sciences. The website was implemented as part of my work as a student assistant. The website uses technologies like SCSS, JavaScript, PHP Pand MySQL.',
-        buttonText: 'View website',
-        href: 'https://webbuddy.robinwittkamp.com',
-        image: WebBuddyDesktop,
-      },
-      {
-        id: '4',
-        title: 'Klifra',
-        description:
-          'A website that was implemented as part of the Web Technologies module at Hamm-Lippstadt University of Applied Sciences. The project was implemented as a group work. Technologies like HTML, CSS, JavaScript and PHP were used.',
-        buttonText: 'View website',
-        href: 'https://klifra.robinwittkamp.com',
-        image: KlifraDesktop,
-      },
-      {
-        id: '5',
         title: 'Text to Web',
         description:
           'As part of my bachelor thesis, a web application was implemented with which users can generate and edit web content resulting from textual instructions. The application was implemented with libraries like React.js, Next.js, TailwindCSS and using language models like GPT-3.',
@@ -110,13 +92,31 @@ export default {
         image: TextToWebDesktop,
       },
       {
-        id: '6',
+        id: '4',
         title: 'Onboarder',
         description:
           'I completed my project work at Onboarder GmbH & Co. KG in Dortmund. An onboarding platform was designed and developed in cooperation with stakeholders and employees. The resulting web application was realized using technologies such as React.js and SCSS.',
         buttonText: 'View company website',
         href: 'https://www.onboarder.de',
         image: OnboarderPreview,
+      },
+      {
+        id: '5',
+        title: 'WebBuddy',
+        description:
+          'A website, which is used as learning content for the module Web Technologies at Hamm-Lippstadt University of Applied Sciences. The website was implemented as part of my work as a student assistant. The website uses technologies like SCSS, JavaScript, PHP Pand MySQL.',
+        buttonText: 'View website',
+        href: 'https://webbuddy.robinwittkamp.com',
+        image: WebBuddyDesktop,
+      },
+      {
+        id: '6',
+        title: 'Klifra',
+        description:
+          'A website that was implemented as part of the Web Technologies module at Hamm-Lippstadt University of Applied Sciences. The project was implemented as a group work. Technologies like HTML, CSS, JavaScript and PHP were used.',
+        buttonText: 'View website',
+        href: 'https://klifra.robinwittkamp.com',
+        image: KlifraDesktop,
       },
       {
         id: '7',
