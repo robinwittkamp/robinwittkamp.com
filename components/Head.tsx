@@ -13,29 +13,40 @@ const Head = ({ title, description, noIndex = false }: HeadProps): ReactElement 
   const router = useRouter();
   const { locale } = router;
 
+  // Languages
   let currentLang = '';
   let alternativeLang = '';
   let currentLangRoute = '';
   let alternativeLangRoute = '';
 
   if (locale === 'en') {
+    // English is selected
     currentLang = 'en-US';
     alternativeLang = 'de-DE';
     currentLangRoute = '/';
-    alternativeLangRoute = 'de';
-  } else {
+    alternativeLangRoute = '/de/';
+  } else if (locale === 'de') {
+    // German is selected
     currentLang = 'de-DE';
     alternativeLang = 'en-US';
-    currentLangRoute = '/de';
-    alternativeLangRoute = '';
+    currentLangRoute = '/de/';
+    alternativeLangRoute = '/';
+  } else {
+    // Default
+    currentLang = 'en-US';
+    alternativeLang = 'de-DE';
+    currentLangRoute = '/';
+    alternativeLangRoute = '/de/';
   }
 
+  // Path
   let currentPath = '';
 
   if (router.asPath === '/') {
     currentPath = '';
   } else {
-    currentPath = `${router.asPath}/`;
+    const currentPathWithoutFirstSlash = router.asPath.replace('/', '');
+    currentPath = `${currentPathWithoutFirstSlash}/`;
   }
 
   return (
