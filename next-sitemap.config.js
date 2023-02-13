@@ -19,7 +19,7 @@ module.exports = {
       hrefLang: 'en',
     },
     {
-      href: process.env.SITE_URL,
+      href: `${process.env.SITE_URL}/de`,
       hrefLang: 'de',
     },
   ],
