@@ -1,21 +1,6 @@
 import type { DefaultSeoProps } from 'next-seo';
 
 const config: DefaultSeoProps = {
-  // title: 'Robin Wittkamp',
-  // defaultTitle: 'Robin Wittkamp',
-  // titleTemplate: '%s - Robin Wittkamp',
-  // description: '',
-  // canonical: 'https://robinwittkamp.com/',
-  // languageAlternates: [
-  //   {
-  //     hrefLang: 'en',
-  //     href: 'https://robinwittkamp.com/',
-  //   },
-  //   {
-  //     hrefLang: 'de',
-  //     href: 'https://robinwittkamp.com/de/',
-  //   },
-  // ],
   additionalMetaTags: [
     {
       name: 'viewport',
@@ -67,11 +52,7 @@ const config: DefaultSeoProps = {
   },
   openGraph: {
     type: 'website',
-    // locale: 'en_US',
-    // url: 'https://robinwittkamp.com/',
     siteName: 'Robin Wittkamp',
-    // title: 'Robin Wittkamp',
-    // description: '',
   },
   twitter: {
     handle: '@robinwittkamp',
