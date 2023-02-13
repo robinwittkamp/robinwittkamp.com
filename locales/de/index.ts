@@ -2,6 +2,7 @@
 import EnergiewerkDesktop from '../../public/images/energiewerk-ruegen_desktop.png';
 import FewoPutbusDesktop from '../../public/images/ferienwohnung-putbus_desktop.png';
 import KlifraDesktop from '../../public/images/klifra_desktop.png';
+// import LinTecDesktop from '../../public/images/lin-tec_desktop.png';
 import OnboarderPreview from '../../public/images/onboarder_mobile.png';
 import QuizBuddyDesktop from '../../public/images/quizbuddy_desktop.png';
 import RobertDenierDesktop from '../../public/images/robertdenier_desktop.png';
@@ -140,10 +141,20 @@ export default {
       //   id: '9',
       //   title: 'Bauraum MV',
       //   description:
-      //     'Ein umgesetztes Corporate Design inklusive der dazugehörigen Webseite für die Bauraum MV GmbH. Die Webseite wurde mit WordPress sowie benutzerdefinierten Theme als auch angepassten Plugins umgesetzt. Zu den verwendeten Sprachen gehören z.B. HTML, CSS, JavaScript und PHP.',
+      //     'Das Corporate Design und die Webseite der Bauraum MV GmbH. Die Webseite wurde mit WordPress, einem benutzerdefinierten Theme und mehreren angepassten Plugins umgesetzt. Zu den verwendeten Sprachen gehören z.B. HTML, CSS, JavaScript und PHP.',
       //   buttonText: 'Webseite ansehen',
       //   href: 'https://bauraum-mv.de',
       //   image: BauraumDesktop,
+      // },
+      // {
+      //   id: '10',
+      //   title: 'LIN-TEC',
+      //   description:
+      //     'Konzeption und Programmierung der Webseite für die LIN-TEC Engineering GmbH. Die Webseite wurde mit WordPress sowie einem benutzerdefinierten Theme und mehreren Plugins umgesetzt. Zu den verwendeten Technologien gehören WordPress, JavaScript und PHP.',
+      //   // buttonText: 'Webseite ansehen',
+      //   // href: 'http://lin-tec.eu',
+      //   image: LinTecDesktop,
+      //   comingSoon: true,
       // },
     ],
   },
