@@ -11,11 +11,9 @@ import Heading from '../components/Text/Heading';
 import localDe from '../locales/de/index';
 import localEn from '../locales/en/index';
 import KlifraPadMockup from '../public/images/klifra_mockup_pad.png';
-// import AdessoLogo from '../public/images/logos/adesso_logo.svg';
 import BauraumMvLogo from '../public/logos/bauraum_mv_logo.svg';
 import EnergiewerkRuegenLogo from '../public/logos/energiewerk_ruegen_logo.svg';
 import HowToSosLogo from '../public/logos/how_to_sos_logo.svg';
-// import HshlLogo from '../public/logos/hshl_logo.svg';
 import KuttigEngineeringLogo from '../public/logos/kuttig_engineering_logo.svg';
 import LbtRuegenLogo from '../public/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/logos/lin-tec_logo.svg';
@@ -24,66 +22,69 @@ import RobertDenierLogo from '../public/logos/robert_denier_logo.svg';
 import RuegenNaturUrlaubLogo from '../public/logos/ruegen_natur_urlaub_logo.svg';
 import TherapieHenkeLogo from '../public/logos/therapie_henke_logo.svg';
 
+// import AdessoLogo from '../public/images/logos/adesso_logo.svg';
+// import HshlLogo from '../public/logos/hshl_logo.svg';
+
 const clientLogos = [
   {
     name: 'LBT Rügen logo',
     logo: LbtRuegenLogo,
     wrapperClasses: '',
-    svgClassas: 'h-7',
+    svgClasses: 'h-7',
   },
   {
     name: 'Energiewerk Rügen logo',
     logo: EnergiewerkRuegenLogo,
     wrapperClasses: '',
-    svgClassas: 'h-7',
+    svgClasses: 'h-7',
   },
   {
     name: 'Robert Denier logo',
     logo: RobertDenierLogo,
     wrapperClasses: '',
-    svgClassas: 'h-5',
+    svgClasses: 'h-5',
   },
   {
     name: 'LIN-TEC logo',
     logo: LinTecLogo,
     wrapperClasses: '',
-    svgClassas: 'h-8',
+    svgClasses: 'h-8',
   },
   {
     name: 'Bauraum MV logo',
     logo: BauraumMvLogo,
     wrapperClasses: '',
-    svgClassas: 'h-10',
+    svgClasses: 'h-10',
   },
   {
     name: 'Kuttig Engineering logo',
     logo: KuttigEngineeringLogo,
     wrapperClasses: '',
-    svgClassas: 'h-10',
+    svgClasses: 'h-10',
   },
   {
     name: 'Ruegen Natur Urlaub logo',
     logo: RuegenNaturUrlaubLogo,
     wrapperClasses: 'hidden md:flex',
-    svgClassas: 'h-8',
+    svgClasses: 'h-8',
   },
   {
     name: 'How to SOS logo',
     logo: HowToSosLogo,
     wrapperClasses: 'hidden md:flex',
-    svgClassas: 'h-10',
+    svgClasses: 'h-10',
   },
   {
     name: 'New Creations logo',
     logo: NewCreationsLogo,
     wrapperClasses: 'hidden md:flex',
-    svgClassas: 'h-6',
+    svgClasses: 'h-6',
   },
   {
     name: 'Therapie Henke logo',
     logo: TherapieHenkeLogo,
     wrapperClasses: 'hidden xl:flex',
-    svgClassas: 'h-8',
+    svgClasses: 'h-8',
   },
 ];
 
@@ -91,12 +92,12 @@ const clientLogos = [
 //   {
 //     name: 'adesso logo',
 //     logo: AdessoLogo,
-//     svgClassas: 'h-10',
+//     svgClasses: 'h-10',
 //   },
 //   {
 //     name: 'HSHL logo',
 //     logo: HshlLogo,
-//     svgClassas: 'h-7',
+//     svgClasses: 'h-7',
 //   },
 // ];
 
@@ -165,7 +166,7 @@ const Home = () => {
                 key={item.name}
                 className={`flex items-center justify-center ${item.wrapperClasses}`}
               >
-                <item.logo className={item.svgClassas} />
+                <item.logo className={item.svgClasses} />
               </div>
             ))}
           </div>
@@ -176,7 +177,7 @@ const Home = () => {
           {/* <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-2 md:gap-x-0 xl:flex xl:max-w-full xl:justify-center xl:gap-x-12">
           {employerLogos.map((item) => (
             <div key={item.name} className="flex items-center justify-center">
-              <item.logo className={item.svgClassas} />
+              <item.logo className={item.svgClasses} />
             </div>
           ))}
         </div> */}
