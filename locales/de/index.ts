@@ -32,7 +32,7 @@ export default {
       items: [
         {
           heading: 'Sprachen',
-          paragraph: 'HTML, CSS, SCSS, JavaScript, TypeScript, PHP, Python, Java',
+          paragraph: 'HTML, CSS, SCSS, JavaScript, TypeScript, PHP, Java, Python',
         },
         {
           heading: 'Frontend',
