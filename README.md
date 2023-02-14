@@ -3,9 +3,11 @@
 </p>
 <h1 align="center">robinwittkamp.com</h1>
 <p align="center">My personal website build with Next.js, TailwindCSS and Framer Motion.</p>
-<p align="center">
+<!-- <p align="center">
   <a href="https://robinwittkamp.com" rel="noopener">robinwittkamp.com</a>
-</p>
+</p> -->
+
+![robinwittkamp.com](https://user-images.githubusercontent.com/13024361/218704091-9e71bb05-5a97-4db0-8374-28617f700481.png)
 
 ## Technologies
 
