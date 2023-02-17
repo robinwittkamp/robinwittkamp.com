@@ -16,7 +16,7 @@
     "@next/font": "^13.1.6",
     "@svgr/webpack": "^6.5.1",
     "clsx": "^1.2.1",
-    "framer-motion": "^9.0.3",
+    "framer-motion": "^9.0.4",
     "next": "^13.1.6",
     "next-seo": "^5.15.0",
     "next-sitemap": "^3.1.52",
@@ -51,7 +51,7 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.3",
-    "tailwindcss": "^3.2.6",
+    "tailwindcss": "^3.2.7",
     "typescript": "^4.9.5"
   }
 }
