@@ -155,30 +155,6 @@ const Header = (): ReactElement => {
                     {/* Logo */}
                     <Logo />
 
-                    {/* Mobil menu button */}
-                    <div className="-mr-3 md:hidden">
-                      <Popover.Button className="group inline-flex items-center justify-center rounded-md px-3 py-2 focus:outline-none">
-                        <span className="sr-only">{t.mainNav.title}</span>
-                        {/* Animated hamburger icon */}
-                        <div
-                          className="flex h-8 w-6 flex-col items-center justify-center"
-                          aria-hidden="true"
-                        >
-                          <div
-                            className={`${hamburgerLine} ${
-                              open ? 'translate-y-[0.5rem] rotate-45' : ''
-                            }`}
-                          />
-                          <div className={`${hamburgerLine} mt-1.5 ${open ? 'opacity-0' : ''}`} />
-                          <div
-                            className={`${hamburgerLine} mt-1.5 ${
-                              open ? 'translate-y-[-0.5rem] -rotate-45' : ''
-                            }`}
-                          />
-                        </div>
-                      </Popover.Button>
-                    </div>
-
                     {/* Desktop navigation */}
                     <nav
                       className="-mr-6 hidden md:block"
@@ -193,7 +169,6 @@ const Header = (): ReactElement => {
                               href={item.href}
                               onFocus={() => setFocused(item)}
                               onMouseEnter={() => setFocused(item)}
-                              tabIndex={0}
                               scroll={!item.href.startsWith('/#')}
                             >
                               <AnimatePresence>
@@ -221,6 +196,30 @@ const Header = (): ReactElement => {
                         ))}
                       </ul>
                     </nav>
+
+                    {/* Mobil menu button */}
+                    <div className="-mr-3 md:hidden">
+                      <Popover.Button className="group inline-flex items-center justify-center rounded-md px-3 py-2 focus:outline-none">
+                        <span className="sr-only">{t.mainNav.title}</span>
+                        {/* Animated hamburger icon */}
+                        <div
+                          className="flex h-8 w-6 flex-col items-center justify-center"
+                          aria-hidden="true"
+                        >
+                          <div
+                            className={`${hamburgerLine} ${
+                              open ? 'translate-y-[0.5rem] rotate-45' : ''
+                            }`}
+                          />
+                          <div className={`${hamburgerLine} mt-1.5 ${open ? 'opacity-0' : ''}`} />
+                          <div
+                            className={`${hamburgerLine} mt-1.5 ${
+                              open ? 'translate-y-[-0.5rem] -rotate-45' : ''
+                            }`}
+                          />
+                        </div>
+                      </Popover.Button>
+                    </div>
                   </div>
                 </div>
               </div>
