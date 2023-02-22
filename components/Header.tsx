@@ -182,8 +182,9 @@ const Header = (): ReactElement => {
                                     variants={desktopNavItemVariants}
                                     transition={{
                                       layout: {
-                                        duration: 0.3,
-                                        ease: 'easeInOut',
+                                        type: 'spring',
+                                        duration: 0.7,
+                                        bounce: 0.2,
                                       },
                                     }}
                                     layoutId="highlight"
