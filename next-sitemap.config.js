@@ -6,11 +6,11 @@ module.exports = {
   alternateRefs: [
     {
       href: process.env.SITE_URL,
-      hrefLang: 'en',
+      hreflang: 'en',
     },
     {
       href: `${process.env.SITE_URL}/de`,
-      hrefLang: 'de',
+      hreflang: 'de',
     },
   ],
 };
