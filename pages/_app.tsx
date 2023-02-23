@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 
-import localFont from '@next/font/local';
 import type { AppProps } from 'next/app';
+import localFont from 'next/font/local';
 import { DefaultSeo } from 'next-seo';
 
 import SEO from '../next-seo.config';
@@ -20,7 +20,6 @@ const gilroy = localFont({
     },
   ],
   variable: '--font-gilroy',
-  display: 'swap',
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
