@@ -11,11 +11,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.11",
+    "@headlessui/react": "^1.7.12",
     "@next/bundle-analyzer": "^13.2.1",
     "@svgr/webpack": "^6.5.1",
     "clsx": "^1.2.1",
-    "framer-motion": "^9.1.7",
+    "framer-motion": "^10.0.0",
     "next": "^13.2.1",
     "next-seo": "^5.15.0",
     "next-sitemap": "^3.1.52",
