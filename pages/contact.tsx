@@ -16,15 +16,24 @@ import localEn from '../locales/en/contact';
 import CircleNotchIcon from '../public/icons/fa-solid/circle-notch-solid.svg';
 import PaperPlaneIcon from '../public/icons/fa-solid/paper-plane-solid.svg';
 
+/**
+ * Dynamic imports
+ */
 const loadFramerMotionFeatures = () =>
   import('../lib/framer-motion/framerMotionFeatures').then((res) => res.default);
 
+/**
+ * Types
+ */
 type InputsProps = {
   name: string;
   email: string;
   message: string;
 };
 
+/**
+ * Component
+ */
 const Contact = () => {
   const [isSendSuccess, setIsSendSuccess] = useState(false);
   const [isSendError, setIsSendError] = useState(false);

@@ -1,12 +1,18 @@
 import clsx from 'clsx';
 import type { ReactElement, ReactNode } from 'react';
 
+/**
+ * Types
+ */
 type HeadingProps = {
   children: ReactNode | ReactNode[] | string;
   classes?: string;
   variant: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 };
 
+/**
+ * Variants (Styling)
+ */
 const variants = {
   h1: 'text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl',
   h2: 'text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl',
@@ -16,6 +22,9 @@ const variants = {
   h6: 'text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-3xl',
 };
 
+/**
+ * Component
+ */
 const Heading = ({ children, classes, variant }: HeadingProps): ReactElement => {
   const Tag = variant;
   const variantClasses = variants[variant];

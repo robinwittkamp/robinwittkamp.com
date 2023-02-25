@@ -6,6 +6,9 @@ import { DefaultSeo } from 'next-seo';
 
 import SEO from '../next-seo.config';
 
+/**
+ * Fonts
+ */
 const gilroy = localFont({
   src: [
     {
@@ -22,6 +25,9 @@ const gilroy = localFont({
   variable: '--font-gilroy',
 });
 
+/**
+ * Component
+ */
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>

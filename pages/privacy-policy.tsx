@@ -9,6 +9,9 @@ import PrivacyPolicyContentDe from '../locales/de/PrivacyPolicyContent';
 import localEn from '../locales/en/privacyPolicy';
 import PrivacyPolicyContentEn from '../locales/en/PrivacyPolicyContent';
 
+/**
+ * Component
+ */
 const PrivacyPolicy = () => {
   const router = useRouter();
   const { locale } = router;

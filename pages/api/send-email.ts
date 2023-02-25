@@ -1,12 +1,18 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
+/**
+ * Types
+ */
 type FieldsProps = {
   name: string;
   email: string;
   message: string;
 };
 
+/**
+ * Handler
+ */
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const { name, email, message } = req.body as FieldsProps;
 

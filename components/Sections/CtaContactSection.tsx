@@ -9,11 +9,15 @@ import Button from '../Buttons/Button';
 import Heading from '../Text/Heading';
 import Section from './Section';
 
-// Async load framer-motion
+/**
+ * Dynamic imports
+ */
 const loadFramerMotionFeatures = () =>
   import('../../lib/framer-motion/framerMotionFeatures').then((res) => res.default);
 
-// Animation variants
+/**
+ * Variants (Animation)
+ */
 const gradientVariants = {
   focused: {
     opacity: 1,
@@ -23,6 +27,9 @@ const gradientVariants = {
   },
 };
 
+/**
+ * Component
+ */
 const CtaContactSection = (): ReactElement => {
   const [hovering, setHovering] = useState(false);
 

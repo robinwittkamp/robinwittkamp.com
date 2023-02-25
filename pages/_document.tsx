@@ -1,5 +1,8 @@
 import { Head, Html, Main, NextScript } from 'next/document';
 
+/**
+ * Component
+ */
 const Document = () => {
   return (
     <Html className="scroll-smooth">

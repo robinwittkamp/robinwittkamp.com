@@ -25,6 +25,9 @@ import TherapieHenkeLogo from '../public/logos/therapie_henke_logo.svg';
 // import AdessoLogo from '../public/images/logos/adesso_logo.svg';
 // import HshlLogo from '../public/logos/hshl_logo.svg';
 
+/**
+ * Logos
+ */
 const clientLogos = [
   {
     name: 'LBT Rügen logo',
@@ -101,6 +104,9 @@ const clientLogos = [
 //   },
 // ];
 
+/**
+ * Component
+ */
 const Home = () => {
   const router = useRouter();
   const { locale } = router;

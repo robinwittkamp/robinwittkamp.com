@@ -9,6 +9,9 @@ import ImprintContentDe from '../locales/de/ImprintContent';
 import localEn from '../locales/en/imprint';
 import ImprintContentEn from '../locales/en/ImprintContent';
 
+/**
+ * Component
+ */
 const Imprint = () => {
   const router = useRouter();
   const { locale } = router;

@@ -3,6 +3,9 @@ import type { ReactElement } from 'react';
 import Heading from '../../components/Text/Heading';
 import TextLink from '../../components/Text/TextLink';
 
+/**
+ * Component
+ */
 const PrivacyPolicyContent = (): ReactElement => (
   <>
     <Heading variant="h1">Privacy policy</Heading>

@@ -6,6 +6,9 @@ import ErrorSection from '../components/Sections/ErrorSection';
 import localDe from '../locales/de/500';
 import localEn from '../locales/en/500';
 
+/**
+ * Component
+ */
 const Custom500 = () => {
   const router = useRouter();
   const { locale } = router;

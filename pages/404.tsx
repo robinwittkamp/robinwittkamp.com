@@ -6,6 +6,9 @@ import ErrorSection from '../components/Sections/ErrorSection';
 import localDe from '../locales/de/404';
 import localEn from '../locales/en/404';
 
+/**
+ * Component
+ */
 const Custom404 = () => {
   const router = useRouter();
   const { locale } = router;

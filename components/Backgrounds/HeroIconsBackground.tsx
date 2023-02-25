@@ -4,6 +4,9 @@ import ReactIcon from '../../public/icons/fa-brands/react.svg';
 import JavaScriptIcon from '../../public/icons/fa-brands/square-js.svg';
 import WordPressIcon from '../../public/icons/fa-brands/wordpress-simple.svg';
 
+/**
+ * Component
+ */
 const HeroIconsBackground = (): ReactElement => (
   <div className="absolute inset-0 -z-10">
     <div className="absolute top-[10%] left-0 -rotate-12 rounded-xl border border-rusty-800 bg-gradient-to-tr from-rusty-900 to-rusty-800 p-2 opacity-50 shadow-lg shadow-black md:left-[10%]">

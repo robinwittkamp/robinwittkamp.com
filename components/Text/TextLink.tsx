@@ -1,11 +1,17 @@
 import Link from 'next/link';
 import type { ReactElement, ReactNode } from 'react';
 
+/**
+ * Types
+ */
 type TextLinkProps = {
   children: ReactNode;
   href: string;
 };
 
+/**
+ * Component
+ */
 const TextLink = ({ children, href }: TextLinkProps): ReactElement => {
   const isExternal = href.startsWith('http');
 

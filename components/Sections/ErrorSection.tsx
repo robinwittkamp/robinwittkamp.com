@@ -4,11 +4,17 @@ import Button from '../Buttons/Button';
 import Heading from '../Text/Heading';
 import Section from './Section';
 
+/**
+ * Types
+ */
 type ErrorLayoutProps = {
   headingText: string;
   bodyText: string;
 };
 
+/**
+ * Component
+ */
 const ErrorLayout = ({ headingText, bodyText }: ErrorLayoutProps): ReactElement => (
   <Section classes="h-screen max-h-[56rem]" first>
     <Heading variant="h1" classes="max-w-screen-lg sm:mx-auto sm:text-center">

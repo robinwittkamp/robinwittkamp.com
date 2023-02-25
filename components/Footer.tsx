@@ -8,6 +8,9 @@ import CodeIcon from '../public/icons/fa-solid/code-solid.svg';
 import RobinWittkampLogo from '../public/logos/robin_wittkamp_logo.svg';
 import SocialLinks from './Socials/SocialLinks';
 
+/**
+ * Component
+ */
 const Footer = (): ReactElement => {
   const router = useRouter();
   const { locale } = router;

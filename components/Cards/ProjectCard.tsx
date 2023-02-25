@@ -4,6 +4,9 @@ import type { ReactElement } from 'react';
 import AngleRightIcon from '../../public/icons/fa-solid/angle-right-solid.svg';
 import Button from '../Buttons/Button';
 
+/**
+ * Types
+ */
 type ProjectCardProps = {
   title: string;
   description: string;
@@ -12,6 +15,9 @@ type ProjectCardProps = {
   image: StaticImageData;
 };
 
+/**
+ * Component
+ */
 const ProjectCard = ({
   title,
   description,

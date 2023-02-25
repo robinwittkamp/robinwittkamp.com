@@ -3,6 +3,9 @@ import type { ReactElement } from 'react';
 
 import RobinWittkampLogo from '../public/logos/robin_wittkamp_logo.svg';
 
+/**
+ * Component
+ */
 const Logo = (): ReactElement => (
   <Link className="cursor-pointer" href="/">
     <div className="flex items-center space-x-3">

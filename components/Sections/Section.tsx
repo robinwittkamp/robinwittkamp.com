@@ -1,5 +1,8 @@
 import type { ReactElement, ReactNode } from 'react';
 
+/**
+ * Types
+ */
 type SectionProps = {
   children: ReactNode | ReactNode[];
   classes?: string;
@@ -8,6 +11,9 @@ type SectionProps = {
   maxScreenWidth?: 'sm' | 'md' | 'lg' | 'xl';
 };
 
+/**
+ * Variants (Styling)
+ */
 const maxScreenWidthVariants = {
   sm: 'max-w-screen-sm',
   md: 'max-w-screen-md',
@@ -15,6 +21,9 @@ const maxScreenWidthVariants = {
   xl: 'max-w-screen-xl',
 };
 
+/**
+ * Component
+ */
 const Section = ({
   children,
   classes = '',

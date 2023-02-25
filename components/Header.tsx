@@ -11,19 +11,30 @@ import localEn from '../locales/en/header';
 import Logo from './Logo';
 import SocialLinks from './Socials/SocialLinks';
 
-// Async load framer-motion
+/**
+ * Dynamic imports
+ */
 const loadFramerMotionFeatures = () =>
   import('../lib/framer-motion/framerMotionFeatures').then((res) => res.default);
 
+/**
+ * Types
+ */
 type MainNavItemProps = {
   id: string;
   name: string;
   href: string;
 };
 
+/**
+ * Styling
+ */
 const hamburgerLine =
   'h-[2px] w-full rounded-full bg-white transform duration-300 group-focus:bg-rusty-300 group-hover:bg-rusty-300';
 
+/**
+ * Variants (Animation)
+ */
 const panelVariants = {
   open: {
     height: '100vh',
@@ -108,6 +119,9 @@ const desktopNavItemVariants = {
   },
 };
 
+/**
+ * Component
+ */
 const Header = (): ReactElement => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);

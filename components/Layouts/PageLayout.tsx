@@ -3,10 +3,16 @@ import type { ReactElement, ReactNode } from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
 
+/**
+ * Types
+ */
 type PageLayoutProps = {
   children: ReactNode;
 };
 
+/**
+ * Component
+ */
 const PageLayout = ({ children }: PageLayoutProps): ReactElement => (
   <>
     <Header />

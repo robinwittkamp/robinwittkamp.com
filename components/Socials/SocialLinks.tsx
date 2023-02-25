@@ -5,10 +5,16 @@ import LinkedinIcon from '../../public/icons/fa-brands/linkedin.svg';
 import TwitterIcon from '../../public/icons/fa-brands/twitter.svg';
 import XingIcon from '../../public/icons/fa-brands/xing.svg';
 
+/**
+ * Types
+ */
 type SocialLinksProps = {
   footer?: boolean;
 };
 
+/**
+ * Component
+ */
 const SocialLinks = ({ footer }: SocialLinksProps): ReactElement => {
   return (
     <div className="flex flex-wrap items-center space-x-8">

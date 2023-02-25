@@ -2,12 +2,18 @@ import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 import type { ReactElement } from 'react';
 
+/**
+ * Types
+ */
 type HeadProps = {
   title: string;
   description: string;
   noIndex?: boolean;
 };
 
+/**
+ * Component
+ */
 const Head = ({ title, description, noIndex = false }: HeadProps): ReactElement => {
   const router = useRouter();
   const { locale } = router;
