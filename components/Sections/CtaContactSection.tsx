@@ -1,6 +1,6 @@
 import { AnimatePresence, LazyMotion, m, useMotionValue } from 'framer-motion';
 import { useRouter } from 'next/router';
-import type { MouseEvent, ReactElement } from 'react';
+import type { CSSProperties, MouseEvent, ReactElement } from 'react';
 import { useState } from 'react';
 
 import localDe from '../../locales/de/common';
@@ -49,12 +49,14 @@ const CtaContactSection = (): ReactElement => {
           className="relative overflow-hidden rounded-[2rem]"
           onMouseMove={handleMouse}
           onMouseLeave={() => setHovering(false)}
-          style={{
-            '--cursor-x': x,
-            '--cursor-y': y,
-            '--x': 'calc((var(--cursor-x) * 1px))', // adds px unit
-            '--y': 'calc((var(--cursor-y) * 1px))', // adds px unit
-          }}
+          style={
+            {
+              '--cursor-x': x,
+              '--cursor-y': y,
+              '--x': 'calc((var(--cursor-x) * 1px))', // adds px unit
+              '--y': 'calc((var(--cursor-y) * 1px))', // adds px unit
+            } as CSSProperties
+          }
         >
           {/* Border (Background with static gradient) */}
           <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-rusty-700/50 to-rusty-600/50" />
