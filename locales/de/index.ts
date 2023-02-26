@@ -69,7 +69,7 @@ export default {
         id: '1',
         title: 'Energiewerk Rügen',
         description:
-          'Für die Energiewerk Rügen eG wurde sowohl das Corporate Design als auch die Webseite umgesetzt. Die Webseite wurde mit WordPress sowie einem benutzerdefinierten Theme und mehreren Plugins umgesetzt. Zu den verwendeten Sprachen gehören HTML, CSS, JavaScript und PHP.',
+          'Für die Energiewerk Rügen eG wurde die Corporate Webseite konzipiert und umgesetzt. Die Webseite wurde mit WordPress sowie einem benutzerdefinierten Theme und mehreren Plugins umgesetzt. Zu den verwendeten Sprachen gehören HTML, CSS, JavaScript und PHP.',
         buttonText: 'Webseite ansehen',
         href: 'https://energiewerk-ruegen.de',
         image: EnergiewerkDesktop,
@@ -78,7 +78,7 @@ export default {
         id: '2',
         title: 'Robert Denier',
         description:
-          'Corporate Design und Webseite für den Fotograf und Künstler Robert Denier. Die Webseite verwendet ein benutzerdefiniertes Shopsystem basierend auf WooCommerce. Aufbauend auf WordPress und relevante Plugins wurden HTML, CSS, JavaScript und PHP verwendet.',
+          'Webseite und Online-Shop für den Fotograf und Künstler Robert Denier. Die Webseite verwendet ein benutzerdefiniertes Shopsystem basierend auf WooCommerce. Aufbauend auf WordPress und relevante Plugins wurden HTML, CSS, JavaScript und PHP verwendet.',
         buttonText: 'Webseite ansehen',
         href: 'https://robertdenier.de',
         image: RobertDenierDesktop,
@@ -123,7 +123,7 @@ export default {
         id: '7',
         title: 'Ferienwohnung Putbus',
         description:
-          'Ein Corporate Design einschließlich einer Webseite für Ferienwohnungen in Putbus auf Rügen. Die Webseite umfasst ein System zum Anfragen und Buchen von Wohnungen. Neben WordPress kamen hierbei unter anderem Technologien wie HTML, CSS, JavaScript und PHP zum Einsatz.',
+          'Eine Webseite für Ferienwohnungen in Putbus auf Rügen. Die Webseite umfasst ein System zum Anfragen und Buchen von Wohnungen. Neben WordPress kamen hierbei Technologien wie HTML, CSS, JavaScript und PHP zum Einsatz.',
         buttonText: 'Webseite ansehen',
         href: 'https://ferienwohnung-putbus.de',
         image: FewoPutbusDesktop,
@@ -141,7 +141,7 @@ export default {
       //   id: '9',
       //   title: 'Bauraum MV',
       //   description:
-      //     'Das Corporate Design und die Webseite der Bauraum MV GmbH. Die Webseite wurde mit WordPress, einem benutzerdefinierten Theme und mehreren angepassten Plugins umgesetzt. Zu den verwendeten Sprachen gehören z.B. HTML, CSS, JavaScript und PHP.',
+      //     'Die umgesetzte Webseite der Bauraum MV GmbH. Die Webseite wurde mit WordPress, einem benutzerdefinierten Theme und mehreren angepassten Plugins umgesetzt. Zu den verwendeten Sprachen gehören z.B. HTML, CSS, JavaScript und PHP.',
       //   buttonText: 'Webseite ansehen',
       //   href: 'https://bauraum-mv.de',
       //   image: BauraumDesktop,

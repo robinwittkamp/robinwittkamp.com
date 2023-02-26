@@ -69,7 +69,7 @@ export default {
         id: '1',
         title: 'Energiewerk Rügen',
         description:
-          'For Energiewerk Rügen eG both the corporate design and the website were implemented. The website was implemented with WordPress as well as a custom theme and several plugins. The languages used include HTML, CSS, JavaScript and PHP.',
+          'For Energiewerk Rügen eG the corporate website was implemented. The website was build with WordPress as well as a custom theme and several plugins. The languages used include HTML, CSS, JavaScript and PHP.',
         buttonText: 'View website',
         href: 'https://energiewerk-ruegen.de',
         image: EnergiewerkDesktop,
@@ -78,7 +78,7 @@ export default {
         id: '2',
         title: 'Robert Denier',
         description:
-          'Corporate design and website for photographer and artist Robert Denier. The website uses a custom store system based on WooCommerce. Built on WordPress and relevant plugins, HTML, CSS, JavaScript and PHP were used.',
+          'Corporate website and online store for photographer and artist Robert Denier. The website uses a custom store system based on WooCommerce. Built on WordPress and relevant plugins, HTML, CSS, JavaScript and PHP were used.',
         buttonText: 'View website',
         href: 'https://robertdenier.de',
         image: RobertDenierDesktop,
@@ -123,7 +123,7 @@ export default {
         id: '7',
         title: 'Ferienwohnung Putbus',
         description:
-          'A corporate design including a website for vacation apartments in Putbus on the island of Rügen. The website includes a system for requesting and booking apartments. In addition to WordPress, technologies such as HTML, CSS, JavaScript and PHP were used here.',
+          'A corporate website for vacation apartments in Putbus on the island of Rügen. The website includes a system for requesting and booking apartments. In addition to WordPress, technologies such as HTML, CSS, JavaScript and PHP were used here.',
         buttonText: 'View website',
         href: 'https://ferienwohnung-putbus.de',
         image: FewoPutbusDesktop,
@@ -141,7 +141,7 @@ export default {
       //   id: '9',
       //   title: 'Bauraum MV',
       //   description:
-      //     'The corporate design and website of Bauraum MV GmbH. The website was implemented with WordPress, a custom theme and several customized plugins. The languages used include e.g. HTML, CSS, JavaScript and PHP.',
+      //     'The corporate website of Bauraum MV GmbH. The website was implemented with WordPress, a custom theme and several customized plugins. The languages used include e.g. HTML, CSS, JavaScript and PHP.',
       //   buttonText: 'View website',
       //   href: 'https://bauraum-mv.de',
       //   image: BauraumDesktop,
