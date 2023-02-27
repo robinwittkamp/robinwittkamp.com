@@ -43,10 +43,10 @@ const CtaContactSection = (): ReactElement => {
 
   const handleMouse = (event: MouseEvent<HTMLDivElement>) => {
     const rect = event.currentTarget.getBoundingClientRect();
-
-    setHovering(true);
     x.set(event.clientX - rect.left);
     y.set(event.clientY - rect.top);
+
+    setHovering(true);
   };
 
   return (
@@ -59,8 +59,8 @@ const CtaContactSection = (): ReactElement => {
           style={{
             ['--cursor-x' as string]: x,
             ['--cursor-y' as string]: y,
-            ['--x' as string]: 'calc((var(--cursor-x) * 1px))', // adds px unit
-            ['--y' as string]: 'calc((var(--cursor-y) * 1px))', // adds px unit
+            ['--cursor-x-px' as string]: 'calc((var(--cursor-x) * 1px))', // adds px unit
+            ['--cursor-y-px' as string]: 'calc((var(--cursor-y) * 1px))', // adds px unit
           }}
         >
           {/* Border (Background with static gradient) */}
@@ -76,7 +76,7 @@ const CtaContactSection = (): ReactElement => {
                 variants={gradientVariants}
                 style={{
                   background:
-                    'radial-gradient(1600px circle at var(--x) var(--y),rgba(255,255,255,0.2),transparent 75%)',
+                    'radial-gradient(1600px circle at var(--cursor-x-px) var(--cursor-y-px),rgba(255,255,255,0.2),transparent 75%)',
                   opacity,
                 }}
               />
@@ -84,14 +84,14 @@ const CtaContactSection = (): ReactElement => {
           </AnimatePresence>
           {/* Content (with 1px margin around) */}
           <m.div className="m-px rounded-[calc(2rem-1px)] bg-gradient-to-tr from-rusty-900 to-rusty-800 px-6 py-12 sm:p-16 lg:p-24">
-            {/* Animated background gradient */}
+            {/* Background with animated gradient */}
             <AnimatePresence>
               {hovering && (
                 <m.div
                   className="pointer-events-none absolute inset-0"
                   style={{
                     background:
-                      'radial-gradient(1600px circle at var(--x) var(--y),rgba(255,255,255,0.025),transparent 75%)',
+                      'radial-gradient(1600px circle at var(--cursor-x-px) var(--cursor-y-px),rgba(255,255,255,0.025),transparent 75%)',
                     opacity,
                   }}
                   initial="unfocused"
