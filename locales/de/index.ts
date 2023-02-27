@@ -20,7 +20,8 @@ export default {
     subheading:
       'Ich entwerfe und entwickle Webseiten und Webanwendungen seit über vier Jahren. Studiert habe ich Computervisualistik und Design an der Hochschule Hamm-Lippstadt.',
     button: 'Projekte ansehen',
-    logosDescription: 'Erfolgreiche Zusammenarbeit mit Unternehmen aus Deutschland',
+    clientLogosDescription: 'Erfolgreiche Zusammenarbeit mit Unternehmen als Freelancer',
+    employerLogosDescription: 'Unternehmen für die ich als Student tätig war',
   },
   aboutSection: {
     heading: 'Über mich',

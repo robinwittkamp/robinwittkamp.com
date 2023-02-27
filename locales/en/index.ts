@@ -20,7 +20,8 @@ export default {
     subheading:
       "I've designed and developed websites and web apps as a freelancer for over four years. I studied Visual Computing and Design at the Hamm-Lippstadt University of Applied Sciences.",
     button: 'View projects',
-    logosDescription: 'Trusted by businesses like',
+    clientLogosDescription: 'Businesses I worked with as a freelancer',
+    employerLogosDescription: 'Businesses I worked for as a student',
   },
   aboutSection: {
     heading: 'About me',

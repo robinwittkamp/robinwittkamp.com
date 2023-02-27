@@ -11,19 +11,19 @@ import Heading from '../components/Text/Heading';
 import localDe from '../locales/de/index';
 import localEn from '../locales/en/index';
 import KlifraPadMockup from '../public/images/klifra_mockup_pad.png';
+import AdessoLogo from '../public/logos/adesso_logo.svg';
 import BauraumMvLogo from '../public/logos/bauraum_mv_logo.svg';
 import EnergiewerkRuegenLogo from '../public/logos/energiewerk_ruegen_logo.svg';
 import HowToSosLogo from '../public/logos/how_to_sos_logo.svg';
+import HshlLogo from '../public/logos/hshl_logo.svg';
 import KuttigEngineeringLogo from '../public/logos/kuttig_engineering_logo.svg';
 import LbtRuegenLogo from '../public/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/logos/lin-tec_logo.svg';
 import NewCreationsLogo from '../public/logos/new_creations_logo.svg';
+import OnboarderLogo from '../public/logos/onboarder_logo.svg';
 import RobertDenierLogo from '../public/logos/robert_denier_logo.svg';
 import RuegenNaturUrlaubLogo from '../public/logos/ruegen_natur_urlaub_logo.svg';
 import TherapieHenkeLogo from '../public/logos/therapie_henke_logo.svg';
-
-// import AdessoLogo from '../public/images/logos/adesso_logo.svg';
-// import HshlLogo from '../public/logos/hshl_logo.svg';
 
 /**
  * Logos
@@ -68,19 +68,19 @@ const clientLogos = [
   {
     name: 'Ruegen Natur Urlaub logo',
     logo: RuegenNaturUrlaubLogo,
-    wrapperClasses: 'hidden md:flex',
+    wrapperClasses: 'hidden lg:flex',
     svgClasses: 'h-8',
   },
   {
     name: 'How to SOS logo',
     logo: HowToSosLogo,
-    wrapperClasses: 'hidden md:flex',
+    wrapperClasses: 'hidden lg:flex',
     svgClasses: 'h-10',
   },
   {
     name: 'New Creations logo',
     logo: NewCreationsLogo,
-    wrapperClasses: 'hidden md:flex',
+    wrapperClasses: 'hidden lg:flex',
     svgClasses: 'h-6',
   },
   {
@@ -91,18 +91,27 @@ const clientLogos = [
   },
 ];
 
-// const employerLogos = [
-//   {
-//     name: 'adesso logo',
-//     logo: AdessoLogo,
-//     svgClasses: 'h-10',
-//   },
-//   {
-//     name: 'HSHL logo',
-//     logo: HshlLogo,
-//     svgClasses: 'h-7',
-//   },
-// ];
+const employerLogos = [
+  {
+    name: 'adesso logo',
+    logo: AdessoLogo,
+    wrapperClasses: '',
+    svgClasses: 'h-10',
+  },
+
+  {
+    name: 'HSHL logo',
+    logo: HshlLogo,
+    wrapperClasses: '',
+    svgClasses: 'h-7',
+  },
+  {
+    name: 'Onboarder logo',
+    logo: OnboarderLogo,
+    wrapperClasses: 'hidden md:flex',
+    svgClasses: 'h-10',
+  },
+];
 
 /**
  * Component
@@ -116,7 +125,7 @@ const Home = () => {
     <PageLayout>
       <Head title={t.title} description={t.description} />
 
-      {/* Hero */}
+      {/* Hero section */}
       <Section
         first
         id="home"
@@ -162,8 +171,10 @@ const Home = () => {
 
         {/* Company logos */}
         <div className="mt-20 md:mt-24">
+          {/* Client logos */}
+          {/* Description */}
           <span className="block text-center text-lg text-rusty-400 md:text-xl">
-            {t.heroSection.logosDescription}
+            {t.heroSection.clientLogosDescription}
           </span>
           {/* Logos container */}
           <div className="mx-auto mt-8 space-y-8 text-rusty-100 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
@@ -176,28 +187,30 @@ const Home = () => {
               </div>
             ))}
           </div>
-          {/* <span className="mt-12 block text-center text-xl text-rusty-400">
-          Businesses I worked for as an intern or student
-        </span> */}
-          {/* <div className="mx-auto mt-8 space-y-8 sm:flex sm:max-w-2xl sm:flex-wrap sm:items-center sm:justify-center sm:gap-y-4 sm:gap-x-12 sm:space-y-0 xl:max-w-full"> */}
-          {/* <div className="mx-auto mt-8 space-y-8 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-2 md:gap-x-0 xl:flex xl:max-w-full xl:justify-center xl:gap-x-12">
-          {employerLogos.map((item) => (
-            <div key={item.name} className="flex items-center justify-center">
-              <item.logo className={item.svgClasses} />
-            </div>
-          ))}
-        </div> */}
+          {/* Employer logos */}
+          {/* Description */}
+          <span className="mt-12 block text-center text-lg text-rusty-400 md:text-xl">
+            {t.heroSection.employerLogosDescription}
+          </span>
+          {/* Logos container */}
+          <div className="mx-auto mt-8 space-y-8 text-rusty-100 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
+            {employerLogos.map((item) => (
+              <div
+                key={item.name}
+                className={`flex items-center justify-center ${item.wrapperClasses}`}
+              >
+                <item.logo className={item.svgClasses} />
+              </div>
+            ))}
+          </div>
         </div>
       </Section>
 
       {/* Line */}
-      {/* <div className="h-px bg-gradient-to-r from-rusty-950/100 via-rusty-700 to-rusty-950/0" /> */}
+      <div className="h-px bg-gradient-to-r from-rusty-950/100 via-rusty-700 to-rusty-950/100" />
 
-      {/* About */}
-      <Section
-        id="about"
-        // classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent"
-      >
+      {/* About section */}
+      <Section id="about" classes="bg-gradient-radial-hero from-rusty-800/50 to-transparent">
         <Heading variant="h2">{t.aboutSection.heading}</Heading>
         <div className="md:flex md:gap-16 lg:gap-24">
           <div className="md:flex-1">
@@ -235,7 +248,7 @@ const Home = () => {
         </div>
       </Section>
 
-      {/* Work */}
+      {/* Work section */}
       <Section id="work">
         <Heading variant="h2" classes="text-center">
           {t.workSection.heading}
@@ -255,6 +268,7 @@ const Home = () => {
         </div>
       </Section>
 
+      {/* Contact section */}
       <CtaContactSection />
     </PageLayout>
   );
