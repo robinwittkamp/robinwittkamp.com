@@ -62,6 +62,26 @@ export default {
         },
       ],
     },
+    experience: {
+      heading: 'My experience',
+      items: [
+        {
+          id: '1',
+          title: '4+',
+          description: 'years',
+        },
+        {
+          id: '2',
+          title: '20+',
+          description: 'clients',
+        },
+        {
+          id: '3',
+          title: '30+',
+          description: 'projects',
+        },
+      ],
+    },
   },
   workSection: {
     heading: 'Featured work',

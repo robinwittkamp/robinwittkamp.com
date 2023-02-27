@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import Button from '../components/Buttons/Button';
+import ExperienceCard from '../components/Cards/ExperienceCard';
 import ProjectCard from '../components/Cards/ProjectCard';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
@@ -244,6 +245,19 @@ const Home = () => {
               {/* <div className="mx-auto mt-12 aspect-square max-w-lg rounded-2xl bg-rusty-800 md:mt-0" /> */}
               {/* <Image src={Profil} alt="Robin" width={400} height={400} className="rounded-2xl" /> */}
             </div>
+          </div>
+        </div>
+
+        {/* Experience */}
+        <div className="mt-16 md:mt-20 lg:mt-24">
+          <h2 className="text-2xl font-bold text-rusty-100 sm:text-3xl lg:text-4xl">
+            {t.aboutSection.experience.heading}
+          </h2>
+          {/* 3 column container */}
+          <div className="mt-8 space-y-6 sm:grid sm:grid-cols-3 sm:gap-x-8 sm:space-y-0">
+            {t.aboutSection.experience.items.map((item) => (
+              <ExperienceCard key={item.id} title={item.title} description={item.description} />
+            ))}
           </div>
         </div>
       </Section>
