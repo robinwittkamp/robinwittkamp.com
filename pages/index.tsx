@@ -30,61 +30,61 @@ import TherapieHenkeLogo from '../public/logos/therapie_henke_logo.svg';
  */
 const clientLogos = [
   {
-    name: 'LBT Rügen logo',
+    id: 1,
     logo: LbtRuegenLogo,
     wrapperClasses: '',
     svgClasses: 'h-7',
   },
   {
-    name: 'Energiewerk Rügen logo',
+    id: 2,
     logo: EnergiewerkRuegenLogo,
     wrapperClasses: '',
     svgClasses: 'h-7',
   },
   {
-    name: 'Robert Denier logo',
+    id: 3,
     logo: RobertDenierLogo,
     wrapperClasses: '',
     svgClasses: 'h-5',
   },
   {
-    name: 'LIN-TEC logo',
+    id: 4,
     logo: LinTecLogo,
     wrapperClasses: '',
     svgClasses: 'h-8',
   },
   {
-    name: 'Bauraum MV logo',
+    id: 5,
     logo: BauraumMvLogo,
     wrapperClasses: '',
     svgClasses: 'h-10',
   },
   {
-    name: 'Kuttig Engineering logo',
+    id: 6,
     logo: KuttigEngineeringLogo,
     wrapperClasses: '',
     svgClasses: 'h-10',
   },
   {
-    name: 'Ruegen Natur Urlaub logo',
+    id: 7,
     logo: RuegenNaturUrlaubLogo,
     wrapperClasses: 'hidden lg:flex',
     svgClasses: 'h-8',
   },
   {
-    name: 'How to SOS logo',
+    id: 8,
     logo: HowToSosLogo,
     wrapperClasses: 'hidden lg:flex',
     svgClasses: 'h-10',
   },
   {
-    name: 'New Creations logo',
+    id: 9,
     logo: NewCreationsLogo,
     wrapperClasses: 'hidden lg:flex',
     svgClasses: 'h-6',
   },
   {
-    name: 'Therapie Henke logo',
+    id: 10,
     logo: TherapieHenkeLogo,
     wrapperClasses: 'hidden xl:flex',
     svgClasses: 'h-8',
@@ -93,20 +93,20 @@ const clientLogos = [
 
 const employerLogos = [
   {
-    name: 'adesso logo',
+    id: 1,
     logo: AdessoLogo,
     wrapperClasses: '',
     svgClasses: 'h-10',
   },
 
   {
-    name: 'HSHL logo',
+    id: 2,
     logo: HshlLogo,
     wrapperClasses: '',
     svgClasses: 'h-7',
   },
   {
-    name: 'Onboarder logo',
+    id: 3,
     logo: OnboarderLogo,
     wrapperClasses: 'hidden md:flex',
     svgClasses: 'h-10',
@@ -159,7 +159,6 @@ const Home = () => {
 
         {/* Image container */}
         <div className="mt-20 md:mt-24">
-          {/* Browser image */}
           <Image
             className="drop-shadow-[0_25px_25px_rgba(0,0,0,0.5)]"
             src={KlifraPadMockup}
@@ -180,13 +179,14 @@ const Home = () => {
           <div className="mx-auto mt-8 space-y-8 text-rusty-100 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
             {clientLogos.map((item) => (
               <div
-                key={item.name}
+                key={item.id}
                 className={`flex items-center justify-center ${item.wrapperClasses}`}
               >
                 <item.logo className={item.svgClasses} />
               </div>
             ))}
           </div>
+
           {/* Employer logos */}
           {/* Description */}
           <span className="mt-12 block text-center text-lg text-rusty-400 md:text-xl">
@@ -196,7 +196,7 @@ const Home = () => {
           <div className="mx-auto mt-8 space-y-8 text-rusty-100 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
             {employerLogos.map((item) => (
               <div
-                key={item.name}
+                key={item.id}
                 className={`flex items-center justify-center ${item.wrapperClasses}`}
               >
                 <item.logo className={item.svgClasses} />
