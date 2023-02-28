@@ -76,7 +76,7 @@ const CtaContactSection = (): ReactElement => {
                 variants={gradientVariants}
                 style={{
                   background:
-                    'radial-gradient(1600px circle at var(--cursor-x-px) var(--cursor-y-px),rgba(255,255,255,0.2),transparent 75%)',
+                    'radial-gradient(800px circle at var(--cursor-x-px) var(--cursor-y-px),rgba(255,255,255,0.4),transparent 75%)',
                   opacity,
                 }}
               />
@@ -91,7 +91,7 @@ const CtaContactSection = (): ReactElement => {
                   className="pointer-events-none absolute inset-0"
                   style={{
                     background:
-                      'radial-gradient(1600px circle at var(--cursor-x-px) var(--cursor-y-px),rgba(255,255,255,0.025),transparent 75%)',
+                      'radial-gradient(800px circle at var(--cursor-x-px) var(--cursor-y-px),rgba(255,255,255,0.025),transparent 75%)',
                     opacity,
                   }}
                   initial="unfocused"
