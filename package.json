@@ -18,7 +18,7 @@
     "framer-motion": "^10.0.1",
     "next": "^13.2.1",
     "next-seo": "^5.15.0",
-    "next-sitemap": "^3.1.54",
+    "next-sitemap": "^3.1.55",
     "nodemailer": "^6.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
