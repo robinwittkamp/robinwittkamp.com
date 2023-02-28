@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Button from '../components/Buttons/Button';
 import ExperienceCard from '../components/Cards/ExperienceCard';
 import ProjectCard from '../components/Cards/ProjectCard';
+// import TestimonialCard from '../components/Cards/TestimonialCard';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';
@@ -267,7 +268,7 @@ const Home = () => {
         <Heading variant="h2" classes="text-center">
           {t.workSection.heading}
         </Heading>
-        {/* Cards container */}
+        {/* Projects container */}
         <div className="mt-8 space-y-8 md:mt-16 md:space-y-16 lg:grid lg:grid-cols-2 lg:gap-8 lg:space-y-0 xl:gap-12">
           {t.workSection.projects.map((item) => (
             <ProjectCard
@@ -281,6 +282,23 @@ const Home = () => {
           ))}
         </div>
       </Section>
+
+      {/* Testimonials section */}
+      {/* <Section id="testimonials">
+        <Heading variant="h2" classes="text-center">
+          {t.testimonialsSection.heading}
+        </Heading>
+        <div className="mt-8 flex justify-center space-y-8 md:mt-16 md:space-y-12">
+          {t.testimonialsSection.testimonials.map((item) => (
+            <TestimonialCard
+              key={item.id}
+              name={item.name}
+              position={item.position}
+              testimonial={item.testimonial}
+            />
+          ))}
+        </div>
+      </Section> */}
 
       {/* Contact section */}
       <CtaContactSection />
