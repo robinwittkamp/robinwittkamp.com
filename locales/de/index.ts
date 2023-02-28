@@ -179,4 +179,31 @@ export default {
       // },
     ],
   },
+  testimonialsSection: {
+    heading: 'Referenzen',
+    subheading: 'Was meine Kunden sagen',
+    testimonials: [
+      {
+        id: '1',
+        name: 'Nico Farrell & Veronika Bruder',
+        position: 'Inhaber bei New Creations',
+        testimonial:
+          'Robin unterstützt uns seit mehreren Jahren bei bestehenden und neuen Webprojekten. Er geht auf unsere Wünsche ein und der Kontakt mit ihm ist immer super nett. Sowohl die Nutzererfahrung als auch die Performanz unserer Projekte hat sich durch seine Arbeit deutlich verbessert. Wir sind mit seiner Arbeit und Beratung sehr zufrieden und freuen uns daher auch auf die zukünftige Zusammenarbeit mit Robin.',
+      },
+      // {
+      //   id: '2',
+      //   name: 'Name',
+      //   position: 'Position',
+      //   testimonial:
+      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at. Quam adipiscing vitae proin sagittis nisl.',
+      // },
+      // {
+      //   id: '3',
+      //   name: 'Name',
+      //   position: 'Position',
+      //   testimonial:
+      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at. Quam adipiscing vitae proin sagittis nisl.',
+      // },
+    ],
+  },
 };
