@@ -1,4 +1,4 @@
-import { AnimatePresence, LazyMotion, m, useMotionValue } from 'framer-motion';
+import { AnimatePresence, LazyMotion, m, useMotionTemplate, useMotionValue } from 'framer-motion';
 import { useRouter } from 'next/router';
 import type { MouseEvent, ReactElement } from 'react';
 import { useState } from 'react';
@@ -38,13 +38,16 @@ const CtaContactSection = (): ReactElement => {
   const t = locale === 'en' ? localEn : localDe;
 
   const opacity = useMotionValue(0);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const cursorPositionX = useMotionValue(0);
+  const cursorPositionY = useMotionValue(0);
+  const cursorPositionXWithUnit = useMotionTemplate`${cursorPositionX}px`;
+  const cursorPositionYWithUnit = useMotionTemplate`${cursorPositionY}px`;
 
   const handleMouse = (event: MouseEvent<HTMLDivElement>) => {
     const rect = event.currentTarget.getBoundingClientRect();
-    x.set(event.clientX - rect.left);
-    y.set(event.clientY - rect.top);
+    // Calculate mouse position relative to section card
+    cursorPositionX.set(event.clientX - rect.left);
+    cursorPositionY.set(event.clientY - rect.top);
 
     setHovering(true);
   };
@@ -57,10 +60,8 @@ const CtaContactSection = (): ReactElement => {
           onMouseMove={handleMouse}
           onMouseLeave={() => setHovering(false)}
           style={{
-            ['--cursor-x' as string]: x,
-            ['--cursor-y' as string]: y,
-            ['--cursor-x-px' as string]: 'calc((var(--cursor-x) * 1px))', // adds px unit
-            ['--cursor-y-px' as string]: 'calc((var(--cursor-y) * 1px))', // adds px unit
+            ['--cursor-x' as string]: cursorPositionXWithUnit,
+            ['--cursor-y' as string]: cursorPositionYWithUnit,
           }}
         >
           {/* Border (Background with static gradient) */}
@@ -76,7 +77,7 @@ const CtaContactSection = (): ReactElement => {
                 variants={gradientVariants}
                 style={{
                   background:
-                    'radial-gradient(800px circle at var(--cursor-x-px) var(--cursor-y-px),rgba(255,255,255,0.4),transparent 75%)',
+                    'radial-gradient(800px circle at var(--cursor-x) var(--cursor-y),rgba(255,255,255,0.4),transparent 75%)',
                   opacity,
                 }}
               />
@@ -91,7 +92,7 @@ const CtaContactSection = (): ReactElement => {
                   className="pointer-events-none absolute inset-0"
                   style={{
                     background:
-                      'radial-gradient(800px circle at var(--cursor-x-px) var(--cursor-y-px),rgba(255,255,255,0.025),transparent 75%)',
+                      'radial-gradient(800px circle at var(--cursor-x) var(--cursor-y),rgba(255,255,255,0.025),transparent 75%)',
                     opacity,
                   }}
                   initial="unfocused"
