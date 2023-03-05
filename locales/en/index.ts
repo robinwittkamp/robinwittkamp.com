@@ -50,7 +50,7 @@ export default {
         },
         {
           heading: 'Hosting & Deployment',
-          paragraph: 'Plesk, Vercel',
+          paragraph: 'Plesk, Vercel, Netflify',
         },
         {
           heading: 'Development tools',
