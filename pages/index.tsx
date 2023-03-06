@@ -13,16 +13,16 @@ import Heading from '../components/Text/Heading';
 import localDe from '../locales/de/index';
 import localEn from '../locales/en/index';
 import KlifraPadMockup from '../public/images/klifra_mockup_pad.png';
-import AdessoLogo from '../public/logos/adesso_logo.svg';
+// import AdessoLogo from '../public/logos/adesso_logo.svg';
 import BauraumMvLogo from '../public/logos/bauraum_mv_logo.svg';
 import EnergiewerkRuegenLogo from '../public/logos/energiewerk_ruegen_logo.svg';
 import HowToSosLogo from '../public/logos/how_to_sos_logo.svg';
-import HshlLogo from '../public/logos/hshl_logo.svg';
+// import HshlLogo from '../public/logos/hshl_logo.svg';
 import KuttigEngineeringLogo from '../public/logos/kuttig_engineering_logo.svg';
 import LbtRuegenLogo from '../public/logos/lbt_ruegen_logo.svg';
 import LinTecLogo from '../public/logos/lin-tec_logo.svg';
 import NewCreationsLogo from '../public/logos/new_creations_logo.svg';
-import OnboarderLogo from '../public/logos/onboarder_logo.svg';
+// import OnboarderLogo from '../public/logos/onboarder_logo.svg';
 import RobertDenierLogo from '../public/logos/robert_denier_logo.svg';
 import RuegenNaturUrlaubLogo from '../public/logos/ruegen_natur_urlaub_logo.svg';
 import TherapieHenkeLogo from '../public/logos/therapie_henke_logo.svg';
@@ -93,27 +93,26 @@ const clientLogos = [
   },
 ];
 
-const employerLogos = [
-  {
-    id: 1,
-    logo: AdessoLogo,
-    wrapperClasses: '',
-    svgClasses: 'h-10',
-  },
-
-  {
-    id: 2,
-    logo: HshlLogo,
-    wrapperClasses: '',
-    svgClasses: 'h-7',
-  },
-  {
-    id: 3,
-    logo: OnboarderLogo,
-    wrapperClasses: 'hidden md:flex',
-    svgClasses: 'h-10',
-  },
-];
+// const employerLogos = [
+//   {
+//     id: 1,
+//     logo: AdessoLogo,
+//     wrapperClasses: '',
+//     svgClasses: 'h-10',
+//   },
+//   {
+//     id: 2,
+//     logo: HshlLogo,
+//     wrapperClasses: '',
+//     svgClasses: 'h-7',
+//   },
+//   {
+//     id: 3,
+//     logo: OnboarderLogo,
+//     wrapperClasses: 'hidden md:flex',
+//     svgClasses: 'h-10',
+//   },
+// ];
 
 /**
  * Component
@@ -191,11 +190,11 @@ const Home = () => {
 
           {/* Employer logos */}
           {/* Description */}
-          <span className="mt-12 block text-center text-lg text-rusty-400 md:text-xl">
+          {/* <span className="mt-12 block text-center text-lg text-rusty-400 md:text-xl">
             {t.heroSection.employerLogosDescription}
-          </span>
+          </span> */}
           {/* Logos container */}
-          <div className="mx-auto mt-8 space-y-8 text-rusty-100 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
+          {/* <div className="mx-auto mt-8 space-y-8 text-rusty-100 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
             {employerLogos.map((item) => (
               <div
                 key={item.id}
@@ -204,7 +203,7 @@ const Home = () => {
                 <item.logo className={item.svgClasses} />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </Section>
 
