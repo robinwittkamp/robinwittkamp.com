@@ -181,7 +181,7 @@ export default {
   },
   testimonialsSection: {
     heading: 'Referenzen',
-    subheading: 'Was meine Kunden sagen',
+    subheading: 'Was meine Klienten über mich sagen.',
     testimonials: [
       {
         id: '1',
@@ -190,19 +190,26 @@ export default {
         testimonial:
           'Robin unterstützt uns seit mehreren Jahren bei bestehenden und neuen Webprojekten. Er geht auf unsere Wünsche ein und der Kontakt mit ihm ist immer super nett. Sowohl die Nutzererfahrung als auch die Performanz unserer Projekte hat sich durch seine Arbeit deutlich verbessert. Wir sind mit seiner Arbeit und Beratung sehr zufrieden und freuen uns daher auch auf die zukünftige Zusammenarbeit mit Robin.',
       },
+      {
+        id: '2',
+        name: 'Patrick Haß',
+        position: 'Gesellschafter bei LBT Rügen',
+        testimonial:
+          'Während des gesamten Entstehungsprozesses hat uns Robin stets mit eingebunden, die aufgekommenen Fragen zu unserer vollsten Zufriedenheit beantwortet und Empfehlungen aufgezeigt. Wir möchten Ihm für seine fortwährende Unterstützung danken und schätzen vor allem seine professionelle Umsetzung unserer Vorstellungen, die rasche Ausführung sowie die wirklich angenehme Zusammenarbeit.',
+      },
+      {
+        id: '3',
+        name: 'M. Sc. Psych. Sarah Gericke',
+        position: 'Praxis für Psychotherapie',
+        testimonial:
+          'Robin ist kompetent, kreativ und dabei gleichzeitig sehr verlässlich in seiner Beratung, Ausführung und Betreuung. Seine unkomplizierte Art sorgt dafür, dass wir auch in den kommenden Jahren nicht auf ihn verzichten wollen.',
+      },
       // {
-      //   id: '2',
-      //   name: 'Name',
-      //   position: 'Position',
+      //   id: '4',
+      //   name: 'Vorname Nachname',
+      //   position: 'Geschäftsführer bei Firma',
       //   testimonial:
-      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at. Quam adipiscing vitae proin sagittis nisl.',
-      // },
-      // {
-      //   id: '3',
-      //   name: 'Name',
-      //   position: 'Position',
-      //   testimonial:
-      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at. Quam adipiscing vitae proin sagittis nisl.',
+      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at.',
       // },
     ],
   },

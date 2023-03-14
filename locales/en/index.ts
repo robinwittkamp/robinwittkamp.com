@@ -181,7 +181,7 @@ export default {
   },
   testimonialsSection: {
     heading: 'Testimonials',
-    subheading: 'What my clients say about me.',
+    subheading: 'What my clients are saying',
     testimonials: [
       {
         id: '1',
@@ -190,21 +190,26 @@ export default {
         testimonial:
           'Robin has been supporting us for several years with existing and new web projects. He is responsive to our needs and the contact with him is always super nice. Both the user experience and the performance of our projects have improved significantly through his work. We are very satisfied with his work and advice and therefore look forward to working with Robin in the future.',
       },
+      {
+        id: '2',
+        name: 'Patrick Haß',
+        position: 'Shareholder at LBT Rügen',
+        testimonial:
+          'During the entire development process, Robin always involved us, answered the questions that arose to our complete satisfaction and made recommendations. We would like to thank him for his continued support and appreciate above all his professional implementation of our ideas, the quick execution and the really pleasant cooperation.',
+      },
+      {
+        id: '3',
+        name: 'Sarah Gericke',
+        position: 'Praxis for psychotherapy',
+        testimonial:
+          "Robin is competent, creative and at the same time very reliable in his advice, execution and support. His uncomplicated nature ensures that we don't want to do without him in the years to come.",
+      },
       // {
-      //   id: '2',
+      //   id: '4',
       //   name: 'Name Surname',
-      //   position: 'Position',
-      //   company: 'Company Name',
+      //   position: 'Position at Company',
       //   testimonial:
-      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at. Quam adipiscing vitae proin sagittis nisl.',
-      // },
-      // {
-      //   id: '3',
-      //   name: 'Name Surname',
-      //   position: 'Position',
-      //   company: 'Company Name',
-      //   testimonial:
-      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at. Quam adipiscing vitae proin sagittis nisl.',
+      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at.',
       // },
     ],
   },

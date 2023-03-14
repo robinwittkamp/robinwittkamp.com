@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Button from '../components/Buttons/Button';
 import ExperienceCard from '../components/Cards/ExperienceCard';
 import ProjectCard from '../components/Cards/ProjectCard';
-// import TestimonialCard from '../components/Cards/TestimonialCard';
+import TestimonialCard from '../components/Cards/TestimonialCard';
 import Head from '../components/Head';
 import PageLayout from '../components/Layouts/PageLayout';
 import CtaContactSection from '../components/Sections/CtaContactSection';
@@ -283,11 +283,15 @@ const Home = () => {
       </Section>
 
       {/* Testimonials section */}
-      {/* <Section id="testimonials">
+      <Section id="testimonials">
         <Heading variant="h2" classes="text-center">
           {t.testimonialsSection.heading}
         </Heading>
-        <div className="mt-8 flex justify-center space-y-8 md:mt-16 md:space-y-12">
+        <p className="mx-auto mt-8 max-w-md text-center text-xl text-rusty-400 sm:max-w-[38rem] lg:max-w-[45rem] lg:text-2xl">
+          {t.testimonialsSection.subheading}
+        </p>
+        {/* Testimonials container */}
+        <div className="mx-auto mt-8 max-w-lg space-y-8 lg:mt-16 lg:grid lg:max-w-6xl lg:grid-cols-2 lg:gap-8 lg:space-y-0 xl:max-w-none xl:grid-cols-3 xl:gap-8">
           {t.testimonialsSection.testimonials.map((item) => (
             <TestimonialCard
               key={item.id}
@@ -297,7 +301,7 @@ const Home = () => {
             />
           ))}
         </div>
-      </Section> */}
+      </Section>
 
       {/* Contact section */}
       <CtaContactSection />
