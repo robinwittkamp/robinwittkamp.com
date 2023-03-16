@@ -1,10 +1,10 @@
-import '../styles/globals.css';
+import '@/styles/globals.css';
 
 import type { AppProps } from 'next/app';
 import localFont from 'next/font/local';
 import { DefaultSeo } from 'next-seo';
 
-import SEO from '../next-seo.config';
+import SEO from '@/next-seo.config';
 
 /**
  * Fonts

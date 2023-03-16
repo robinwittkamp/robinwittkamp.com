@@ -3,24 +3,24 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import Button from '../components/Buttons/Button';
-import FieldMessage from '../components/Form/FieldMessage';
-import FormMessage from '../components/Form/FormMessage';
-import Head from '../components/Head';
-import PageLayout from '../components/Layouts/PageLayout';
-import Section from '../components/Sections/Section';
-import SocialLinks from '../components/Socials/SocialLinks';
-import Heading from '../components/Text/Heading';
-import localDe from '../locales/de/contact';
-import localEn from '../locales/en/contact';
-import CircleNotchIcon from '../public/icons/fa-solid/circle-notch-solid.svg';
-import PaperPlaneIcon from '../public/icons/fa-solid/paper-plane-solid.svg';
+import Button from '@/components/Buttons/Button';
+import FieldMessage from '@/components/Form/FieldMessage';
+import FormMessage from '@/components/Form/FormMessage';
+import Head from '@/components/Head';
+import PageLayout from '@/components/Layouts/PageLayout';
+import Section from '@/components/Sections/Section';
+import SocialLinks from '@/components/Socials/SocialLinks';
+import Heading from '@/components/Text/Heading';
+import localDe from '@/locales/de/contact';
+import localEn from '@/locales/en/contact';
+import CircleNotchIcon from '@/public/icons/fa-solid/circle-notch-solid.svg';
+import PaperPlaneIcon from '@/public/icons/fa-solid/paper-plane-solid.svg';
 
 /**
  * Dynamic imports
  */
 const loadFramerMotionFeatures = () =>
-  import('../lib/framer-motion/framerMotionFeatures').then((res) => res.default);
+  import('@/lib/framer-motion/framerMotionFeatures').then((res) => res.default);
 
 /**
  * Types

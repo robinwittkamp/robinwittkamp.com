@@ -3,17 +3,17 @@ import { useRouter } from 'next/router';
 import type { MouseEvent, ReactElement } from 'react';
 import { useState } from 'react';
 
-import localDe from '../../locales/de/common';
-import localEn from '../../locales/en/common';
-import Button from '../Buttons/Button';
-import Heading from '../Text/Heading';
-import Section from './Section';
+import Button from '@/components/Buttons/Button';
+import Section from '@/components/Sections/Section';
+import Heading from '@/components/Text/Heading';
+import localDe from '@/locales/de/common';
+import localEn from '@/locales/en/common';
 
 /**
  * Dynamic imports
  */
 const loadFramerMotionFeatures = () =>
-  import('../../lib/framer-motion/framerMotionFeatures').then((res) => res.default);
+  import('@/lib/framer-motion/framerMotionFeatures').then((res) => res.default);
 
 /**
  * Variants (Animation)

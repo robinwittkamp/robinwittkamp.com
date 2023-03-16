@@ -6,16 +6,16 @@ import type { ReactElement } from 'react';
 import { useEffect, useState } from 'react';
 import { RemoveScroll } from 'react-remove-scroll';
 
-import localDe from '../locales/de/header';
-import localEn from '../locales/en/header';
-import Logo from './Logo';
-import SocialLinks from './Socials/SocialLinks';
+import Logo from '@/components/Logo';
+import SocialLinks from '@/components/Socials/SocialLinks';
+import localDe from '@/locales/de/header';
+import localEn from '@/locales/en/header';
 
 /**
  * Dynamic imports
  */
 const loadFramerMotionFeatures = () =>
-  import('../lib/framer-motion/framerMotionFeatures').then((res) => res.default);
+  import('@/lib/framer-motion/framerMotionFeatures').then((res) => res.default);
 
 /**
  * Types

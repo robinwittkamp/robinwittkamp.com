@@ -1,13 +1,13 @@
-// import BauraumDesktop from '../../public/images/bauraum-mv_desktop.png';
-import EnergiewerkDesktop from '../../public/images/energiewerk-ruegen_desktop.png';
-import FewoPutbusDesktop from '../../public/images/ferienwohnung-putbus_desktop.png';
-import KlifraDesktop from '../../public/images/klifra_desktop.png';
-// import LinTecDesktop from '../../public/images/lin-tec_desktop.png';
-import OnboarderPreview from '../../public/images/onboarder_mobile.png';
-import QuizBuddyDesktop from '../../public/images/quizbuddy_desktop.png';
-import RobertDenierDesktop from '../../public/images/robertdenier_desktop.png';
-import TextToWebDesktop from '../../public/images/text-to-web_desktop.png';
-import WebBuddyDesktop from '../../public/images/webbuddy_desktop.png';
+// import BauraumDesktop from '@/public/images/bauraum-mv_desktop.png';
+import EnergiewerkDesktop from '@/public/images/energiewerk-ruegen_desktop.png';
+import FewoPutbusDesktop from '@/public/images/ferienwohnung-putbus_desktop.png';
+import KlifraDesktop from '@/public/images/klifra_desktop.png';
+// import LinTecDesktop from '@/public/images/lin-tec_desktop.png';
+import OnboarderPreview from '@/public/images/onboarder_mobile.png';
+import QuizBuddyDesktop from '@/public/images/quizbuddy_desktop.png';
+import RobertDenierDesktop from '@/public/images/robertdenier_desktop.png';
+import TextToWebDesktop from '@/public/images/text-to-web_desktop.png';
+import WebBuddyDesktop from '@/public/images/webbuddy_desktop.png';
 
 export default {
   title: 'Robin Wittkamp - Webentwickler, UI/UX Designer und freelancer',

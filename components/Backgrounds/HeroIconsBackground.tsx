@@ -1,8 +1,8 @@
 import type { ReactElement } from 'react';
 
-import ReactIcon from '../../public/icons/fa-brands/react.svg';
-import JavaScriptIcon from '../../public/icons/fa-brands/square-js.svg';
-import WordPressIcon from '../../public/icons/fa-brands/wordpress-simple.svg';
+import ReactIcon from '@/public/icons/fa-brands/react.svg';
+import JavaScriptIcon from '@/public/icons/fa-brands/square-js.svg';
+import WordPressIcon from '@/public/icons/fa-brands/wordpress-simple.svg';
 
 /**
  * Component

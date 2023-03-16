@@ -1,8 +1,8 @@
 import Image, { StaticImageData } from 'next/image';
 import type { ReactElement } from 'react';
 
-import AngleRightIcon from '../../public/icons/fa-solid/angle-right-solid.svg';
-import Button from '../Buttons/Button';
+import Button from '@/components/Buttons/Button';
+import AngleRightIcon from '@/public/icons/fa-solid/angle-right-solid.svg';
 
 /**
  * Types

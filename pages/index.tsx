@@ -1,31 +1,31 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import Button from '../components/Buttons/Button';
-import ExperienceCard from '../components/Cards/ExperienceCard';
-import ProjectCard from '../components/Cards/ProjectCard';
-import TestimonialCard from '../components/Cards/TestimonialCard';
-import Head from '../components/Head';
-import PageLayout from '../components/Layouts/PageLayout';
-import CtaContactSection from '../components/Sections/CtaContactSection';
-import Section from '../components/Sections/Section';
-import Heading from '../components/Text/Heading';
-import localDe from '../locales/de/index';
-import localEn from '../locales/en/index';
-import KlifraPadMockup from '../public/images/klifra_mockup_pad.png';
-// import AdessoLogo from '../public/logos/adesso_logo.svg';
-import BauraumMvLogo from '../public/logos/bauraum_mv_logo.svg';
-import EnergiewerkRuegenLogo from '../public/logos/energiewerk_ruegen_logo.svg';
-import HowToSosLogo from '../public/logos/how_to_sos_logo.svg';
-// import HshlLogo from '../public/logos/hshl_logo.svg';
-import KuttigEngineeringLogo from '../public/logos/kuttig_engineering_logo.svg';
-import LbtRuegenLogo from '../public/logos/lbt_ruegen_logo.svg';
-import LinTecLogo from '../public/logos/lin-tec_logo.svg';
-import NewCreationsLogo from '../public/logos/new_creations_logo.svg';
-// import OnboarderLogo from '../public/logos/onboarder_logo.svg';
-import RobertDenierLogo from '../public/logos/robert_denier_logo.svg';
-import RuegenNaturUrlaubLogo from '../public/logos/ruegen_natur_urlaub_logo.svg';
-import TherapieHenkeLogo from '../public/logos/therapie_henke_logo.svg';
+import Button from '@/components/Buttons/Button';
+import ExperienceCard from '@/components/Cards/ExperienceCard';
+import ProjectCard from '@/components/Cards/ProjectCard';
+import TestimonialCard from '@/components/Cards/TestimonialCard';
+import Head from '@/components/Head';
+import PageLayout from '@/components/Layouts/PageLayout';
+import CtaContactSection from '@/components/Sections/CtaContactSection';
+import Section from '@/components/Sections/Section';
+import Heading from '@/components/Text/Heading';
+import localDe from '@/locales/de/index';
+import localEn from '@/locales/en/index';
+import KlifraPadMockup from '@/public/images/klifra_mockup_pad.png';
+// import AdessoLogo from '@/public/logos/adesso_logo.svg';
+import BauraumMvLogo from '@/public/logos/bauraum_mv_logo.svg';
+import EnergiewerkRuegenLogo from '@/public/logos/energiewerk_ruegen_logo.svg';
+import HowToSosLogo from '@/public/logos/how_to_sos_logo.svg';
+// import HshlLogo from '@/public/logos/hshl_logo.svg';
+import KuttigEngineeringLogo from '@/public/logos/kuttig_engineering_logo.svg';
+import LbtRuegenLogo from '@/public/logos/lbt_ruegen_logo.svg';
+import LinTecLogo from '@/public/logos/lin-tec_logo.svg';
+import NewCreationsLogo from '@/public/logos/new_creations_logo.svg';
+// import OnboarderLogo from '@/public/logos/onboarder_logo.svg';
+import RobertDenierLogo from '@/public/logos/robert_denier_logo.svg';
+import RuegenNaturUrlaubLogo from '@/public/logos/ruegen_natur_urlaub_logo.svg';
+import TherapieHenkeLogo from '@/public/logos/therapie_henke_logo.svg';
 
 /**
  * Logos

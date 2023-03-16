@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router';
 
-import Head from '../components/Head';
-import PageLayout from '../components/Layouts/PageLayout';
-import Section from '../components/Sections/Section';
-import UnstyledTextWrapper from '../components/Text/UnstyledTextWrapper';
-import localDe from '../locales/de/privacyPolicy';
-import PrivacyPolicyContentDe from '../locales/de/PrivacyPolicyContent';
-import localEn from '../locales/en/privacyPolicy';
-import PrivacyPolicyContentEn from '../locales/en/PrivacyPolicyContent';
+import Head from '@/components/Head';
+import PageLayout from '@/components/Layouts/PageLayout';
+import Section from '@/components/Sections/Section';
+import UnstyledTextWrapper from '@/components/Text/UnstyledTextWrapper';
+import localDe from '@/locales/de/privacyPolicy';
+import PrivacyPolicyContentDe from '@/locales/de/PrivacyPolicyContent';
+import localEn from '@/locales/en/privacyPolicy';
+import PrivacyPolicyContentEn from '@/locales/en/PrivacyPolicyContent';
 
 /**
  * Component

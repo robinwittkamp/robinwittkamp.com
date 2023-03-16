@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router';
 
-import Head from '../components/Head';
-import PageLayout from '../components/Layouts/PageLayout';
-import Section from '../components/Sections/Section';
-import UnstyledTextWrapper from '../components/Text/UnstyledTextWrapper';
-import localDe from '../locales/de/imprint';
-import ImprintContentDe from '../locales/de/ImprintContent';
-import localEn from '../locales/en/imprint';
-import ImprintContentEn from '../locales/en/ImprintContent';
+import Head from '@/components/Head';
+import PageLayout from '@/components/Layouts/PageLayout';
+import Section from '@/components/Sections/Section';
+import UnstyledTextWrapper from '@/components/Text/UnstyledTextWrapper';
+import localDe from '@/locales/de/imprint';
+import ImprintContentDe from '@/locales/de/ImprintContent';
+import localEn from '@/locales/en/imprint';
+import ImprintContentEn from '@/locales/en/ImprintContent';
 
 /**
  * Component

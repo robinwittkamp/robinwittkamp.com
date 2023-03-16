@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react';
 
-import Heading from '../../components/Text/Heading';
-import TextLink from '../../components/Text/TextLink';
+import Heading from '@/components/Text/Heading';
+import TextLink from '@/components/Text/TextLink';
 
 /**
  * Component

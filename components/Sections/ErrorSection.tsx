@@ -1,8 +1,8 @@
 import type { ReactElement } from 'react';
 
-import Button from '../Buttons/Button';
-import Heading from '../Text/Heading';
-import Section from './Section';
+import Button from '@/components/Buttons/Button';
+import Section from '@/components/Sections/Section';
+import Heading from '@/components/Text/Heading';
 
 /**
  * Types

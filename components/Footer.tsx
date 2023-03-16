@@ -2,11 +2,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import type { ReactElement } from 'react';
 
-import localDe from '../locales/de/footer';
-import localEn from '../locales/en/footer';
-import CodeIcon from '../public/icons/fa-solid/code-solid.svg';
-import RobinWittkampLogo from '../public/logos/robin_wittkamp_logo.svg';
-import SocialLinks from './Socials/SocialLinks';
+import SocialLinks from '@/components/Socials/SocialLinks';
+import localDe from '@/locales/de/footer';
+import localEn from '@/locales/en/footer';
+import CodeIcon from '@/public/icons/fa-solid/code-solid.svg';
+import RobinWittkampLogo from '@/public/logos/robin_wittkamp_logo.svg';
 
 /**
  * Component

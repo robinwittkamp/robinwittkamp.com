@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 
-import Head from '../components/Head';
-import PageLayout from '../components/Layouts/PageLayout';
-import ErrorSection from '../components/Sections/ErrorSection';
-import localDe from '../locales/de/500';
-import localEn from '../locales/en/500';
+import Head from '@/components/Head';
+import PageLayout from '@/components/Layouts/PageLayout';
+import ErrorSection from '@/components/Sections/ErrorSection';
+import localDe from '@/locales/de/500';
+import localEn from '@/locales/en/500';
 
 /**
  * Component

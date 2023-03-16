@@ -1,9 +1,9 @@
 import type { ReactElement } from 'react';
 
-import GithubIcon from '../../public/icons/fa-brands/github.svg';
-import LinkedinIcon from '../../public/icons/fa-brands/linkedin.svg';
-import TwitterIcon from '../../public/icons/fa-brands/twitter.svg';
-import XingIcon from '../../public/icons/fa-brands/xing.svg';
+import GithubIcon from '@/public/icons/fa-brands/github.svg';
+import LinkedinIcon from '@/public/icons/fa-brands/linkedin.svg';
+import TwitterIcon from '@/public/icons/fa-brands/twitter.svg';
+import XingIcon from '@/public/icons/fa-brands/xing.svg';
 
 /**
  * Types
