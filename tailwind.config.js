@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 const defaultTheme = require('tailwindcss/defaultTheme');
 const forms = require('@tailwindcss/forms');
 const typography = require('@tailwindcss/typography');
@@ -6,9 +5,6 @@ const typography = require('@tailwindcss/typography');
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    // fontFamily: {
-    //   gilroy: ['Gilroy', ...defaultTheme.fontFamily.sans],
-    // },
     extend: {
       backgroundImage: {
         'gradient-radial-hero':
