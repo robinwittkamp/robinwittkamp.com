@@ -15,21 +15,13 @@ import localDe from '@/locales/de/contact';
 import localEn from '@/locales/en/contact';
 import CircleNotchIcon from '@/public/icons/fa-solid/circle-notch-solid.svg';
 import PaperPlaneIcon from '@/public/icons/fa-solid/paper-plane-solid.svg';
+import type { Mail } from '@/types/mail';
 
 /**
  * Dynamic imports
  */
 const loadFramerMotionFeatures = () =>
   import('@/lib/framer-motion/framerMotionFeatures').then((res) => res.default);
-
-/**
- * Types
- */
-type InputsProps = {
-  name: string;
-  email: string;
-  message: string;
-};
 
 /**
  * Component
@@ -48,9 +40,9 @@ const Contact = () => {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<InputsProps>();
+  } = useForm<Mail>();
 
-  const onSubmit: SubmitHandler<InputsProps> = (data) => {
+  const onSubmit: SubmitHandler<Mail> = (data) => {
     setIsSending(true);
 
     fetch('/api/send-email', {

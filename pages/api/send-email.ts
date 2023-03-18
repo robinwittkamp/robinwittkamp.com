@@ -1,20 +1,13 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
-/**
- * Types
- */
-type FieldsProps = {
-  name: string;
-  email: string;
-  message: string;
-};
+import type { Mail } from '@/types/mail';
 
 /**
  * Handler
  */
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  const { name, email, message } = req.body as FieldsProps;
+  const { name, email, message } = req.body as Mail;
 
   // Return an error if POST method is not used
   if (req.method !== 'POST') {
