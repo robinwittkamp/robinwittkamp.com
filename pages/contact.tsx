@@ -46,14 +46,11 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
-    // watch,
     reset,
-    // formState,
     formState: { errors },
   } = useForm<InputsProps>();
 
   const onSubmit: SubmitHandler<InputsProps> = (data) => {
-    // console.log(data);
     setIsSending(true);
 
     fetch('/api/send-email', {
@@ -65,14 +62,11 @@ const Contact = () => {
       body: JSON.stringify(data),
     })
       .then((response) => {
-        // console.log('Response received:', response);
         if (response.status === 200) {
-          // console.log(t.form.messages.sendSuccess);
           setIsSendSuccess(true);
           setIsSending(false);
           reset();
         } else {
-          // console.log(t.form.messages.sendError);
           setIsSendError(true);
           setIsSending(false);
         }
@@ -90,9 +84,7 @@ const Contact = () => {
           {/* Left container */}
           <div className="lg:flex-1">
             {/* <p className="text-lg">{t.paragraph}</p> */}
-            <Heading variant="h5" classes="">
-              {t.contactInformation.email}
-            </Heading>
+            <Heading variant="h5">{t.contactInformation.email}</Heading>
             <p className="mt-4 text-lg text-rusty-300 lg:mt-6 lg:text-xl">info@robinwittkamp.com</p>
             <Heading variant="h5" classes="mt-8">
               {t.contactInformation.social}
@@ -126,7 +118,7 @@ const Contact = () => {
                   aria-invalid={errors.name ? 'true' : 'false'}
                   {...register('name', { required: t.form.messages.fieldRequired })}
                 />
-                {/* Error */}
+                {/* Error message */}
                 <FieldMessage>{errors.name?.message}</FieldMessage>
               </div>
 
@@ -147,7 +139,7 @@ const Contact = () => {
                   aria-invalid={errors.email ? 'true' : 'false'}
                   {...register('email', { required: t.form.messages.fieldRequired })}
                 />
-                {/* Error */}
+                {/* Error message */}
                 <FieldMessage>{errors.email?.message}</FieldMessage>
               </div>
 
@@ -168,7 +160,7 @@ const Contact = () => {
                   aria-invalid={errors.message ? 'true' : 'false'}
                   {...register('message', { required: t.form.messages.fieldRequired })}
                 />
-                {/* Error */}
+                {/* Error message */}
                 <FieldMessage>{errors.message?.message}</FieldMessage>
               </div>
 

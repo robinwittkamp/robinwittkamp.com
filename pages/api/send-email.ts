@@ -37,7 +37,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       throw new Error('Please provide a valid email message.');
     }
 
-    // create reusable transporter object using the default SMTP transport
+    // Create reusable transporter object using the default SMTP transport
     const transporter = nodemailer.createTransport({
       host: process.env.MAIL_HOST,
       port: 465,
@@ -48,9 +48,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       },
     });
 
-    // send mail with defined transport object
+    // Send mail with defined transport object
     const info = await transporter.sendMail({
-      // await transporter.sendMail({
       from: `"${name}" <${email}>`,
       to: 'info@robinwittkamp.com',
       subject: 'Contact form at robinwittkamp.com',
@@ -62,7 +61,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     console.log('Request Body:', req.body);
 
     res.status(200).json({ status: 'OK' });
-    // res.status(200).send({ status: 'done', message: 'message has been sent' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Failed to send mail' });
