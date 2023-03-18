@@ -12,24 +12,36 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   // Return an error if POST method is not used
   if (req.method !== 'POST') {
     res.status(405).json({
-      error: 'Only POST method allowed',
+      error: 'Only POST method is allowed.',
+    });
+    return;
+  }
+
+  // Return an error if the request body does not contain a valid name object
+  if (!name || !name.trim()) {
+    res.status(400).json({
+      error: 'Please provide a valid name.',
+    });
+    return;
+  }
+
+  // Return an error if the request body does not contain a valid email object
+  if (!email || !email.trim()) {
+    res.status(400).json({
+      error: 'Request body is not a valid email object',
+    });
+    return;
+  }
+
+  // Return an error if the request body does not contain a valid message object
+  if (!message || !message.trim()) {
+    res.status(400).json({
+      error: 'Request body is not a valid message object',
     });
     return;
   }
 
   try {
-    if (!name || !name.trim()) {
-      throw new Error('Please provide a valid name.');
-    }
-
-    if (!email || !email.trim()) {
-      throw new Error('Please provide a valid email address.');
-    }
-
-    if (!message || !message.trim()) {
-      throw new Error('Please provide a valid email message.');
-    }
-
     // Create reusable transporter object using the default SMTP transport
     const transporter = nodemailer.createTransport({
       host: process.env.MAIL_HOST,
@@ -56,6 +68,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     res.status(200).json({ status: 'OK' });
   } catch (error) {
     console.error(error);
+
     res.status(500).json({ error: 'Failed to send mail' });
   }
 };
