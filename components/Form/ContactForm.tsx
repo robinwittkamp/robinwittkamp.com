@@ -10,7 +10,10 @@ import FormMessage from '@/components/Form/FormMessage';
 import localDe from '@/locales/de/contact';
 import localEn from '@/locales/en/contact';
 import CircleNotchIcon from '@/public/icons/fa-solid/circle-notch-solid.svg';
+import EnvelopeIcon from '@/public/icons/fa-solid/envelope-solid.svg';
 import PaperPlaneIcon from '@/public/icons/fa-solid/paper-plane-solid.svg';
+import PenClipIcon from '@/public/icons/fa-solid/pen-clip-solid.svg';
+import UserLargeIcon from '@/public/icons/fa-solid/user-large-solid.svg';
 import type { Mail } from '@/types/mail';
 
 /**
@@ -82,15 +85,20 @@ const ContactForm = (): ReactElement => {
   return (
     <form className="mt-6" onSubmit={handleSubmit(onSubmit)} method="POST">
       {/* Field: Name */}
-      <div className="">
+      <div className="relative">
         {/* Label */}
         {/* <div className="">
           <label htmlFor="name">{t.form.fields.name}</label>
         </div> */}
+        {/* Icon */}
+        <UserLargeIcon
+          className="absolute top-1/2 h-4 -translate-y-1/2 px-4 text-rusty-200"
+          fill="currentColor"
+        />
         {/* Input */}
         <input
           id="name"
-          className={`block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:outline-0 focus:ring-2 focus:ring-white lg:text-lg ${
+          className={`block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 py-3 pl-12 pr-4 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:outline-0 focus:ring-2 focus:ring-white lg:text-lg ${
             errors.name ? 'shadow-[0_0_0_1px_rgba(255,0,0,1)]' : ''
           }`}
           type="text"
@@ -103,15 +111,20 @@ const ContactForm = (): ReactElement => {
       </div>
 
       {/* Field: Email */}
-      <div className="mt-4">
+      <div className="relative mt-4">
         {/* Label */}
         {/* <div className="">
           <label htmlFor="email">{t.form.fields.email}</label>
         </div> */}
+        {/* Icon */}
+        <EnvelopeIcon
+          className="absolute top-1/2 h-4 -translate-y-1/2 px-4 text-rusty-200"
+          fill="currentColor"
+        />
         {/* Input */}
         <input
           id="email"
-          className={`block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:outline-0 focus:ring-2 focus:ring-white lg:text-lg ${
+          className={`block w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 py-3 pl-12 pr-4 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:outline-0 focus:ring-2 focus:ring-white lg:text-lg ${
             errors.email ? 'shadow-[0_0_0_1px_rgba(255,0,0,1)]' : ''
           }`}
           type="email"
@@ -124,15 +137,20 @@ const ContactForm = (): ReactElement => {
       </div>
 
       {/* Field: Message */}
-      <div className="mt-4">
+      <div className="relative mt-4">
         {/* Label */}
         {/* <div className="">
           <label htmlFor="message">{t.form.fields.message}</label>
         </div> */}
+        {/* Icon */}
+        <PenClipIcon
+          className="absolute top-[calc(3.25rem/2)] h-4 -translate-y-1/2 px-4 text-rusty-200"
+          fill="currentColor"
+        />
         {/* Input */}
         <textarea
           id="message"
-          className={`block max-h-[32rem] min-h-[8rem] w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 px-4 py-3 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:outline-0 focus:ring-2 focus:ring-white lg:text-lg ${
+          className={`block max-h-[32rem] min-h-[8rem] w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 py-3 pl-12 pr-4 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:outline-0 focus:ring-2 focus:ring-white lg:text-lg ${
             errors.message ? 'shadow-[0_0_0_1px_rgba(255,0,0,1)]' : ''
           }`}
           placeholder={t.form.fields.message}
