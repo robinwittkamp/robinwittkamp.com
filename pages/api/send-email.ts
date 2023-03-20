@@ -62,7 +62,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       html: message,
     });
 
-    console.log('Message sent: %s', info.response);
+    console.log('Mail sent: %s', info.response);
     console.log('Request Body:', req.body);
 
     res.status(200).json({ status: 'OK' });
