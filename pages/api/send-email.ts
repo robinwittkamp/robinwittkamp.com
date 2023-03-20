@@ -20,7 +20,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   // Return an error if the request body does not contain a valid name object
   if (!name || !name.trim()) {
     res.status(400).json({
-      error: 'Please provide a valid name.',
+      error: 'Request body does not contain a valid name object.',
     });
     return;
   }
@@ -28,7 +28,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   // Return an error if the request body does not contain a valid email object
   if (!email || !email.trim()) {
     res.status(400).json({
-      error: 'Request body is not a valid email object',
+      error: 'Request body does not contain a valid email object.',
     });
     return;
   }
@@ -36,7 +36,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   // Return an error if the request body does not contain a valid message object
   if (!message || !message.trim()) {
     res.status(400).json({
-      error: 'Request body is not a valid message object',
+      error: 'Request body does not contain a valid message object.',
     });
     return;
   }
@@ -69,7 +69,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   } catch (error) {
     console.error(error);
 
-    res.status(500).json({ error: 'Failed to send mail' });
+    res.status(500).json({ error: 'Failed to send email.' });
   }
 };
 
