@@ -175,7 +175,7 @@ const Contact = () => {
 
               {/* Field: Button */}
               <div className="mt-6">
-                <Button type="submit" variant="secondary">
+                <Button type="submit" variant="secondary" disabled={isSending}>
                   {isSending ? (
                     <>
                       <LazyMotion features={loadFramerMotionFeatures} strict>
