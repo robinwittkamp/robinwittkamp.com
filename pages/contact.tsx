@@ -24,18 +24,6 @@ const loadFramerMotionFeatures = () =>
   import('@/lib/framer-motion/framerMotionFeatures').then((res) => res.default);
 
 /**
- * Types
- */
-// type ApiResponse = {
-//   status?: string;
-//   error?: string;
-// };
-
-// function isError(object: unknown): object is Error {
-//   return object instanceof Error;
-// }
-
-/**
  * Send form data to API endpoint
  */
 const sendEmail = async (data: Mail) => {
@@ -49,19 +37,12 @@ const sendEmail = async (data: Mail) => {
       body: JSON.stringify(data),
     });
 
-    // console.log('response on client before json():', response);
-
     if (response.status !== 200) {
       throw new Error('Failed to send email.');
     }
 
-    // return (await response.json());
     return response;
   } catch (error) {
-    // if (error instanceof Error) {
-    //   console.error('Error message:', error.message);
-    // }
-    // console.error('Unkown:', error);
     return error;
   }
 };
@@ -92,15 +73,7 @@ const Contact = () => {
 
     const response = await sendEmail(data);
 
-    // console.log('response on client:', response);
-
-    // if (response instanceof Response) {
-    //   const json = await response.json();
-    //   console.log('json:', json);
-    // }
-
     if (response instanceof Response && response.status === 200) {
-      // if (response.status === 200) {
       setIsSendSuccess(true);
       setIsSending(false);
       reset();
@@ -108,55 +81,6 @@ const Contact = () => {
       setIsSendError(true);
       setIsSending(false);
     }
-
-    // if (!response.ok) {
-    //   throw new Error('Failed to send email');
-    // }
-
-    // try {
-    //   const response = await fetch('/api/send-email', {
-    //     method: 'POST',
-    //     headers: {
-    //       Accept: 'application/json, text/plain, */*',
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(data),
-    //   });
-
-    //   return await response.json();
-
-    //   if (response.status !== 200) {
-    //     throw new Error('Something went wrong');
-    //   }
-
-    //   setIsSendSuccess(true);
-    //   setIsSending(false);
-    //   reset();
-    // } catch (error) {
-    //   console.log(error);
-    //   setIsSendError(true);
-    //   setIsSending(false);
-    // }
-
-    // fetch('/api/send-email', {
-    //   method: 'POST',
-    //   headers: {
-    //     Accept: 'application/json, text/plain, */*',
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(data),
-    // })
-    //   .then((response) => {
-    //     if (response.status === 200) {
-    //       setIsSendSuccess(true);
-    //       setIsSending(false);
-    //       reset();
-    //     } else {
-    //       setIsSendError(true);
-    //       setIsSending(false);
-    //     }
-    //   })
-    //   .catch((error) => console.log(error));
   };
 
   return (
