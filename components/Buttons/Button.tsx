@@ -12,10 +12,12 @@ type CommonButtonProps = {
 
 type ConditionalButtonProps =
   | {
+      disabled?: never;
       href: string;
       type?: never;
     }
   | {
+      disabled?: boolean;
       href?: never;
       type: 'submit' | 'button' | 'reset';
     };
@@ -34,7 +36,7 @@ const variants = {
 /**
  * Component
  */
-const Button = ({ children, href, type, variant }: ButtonProps): ReactElement => {
+const Button = ({ children, disabled = false, href, type, variant }: ButtonProps): ReactElement => {
   const variantClasses = variants[variant];
   const classes = clsx(
     `inline-flex items-center rounded-2xl px-6 py-3 text-lg font-extrabold transition ${variantClasses}`
@@ -86,7 +88,7 @@ const Button = ({ children, href, type, variant }: ButtonProps): ReactElement =>
   // If prop 'type' is used, render a button
   if (type) {
     return (
-      <button className={classes} type={type}>
+      <button className={classes} type={type} disabled={disabled}>
         {children}
       </button>
     );
