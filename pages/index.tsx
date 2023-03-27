@@ -287,9 +287,9 @@ const Home = () => {
         <Heading variant="h2" classes="text-center">
           {t.testimonialsSection.heading}
         </Heading>
-        <p className="mx-auto mt-8 max-w-md text-center text-xl text-rusty-400 sm:max-w-[38rem] lg:max-w-[45rem] lg:text-2xl">
+        {/* <p className="mx-auto mt-8 max-w-md text-center text-xl text-rusty-400 sm:max-w-[38rem] lg:max-w-[45rem] lg:text-2xl">
           {t.testimonialsSection.subheading}
-        </p>
+        </p> */}
         {/* Testimonials container */}
         <div className="mx-auto mt-8 max-w-lg space-y-8 lg:mt-16 lg:grid lg:max-w-6xl lg:grid-cols-2 lg:gap-8 lg:space-y-0 xl:max-w-none xl:grid-cols-3 xl:gap-8">
           {t.testimonialsSection.testimonials.map((item) => (
