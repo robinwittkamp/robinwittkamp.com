@@ -1,8 +1,9 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-const forms = require('@tailwindcss/forms');
-const typography = require('@tailwindcss/typography');
+import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
+import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
-module.exports = {
+export default {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
@@ -36,4 +37,4 @@ module.exports = {
     },
   },
   plugins: [forms(), typography()],
-};
+} satisfies Config;
