@@ -41,15 +41,22 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-    "react/jsx-props-no-spreading": "off",
+    // Only allow React in tsx files
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    // Don't require state initialization in constructor (Functional components are used)
     "react/state-in-constructor": "off",
-    "react/react-in-jsx-scope": "off",
+    // Turn off need for default props (TypeScript is used for type checking)
+    "react/require-default-props": "off",
+    // Only allow arrow functions for React components
     "react/function-component-definition": [2, {
       "namedComponents": "arrow-function",
       "unnamedComponents": "arrow-function"
     }],
-    "react/require-default-props": "off",
+    // Allow no props spreading (needed for _app.tsx)
+    "react/jsx-props-no-spreading": "off",
+    // Don't require React import (Next.js does it automatically)
+    "react/react-in-jsx-scope": "off",
+    // Allow "jsx global" in _app.tsx
     "react/no-unknown-property": [
       2,
       {
@@ -58,7 +65,14 @@
         ]
       }
     ],
+    // Display wrong import order as errors
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+    // React hook form fix
+    "@typescript-eslint/no-misused-promises": [2, {
+      "checksVoidReturn": {
+        "attributes": false
+      }
+    }]
   }
 }
