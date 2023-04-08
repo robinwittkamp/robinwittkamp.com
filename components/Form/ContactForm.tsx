@@ -2,7 +2,8 @@ import { LazyMotion, m } from 'framer-motion';
 import { useRouter } from 'next/router';
 import type { ReactElement } from 'react';
 import { useState } from 'react';
-import { SubmitHandler, useForm } from 'react-hook-form';
+import type { SubmitHandler } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 import Button from '@/components/Buttons/Button';
 import FieldMessage from '@/components/Form/FieldMessage';
@@ -50,6 +51,10 @@ const sendEmail = async (data: Mail) => {
  * Component
  */
 const ContactForm = (): ReactElement => {
+  const [isNameFieldFocused, setNameFieldFocused] = useState(false);
+  const [isEmailFieldFocused, setEmailFieldFocused] = useState(false);
+  const [isMessageFieldFocused, setMessageFieldFocused] = useState(false);
+
   const [isSendSuccess, setIsSendSuccess] = useState(false);
   const [isSendError, setIsSendError] = useState(false);
   const [isSending, setIsSending] = useState(false);
@@ -62,8 +67,15 @@ const ContactForm = (): ReactElement => {
     register,
     handleSubmit,
     reset,
+    getFieldState,
     formState: { errors },
-  } = useForm<Mail>();
+  } = useForm<Mail>({
+    defaultValues: {
+      name: '',
+      email: '',
+      message: '',
+    },
+  });
 
   const onSubmit: SubmitHandler<Mail> = async (data) => {
     setIsSending(true);
@@ -76,6 +88,9 @@ const ContactForm = (): ReactElement => {
       setIsSendSuccess(true);
       setIsSending(false);
       reset();
+      setMessageFieldFocused(false);
+      setEmailFieldFocused(false);
+      setNameFieldFocused(false);
     } else {
       setIsSendError(true);
       setIsSending(false);
@@ -86,12 +101,16 @@ const ContactForm = (): ReactElement => {
     <form className="mt-6" onSubmit={handleSubmit(onSubmit)} method="POST">
       {/* Row (Name) */}
       <div>
-        {/* Label */}
-        {/* <div className="">
-          <label htmlFor="name">{t.form.fields.name}</label>
-        </div> */}
         {/* Field */}
         <div className="relative">
+          <label
+            htmlFor="name"
+            className={`absolute left-11 top-1/2 origin-[0%_50%] -translate-y-1/2 bg-rusty-800 px-1 text-lg text-rusty-300 transition-transform duration-200 ${
+              isNameFieldFocused ? '-translate-y-10 scale-75' : ''
+            }`}
+          >
+            {t.form.fields.name}
+          </label>
           <UserLargeIcon
             className="absolute top-1/2 h-4 -translate-y-1/2 px-4 text-rusty-200"
             fill="currentColor"
@@ -102,9 +121,12 @@ const ContactForm = (): ReactElement => {
               errors.name ? 'shadow-[0_0_0_1px_rgba(255,0,0,1)]' : ''
             }`}
             type="text"
-            placeholder={t.form.fields.name}
             aria-invalid={errors.name ? 'true' : 'false'}
-            {...register('name', { required: t.form.messages.fieldRequired })}
+            onFocus={() => setNameFieldFocused(true)}
+            {...register('name', {
+              required: t.form.messages.fieldRequired,
+              onBlur: () => setNameFieldFocused(getFieldState('name').isDirty),
+            })}
           />
         </div>
         {/* Error message */}
@@ -113,12 +135,16 @@ const ContactForm = (): ReactElement => {
 
       {/* Row (Email) */}
       <div className="mt-4">
-        {/* Label */}
-        {/* <div className="">
-          <label htmlFor="email">{t.form.fields.email}</label>
-        </div> */}
         {/* Field */}
         <div className="relative">
+          <label
+            htmlFor="email"
+            className={`absolute left-11 top-1/2 origin-[0%_50%] -translate-y-1/2 bg-rusty-800 px-1 text-lg text-rusty-300 transition-transform duration-200 ${
+              isEmailFieldFocused ? '-translate-y-10 scale-75' : ''
+            }`}
+          >
+            {t.form.fields.email}
+          </label>
           <EnvelopeIcon
             className="absolute top-1/2 h-4 -translate-y-1/2 px-4 text-rusty-200"
             fill="currentColor"
@@ -129,9 +155,12 @@ const ContactForm = (): ReactElement => {
               errors.email ? 'shadow-[0_0_0_1px_rgba(255,0,0,1)]' : ''
             }`}
             type="email"
-            placeholder={t.form.fields.email}
             aria-invalid={errors.email ? 'true' : 'false'}
-            {...register('email', { required: t.form.messages.fieldRequired })}
+            onFocus={() => setEmailFieldFocused(true)}
+            {...register('email', {
+              required: t.form.messages.fieldRequired,
+              onBlur: () => setEmailFieldFocused(getFieldState('email').isDirty),
+            })}
           />
         </div>
         {/* Error message */}
@@ -140,14 +169,18 @@ const ContactForm = (): ReactElement => {
 
       {/* Row (Message) */}
       <div className="mt-4">
-        {/* Label */}
-        {/* <div className="">
-          <label htmlFor="message">{t.form.fields.message}</label>
-        </div> */}
         {/* Field */}
         <div className="relative">
+          <label
+            htmlFor="message"
+            className={`absolute left-11 top-7 origin-[0%_50%] -translate-y-1/2 bg-rusty-800 px-1 text-lg text-rusty-300 transition-transform duration-200 ${
+              isMessageFieldFocused ? '-translate-y-10 scale-75' : ''
+            }`}
+          >
+            {t.form.fields.message}
+          </label>
           <PenClipIcon
-            className="absolute top-[calc(3.25rem/2)] h-4 -translate-y-1/2 px-4 text-rusty-200"
+            className="absolute top-7 h-4 -translate-y-1/2 px-4 text-rusty-200"
             fill="currentColor"
           />
           <textarea
@@ -155,10 +188,13 @@ const ContactForm = (): ReactElement => {
             className={`block max-h-[32rem] min-h-[8rem] w-full rounded-xl border-0 border-t border-rusty-700 bg-rusty-800 py-3 pl-12 pr-4 text-white transition placeholder:text-rusty-300 focus:border-rusty-700 focus:outline-0 focus:ring-2 focus:ring-white lg:text-lg ${
               errors.message ? 'shadow-[0_0_0_1px_rgba(255,0,0,1)]' : ''
             }`}
-            placeholder={t.form.fields.message}
             rows={4}
             aria-invalid={errors.message ? 'true' : 'false'}
-            {...register('message', { required: t.form.messages.fieldRequired })}
+            onFocus={() => setMessageFieldFocused(true)}
+            {...register('message', {
+              required: t.form.messages.fieldRequired,
+              onBlur: () => setMessageFieldFocused(getFieldState('message').isDirty),
+            })}
           />
         </div>
         {/* Error message */}
