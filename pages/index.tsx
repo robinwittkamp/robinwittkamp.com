@@ -177,7 +177,7 @@ const Home = () => {
             {t.heroSection.clientLogosDescription}
           </span>
           {/* Logos container */}
-          <div className="mx-auto mt-8 space-y-8 text-rusty-100 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-y-8 sm:gap-x-12 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
+          <div className="mx-auto mt-8 space-y-8 text-rusty-100 sm:grid sm:max-w-lg sm:grid-cols-2 sm:gap-x-12 sm:gap-y-8 sm:space-y-0 md:max-w-4xl md:grid-cols-3 md:gap-x-0 xl:flex xl:max-w-5xl xl:flex-wrap xl:justify-center xl:gap-x-12">
             {clientLogos.map((item) => (
               <div
                 key={item.id}

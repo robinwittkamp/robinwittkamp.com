@@ -33,7 +33,7 @@ const Section = ({
 }: SectionProps): ReactElement => (
   <section
     id={id}
-    className={`py-20 px-4 sm:px-8 lg:py-32 ${
+    className={`px-4 py-20 sm:px-8 lg:py-32 ${
       first ? 'pt-28 sm:pt-32 md:pt-36 lg:pt-40' : ''
     } ${classes}`}
   >
