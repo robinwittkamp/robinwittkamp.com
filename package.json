@@ -15,7 +15,7 @@
     "@next/bundle-analyzer": "^13.3.0",
     "@svgr/webpack": "^7.0.0",
     "clsx": "^1.2.1",
-    "framer-motion": "^10.11.6",
+    "framer-motion": "^10.12.2",
     "next": "^13.3.0",
     "next-seo": "^6.0.0",
     "next-sitemap": "^4.0.7",
