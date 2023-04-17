@@ -1,8 +1,8 @@
-// import BauraumDesktop from '@/public/images/bauraum-mv_desktop.png';
+import BauraumDesktop from '@/public/images/bauraum-mv_desktop.png';
 import EnergiewerkDesktop from '@/public/images/energiewerk-ruegen_desktop.png';
 import FewoPutbusDesktop from '@/public/images/ferienwohnung-putbus_desktop.png';
 import KlifraDesktop from '@/public/images/klifra_desktop.png';
-// import LinTecDesktop from '@/public/images/lin-tec_desktop.png';
+import LinTecDesktop from '@/public/images/lin-tec_desktop.png';
 import OnboarderPreview from '@/public/images/onboarder_mobile.png';
 import QuizBuddyDesktop from '@/public/images/quizbuddy_desktop.png';
 import RobertDenierDesktop from '@/public/images/robertdenier_desktop.png';
@@ -88,21 +88,21 @@ export default {
     projects: [
       {
         id: '1',
+        title: 'LIN-TEC',
+        description:
+          'Programmierung der Webseite für die LIN-TEC Engineering GmbH. Die Webseite wurde mit WordPress sowie einem benutzerdefinierten Theme und mehreren Plugins umgesetzt. Es kamen hierbei Technologien wie HTML, CSS, JavaScript und PHP zum Einsatz.',
+        buttonText: 'Webseite ansehen',
+        href: 'http://lin-tec.eu',
+        image: LinTecDesktop,
+      },
+      {
+        id: '2',
         title: 'Energiewerk Rügen',
         description:
           'Für die Energiewerk Rügen eG wurde die Corporate Webseite konzipiert und umgesetzt. Die Webseite wurde mit WordPress sowie einem benutzerdefinierten Theme und mehreren Plugins umgesetzt. Zu den verwendeten Sprachen gehören HTML, CSS, JavaScript und PHP.',
         buttonText: 'Webseite ansehen',
         href: 'https://energiewerk-ruegen.de',
         image: EnergiewerkDesktop,
-      },
-      {
-        id: '2',
-        title: 'Robert Denier',
-        description:
-          'Webseite und Online-Shop für den Fotograf und Künstler Robert Denier. Die Webseite verwendet ein benutzerdefiniertes Shopsystem basierend auf WooCommerce. Aufbauend auf WordPress und relevante Plugins wurden HTML, CSS, JavaScript und PHP verwendet.',
-        buttonText: 'Webseite ansehen',
-        href: 'https://robertdenier.de',
-        image: RobertDenierDesktop,
       },
       {
         id: '3',
@@ -142,12 +142,12 @@ export default {
       },
       {
         id: '7',
-        title: 'Ferienwohnung Putbus',
+        title: 'Robert Denier',
         description:
-          'Eine Webseite für Ferienwohnungen in Putbus auf Rügen. Die Webseite umfasst ein System zum Anfragen und Buchen von Wohnungen. Neben WordPress kamen hierbei Technologien wie HTML, CSS, JavaScript und PHP zum Einsatz.',
+          'Webseite und Online-Shop für den Fotograf und Künstler Robert Denier. Die Webseite verwendet ein benutzerdefiniertes Shopsystem basierend auf WooCommerce. Aufbauend auf WordPress und relevante Plugins wurden HTML, CSS, JavaScript und PHP verwendet.',
         buttonText: 'Webseite ansehen',
-        href: 'https://ferienwohnung-putbus.de',
-        image: FewoPutbusDesktop,
+        href: 'https://robertdenier.de',
+        image: RobertDenierDesktop,
       },
       {
         id: '8',
@@ -159,23 +159,22 @@ export default {
         image: QuizBuddyDesktop,
       },
       // {
-      //   id: '9',
+      //   id: '8',
+      //   title: 'Ferienwohnung Putbus',
+      //   description:
+      //     'Eine Webseite für Ferienwohnungen in Putbus auf Rügen. Die Webseite umfasst ein System zum Anfragen und Buchen von Wohnungen. Neben WordPress kamen hierbei Technologien wie HTML, CSS, JavaScript und PHP zum Einsatz.',
+      //   buttonText: 'Webseite ansehen',
+      //   href: 'https://ferienwohnung-putbus.de',
+      //   image: FewoPutbusDesktop,
+      // },
+      // {
+      //   id: '10',
       //   title: 'Bauraum MV',
       //   description:
       //     'Die umgesetzte Webseite der Bauraum MV GmbH. Die Webseite wurde mit WordPress, einem benutzerdefinierten Theme und mehreren angepassten Plugins umgesetzt. Zu den verwendeten Sprachen gehören z.B. HTML, CSS, JavaScript und PHP.',
       //   buttonText: 'Webseite ansehen',
       //   href: 'https://bauraum-mv.de',
       //   image: BauraumDesktop,
-      // },
-      // {
-      //   id: '10',
-      //   title: 'LIN-TEC',
-      //   description:
-      //     'Konzeption und Programmierung der Webseite für die LIN-TEC Engineering GmbH. Die Webseite wurde mit WordPress sowie einem benutzerdefinierten Theme und mehreren Plugins umgesetzt. Zu den verwendeten Technologien gehören WordPress, JavaScript und PHP.',
-      //   // buttonText: 'Webseite ansehen',
-      //   // href: 'http://lin-tec.eu',
-      //   image: LinTecDesktop,
-      //   comingSoon: true,
       // },
     ],
   },

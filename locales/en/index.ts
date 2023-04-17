@@ -1,8 +1,8 @@
-// import BauraumDesktop from '@/public/images/bauraum-mv_desktop.png';
+import BauraumDesktop from '@/public/images/bauraum-mv_desktop.png';
 import EnergiewerkDesktop from '@/public/images/energiewerk-ruegen_desktop.png';
 import FewoPutbusDesktop from '@/public/images/ferienwohnung-putbus_desktop.png';
 import KlifraDesktop from '@/public/images/klifra_desktop.png';
-// import LinTecDesktop from '@/public/images/lin-tec_desktop.png';
+import LinTecDesktop from '@/public/images/lin-tec_desktop.png';
 import OnboarderPreview from '@/public/images/onboarder_mobile.png';
 import QuizBuddyDesktop from '@/public/images/quizbuddy_desktop.png';
 import RobertDenierDesktop from '@/public/images/robertdenier_desktop.png';
@@ -88,21 +88,21 @@ export default {
     projects: [
       {
         id: '1',
+        title: 'LIN-TEC',
+        description:
+          'Programming of the website for LIN-TEC Engineering GmbH. The website was implemented using WordPress as well as a custom theme and several plugins. Technologies such as HTML, CSS, JavaScript and PHP were used here.',
+        buttonText: 'View website',
+        href: 'https://lin-tec.de',
+        image: LinTecDesktop,
+      },
+      {
+        id: '2',
         title: 'Energiewerk Rügen',
         description:
           'For Energiewerk Rügen eG the corporate website was implemented. The website was build with WordPress as well as a custom theme and several plugins. The languages used include HTML, CSS, JavaScript and PHP.',
         buttonText: 'View website',
         href: 'https://energiewerk-ruegen.de',
         image: EnergiewerkDesktop,
-      },
-      {
-        id: '2',
-        title: 'Robert Denier',
-        description:
-          'Corporate website and online store for photographer and artist Robert Denier. The website uses a custom store system based on WooCommerce. Built on WordPress and relevant plugins, HTML, CSS, JavaScript and PHP were used.',
-        buttonText: 'View website',
-        href: 'https://robertdenier.de',
-        image: RobertDenierDesktop,
       },
       {
         id: '3',
@@ -142,12 +142,12 @@ export default {
       },
       {
         id: '7',
-        title: 'Ferienwohnung Putbus',
+        title: 'Robert Denier',
         description:
-          'A corporate website for vacation apartments in Putbus on the island of Rügen. The website includes a system for requesting and booking apartments. In addition to WordPress, technologies such as HTML, CSS, JavaScript and PHP were used here.',
+          'Corporate website and online store for photographer and artist Robert Denier. The website uses a custom store system based on WooCommerce. Built on WordPress and relevant plugins, HTML, CSS, JavaScript and PHP were used.',
         buttonText: 'View website',
-        href: 'https://ferienwohnung-putbus.de',
-        image: FewoPutbusDesktop,
+        href: 'https://robertdenier.de',
+        image: RobertDenierDesktop,
       },
       {
         id: '8',
@@ -159,23 +159,22 @@ export default {
         image: QuizBuddyDesktop,
       },
       // {
-      //   id: '9',
+      //   id: '8',
+      //   title: 'Ferienwohnung Putbus',
+      //   description:
+      //     'A corporate website for vacation apartments in Putbus on the island of Rügen. The website includes a system for requesting and booking apartments. In addition to WordPress, technologies such as HTML, CSS, JavaScript and PHP were used here.',
+      //   buttonText: 'View website',
+      //   href: 'https://ferienwohnung-putbus.de',
+      //   image: FewoPutbusDesktop,
+      // },
+      // {
+      //   id: '10',
       //   title: 'Bauraum MV',
       //   description:
       //     'The corporate website of Bauraum MV GmbH. The website was implemented with WordPress, a custom theme and several customized plugins. The languages used include e.g. HTML, CSS, JavaScript and PHP.',
       //   buttonText: 'View website',
       //   href: 'https://bauraum-mv.de',
       //   image: BauraumDesktop,
-      // },
-      // {
-      //   id: '10',
-      //   title: 'LIN-TEC',
-      //   description:
-      //     'Design and programming of the website for LIN-TEC Engineering GmbH. The website was implemented using WordPress as well as a custom theme and several plugins. The technologies used include WordPress, JavaScript and PHP.',
-      //   // buttonText: 'View website',
-      //   // href: 'http://lin-tec.eu',
-      //   image: LinTecDesktop,
-      //   comingSoon: true,
       // },
     ],
   },
