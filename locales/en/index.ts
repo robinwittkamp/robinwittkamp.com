@@ -92,7 +92,7 @@ export default {
         description:
           'Programming of the website for LIN-TEC Engineering GmbH. The website was implemented using WordPress as well as a custom theme and several plugins. Technologies such as HTML, CSS, JavaScript and PHP were used here.',
         buttonText: 'View website',
-        href: 'https://lin-tec.de',
+        href: 'https://lin-tec.eu',
         image: LinTecDesktop,
       },
       {
