@@ -48,7 +48,6 @@
     ".next/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "temp"
+    "node_modules"
   ]
 }
