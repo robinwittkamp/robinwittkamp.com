@@ -186,6 +186,7 @@ export default {
         id: '1',
         name: 'Nico Farrell & Veronika Bruder',
         position: 'Owners of New Creations',
+        stars: 5,
         testimonial:
           'Robin has been supporting us for several years with existing and new web projects. He is responsive to our needs and the contact with him is always super nice. Both the user experience and the performance of our projects have improved significantly through his work. We are very satisfied with his work and advice and therefore look forward to working with Robin in the future.',
       },
@@ -193,6 +194,7 @@ export default {
         id: '2',
         name: 'Patrick Haß',
         position: 'Shareholder at LBT Rügen',
+        stars: 5,
         testimonial:
           'During the entire development process, Robin always involved us, answered the questions that arose to our complete satisfaction and made recommendations. We would like to thank him for his continued support and appreciate above all his professional implementation of our ideas, the quick execution and the really pleasant cooperation.',
       },
@@ -200,6 +202,7 @@ export default {
         id: '3',
         name: 'Heike & Frank Balzer',
         position: 'Owners of Rügen Natur Urlaub',
+        stars: 5,
         testimonial:
           'Working with Robin was a great enrichment for us. Robin has already created two websites for us. When implementing them, Robin always placed great value on usability, design and performance. We are very satisfied with the result of both projects and therefore trust Robin for future projects.',
       },
@@ -207,6 +210,7 @@ export default {
         id: '4',
         name: 'Sarah Gericke',
         position: 'Praxis for psychotherapy',
+        stars: 5,
         testimonial:
           "Robin is competent, creative and at the same time very reliable in his advice, execution and support. His uncomplicated nature ensures that we don't want to do without him in the years to come.",
       },

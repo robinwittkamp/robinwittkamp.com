@@ -186,6 +186,7 @@ export default {
         id: '1',
         name: 'Nico Farrell & Veronika Bruder',
         position: 'Inhaber bei New Creations',
+        stars: 5,
         testimonial:
           'Robin unterstützt uns seit mehreren Jahren bei bestehenden und neuen Webprojekten. Er geht auf unsere Wünsche ein und der Kontakt mit ihm ist immer super nett. Sowohl die Nutzererfahrung als auch die Performanz unserer Projekte hat sich durch seine Arbeit deutlich verbessert. Wir sind mit seiner Arbeit und Beratung sehr zufrieden und freuen uns daher auch auf die zukünftige Zusammenarbeit mit Robin.',
       },
@@ -193,6 +194,7 @@ export default {
         id: '2',
         name: 'Patrick Haß',
         position: 'Gesellschafter bei LBT Rügen',
+        stars: 5,
         testimonial:
           'Während des gesamten Entstehungsprozesses hat uns Robin stets mit eingebunden, die aufgekommenen Fragen zu unserer vollsten Zufriedenheit beantwortet und Empfehlungen aufgezeigt. Wir möchten Ihm für seine fortwährende Unterstützung danken und schätzen vor allem seine professionelle Umsetzung unserer Vorstellungen, die rasche Ausführung sowie die wirklich angenehme Zusammenarbeit.',
       },
@@ -200,6 +202,7 @@ export default {
         id: '3',
         name: 'Heike & Frank Balzer',
         position: 'Inhaber von Rügen Natur Urlaub',
+        stars: 5,
         testimonial:
           'Die Zusammenarbeit mit Robin war eine große Bereicherung für uns. Robin hat bereits zwei Webseiten für uns erstellt. Bei deren Umsetzung legte Robin stets einen hohen Wert auf Benutzerfreundlichkeit, Design und Performanz. Wir sind sehr zufrieden mit dem Ergebnis beider Projekte und vertrauen Robin daher auch für zukünftige Vorhaben.',
       },
@@ -207,6 +210,7 @@ export default {
         id: '4',
         name: 'M. Sc. Psych. Sarah Gericke',
         position: 'Praxis für Psychotherapie',
+        stars: 5,
         testimonial:
           'Robin ist kompetent, kreativ und dabei gleichzeitig sehr verlässlich in seiner Beratung, Ausführung und Betreuung. Seine unkomplizierte Art sorgt dafür, dass wir auch in den kommenden Jahren nicht auf ihn verzichten wollen.',
       },

@@ -297,6 +297,7 @@ const Home = () => {
               key={item.id}
               name={item.name}
               position={item.position}
+              stars={item.stars}
               testimonial={item.testimonial}
             />
           ))}
