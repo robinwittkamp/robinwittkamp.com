@@ -198,18 +198,18 @@ export default {
       },
       {
         id: '3',
+        name: 'Heike & Frank Balzer',
+        position: 'Inhaber von Rügen Natur Urlaub',
+        testimonial:
+          'Die Zusammenarbeit mit Robin war eine große Bereicherung für uns. Robin hat bereits zwei Webseiten für uns erstellt. Bei deren Umsetzung legte Robin stets einen hohen Wert auf Benutzerfreundlichkeit, Design und Performanz. Wir sind sehr zufrieden mit dem Ergebnis beider Projekte und vertrauen Robin daher auch für zukünftige Vorhaben.',
+      },
+      {
+        id: '4',
         name: 'M. Sc. Psych. Sarah Gericke',
         position: 'Praxis für Psychotherapie',
         testimonial:
           'Robin ist kompetent, kreativ und dabei gleichzeitig sehr verlässlich in seiner Beratung, Ausführung und Betreuung. Seine unkomplizierte Art sorgt dafür, dass wir auch in den kommenden Jahren nicht auf ihn verzichten wollen.',
       },
-      // {
-      //   id: '4',
-      //   name: 'Vorname Nachname',
-      //   position: 'Geschäftsführer bei Firma',
-      //   testimonial:
-      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at.',
-      // },
     ],
   },
 };

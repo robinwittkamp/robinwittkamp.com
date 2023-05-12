@@ -198,18 +198,18 @@ export default {
       },
       {
         id: '3',
+        name: 'Heike & Frank Balzer',
+        position: 'Inhaber von Rügen Natur Urlaub',
+        testimonial:
+          'Working with Robin was a great enrichment for us. Robin has already created two websites for us. When implementing them, Robin always placed great value on usability, design and performance. We are very satisfied with the result of both projects and therefore trust Robin for future projects.',
+      },
+      {
+        id: '4',
         name: 'Sarah Gericke',
         position: 'Praxis for psychotherapy',
         testimonial:
           "Robin is competent, creative and at the same time very reliable in his advice, execution and support. His uncomplicated nature ensures that we don't want to do without him in the years to come.",
       },
-      // {
-      //   id: '4',
-      //   name: 'Name Surname',
-      //   position: 'Position at Company',
-      //   testimonial:
-      //     'At lectus urna duis convallis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum id venenatis a condimentum vitae. A iaculis at erat pellentesque adipiscing commodo elit at.',
-      // },
     ],
   },
 };

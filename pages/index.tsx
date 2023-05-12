@@ -291,7 +291,7 @@ const Home = () => {
           {t.testimonialsSection.subheading}
         </p> */}
         {/* Testimonials container */}
-        <div className="mx-auto mt-8 max-w-lg space-y-8 lg:mt-16 lg:grid lg:max-w-6xl lg:grid-cols-2 lg:gap-8 lg:space-y-0 xl:max-w-none xl:grid-cols-3 xl:gap-8">
+        <div className="mx-auto mt-8 max-w-lg space-y-8 lg:mt-16 lg:grid lg:max-w-4xl lg:grid-cols-2 lg:grid-rows-[minmax(24rem,_auto)_minmax(24rem,_auto)] lg:gap-8 lg:space-y-0">
           {t.testimonialsSection.testimonials.map((item) => (
             <TestimonialCard
               key={item.id}
