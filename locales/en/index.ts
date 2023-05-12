@@ -199,7 +199,7 @@ export default {
       {
         id: '3',
         name: 'Heike & Frank Balzer',
-        position: 'Inhaber von Rügen Natur Urlaub',
+        position: 'Owners of Rügen Natur Urlaub',
         testimonial:
           'Working with Robin was a great enrichment for us. Robin has already created two websites for us. When implementing them, Robin always placed great value on usability, design and performance. We are very satisfied with the result of both projects and therefore trust Robin for future projects.',
       },
