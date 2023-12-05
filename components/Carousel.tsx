@@ -1,4 +1,10 @@
-import { AnimatePresence, LazyMotion, m, useMotionTemplate, useMotionValue } from 'framer-motion';
+import {
+  // AnimatePresence,
+  LazyMotion,
+  // m,
+  // useMotionTemplate,
+  // useMotionValue
+} from 'framer-motion';
 import type { ReactElement, ReactNode } from 'react';
 
 /**
