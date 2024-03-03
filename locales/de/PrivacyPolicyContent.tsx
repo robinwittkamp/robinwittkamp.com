@@ -124,9 +124,9 @@ const PrivacyPolicyContent = (): ReactElement => (
     <p>
       Robin Wittkamp
       <br />
-      Auf dem Rott 33
+      Am Heuweg 1
       <br />
-      59069 Hamm
+      59494 Soest
     </p>
     <p>
       Telefon: +49-1573-0739127

@@ -13,9 +13,9 @@ const ImprintContent = (): ReactElement => (
     <p>
       Robin Wittkamp
       <br />
-      Auf dem Rott 33
+      Am Heuweg 1
       <br />
-      59069 Hamm
+      59494 Soest
     </p>
     <Heading variant="h6">Kontakt</Heading>
     <p>
